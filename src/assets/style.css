@@ -428,3 +428,10 @@ h1 small { display: block; font-size: .6em; margin-top: .2em; }
 .page-hero h1 small { color: var(--ink-2); }
 .page-hero .lead { margin-bottom: 0; }
 @media (max-width: 520px) { .page-hero h1 { font-size: 1.38rem; } }
+
+/* ---------- 誤りの報告 ---------- */
+.report { margin-top: 1rem; padding: 12px 14px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.report p { margin: 0 0 .5rem; }
+.report-title { font-weight: 800; color: var(--brand-strong); }
+.report-btn { background: var(--brand); color: #fff; border-color: var(--brand); }
+.report-btn:hover { background: var(--brand-strong); }

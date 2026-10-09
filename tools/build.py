@@ -11,6 +11,7 @@ import html
 import json
 import re
 import shutil
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -89,6 +90,16 @@ def nav_primary_html(current: str, root: str) -> str:
         cur = ' aria-current="page"' if slug == current else ""
         items.append(f'<li><a href="{root}{slug}.html"{cur}>{esc(label)}</a></li>')
     return "<ul>" + "".join(items) + "</ul>"
+
+
+def report_url(title: str, canonical: str) -> str:
+    """X の投稿画面を、ページ名とURLが入った状態で開くリンク"""
+    page = title.split("｜")[0]
+    text = (
+        f"@skikkh 「漏れた後の守り方」の「{page}」で、誤りや古い情報を見つけました。\n\n"
+        "（どこが違うか・正しい情報が載っているページのURL）\n"
+    )
+    return "https://x.com/intent/post?" + urllib.parse.urlencode({"text": text, "url": canonical})
 
 
 def nav_html(current: str, root: str) -> str:
@@ -321,6 +332,7 @@ def main() -> None:
             "updated": UPDATED,
             "nav": nav_html(slug, root),
             "nav_primary": nav_primary_html(slug, root),
+            "report_url": esc(report_url(meta["title"], canonical)),
             "nav_footer": nav_html(slug, root),
             "content": body.strip(),
         }
