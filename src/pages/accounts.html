@@ -26,7 +26,7 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
   <li><strong>銀行・証券</strong>お金そのものです。</li>
   <li><strong>スマホ決済とクレジットカード</strong>PayPayなど。銀行口座からの自動チャージが付いていることがあります。</li>
   <li><strong>通販とポイント</strong>Amazon、楽天など。登録したカードで買い物をされ、貯めたポイントも狙われます。</li>
-  <li><strong>LINEとSNS</strong>乗っ取られると、あなたの名前で家族や友人に詐欺のメッセージが送られます。</li>
+  <li><strong>LINEとSNS</strong>乗っ取られると、あなたの名前で家族や友人に詐欺のメッセージが送られます。LINEの認証番号は、家族や友人に頼まれても教えません。LINEは、家族や知人であっても受信した認証番号を教えないよう呼びかけています。</li>
   <li><strong>それ以外</strong>使っていないものは<a href="delete.html">退会と消去請求</a>へ。</li>
 </ol>
 
@@ -83,13 +83,13 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
 
 <h2 id="carrier">携帯電話：番号を奪われない</h2>
 <ul>
-  <li><strong>携帯会社のIDを乗っ取られないようにする。</strong>dアカウント、au ID、My SoftBank、楽天IDなどのパスワードを固有のものにし、2段階認証やパスキーをオンにします。</li>
+  <li><strong>携帯会社のIDを乗っ取られないようにする。</strong>dアカウント、au ID、My SoftBank、楽天IDなどのパスワードを固有のものにし、2段階認証やパスキーをオンにします。盗まれたIDとパスワードで、店に行かずにeSIMを再発行され、番号を奪われた事例があります。ログイン通知や再発行の連絡が来るようにしておき、身に覚えのない連絡が届いたら、すぐ携帯会社に連絡します。</li>
   <li><strong>契約時の4桁の暗証番号を見直す。</strong>生年月日、電話番号の一部、「0000」「1234」なら変更します。</li>
-  <li><strong>迷惑SMSのフィルタをオンにする。</strong>ドコモの「危険SMS拒否設定」、au・UQ mobile・povoの「迷惑SMSブロック」、ソフトバンク・ワイモバイル・LINEMOの「迷惑SMSフィルター」などがあり、多くは無料です。名称と内容は各社の公式サイトで確認してください。</li>
+  <li><strong>迷惑SMSのフィルタをオンにする。</strong>ドコモの「危険SMS拒否設定」、au・UQ mobile・povoの「迷惑SMSブロック」、ソフトバンク・ワイモバイル・LINEMOの「迷惑SMSフィルター」などがあり、多くは無料です。名称と内容は各社の公式サイトで確認してください。偽のSMSは、本物と同じ送信者名で、本物のSMSと同じスレッドに並ぶことがあります。届いた場所や送信者名では見分けず、リンクを押さずに公式アプリで確かめます。</li>
   <li><strong>大事なサービスの認証を、可能ならパスキーや認証アプリに移す。</strong>新しい方法でログインでき、予備の手段も使えると確かめてからSMSの設定を見直します。SMSしか選べないなら、認証をオフにはしません。</li>
   <li><strong>突然「圏外」「SIMなし」になったら、すぐ動く。</strong>電波の問題でなければ、SIMが乗っ取られた可能性があります。家族の電話などから携帯会社に連絡し、回線を止めてもらいます。</li>
 </ul>
-<p class="src">出典：<a href="https://www.itmedia.co.jp/mobile/spv/2305/20/news034.html" rel="noopener">ITmedia Mobile「携帯電話に届く迷惑SMS、未然に防ぐには？」</a></p>
+<p class="src">出典：<a href="https://www.itmedia.co.jp/mobile/spv/2305/20/news034.html" rel="noopener">ITmedia Mobile「携帯電話に届く迷惑SMS、未然に防ぐには？」</a>、<a href="https://www.softbank.jp/corp/news/press/sbkk/2022/20220113_02/" rel="noopener">ソフトバンク（同じスレッドに表示される偽装SMS）</a>、<a href="https://network.mobile.rakuten.co.jp/information/news/other/2675/" rel="noopener">楽天モバイル「身に覚えのないeSIMの再発行にご注意ください」</a></p>
 
 <h2 id="money">銀行・証券・カード・決済</h2>
 <h3>銀行</h3>
@@ -121,7 +121,9 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
 <h2 id="device">スマホとパソコン</h2>
 <ul>
   <li><strong>OSとアプリを自動で更新する。</strong>公表済みの弱点を突く攻撃への基本対策です。今回の事案すべての侵入原因が判明しているわけではありません。</li>
-  <li><strong>アプリは公式ストアからだけ入れる。</strong>SMSやメールで案内されたアプリは入れません。</li>
+  <li><strong>アプリは公式ストアからだけ入れる。</strong>SMSやメールで案内されたアプリは入れません。「アクセシビリティ」「デバイスのフルコントロール」「VPN接続」の許可を求めるアプリは、本当に必要か確かめ、分からなければ入れません。</li>
+  <li><strong>電話やチャットで言われたアプリは入れない。画面も共有しない。</strong>遠隔操作や画面共有を許すと、認証コードや暗証番号が相手に見えます。</li>
+  <li><strong>自分で操作していないのに届いた認証コードや「承認しますか」は、断る。</strong>誰かがログインしようとしているおそれがあります。<a href="help.html#first">届いたときの手順</a></li>
   <li><strong>「ウイルスに感染しました」という画面の電話番号にかけない。</strong></li>
   <li><strong>指示されてもコマンドを貼り付けない。</strong>「Windowsキー＋R」を押させる確認画面は攻撃です。</li>
 </ul>

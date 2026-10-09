@@ -6,13 +6,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>なぜこの対策なのか ── 攻撃者の目線で見た今回の漏えい｜情報漏えい対策ガイド</title>
-<meta name="description" content="今回の大量漏えいで何が盗まれ、攻撃者はそれをどうお金に変えるのか。5つの換金ルートと、それぞれを断つ方法を、セキュリティエンジニアの目線で整理しました。">
+<meta name="description" content="今回の大量漏えいで何が盗まれ、攻撃者はそれをどうお金に変えるのか。6つの換金ルートと、それぞれを断つ方法を、セキュリティエンジニアの目線で整理しました。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/threat.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="情報漏えい対策ガイド">
 <meta property="og:title" content="なぜこの対策なのか ── 攻撃者の目線で見た今回の漏えい｜情報漏えい対策ガイド">
-<meta property="og:description" content="今回の大量漏えいで何が盗まれ、攻撃者はそれをどうお金に変えるのか。5つの換金ルートと、それぞれを断つ方法を、セキュリティエンジニアの目線で整理しました。">
+<meta property="og:description" content="今回の大量漏えいで何が盗まれ、攻撃者はそれをどうお金に変えるのか。6つの換金ルートと、それぞれを断つ方法を、セキュリティエンジニアの目線で整理しました。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/threat.html">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=926cbcb1d3">
-<script src="assets/app.js?v=926cbcb1d3" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=c580bde54f">
+<script src="assets/app.js?v=c580bde54f" defer></script>
 </head>
 <body class="page-threat">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -49,7 +49,7 @@
 <ol>
   <li><a href="#what">何が起きているか（事実）</a></li>
   <li><a href="#nature">漏れたものの性質</a></li>
-  <li><a href="#routes">攻撃者の5つの換金ルートと断ち方</a></li>
+  <li><a href="#routes">攻撃者の6つの換金ルートと断ち方</a></li>
   <li><a href="#gov">国の呼びかけをどう見るか</a></li>
   <li><a href="#limits">個人にできないこと</a></li>
 </ol></nav>
@@ -91,7 +91,7 @@
 </div>
 <p>今回の漏えいには、パスワード以外に<strong>本人確認に使われ得る情報</strong>も含まれます。どの情報が漏れたかは事案ごとに違います。氏名・住所・生年月日だけを秘密の証拠にできないため、情報が悪用される道筋も点検します。</p>
 
-<h2 id="routes">攻撃者の5つの換金ルートと、断ち方</h2>
+<h2 id="routes">攻撃者の6つの換金ルートと、断ち方</h2>
 <p>盗んだ情報は、それだけではお金になりません。攻撃者は次のどれかの道を通ってお金に変えます。どの道も、途中のどこかで断ち切れます。</p>
 <ol class="routes">
   <li>
@@ -109,7 +109,7 @@
     <div class="route-flow">
       <div class="step"><b>使う情報</b>漏れたパスワード、メールアドレス</div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="step"><b>攻撃者の動き</b>同じ組み合わせでほかのサービスに自動ログイン。偽サイトでSMSコードをその場で横取りする</div>
+      <div class="step"><b>攻撃者の動き</b>同じ組み合わせでほかのサービスに自動ログイン。偽サイトでSMSコードをその場で横取りする。電話で「届いたコードを読んで」「承認を押して」と頼む</div>
       <div class="arrow" aria-hidden="true"></div>
       <div class="step defense"><b>断ち方</b>長く、推測しにくい別々のパスワード。可能ならパスキー。SMSの追加認証も、認証なしより安全。<a href="accounts.html#passkey">パスキーとは</a></div>
     </div>
@@ -119,7 +119,7 @@
     <div class="route-flow">
       <div class="step"><b>使う情報</b>氏名、住所、生年月日、免許証の画像</div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="step"><b>攻撃者の動き</b>偽造の身分証で携帯ショップに行き、SIMを再発行させる。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
+      <div class="step"><b>攻撃者の動き</b>偽造の身分証で携帯ショップに行き、SIMを再発行させる。盗んだ携帯会社のIDで、ネットからeSIMを再発行させることもある。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
       <div class="arrow" aria-hidden="true"></div>
       <div class="step defense"><b>断ち方</b>携帯会社のIDのパスワードと、契約の暗証番号を見直す。対応していれば新しい認証と復旧方法を確認してからSMSを移す。突然圏外になったらすぐ連絡。<a href="accounts.html#carrier">携帯電話の守り方</a></div>
     </div>
@@ -142,6 +142,16 @@
       <div class="step"><b>攻撃者の動き</b>名簿にして売買する。業者や役所を名乗って訪問する。在宅状況や資産を電話で探る</div>
       <div class="arrow" aria-hidden="true"></div>
       <div class="step defense"><b>断ち方</b>アポなしの訪問には開けない。電話で資産や在宅の話をしない。<a href="family.html">家族を守る</a></div>
+    </div>
+  </li>
+  <li>
+    <div class="route-head"><strong>あなた自身にお金を動かさせる（ニセ警察・投資・遠隔操作）</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>氏名、年齢、電話番号、住所、免許証の画像、証券口座や買い物の履歴</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>銀行のシステムは破らず、警察、役所、著名人、恋人を名乗って本人を説得し、振込や現金、暗号資産で本人の手でお金を動かさせる。アプリを入れさせて画面を見る。声や顔はAIでまねる</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>お金を動かす話、アプリを入れる話が出たら、相手が誰でも一度切り、家族や <strong>#9110</strong> に相談する。<a href="scams.html#police">ニセ警察</a>・<a href="scams.html#invest">投資詐欺</a>・<a href="scams.html#pc">遠隔操作</a></div>
     </div>
   </li>
 </ol>

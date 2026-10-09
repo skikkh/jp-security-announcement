@@ -11,17 +11,18 @@ description: お詫び・補償をうたう偽メール、再登録の要求、�
 <table class="stack">
   <thead><tr><th scope="col">届いた連絡</th><th scope="col">やってはいけないこと</th><th scope="col">代わりにやること</th></tr></thead>
   <tbody>
-    <tr><th scope="row">メール・SMS</th><td data-label="やってはいけない">リンクを押す。添付ファイルを開く</td><td data-label="代わりに">公式アプリか、ブックマークしておいた公式サイトから開いて確認する</td></tr>
+    <tr><th scope="row">メール・SMS</th><td data-label="やってはいけない">リンクを押す。添付ファイルを開く。QRコードを読み取る</td><td data-label="代わりに">公式アプリか、ブックマークしておいた公式サイトから開いて確認する。本物と同じ送信者名で、本物のSMSと同じスレッドに偽物が並ぶことがある</td></tr>
     <tr><th scope="row">電話</th><td data-label="やってはいけない">その場で答える。言われた番号にかけ直す</td><td data-label="代わりに">一度切る。カードの裏面、通帳、公式サイトの番号に自分からかける</td></tr>
     <tr><th scope="row">郵便</th><td data-label="やってはいけない">書かれた番号やQRコードを使う</td><td data-label="代わりに">以前から使っている公式アプリ・ブックマーク、手元の契約書などから窓口を確認する。検索広告の番号は使わない</td></tr>
     <tr><th scope="row">訪問</th><td data-label="やってはいけない">ドアを開ける。身分証を見て信用する</td><td data-label="代わりに">インターホン越しに用件を聞き、会社や役所の代表番号に確認する</td></tr>
-    <tr><th scope="row">LINE・SNS</th><td data-label="やってはいけない">返信する。ビデオ通話に応じる</td><td data-label="代わりに">本人に、電話など別の方法で確認する</td></tr>
+    <tr><th scope="row">LINE・SNS</th><td data-label="やってはいけない">返信する。ビデオ通話に応じる。「届いた認証番号を教えて」に答える</td><td data-label="代わりに">本人に、電話など別の方法で確認する。LINEの認証番号は、家族や友人に頼まれても教えない</td></tr>
+    <tr><th scope="row">「アプリを入れて」「画面を見せて」</th><td data-label="やってはいけない">言われたアプリを入れる。画面共有や遠隔操作を許す</td><td data-label="代わりに">相手が警察、銀行、携帯会社、パソコンのサポートを名乗っても断り、電話を切る</td></tr>
   </tbody>
 </table>
 </div>
 <div class="callout engineer">
   <span class="callout-title">なぜ「見分ける」ではなく「経路」なのか</span>
-  <p>差出人の表示名、ロゴ、文面、あなたの名前や注文番号は本物らしく見せられます。警察署など実在する番号の着信表示も偽装された例があります。<strong>以前から使っている公式アプリやブックマーク、手元のカード・契約書</strong>から自分で確認してください。検索結果の広告や、届いた連絡に記されたURL・番号は独立した確認先になりません。公式サイトに見える検索結果もURLを確認し、不安なら別の既知の経路を使います。</p>
+  <p>差出人の表示名、ロゴ、文面、あなたの名前や注文番号は本物らしく見せられます。生成AIを使えば、誤字のない自然な文面や、本人そっくりの声・顔も作れます。警察署など実在する番号の着信表示も偽装された例があります。<strong>以前から使っている公式アプリやブックマーク、手元のカード・契約書</strong>から自分で確認してください。検索結果の広告や、届いた連絡に記されたURL・番号は独立した確認先になりません。公式サイトに見える検索結果もURLを確認し、不安なら別の既知の経路を使います。</p>
 </div>
 
 <h2 id="patterns">典型的な手口</h2>
@@ -56,12 +57,14 @@ description: お詫び・補償をうたう偽メール、再登録の要求、�
   <div class="scam-msg"><span class="from">電話「〇〇警察署 捜査二課」</span>あなたの運転免許証が、詐欺グループの口座開設に使われています。あなたにも逮捕状が出ています。容疑を晴らすため、これからLINEでビデオ通話をします。資産が犯罪に関係していないか確認するため、口座の残高を……</div>
   <div class="scam-flags"><span class="flag-title">ここがおかしい</span>
     <ul>
-      <li>警察が電話で逮捕状を告げたり、LINEやビデオ通話に誘導したりすることはない</li>
-      <li>「捜査のため」とお金や口座の確認を求めることはない</li>
+      <li>警察が電話で逮捕状を告げたり、LINEやビデオ通話に誘導したりすることはない。ビデオ通話に制服や警察手帳、逮捕状が映っても、本物の証拠にならない</li>
+      <li>「捜査のため」とお金や口座の確認を求めることはない。「資産を保護する」「口座を調査する」と言って、振込や現金の受け渡しをさせるのが、この詐欺のお金の取り方です</li>
+      <li>「家族にも言わないで」「捜査の秘密」と口止めする</li>
       <li>流出した免許証情報を知っているだけでは、警察官の証明にはならない</li>
     </ul>
   </div>
 </div>
+<p>始まりは警察とは限りません。「総務省」「NTT」などを名乗り「2時間後に電話が使えなくなる」「1を押して」と流れる自動音声の電話や、「携帯電話の未納料金がある」という電話から、途中で警察官役に代わる流れも確認されています。<strong>自動音声の電話は、最後まで聞かずに切ります。</strong></p>
 <p>警察庁は、警察本部・警察署の実在する代表番号が着信画面に偽装表示された事例を公表しています。番号が本物に見えても通話を切り、着信履歴や相手の指定した番号を使わず、公式案内で確かめた警察署の番号か警察相談専用電話 <strong>#9110</strong> に自分でかけます。緊急時は <strong>110</strong> です。</p>
 
 <h3 id="erase-scam">④ 「個人情報を削除します」型</h3>
@@ -92,13 +95,32 @@ description: お詫び・補償をうたう偽メール、再登録の要求、�
 <p>「今の会社は倒産する」「契約が使えなくなる」「手続きのためログイン情報を教えて」と電話で聞き出す手口です。hi-hoでは、主にこの方法で聞き出された情報による不正ログインが38,509件（契約単位）確認されました。<strong>ログインID、パスワード、生年月日を電話で伝えない。</strong>その場で答えず、一度切って、契約している会社の公式窓口に確かめます。</p>
 
 <h3 id="refund">⑦ 返金・口座確認型</h3>
-<p>「補償金をお振り込みするため、口座番号と暗証番号を入力してください」「キャッシュカードの交換が必要です」。<strong>暗証番号を尋ねる会社や役所はありません。</strong>キャッシュカードを預かりに来ることもありません。</p>
+<p>「補償金をお振り込みするため、口座番号と暗証番号を入力してください」「キャッシュカードの交換が必要です」。<strong>暗証番号を尋ねる会社や役所はありません。</strong>キャッシュカードを預かりに来ることもありません。「口座が犯罪に使われている。守るために別の口座へ移して」も同じ仲間です。警察や銀行が、あなたのお金を別の口座へ移すよう頼むことはありません。</p>
 
-<h3 id="pc">⑧ パソコンの画面に出る偽の警告・偽の確認</h3>
+<h3 id="pc">⑧ パソコンやスマホを操作させようとする型</h3>
 <ul>
+  <li><strong>「このアプリを入れてください」「画面を共有してください」「遠隔で確認します」と言われたら、相手が誰でも断ります。</strong>入れると、画面に出る認証コードや通知、入力した暗証番号が相手に見えたり、操作されたりします。遠隔操作や画面共有のアプリで、借金や振込をさせられたという相談も寄せられています。</li>
+  <li>パソコンの修理代として「100円」をネットバンキングで送金したはずが、遠隔操作で「0」を足され、100万円が送金された例があります。<strong>知らない相手とつながったまま、銀行や決済のアプリやサイトを開かないでください。</strong>入れてしまったら、<a href="help.html#first">被害に遭ったときの手順</a>へ進みます。</li>
+  <li>スマホでは、「アプリの更新」「Android版だけの特典」などのメールやSMSから、公式ストア以外のアプリを入れさせる手口があります。入れるときに「アクセシビリティ」「デバイスのフルコントロール」「VPN接続」の許可を求められたら、その場でやめます。これらの許可を悪用して、決済アプリで勝手に買い物をされた例があります。</li>
   <li>「ウイルスに感染しました。こちらにお電話ください」と大きな音と画面で脅すのは、サポート詐欺です。電話せず、ブラウザを閉じます。閉じられない場合はパソコンを再起動します。</li>
-  <li>「ロボットではないことを確認するため、Windowsキー＋Rを押し、Ctrl＋Vで貼り付けてEnter」と指示する画面は、不正なコマンドを実行させる手口のおそれがあります。指示に従わず、画面を閉じてください。</li>
+  <li>「ロボットではないことを確認するため、Windowsキー＋Rを押し、Ctrl＋Vで貼り付けてEnter」と指示する画面は、不正なコマンドを実行させる手口のおそれがあります。指示に従わず、画面を閉じてください。実行すると、ブラウザーに保存したパスワードやログイン状態を盗まれることがあります。</li>
   <li>銀行やカード会社のサイトは、検索結果の広告からではなく、ブックマークか公式アプリから開きます。広告に偽サイトがまぎれることがあります。</li>
+</ul>
+
+<h3 id="invest">⑨ SNS・広告・出会いから始まる「もうかる話」</h3>
+<p>被害額がいちばん大きい詐欺です。警察庁の暫定値では、2026年1〜8月だけで、SNS型投資詐欺が約937億円、SNS型ロマンス詐欺が約326億円、ニセ警察詐欺が約729億円です。漏れた年齢、住所、証券口座や買い物の履歴は、勧誘の相手を選ぶ材料になりえます。</p>
+<div class="scam-flags"><span class="flag-title">よくある流れ</span>
+  <ul>
+    <li>著名人が投資を勧める広告やSNSのメッセージから、「無料の投資セミナー」「LINEグループ」に誘う。著名人の画像や動画は無断で使われ、AIで作られたものもある</li>
+    <li>画面上では利益が出たように見え、少額は引き出せる。増額を勧められ、全額を引き出そうとすると「手数料」などを先に払えと言われる</li>
+    <li>SNSやマッチングアプリで知り合い、会ったことのない相手が「2人の将来のために投資を」と勧める</li>
+  </ul>
+</div>
+<ul>
+  <li><strong>SNS、広告、知り合ったばかりの相手から知った投資話には、お金を入れない。</strong>「必ずもうかる」「元本保証」は、それだけで疑います。</li>
+  <li>投資をするなら、<a href="https://www.fsa.go.jp/menkyo/menkyo.html" rel="noopener">金融庁の登録業者一覧</a>で確かめた会社の、自分で入れた公式アプリから口座を開きます。個人名義の口座へ振り込むよう言われたら詐欺です。</li>
+  <li>「引き出すには手数料が必要」と言われたら、それ以上払わず、<strong>#9110</strong> に相談します。</li>
+  <li>「口座を貸して」「荷物を受け取って送るだけ」といった誘いにも応じません。口座の売買や譲渡は犯罪で、あなたの口座が止められます。</li>
 </ul>
 
 <h2 id="redflags">どの手口にも共通する赤信号</h2>
@@ -108,12 +130,15 @@ description: お詫び・補償をうたう偽メール、再登録の要求、�
   <li><div class="card"><span class="card-title">秘密にさせる</span><span class="card-body">「家族にも言わないで」「捜査の秘密です」</span></div></li>
   <li><div class="card"><span class="card-title">番号を言わせる</span><span class="card-body">暗証番号、認証コード、カード番号、パスワード</span></div></li>
   <li><div class="card"><span class="card-title">知っていることを並べる</span><span class="card-body">名前、住所、注文内容、免許証番号。いまは本物の証拠になりません</span></div></li>
-  <li><div class="card"><span class="card-title">お金を動かさせる</span><span class="card-body">振込、ギフトカード、電子マネー、暗号資産</span></div></li>
+  <li><div class="card"><span class="card-title">お金を動かさせる</span><span class="card-body">振込、ギフトカード、電子マネー、暗号資産、「安全な口座」への移動</span></div></li>
+  <li><div class="card"><span class="card-title">スマホやパソコンを操作させる</span><span class="card-body">アプリを入れる、画面を共有する、届いたコードを読み上げる、「承認」を押す</span></div></li>
+  <li><div class="card"><span class="card-title">声や顔を見せる</span><span class="card-body">家族の声、制服の警察官、著名人の動画。AIで作れるので、本物の証拠になりません</span></div></li>
 </ul>
 
 <h2 id="entered">入力してしまった、答えてしまったら</h2>
 <p>早く動くほど、止められる可能性が上がります。<a href="help.html">被害に遭ったときの手順</a>を、上から順に進めてください。</p>
 <ul>
+  <li>被害のあとに「被害金を取り戻せる」「返金の手続きを代行する」と連絡してくる相手にも注意します。相談は、自分からかける <strong>#9110</strong> や <strong>188</strong> を使います。</li>
   <li>偽サイトはフィッシング対策協議会（<a href="mailto:info@antiphishing.jp">info@antiphishing.jp</a>）に報告できます。報告は、ほかの人の被害を減らします。</li>
 </ul>
-<p class="src">出典：<a href="https://www.npa.go.jp/bureau/cyber/countermeasures/phishing.html" rel="noopener">警察庁「フィッシング対策」</a>、<a href="https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/241218/02.html" rel="noopener">警察庁「ニセ警察詐欺に注意」</a>、<a href="https://www.digital.go.jp/policies/mynumber_faq_05" rel="noopener">デジタル庁「個人情報の保護について」</a>、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー「ご質問と回答」Q6・Q10</a>、<a href="https://www.kokusen.go.jp/news/data/n-20240807_2.html" rel="noopener">国民生活センター「国民生活センターをかたるニセの電話やハガキにご注意ください」</a>、<a href="https://www2.sagawa-exp.co.jp/information/detail/420/" rel="noopener">佐川急便のお知らせ</a>、<a href="https://internet.watch.impress.co.jp/docs/news/2145352.html" rel="noopener">INTERNET Watch（ヤマト運輸）</a></p>
+<p class="src">出典：<a href="https://www.npa.go.jp/bureau/cyber/countermeasures/phishing.html" rel="noopener">警察庁「フィッシング対策」</a>、<a href="https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/241218/02.html" rel="noopener">警察庁「ニセ警察詐欺に注意」</a>、<a href="https://www.npa.go.jp/bureau/criminal/souni/tokusyusagi/kouhou.pdf" rel="noopener">警察庁「令和8年8月末における特殊詐欺の認知・検挙状況等（暫定値）」</a>、<a href="https://www.npa.go.jp/bureau/safetylife/sos47/case/sns-romance/investment/" rel="noopener">警察庁「SNS型投資詐欺」</a>、<a href="https://www.npa.go.jp/bureau/safetylife/sos47/case/sns-romance/romance/" rel="noopener">警察庁「SNS型ロマンス詐欺」</a>、<a href="https://www.kokusen.go.jp/news/data/n-20241219_1.html" rel="noopener">国民生活センター「2時間後に電話が使えない！？」</a>、<a href="https://www.kokusen.go.jp/news/data/n-20240327_1.html" rel="noopener">国民生活センター「サポート詐欺」</a>、<a href="https://www.pref.kanagawa.jp/docs/r7b/cnt/f370214/20230821.html" rel="noopener">神奈川県「アプリ悪用手口に注意」</a>、<a href="https://www.docomo.ne.jp/info/notice/page/260918_00.html" rel="noopener">NTTドコモ「不正なアプリのインストール」</a>、<a href="https://www.softbank.jp/corp/news/press/sbkk/2022/20220113_02/" rel="noopener">ソフトバンク（同じスレッドに表示される偽装SMS）</a>、<a href="https://help.line.me/line/smartphone/sp?contentId=20003774&amp;lang=ja" rel="noopener">LINEヘルプ（認証番号）</a>、<a href="https://www.digital.go.jp/policies/mynumber_faq_05" rel="noopener">デジタル庁「個人情報の保護について」</a>、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー「ご質問と回答」Q6・Q10</a>、<a href="https://www.kokusen.go.jp/news/data/n-20240807_2.html" rel="noopener">国民生活センター「国民生活センターをかたるニセの電話やハガキにご注意ください」</a>、<a href="https://www2.sagawa-exp.co.jp/information/detail/420/" rel="noopener">佐川急便のお知らせ</a>、<a href="https://internet.watch.impress.co.jp/docs/news/2145352.html" rel="noopener">INTERNET Watch（ヤマト運輸）</a></p>

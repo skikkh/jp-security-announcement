@@ -106,6 +106,14 @@
       why: "漏れた情報を使った詐欺は、名前や使っているサービスを正しく言い当ててきます。見分けるより、連絡の経路で防ぐほうが確実です。",
       steps: ["メールやSMSのリンクは押さず、公式アプリかブックマークから開く", "電話は一度切り、カード裏面や公式サイトの番号にかけ直す", "訪問者にはドアを開けず、会社や役所の代表番号で確かめる"],
       link: ["scams.html#rule", "詳しく"] },
+    "inbound-code": { p: "now", t: "自分で操作していないのに届いた認証コードや「承認しますか」は、断る",
+      why: "誰かがあなたのアカウントに入ろうとしているおそれがあります。コードを伝えたり「承認」を押したりすると、その場で乗っ取られることがあります。",
+      steps: ["「承認」「許可」は、自分の操作でなければ押さない。何度届いても押さない", "電話で「届いたコードを読んで」「承認を押して」と言われたら、相手が誰でも切る", "公式アプリかブックマークからパスワードを変え、ログイン中の端末を確認する"],
+      link: ["help.html#first", "届いたときの手順"] },
+    "remote-app": { p: "now", t: "「アプリを入れて」「画面を共有して」と言われたら、相手が誰でも断る",
+      why: "遠隔操作や画面共有を許すと、認証コードや暗証番号が相手に見えたり、送金を操作されたりします。",
+      steps: ["電話やチャットで言われたアプリは入れない。画面共有もしない", "知らない相手とつながったまま、銀行や決済のアプリを開かない", "入れてしまったら、ネットを切り、別の端末や電話で銀行と決済の会社に連絡する"],
+      link: ["scams.html#pc", "詳しく"] },
     "email-lock": { p: "now", t: "メールのログイン方法と再設定先を点検する",
       why: "多くのサービスのパスワード再設定がメールに届くため、メールの乗っ取りは被害を広げる原因になります。",
       steps: ["パスワードが短い・推測されやすい・使い回し・漏えいの対象なら、長くランダムで固有のものへ変更する", "対応するパスキーや多要素認証を設定する。新しい方法でログインできることを確認してから古い方法を変更する", "再設定用の電話番号と予備のメールアドレスが今も自分のものか確認する。不審なログインがあれば被害時の手順へ"],
@@ -172,8 +180,16 @@
       steps: ["身に覚えのない契約や通知があれば、まず該当会社へ連絡する", "開示の手数料と記録の保持期間を各機関で確認し、知らない照会や契約を調べる。継続して開示する頻度は状況に応じて決める"] },
     "fake-police": { p: "now", t: "「警察」を名乗る電話の筋書きを知っておく",
       why: "漏れた免許証の番号や写真を見せて、信用させてきます。",
-      steps: ["警察が電話でお金や口座の確認を求めることはない", "LINEやビデオ通話に誘導されたら切る", "不安なら #9110 か、自分で調べた警察署の番号へ"],
+      steps: ["警察が電話でお金や口座の確認を求めることはない。「資産を保護する」「安全な口座へ」と言われたら、その時点で切る", "LINEやビデオ通話に誘導されたら切る。制服や警察手帳が映っても本物とは限らない", "「総務省」「NTT」などを名乗る自動音声の電話は、1を押さずに切る", "画面に出た番号が本物の警察署でも偽装できる。不安なら #9110 に自分からかける"],
       link: ["scams.html#police", "ニセ警察詐欺"] },
+    "invest-scam": { p: "ongoing", t: "SNS・広告・ネットで知り合った相手からの投資話には、お金を入れない",
+      why: "2026年の被害額がいちばん大きい詐欺です。著名人の画像や動画を無断で使った広告や、会ったことのない相手からの勧誘で始まります。",
+      steps: ["「必ずもうかる」「元本保証」「LINEグループで案内」は、それだけで疑う", "投資は、金融庁の登録業者一覧で確かめた会社の公式アプリからだけ", "「引き出すには手数料が必要」と言われたら、払わずに #9110 へ"],
+      link: ["scams.html#invest", "手口と流れ"] },
+    "line-code": { p: "now", t: "LINEの認証番号は、家族や友人に頼まれても教えない",
+      why: "友人を装って認証番号を聞き出し、アカウントを乗っ取って、家族や友人にお金を求める手口があります。",
+      steps: ["「認証番号を送って」と来たら、相手が誰でも答えない", "本人に電話など別の方法で確かめる", "乗っ取られたら、別の方法で家族や友人に「お金の話は無視して」と伝える"],
+      link: ["help.html#first", "乗っ取られたとき"] },
     "license-reissue": { p: "opt", t: "流出した本人確認書類の発行元へ相談する",
       why: "免許証・旅券・マイナンバーカードは手続きが異なります。画像や番号の流出だけで一律に再交付を勧めることはできません。",
       steps: ["書類の種類と、現物の紛失なのか画像・番号の流出なのかを伝え、発行元の公式窓口で対応を確認する", "免許証は住所地の運転免許センター等に、流出時の再交付受付と条件を確認する"],
@@ -243,32 +259,32 @@
   };
   /* 同じグループ内の並び順（攻撃者の換金ルートへの効き目が大きい順） */
   var ORDER = [
-    "notice-check", "rule-inbound", "email-lock", "carrier-lock", "pw-change", "session-revoke", "files-review", "card-reissue", "refund-scam", "fake-police",
+    "notice-check", "rule-inbound", "inbound-code", "remote-app", "email-lock", "carrier-lock", "pw-change", "session-revoke", "files-review", "card-reissue", "refund-scam", "fake-police",
     "phish-email", "known-not-proof", "bank-limit", "card-notify", "securities", "qr-lock", "bank-notify-detail",
-    "sms-filter", "no-birth-pin", "context-scam", "family-pass", "answering",
+    "sms-filter", "line-code", "no-birth-pin", "context-scam", "family-pass", "invest-scam", "answering",
     "credit-declare", "passkey", "pwm", "sms-2fa", "alias", "scam-app", "intl-call", "family-card", "hibp", "delete-unused",
     "outage", "mail-watch", "credit-disclose", "card-statement", "visitor",
     "license-reissue"
   ];
   Object.keys(A).forEach(function (k) { if (ORDER.indexOf(k) < 0) ORDER.push(k); });
-  var BASE = ["rule-inbound", "email-lock"];
+  var BASE = ["rule-inbound", "inbound-code", "remote-app", "email-lock"];
   var MAP = {
     email: ["phish-email", "alias"],
     password: ["pw-change", "pwm", "passkey"],
     token: ["session-revoke"],
     files: ["files-review"],
-    phone: ["carrier-lock", "sms-filter", "sms-2fa", "outage"],
+    phone: ["carrier-lock", "sms-filter", "line-code", "sms-2fa", "outage"],
     address: ["known-not-proof", "visitor", "mail-watch"],
     birth: ["known-not-proof", "no-birth-pin"],
     idimg: ["carrier-lock", "fake-police", "credit-declare", "credit-disclose", "mail-watch", "outage", "license-reissue"],
     card: ["card-reissue", "card-statement", "card-notify"],
     bank: ["refund-scam", "bank-notify-detail", "bank-limit"],
-    history: ["context-scam", "known-not-proof"],
-    family: ["family-pass", "family-card"],
+    history: ["context-scam", "known-not-proof", "invest-scam"],
+    family: ["family-pass", "family-card", "line-code"],
     unknown: ["notice-check", "pwm", "passkey", "hibp", "delete-unused"],
-    elderly: ["family-pass", "family-card", "scam-app", "visitor"],
+    elderly: ["family-pass", "family-card", "scam-app", "visitor", "invest-scam", "line-code"],
     landline: ["answering", "intl-call"],
-    netbank: ["passkey", "securities", "bank-limit"],
+    netbank: ["passkey", "securities", "bank-limit", "invest-scam"],
     qr: ["qr-lock", "card-notify"]
   };
 
