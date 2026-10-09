@@ -1,5 +1,91 @@
 [
  {
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日",
+  "org": "コミューン",
+  "service": "Commune・Commune for Work（コミュニティ基盤）",
+  "kana": "こみゅーん commune コミュニティ",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09",
+  "count": "約30.7万人（推計。うちメールアドレスを含む情報 約12.6万人〈同社従業員・テスト用デモアカウント 合計約4.2万人を含む〉、メールアドレスを含まない情報 約18.1万人）",
+  "status": "確認",
+  "items": [
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "企業などが運営する一部のコミュニティで、会員情報（表示名、自己紹介、非公開グループの所属など）の漏えいを確認。対象となる情報はコミュニティと会員によって異なります。144名はパスワードが本人の操作によらず仮パスワードに変更されましたが、パスワードそのものの漏えいは確認されていないとしています。ダイレクトメッセージの漏えいは確認されておらず、決済情報は保持していないとしています。利用企業ごとの人数は各社へ個別に案内されます。",
+  "url": "https://communeinc.com/ja/news/2026oct09",
+  "src": "公式",
+  "contact": {
+   "name": "Communeを利用したコミュニティの会員向け窓口",
+   "emails": [
+    "security@commune.co.jp"
+   ],
+   "forms": [
+    {
+     "label": "お問い合わせ・退会希望フォーム",
+     "url": "https://communeinc.com/ja/contact-user"
+    }
+   ],
+   "note": "会員の問い合わせや退会の希望はフォームで受け付けています。メールアドレスは公式発表に「不正アクセス事案に関するお問い合わせ」として掲載されているものです。"
+  }
+ },
+ {
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日",
+  "org": "Sansan",
+  "service": "Sansan User Forum（Commune経由）",
+  "kana": "さんさん sansan ゆーざーふぉーらむ",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09",
+  "count": "漏えい確認 1,325名、漏えいの可能性 8,687名（10月9日時点）",
+  "status": "確認",
+  "items": [
+   "メールアドレス",
+   "保存ファイル・画像",
+   "その他（詳細は出典）"
+  ],
+  "note": "利用している外部クラウドサービス「Commune」への不正アクセスによるものです。漏えいを確認した1,325名はメールアドレス、表示名、自己紹介欄、プロフィール画像、グループ所属情報。可能性がある8,687名はメールアドレスを含みません。パスワードは含まれていません。名刺管理のSansan、Bill One、Eightなどのサービスへの影響はないとしています。",
+  "url": "https://jp.corp-sansan.com/news/2026/1009.html",
+  "src": "公式",
+  "contact": {
+   "name": "Sansan Innovation Community運営事務局",
+   "emails": [
+    "community@sansan.com"
+   ]
+  }
+ },
+ {
+  "date": "2026-10-08",
+  "date_label": "2026年10月8日",
+  "org": "ウイングアーク1st",
+  "service": "nest Portal（Commune経由）",
+  "kana": "ういんぐあーく wingarc ねすとぽーたる nest portal",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09",
+  "count": "約1,200名（現時点の推定。調査中）",
+  "status": "可能性",
+  "items": [
+   "勤務先・所属",
+   "氏名",
+   "メールアドレス",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "ユーザー向け交流サイトで利用している外部クラウドサービス（コミューン社）への不正アクセスにより、管理者アカウントが不正に利用され、一部の会員情報が取得・閲覧された可能性があります。対象情報は企業名、役職、氏名、フリガナ、メールアドレス、住所などの登録情報（現時点の推定）です。",
+  "url": "https://corp.wingarc.com/public/202610/news3042.html",
+  "src": "公式",
+  "contact": {
+   "name": "個人情報相談窓口",
+   "emails": [
+    "personal_info@wingarc.com"
+   ]
+  }
+ },
+ {
   "date": "2026-10-08",
   "date_label": "2026年10月8日（10月9日に詳細を公表）",
   "org": "アドベンチャー",
