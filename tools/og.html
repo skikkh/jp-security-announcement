@@ -2,22 +2,29 @@
 <html lang="ja"><head><meta charset="utf-8">
 <style>
   html, body { margin: 0; width: 1200px; height: 630px; }
-  body { font-family: "Hiragino Sans", "Noto Sans JP", "IPAGothic", sans-serif; background: #123b63; color: #fff; display: flex; }
-  .l { flex: 1; padding: 64px 0 56px 72px; display: flex; flex-direction: column; }
-  .tag { display: inline-block; align-self: flex-start; background: #b3261e; padding: 6px 16px; border-radius: 99px; font-size: 26px; font-weight: 700; letter-spacing: .06em; }
-  h1 { font-size: 88px; margin: 22px 0 8px; letter-spacing: .04em; line-height: 1.15; }
-  .sub { font-size: 31px; line-height: 1.5; color: #dbe7f3; margin: 0; }
-  .rules { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
-  .rules div { align-self: flex-start; background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.25); border-radius: 12px; padding: 6px 18px; font-size: 27px; font-weight: 700; white-space: nowrap; }
-  .r { width: 300px; display: grid; place-items: center; }
+  body { font-family: "Noto Sans JP", "Hiragino Sans", "IPAGothic", sans-serif; background: #ffffff; color: #1b2533; position: relative; overflow: hidden; }
+  .top { position: absolute; left: 0; top: 0; right: 0; height: 14px; background: #0b4fa8; }
+  .panel { position: absolute; left: 0; right: 0; bottom: 0; height: 200px; background: #eaf2fc; border-top: 1px solid #d3e2f5; }
+  .l { position: absolute; left: 72px; top: 62px; right: 330px; }
+  .tag { display: inline-block; background: #eaf2fc; color: #0b4fa8; border: 2px solid #c9dcf3; padding: 4px 16px; border-radius: 8px; font-size: 26px; font-weight: 700; }
+  h1 { font-size: 86px; margin: 22px 0 6px; letter-spacing: .04em; color: #0a3a7a; line-height: 1.15; }
+  .sub { font-size: 31px; line-height: 1.5; color: #3d4757; margin: 0; }
+  .rules { position: absolute; left: 72px; bottom: 34px; display: flex; flex-direction: column; gap: 8px; }
+  .rules div { font-size: 27px; font-weight: 700; color: #1b2533; display: flex; align-items: center; gap: 14px; }
+  .rules span { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #0b4fa8; color: #fff; font-size: 22px; }
+  .r { position: absolute; right: 80px; top: 70px; }
   .r svg { width: 230px; height: 230px; }
+  .site { position: absolute; right: 80px; bottom: 40px; font-size: 24px; color: #5e6878; }
 </style></head>
 <body>
+  <div class="top"></div>
+  <div class="panel"></div>
   <div class="l">
-    <span class="tag">2026年10月 個人情報 大量漏えい</span>
+    <span class="tag">2026年10月版 市民のための自衛ガイド</span>
     <h1>漏れた後の守り方</h1>
-    <p class="sub">情報が漏れていても、被害は防げる。<br>いま一人ひとりができる対策を、効く順に。</p>
-    <div class="rules"><div>1. 届いた連絡からは動かない</div><div>2. 「知っている」は本物の証拠ではない</div><div>3. 消すより、使えなくする</div></div>
+    <p class="sub">個人情報が漏れていても、被害は防げます。<br>いま一人ひとりができる対策を、効く順に。</p>
   </div>
-  <div class="r"><svg viewBox="0 0 64 64"><path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#f6f5f1"/><path d="M32 10.5 14 17.3V30c0 11.6 7.6 20.6 18 23.6 10.4-3 18-12 18-23.6V17.3L32 10.5Z" fill="#123b63"/><path d="M32 18c-1.8 4.8-7 9.3-7 15a7 7 0 0 0 14 0c0-5.7-5.2-10.2-7-15Z" fill="#e8574d"/><path d="m26.5 45.5 11-11" stroke="#f6f5f1" stroke-width="3.2" stroke-linecap="round"/></svg></div>
+  <div class="rules"><div><span>1</span>届いた連絡からは動かない</div><div><span>2</span>「知っている」は本物の証拠ではない</div><div><span>3</span>消すより、使えなくする</div></div>
+  <div class="r"><svg viewBox="0 0 64 64"><path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#0b4fa8"/><path d="m21 32.5 7.5 7.5L44 24.5" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="site">skikkh.github.io</div>
 </body></html>

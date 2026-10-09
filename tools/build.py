@@ -112,6 +112,43 @@ def parse_page(text: str) -> tuple[dict, str]:
     return meta, text[m.end():]
 
 
+def tel_href(tel: str) -> str:
+    return "tel:" + re.sub(r"[^0-9+]", "", tel)
+
+
+def contact_html(e: dict) -> str:
+    c = e.get("contact")
+    official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
+    src_link = (
+        f'<a href="{esc(official)}" rel="noopener">公式発表で確認</a>' if official else ""
+    )
+    if not c:
+        return (
+            '<div class="contact contact-none"><span class="contact-title">公式の問い合わせ窓口</span>'
+            "<p>公式発表に、本件専用の窓口の記載を確認できていません。会社の公式サイトを自分で開き、問い合わせ窓口を探してください。"
+            + (f" {src_link}" if src_link else "")
+            + "</p></div>"
+        )
+    rows = []
+    if c.get("name"):
+        rows.append(f'<li class="contact-name">{esc(c["name"])}</li>')
+    for tel in c.get("tels", []):
+        hours = f'<span class="contact-hours">{esc(c["hours"])}</span>' if c.get("hours") else ""
+        rows.append(f'<li>電話 <a class="contact-tel" href="{tel_href(tel)}">{esc(tel)}</a>{hours}</li>')
+    if not c.get("tels") and c.get("hours"):
+        rows.append(f'<li>受付 {esc(c["hours"])}</li>')
+    for mail in c.get("emails", []):
+        rows.append(f'<li>メール <a href="mailto:{esc(mail)}">{esc(mail)}</a></li>')
+    for f in c.get("forms", []):
+        rows.append(f'<li><a href="{esc(f["url"])}" rel="noopener">{esc(f["label"])}</a></li>')
+    note = f'<p class="contact-note">{esc(c["note"])}</p>' if c.get("note") else ""
+    check = f'<p class="contact-check">{src_link}（{esc(UPDATED)}確認）</p>' if src_link else ""
+    return (
+        '<div class="contact"><span class="contact-title">公式の問い合わせ窓口</span>'
+        f'<ul>{"".join(rows)}</ul>{note}{check}</div>'
+    )
+
+
 def breach_cards(entries: list[dict]) -> str:
     out = []
     for e in sorted(entries, key=lambda x: x["date"], reverse=True):
@@ -125,7 +162,8 @@ def breach_cards(entries: list[dict]) -> str:
         )
         search = " ".join([e["org"], e.get("service", ""), e.get("kana", "")])
         cls = "breach has-id" if "id" in keys else "breach"
-        links = [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
+        official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
+        links = [] if official == e["url"] else [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
         if plan:
             links.append(f'<a href="plan.html#items={",".join(plan)}">この漏えいの対策を見る</a>')
         service = f'<span class="muted">｜{esc(e["service"])}</span>' if e.get("service") else ""
@@ -138,6 +176,7 @@ def breach_cards(entries: list[dict]) -> str:
             f'<span class="breach-count">{esc(e["count"])}</span>'
             f'<ul class="tags" aria-label="漏えい（の可能性がある）項目">{tag_html}</ul>'
             f"{note}"
+            f"{contact_html(e)}"
             f'<div class="breach-links">{"".join(links)}</div>'
             "</li>"
         )

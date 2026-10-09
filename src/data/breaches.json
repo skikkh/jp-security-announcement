@@ -39,7 +39,16 @@
   ],
   "note": "カード番号の一部が含まれるのは、アプリ予約の26件です。",
   "url": "https://www.lawson.co.jp/contents/cont07/1533174_3310.html",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "ローソンカスタマーセンター",
+   "forms": [
+    {
+     "label": "専用受付フォーム",
+     "url": "https://lawson-faq.lawson.co.jp/"
+    }
+   ]
+  }
  },
  {
   "date": "2026-10-08",
@@ -57,7 +66,18 @@
   ],
   "note": "委託先の従業員の端末がマルウェアに感染したことが原因とされています。パスワードは含まないとしています。",
   "url": "https://www.dkkaraoke.co.jp/news/newsletter/261008_2.html",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "お客様お問い合わせ窓口",
+   "tels": [
+    "03-3280-3702"
+   ],
+   "hours": "午前10時から午後5時まで（土・日・祝日を除く）",
+   "emails": [
+    "incident-desk@dkkaraoke.co.jp"
+   ],
+   "note": "フリーダイヤルを準備中と案内されています。"
+  }
  },
  {
   "date": "2026-10-08",
@@ -76,7 +96,20 @@
   ],
   "note": "他社への乗り換えを勧誘する第三者が、電話で顧客からログイン情報を聞き出し、なりすましてログインしていました。同社は、電話番号・郵便番号・生年月日でログインできる方式を廃止しました。カードと口座の情報は対象外です。",
   "url": "https://brand.hi-ho.jp/category/uncategorized/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "契約中のサービスのサイトから問い合わせ",
+   "forms": [
+    {
+     "label": "BiZiMo光の問い合わせ",
+     "url": "https://bizimo.ne.jp/contact/contact_hikari/"
+    },
+    {
+     "label": "その他のサービスの問い合わせ",
+     "url": "https://brand.hi-ho.jp/support/technical/"
+    }
+   ]
+  }
  },
  {
   "date": "2026-10-07",
@@ -94,7 +127,14 @@
   ],
   "note": "運転者IDや運転の記録なども含みます。口座、カード、マイナンバーは含まないとしています。大和証券と同じ委託先です。",
   "url": "https://www.sompo-japan.co.jp/-/media/SJNK/files/news/2026/20261007_1.pdf",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "お客さま専用窓口",
+   "tels": [
+    "0120-268-567"
+   ],
+   "hours": "平日9:00〜17:00（土・日・祝日・年末年始を除く）"
+  }
  },
  {
   "date": "2026-10-07",
@@ -112,7 +152,17 @@
   ],
   "note": "旅券番号と有効期限、アレルギー情報も含みます。",
   "url": "https://www.his.co.jp/assets/20261007.pdf",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "お客様特設窓口",
+   "tels": [
+    "0120-945-146"
+   ],
+   "hours": "平日11:00〜18:00（土日祝除く）",
+   "emails": [
+    "support-desk@his-world.com"
+   ]
+  }
  },
  {
   "date": "2026-10-06",
@@ -130,7 +180,13 @@
   ],
   "note": "住所、生年月日、カード情報、パスワード、購入履歴は含まないとしています。",
   "url": "https://www.mrmax.co.jp/info/incident_20261006/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "本件に関するお問い合わせ窓口",
+   "emails": [
+    "incident-desk@mrmax.co.jp"
+   ]
+  }
  },
  {
   "date": "2026-10-06",
@@ -149,7 +205,16 @@
   ],
   "note": "問い合わせ欄に書き込まれた口座やカードの情報が含まれる可能性があるとしています。",
   "url": "https://www.citizen.co.jp/release/news/detail/2026/20261006.html",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "本件専用のお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "専用お問い合わせフォーム",
+     "url": "https://contact.citizen.co.jp/m/support-202610"
+    }
+   ]
+  }
  },
  {
   "date": "2026-10-06",
@@ -169,7 +234,13 @@
   ],
   "note": "学歴、職歴、希望条件、応募履歴を含みます。",
   "url": "https://www.cinra.co.jp/news/20261006",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "CINRA JOB お問い合わせ窓口",
+   "emails": [
+    "incident_support@cinra.net"
+   ]
+  }
  },
  {
   "date": "2026-10-06",
@@ -203,7 +274,14 @@
   ],
   "note": "パスワード、生年月日、利用履歴、決済情報は含まないとしています。",
   "url": "https://www.monogatari.co.jp/news/261005_news/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "公式アプリ専用コールセンター",
+   "tels": [
+    "0120-795-775"
+   ],
+   "hours": "10時〜18時（土日祝日を含む）"
+  }
  },
  {
   "date": "2026-10-05",
@@ -222,7 +300,14 @@
   ],
   "note": "パスワードは暗号化されていたとされます。ポイントの不正交換も確認されています。",
   "url": "https://gmo-research.ai/pressroom/notice/notice-20261005",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "infoQサポートセンター",
+   "emails": [
+    "infoq-support@gmo-research.ai"
+   ],
+   "hours": "平日10:00〜18:00（メールは24時間受付）"
+  }
  },
  {
   "date": "2026-10-05",
@@ -255,7 +340,14 @@
   ],
   "note": "口座番号と問い合わせ内容を含みます。この情報だけでは証券口座へのアクセスや取引はできないとしています。損害保険ジャパンと同じ委託先です。",
   "url": "https://ssl4.eir-parts.net/doc/8601/tdnet/2891437/00.pdf",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "お客さま専用対応窓口",
+   "tels": [
+    "0120-851850"
+   ],
+   "hours": "午前9時から午後5時まで（土・日・祝日を除く）"
+  }
  },
  {
   "date": "2026-10-05",
@@ -271,7 +363,14 @@
   ],
   "note": "侵入ではなく設定の不備で、通信の中身が見える状態でした。",
   "url": "https://i-plug.co.jp/news/11334/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "お問い合わせ窓口",
+   "tels": [
+    "0120-600-463"
+   ],
+   "hours": "平日9時〜18時"
+  }
  },
  {
   "date": "2026-10-05",
@@ -291,7 +390,15 @@
   ],
   "note": "退会した人を含みます。郵便番号も対象です。",
   "url": "https://www.daiki-suisan.co.jp/files/optionallink/00000164_file.pdf",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "大起水産公式アプリ 不正アクセスに関するお問い合わせ窓口",
+   "tels": [
+    "0120-811-266"
+   ],
+   "hours": "9:00〜18:00（土日祝を含む）",
+   "note": "公式サイトの問い合わせフォーム、代表電話、店舗では本件の対応をしていないとしています。"
+  }
  },
  {
   "date": "2026-10-05",
@@ -308,7 +415,18 @@
   ],
   "note": "パスポートの画像234件、署名や顔写真の画像も含まれます。",
   "url": "https://www.resorts.co.jp/resortinn-ishigaki/news_detail?actual_object_id=31763",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "リゾートイン石垣島 お客様窓口",
+   "tels": [
+    "050-1809-4180"
+   ],
+   "hours": "平日9:00〜17:00",
+   "emails": [
+    "security@guest-desk.jp"
+   ],
+   "note": "自分が対象かどうかの確認も受け付けています。"
+  }
  },
  {
   "date": "2026-10-05",
@@ -363,7 +481,21 @@
   ],
   "note": "",
   "url": "https://www.dai-ichi-life.co.jp/information/pdf/index_192.pdf",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "人事部窓口（従業員・退職者向け）",
+   "tels": [
+    "070-3195-0933",
+    "070-3195-1239"
+   ],
+   "hours": "平日9:00〜17:00",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム（まずはこちら）",
+     "url": "https://forms.cloud.microsoft/r/FqmSVGt9KW"
+    }
+   ]
+  }
  },
  {
   "date": "2026-10-02",
@@ -394,7 +526,20 @@
   ],
   "note": "氏名と都道府県は一部の会員のみです。",
   "url": "https://starts-pub.jp/info20261001",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "スターツ出版 管理部",
+   "tels": [
+    "03-6202-0390"
+   ],
+   "hours": "平日10:00〜17:00",
+   "forms": [
+    {
+     "label": "問合せフォーム",
+     "url": "https://starts-pub.jp/contact_info"
+    }
+   ]
+  }
  },
  {
   "date": "2026-10-01",
@@ -547,7 +692,26 @@
   ],
   "note": "退会者と入会手続き未完了の人を含みます。画像は免許証、住所確認書類、学生証、家族確認書類。パスワードは復元できない形式。カード情報は保有していないとしています。",
   "url": "https://corp.timescar.jp/mail/announce/faq.pdf",
-  "src": "公式"
+  "src": "公式",
+  "official": "https://share.timescar.jp/news/2026/0929/1816.html",
+  "contact": {
+   "name": "本件に関わる問い合わせ先",
+   "tels": [
+    "0120-25-8924"
+   ],
+   "hours": "24時間",
+   "forms": [
+    {
+     "label": "問い合わせフォーム",
+     "url": "https://share.timescar.jp/inquiry.html#contact"
+    },
+    {
+     "label": "退会者専用の問い合わせフォーム",
+     "url": "https://share.timescar.jp/view/inquiry/input.jsp?inquiryTitleId=16"
+    }
+   ],
+   "note": "退会済みの人は、専用フォームで対象かどうかを確認できます。"
+  }
  },
  {
   "date": "2026-09-25",
@@ -579,7 +743,17 @@
   ],
   "note": "データの転送が確認されています。",
   "url": "https://www.epark-relax.co.jp/news/231",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "EPARKリラク＆エステ PeakManager事業部",
+   "tels": [
+    "0120-206-460"
+   ],
+   "hours": "平日午前10時から午後5時まで（土日祝祭日を除く）",
+   "emails": [
+    "pm-support@epark-r.jp"
+   ]
+  }
  },
  {
   "date": "2026-09-18",
@@ -594,7 +768,16 @@
   ],
   "note": "分析ツールMetabaseの脆弱性が悪用されました。",
   "url": "https://jgc-digital.com/topics/topics-3049/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "サービスごとの窓口",
+   "emails": [
+    "support@azas-token.com",
+    "support@suloop.biz"
+   ],
+   "hours": "平日9:00〜17:00",
+   "note": "アザスは support@azas-token.com、するーぷは support@suloop.biz です。"
+  }
  },
  {
   "date": "2026-09-16",
@@ -612,7 +795,16 @@
   ],
   "note": "パスワードはハッシュ値。X（旧Twitter）との連携情報も含みます。",
   "url": "https://corp.helpfeel.com/news/news-20260916-1",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "Gyazo お問い合わせ窓口",
+   "forms": [
+    {
+     "label": "お問い合わせ（日本語）",
+     "url": "https://help-ja.gyazo.com/contact-us"
+    }
+   ]
+  }
  },
  {
   "date": "2026-09-15",
@@ -664,7 +856,14 @@
   ],
   "note": "職員や事業者の情報です。一般の国民の情報とマイナンバーは含まないとしています。",
   "url": "https://www.digital.go.jp/news/2026-0911-01",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "対象となる皆様のお問い合わせ窓口（GSS班）",
+   "tels": [
+    "0120-360-036"
+   ],
+   "note": "専用のメールアドレスもあります。公式発表で確認してください。"
+  }
  },
  {
   "date": "2026-09-10",
@@ -680,7 +879,18 @@
   ],
   "note": "うち30アカウントは、ハッシュ化されたパスワードが閲覧された可能性があります。",
   "url": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/09/10/1968225692/",
-  "src": "公式"
+  "src": "公式",
+  "contact": {
+   "name": "本件専用の窓口",
+   "tels": [
+    "0120-378-719"
+   ],
+   "hours": "10:00〜18:00（土日祝を除く）",
+   "emails": [
+    "support@sakura.ad.jp"
+   ],
+   "note": "問い合わせの際は会員IDを伝えるよう案内されています。"
+  }
  },
  {
   "date": "2026-08-28",
