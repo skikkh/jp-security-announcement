@@ -27,8 +27,25 @@ OUT = ROOT / "docs"
 
 BASE_URL = "https://skikkh.github.io/jp-security-announcement/"
 BASE_PATH = "/jp-security-announcement/"
-UPDATED = "2026年10月9日"
-UPDATED_ISO = "2026-10-09"
+UPDATED = ""
+UPDATED_ISO = ""
+
+
+def history_update_date(source: str) -> date:
+    """更新履歴の行頭の日付を使い、時計や本文中の制度日程には依存しない。"""
+    section = re.search(
+        r'<h2\b[^>]*\sid=["\']history["\'][^>]*>.*?</h2>(.*?)(?=<h2\b|\Z)',
+        source, re.S,
+    )
+    if section is None:
+        raise ValueError("更新履歴がありません")
+    markers = re.findall(
+        r'<li\b[^>]*>\s*(\d{4})年(\d{1,2})月(\d{1,2})日[：:]',
+        section[1],
+    )
+    if not markers:
+        raise ValueError("更新履歴に実施日がありません")
+    return max(date(int(y), int(m), int(d)) for y, m, d in markers)
 
 # (slug, ナビ表示名)
 NAV = [
@@ -433,6 +450,7 @@ def validate(entries: list[dict]) -> None:
 
 
 def build_into(output: Path) -> tuple[int, int, str]:
+    global UPDATED, UPDATED_ISO
     breaches = json.loads((SRC / "data" / "breaches.json").read_text(encoding="utf-8"))
     validate(breaches)
     pages = sorted((SRC / "pages").glob("*.html"))
@@ -440,6 +458,9 @@ def build_into(output: Path) -> tuple[int, int, str]:
     missing = required - {p.stem for p in pages}
     if missing:
         raise SystemExit(f"原稿がありません: {sorted(missing)}")
+    revised = history_update_date((SRC / "pages" / "about.html").read_text(encoding="utf-8"))
+    UPDATED = f"{revised.year}年{revised.month}月{revised.day}日"
+    UPDATED_ISO = revised.isoformat()
     (output / "assets").mkdir(parents=True)
 
     for f in (SRC / "assets").iterdir():
