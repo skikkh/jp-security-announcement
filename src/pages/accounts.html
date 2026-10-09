@@ -12,6 +12,7 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
   <li><a href="#password">パスワード：全部を別々にする</a></li>
   <li><a href="#passkey">パスキー：偽サイトに強いログイン</a></li>
   <li><a href="#alias">メールアドレスをサービスごとに分ける</a></li>
+  <li><a href="#sns">SNSの見つけやすさと公開範囲を見直す</a></li>
   <li><a href="#carrier">携帯電話：番号を奪われない</a></li>
   <li><a href="#money">銀行・証券・カード・決済</a></li>
   <li><a href="#device">スマホとパソコン</a></li>
@@ -64,6 +65,7 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
 </ol>
 <p>パスキーには、対応する管理機能を通じて別の端末へ同期できるものと、作った端末やセキュリティキーだけで使うものがあります。機種変更時に必ず引き継げるとは限りません。登録先を確かめ、端末を失った場合の復旧方法や予備の認証手段を用意してください。</p>
 <p>切り替えるときは、新しい方法でログインできることと復旧手段を確認してから、不要になった古い方法を外します。パスキーを追加しただけでは、残るパスワードや再設定先まで安全にはなりません。</p>
+<p>パスキーは認証を強める方式で、偽フォームへの氏名・カード情報の入力や、相手の指示による送金・アプリ連携の許可まで防ぐものではありません。届いた連絡から手続きせず、自分で開いた公式の入口から確かめてください。</p>
 <p class="src">出典：<a href="https://pages.nist.gov/800-63-4/sp800-63b/authenticators/" rel="noopener">NIST（偽サイトに強い認証の条件）</a>、<a href="https://fidoalliance.org/wp-content/uploads/2024/05/Synced-Passkey-Deployment_-Emerging-Practices-for-Consumer-Use-Cases_2024-May-31.pdf" rel="noopener">FIDO Alliance（同期型と端末固定型）</a>、<a href="https://support.apple.com/en-gb/102195" rel="noopener">Apple（iCloudキーチェーンのパスキー）</a>、<a href="https://www.fsa.go.jp/ordinary/chuui/chuui_phishing.html" rel="noopener">金融庁（証券口座の不正取引）</a></p>
 
 <div class="callout info"><span class="callout-title">端末を紛失した・不審なログインがある場合</span><p>別の安全な端末から、サービスの公式手順でログイン中の端末やパスキーを確認し、必要な無効化を行います。端末を紛失・盗難した場合は、OSの紛失モードなどを使い、携帯会社へ必要な回線停止を相談してください。パスキーを設定していても、端末自体の侵害やログイン後のセッション情報の流出が疑われる場合は、<a href="help.html#account-recovery">ログイン後の点検</a>を行います。</p><p class="src">出典：<a href="https://support.google.com/accounts/answer/185834?hl=ja" rel="noopener">Google（パスキー等の紛失・盗難）</a>、<a href="https://pages.nist.gov/800-63-4/sp800-63b/session/" rel="noopener">NIST（認証後のセッション管理）</a></p></div>
@@ -82,6 +84,16 @@ description: メール、携帯電話、銀行・証券、決済、ポイント�
   <li><strong>Gmailの「＋」</strong>：例えば name+shop@gmail.com のように書くと、name@gmail.com に届きます。手軽ですが「＋」以降を消せば元のアドレスが分かるため、流出経路を調べる手掛かりにとどまります。</li>
 </ul>
 <p class="src">出典：<a href="https://www.ipa.go.jp/security/anshin/attention/2021/mgdayori20210921.html" rel="noopener">IPA「メールの見かけ上の送信元情報を安易に信じないで」</a></p>
+
+<h2 id="sns">SNSの見つけやすさと公開範囲を見直す</h2>
+<p>メールアドレスや電話番号は、SNSのアカウントを見つける手掛かりとして使われる場合があります。照合やおすすめの設定を見直し、プロフィールや投稿に出している情報も、自分が望む範囲に絞ります。</p>
+<ul>
+  <li><strong>X：</strong>公式ヘルプにある「見つけやすさと連絡先」を確認し、メールアドレスや電話番号から他の利用者に見つけられる設定が不要ならオフにします。同じ番号を使う別アカウントも、それぞれ確認します。</li>
+  <li><strong>連絡先の同期と、登録済みデータは別です。</strong>Xで同期をオフにしても、その端末からの今後の同期が止まるだけで、過去にアップロードした連絡先は残ります。不要な場合は、公式ヘルプの管理・削除方法を確認します。</li>
+  <li><strong>他のSNS：</strong>公開範囲や、電話番号・メールアドレスに基づく見つけやすさを調整できるか、各サービスの公式ヘルプで確認します。設定名と機能はサービスや端末によって異なります。</li>
+</ul>
+<p>設定を変えても、既に集められた情報や、公開情報・他者の投稿などからの照合まで止められるとは限りません。認証コードを伝えず、届いた連絡から手続きしない対策も続けてください。</p>
+<p class="src">出典：<a href="https://help.x.com/ja/safety-and-security/email-and-phone-discoverability-settings" rel="noopener">X（メール・電話番号での見つけやすさ）</a>、<a href="https://help.x.com/ja/using-x/upload-your-contacts-to-search-for-friends" rel="noopener">X（連絡先の同期と管理）</a>、<a href="https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams" rel="noopener">NCSC（公開情報とSNSのプライバシー設定）</a></p>
 
 <h2 id="carrier">携帯電話：番号を奪われない</h2>
 <ul>

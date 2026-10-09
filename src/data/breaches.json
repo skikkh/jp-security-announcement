@@ -53,7 +53,10 @@
   "src": "公式",
   "contact": {
    "name": "株式会社ちとせ研究所「ちとせアカデミー」担当",
-   "note": "問い合わせ先のメールアドレスは公式発表のページに掲載されています。"
+   "note": "土日祝日にいただいた問い合わせも含め、内容確認の上で順次回答すると案内されています。具体的な受付時刻は原文に記載されていません。",
+   "emails": [
+    "support_chitose-academy@chitose-bio.com"
+   ]
   }
  },
  {
@@ -2584,7 +2587,19 @@
   "url": "https://www.sammy-net.jp/news/2026/10/777con-pass-6.html",
   "src": "公式",
   "category": "media_entertainment",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "777CON-PASS 利用者向けメール問い合わせの案内",
+   "forms": [
+    {
+     "label": "777CON-PASSの問い合わせ案内・FAQ（公式）",
+     "url": "https://faq.777con-pass.net/hc/ja"
+    }
+   ],
+   "note": "公式企業サイトで777CON-PASS利用者向けと案内する通常の窓口。本件専用フォームとは記されていません。ホール専用customer@777con-pass.netは掲載しません。"
+  },
+  "contact_source": "https://www.sammy-net.jp/contact/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-17",
@@ -2606,7 +2621,16 @@
   "url": "https://www.lvi.co.jp/company-news/2026/08/17/post-2244/",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "ロジックベイン セキュリティ対応窓口",
+   "emails": [
+    "privacy@lvi.co.jp"
+   ],
+   "hours": "平日9:00〜17:30"
+  },
+  "contact_source": "https://www.lvi.co.jp/company-news/2026/08/17/post-2244/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-04-27",
@@ -2714,7 +2738,17 @@
   "url": "https://www.innovation.co.jp/2026/08/githubへの不正アクセスに関するお知らせ（確定報）/",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "イノベーション 個人情報保護管理担当（本件）",
+   "emails": [
+    "sec@innovation.co.jp"
+   ],
+   "hours": "平日10:00〜17:00",
+   "note": "8月7日の同一事案の確定報にある窓口。8月10日の件数訂正を別事案とは扱わない。"
+  },
+  "contact_source": "https://www.innovation.co.jp/2026/08/githubへの不正アクセスに関する詳細調査の完了およ/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-28",
@@ -3031,7 +3065,19 @@
   "url": "https://www.fusodentsu.co.jp/news/news_cp_20260910.html",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "扶桑電通 ビジネス推進本部（本件・取引先向け）",
+   "tels": [
+    "03-3544-7191"
+   ],
+   "emails": [
+    "ictconveni@fusodentsu.co.jp"
+   ],
+   "note": "本件原発表のお取引先様向け窓口。報道用03-3544-7211/keiki@fusodentsu.co.jpと区別。"
+  },
+  "contact_source": "https://www.fusodentsu.co.jp/news/news_cp_20260910.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-07-14",
@@ -3052,7 +3098,16 @@
   "url": "https://www.media4u.co.jp/news/3351",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "メディア4u 本件お問い合わせ窓口",
+   "emails": [
+    "ir@media4u.co.jp"
+   ],
+   "note": "原文は不審な連絡を受けた場合や本件の不明点の窓口としてこのメールを明示。メール名だけを根拠にIR専用とは扱わない。"
+  },
+  "contact_source": "https://www.media4u.co.jp/news/3351",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-01-21",
@@ -3794,7 +3849,15 @@
   "url": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000687654.html",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "大阪市立美術館 総務課（本件）",
+   "tels": [
+    "06-6771-4874"
+   ]
+  },
+  "contact_source": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000687654.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-07-15",
@@ -4052,7 +4115,16 @@
   "url": "https://www.city-kirishima.jp/soumu/kojinnjyouhou/rouei/documents/2026_10_6kosodatesiennka.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "霧島市 こども部子育て支援課 子ども・子育てグループ（担当課の通常窓口）",
+   "tels": [
+    "0995-64-0735"
+   ],
+   "note": "公表PDFで本件担当を子育て支援課と確認し、同じ子ども医療費助成制度の公式案内で通常窓口を照合。本件専用の番号ではありません。"
+  },
+  "contact_source": "https://www.city-kirishima.jp/jidou/kosodate/kosodate/josesedo/kodomoiryou/shinnseido.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4114,7 +4186,22 @@
   "url": "https://www.kuins.ac.jp/news/2026/10/post_1450.html",
   "src": "公式",
   "category": "work_education",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "関西国際大学 各キャンパス学生課（学生・保証人向けの案内）",
+   "emails": [
+    "student@kuins.ac.jp"
+   ],
+   "tels": [
+    "078-341-8550",
+    "06-6496-4114",
+    "0794-84-3507"
+   ],
+   "hours": "平日9:30〜17:00（土曜日閉室）",
+   "note": "神戸山手078-341-8550、尼崎06-6496-4114、三木0794-84-3507。本件原文が学生・保証人に案内する学生課の通常連絡先です。卒業生専用の窓口は今回確認できていません。"
+  },
+  "contact_source": "https://www.kuins.ac.jp/campuslife/procedure/procedure.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-04",
@@ -4151,7 +4238,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 市民税課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1133"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/23/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の1番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/23/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4169,7 +4271,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 新産業推進課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1273"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/76/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の2番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/76/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4187,7 +4304,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 景観推進室（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1177"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/116/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の3番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/116/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4205,7 +4337,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 文化振興課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1235"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/31/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の4番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/31/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4225,7 +4372,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 国民健康保険課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1225"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/52/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の5番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/52/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4244,7 +4406,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 資源循環課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1159"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/68/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の6番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/68/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4262,7 +4439,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 資源循環課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1159"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/68/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の7番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/68/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-08",
@@ -4285,7 +4477,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624631_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 琴海地域センター（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-884-2001"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/154/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の8番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/154/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4303,7 +4510,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 観光交流推進室（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1426"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/80/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の9番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/80/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4322,7 +4544,22 @@
   "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "長崎市 市民税課（公表資料の担当課・通常連絡先）",
+   "tels": [
+    "095-829-1133"
+   ],
+   "forms": [
+    {
+     "label": "担当課の公式連絡先ページ",
+     "url": "https://www.city.nagasaki.lg.jp/soshiki/23/"
+    }
+   ],
+   "note": "個人情報漏えい等の公表資料の10番で本件担当課を確認し、公式組織一覧の連絡先を照合。本件専用窓口ではありません。担当課ごとの時間は原文で確定していないため記載していません。"
+  },
+  "contact_source": "https://www.city.nagasaki.lg.jp/soshiki/23/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-07",
@@ -4603,7 +4840,16 @@
   "url": "https://www.emori.co.jp/wp-content/uploads/2026/01/information_20260107.pdf",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "興和江守 総務部（本件・一般の方）",
+   "tels": [
+    "0776-36-6521"
+   ],
+   "note": "1月7日原発表に掲載された一般向けの問い合わせ先。取引先には各担当への電話/FAXを案内。窓口の実応答は未試験。"
+  },
+  "contact_source": "https://www.emori.co.jp/wp-content/uploads/2026/01/information_20260107.pdf",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-01-29",
@@ -5048,5 +5294,37 @@
   "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/09/202691009_mail_address_access_1.pdf",
   "src": "公式",
   "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日",
+  "org": "LINEヤフー",
+  "service": "DS.INSIGHTのコミュニティ機能「DS.LAB」（Commune経由）",
+  "kana": "らいんやふー LINEヤフー DS.INSIGHT DS.LAB でぃーえすいんさいと でぃーえすらぼ",
+  "category": "telecom_it",
+  "count": "1,750名（DS.LAB利用者・閲覧／取得の可能性）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "保存ファイル・画像",
+   "その他（詳細は出典）"
+  ],
+  "note": "対象は、事業者向けデスクリサーチツール「DS.INSIGHT」内のコミュニティ機能「DS.LAB」を利用している一部のユーザーです。委託先コミューン株式会社の「Commune」への不正アクセスに伴い、1,750名のニックネーム、アカウント名、氏名、自己紹介、アイコン、所属グループ、メールアドレス、カスタムプロフィール項目、ポイント、最終アクティブ日時が閲覧・取得された可能性があります。一般のLINE／Yahoo! JAPAN利用者全体を対象とする発表ではありません。本件に関連するLINEヤフーのシステムへの不正アクセス、情報の不正利用や二次被害は現時点で確認されていません。DS.LABは停止中で、対象ユーザーへ順次個別に知らせるとしています。同じコミューンの事案に関する全体公表や他サービスの人数とは合算しません。不審なメールやメッセージ内のリンクを開かず、個人情報を入力しないよう求めています。LINEヤフーはメールやメッセージでパスワードや決済情報の入力を求めないとしています。窓口は同社発表が参照するコミューン公式発表のコミュニティ会員向けフォームです。",
+  "url": "https://www.lycorp.co.jp/ja/privacy-security/announcement/020892/",
+  "src": "公式",
+  "source_checked_on": "2026-10-09",
+  "contact_source": "https://communeinc.com/ja/news/2026oct09",
+  "contact_checked_on": "2026-10-09",
+  "contact": {
+   "name": "コミューン コミュニティ会員向けお問い合わせ・お手続き窓口",
+   "forms": [
+    {
+     "label": "お問い合わせ・退会希望フォーム（コミューン）",
+     "url": "https://communeinc.com/ja/contact-user"
+    }
+   ],
+   "note": "Communeを利用したコミュニティの登録会員向け。コミュニティ名はDS.LABとして確認してください。"
+  }
  }
 ]

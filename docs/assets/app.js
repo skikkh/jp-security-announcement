@@ -142,7 +142,7 @@
       steps: ["OSやブラウザーのパスワード管理、または信頼できる専用アプリを使う", "サービスの制限に合わせ、できれば16文字以上のランダムなパスワードを個別に生成する", "管理ツールの鍵と復旧方法も確認する。秘密の質問は、利用できる安全な別方式があればそちらを選ぶ"],
       link: ["accounts.html#password", "詳しく"] },
     "passkey": { p: "week", t: "大事なサービスをパスキーに切り替える",
-      why: "パスキー自体は偽サイトで使えず、SMSの認証コードよりフィッシングに強い方式です。ただし、同じアカウントに残るパスワードなど別のログイン方法は狙われ得ます。",
+      why: "パスキー自体は無関係な偽サイトで使えず、SMSの認証コードよりフィッシングに強い方式です。ただし、同じアカウントに残るパスワードなど別のログイン方法は狙われ得ます。偽フォームへの個人情報入力や、相手の指示による送金・アプリ連携の許可は、別に注意が必要です。",
       steps: ["対応サービスの公式設定から作成し、保存先と別の端末でログインできるか確認する", "機種変更や端末紛失時の復旧手段を確かめる。残るパスワードと再設定先も保護する"],
       link: ["accounts.html#passkey", "パスキーとは"] },
     "carrier-lock": { p: "now", t: "携帯電話会社のIDのパスワードと、契約の暗証番号を見直す",
@@ -222,6 +222,20 @@
       why: "退会済みでも対象になることがあります。",
       steps: ["主な漏えい事案の一覧で、使っていたサービスを探す", "該当すれば、公式サイトを自分で開いて通知の内容を確かめ、漏れた項目でこのページを選び直す"],
       link: ["breaches.html", "漏えい事案の一覧"] },
+    "sns-discovery": {
+      "p": "week",
+      "t": "SNSで見つけられる設定と公開範囲を見直す",
+      "why": "メールアドレスや電話番号が、SNSのアカウントを見つける手掛かりに使われる場合があります。一部の照合経路を減らす対策であり、既に集められた情報や公開情報からの照合を全て止めるものではありません。",
+      "steps": [
+        "Xの公式ヘルプで、メールアドレス・電話番号から見つけられる設定を確認し、不要ならオフにする。同じ番号を使う別アカウントも確認する",
+        "連絡先の同期を使わない場合は停止する。過去にアップロードした連絡先は別に管理・削除の手順を確認する",
+        "他のSNSも公式ヘルプで設定を確認し、プロフィールや投稿の公開範囲を見直す。"
+      ],
+      "link": [
+        "accounts.html#sns",
+        "設定の範囲と限界"
+      ]
+    },
     "hibp": { p: "week", t: "Have I Been Pwned でメールアドレスを確かめる",
       why: "HIBPに収録され、検索できる事案への掲載を確認できます。見つからなくても、漏えいしていない証明にはなりません。企業の公式通知と併せて確認します。",
       steps: ["haveibeenpwned.com にメールアドレスを入れる", "知らないサイトの「漏えいチェック」には個人情報を入れない"],
@@ -262,18 +276,18 @@
     "notice-check", "card-reissue", "pw-change", "session-revoke", "files-review", "rule-inbound", "inbound-code", "remote-app", "email-lock", "carrier-lock", "refund-scam", "fake-police",
     "phish-email", "known-not-proof", "bank-limit", "card-notify", "securities", "qr-lock", "bank-notify-detail",
     "sms-filter", "line-code", "no-birth-pin", "context-scam", "family-pass", "invest-scam", "answering",
-    "credit-declare", "passkey", "pwm", "sms-2fa", "alias", "scam-app", "intl-call", "family-card", "hibp", "delete-unused",
+    "credit-declare", "passkey", "pwm", "sms-2fa", "alias", "sns-discovery", "scam-app", "intl-call", "family-card", "hibp", "delete-unused",
     "outage", "mail-watch", "credit-disclose", "card-statement", "visitor",
     "license-reissue"
   ];
   Object.keys(A).forEach(function (k) { if (ORDER.indexOf(k) < 0) ORDER.push(k); });
   var BASE = ["rule-inbound", "inbound-code", "remote-app", "email-lock"];
   var MAP = {
-    email: ["phish-email", "alias"],
+    email: ["phish-email", "alias", "sns-discovery"],
     password: ["pw-change", "pwm", "passkey"],
     token: ["session-revoke"],
     files: ["files-review"],
-    phone: ["carrier-lock", "sms-filter", "line-code", "sms-2fa", "outage"],
+    phone: ["carrier-lock", "sms-filter", "line-code", "sms-2fa", "outage", "sns-discovery"],
     address: ["known-not-proof", "visitor", "mail-watch"],
     birth: ["known-not-proof", "no-birth-pin"],
     idimg: ["carrier-lock", "fake-police", "credit-declare", "credit-disclose", "mail-watch", "outage", "license-reissue"],
