@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-10-09",
+  "candidates": [
+    {
+      "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
+      "url": "https://www.sanga-fc.jp/news/detail/21401",
+      "reason": "検索インデックスには2026年9月8日付の公式記事本文が残り、15,612人分の誤送信等を読める。一方、現行URLはChromeでメンテナンス画面、検索閲覧は502となり、現在の公式本文と本件窓口を再確認できない。掲載用の生きた出典リンクも確保できないため保留。",
+      "draft_entry_on_recovery": {
+        "date": "2026-09-08",
+        "date_label": "2026年9月8日",
+        "org": "京都パープルサンガ",
+        "service": "京都サンガF.C.ファンクラブ",
+        "kana": "きょうとぱーぷるさんが きょうとさんが ふぁんくらぶ",
+        "category": "media_entertainment",
+        "count": "ファンクラブ会員15,612人分（2026年7月3日時点の保有データ）",
+        "status": "確認",
+        "items": [
+          "氏名",
+          "住所",
+          "メールアドレス",
+          "電話番号",
+          "生年月日",
+          "性別",
+          "会員ID",
+          "その他（詳細は出典）"
+        ],
+        "note": "取引先担当者11人へのメールに会員情報のファイルを誤添付し、うち2人の開封を確認。コース・入退会日・ワンタッチパスID等も含みます。カード情報と口座情報は含まれません。9月8日時点で取引先による削除を確認し、二次的な流出は確認されていません。",
+        "url": "https://www.sanga-fc.jp/news/detail/21401",
+        "src": "公式"
+      }
+    },
+    {
+      "candidateNumber": 95,
+      "name": "楽天会員データ販売主張",
+      "referenceURL": "https://ai.itokoba.com/security-tier/#incident-095",
+      "sourceURL": "https://rocket-boys.co.jp/security-measures-lab/rakuten-101m-data-sale-unverified-20261004/",
+      "reason": "第三者の販売主張と公開仕様に合うサンプルだけでは真正性・取得元・1億100万件を検証できない。楽天グループの公式発表も確認できず、元の保留を維持する。"
+    },
+    {
+      "candidateNumber": 105,
+      "name": "Suno",
+      "sourceURL": "https://haveibeenpwned.com/Breach/Suno",
+      "reason": "HIBPは55.3百万件のメールアドレス等を報告するが、Suno公式サイトで同件数・項目を確認できない。Suno広報の媒体向け声明は2025年11月の限定的事案と一部利用者情報を認める一方、55.3百万件の範囲を確定していない。日本の対象人数も未公表のため、会社公式一次資料を要する掲載条件では保留。"
+    }
+  ]
+}

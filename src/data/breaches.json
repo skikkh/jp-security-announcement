@@ -1498,5 +1498,2926 @@
   "src": "公式",
   "category": "transport",
   "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-08",
+  "date_label": "2026年7月8日",
+  "org": "九州電力送配電",
+  "service": "契約情報を保存した外部記憶媒体",
+  "kana": "九州電力送配電 契約情報を保存した外部記憶媒体",
+  "count": "人数未公表",
+  "status": "未確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "購入・配送・利用履歴"
+  ],
+  "note": "外部記憶媒体が所在不明。電力使用量・契約情報を保存。外部流出と二次被害は確認されていません。電話番号は一部の手続利用者のみ。",
+  "url": "https://www.kyuden.co.jp/td/faq.html",
+  "src": "公式",
+  "category": "energy",
+  "contact": {
+   "name": "本件専用ダイヤル",
+   "tels": [
+    "0120-528-180"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-18",
+  "date_label": "2026年5月18日",
+  "org": "ユニバーサル ミュージック",
+  "service": "UNIVERSAL MUSIC STORE・THE BEATLES STORE",
+  "kana": "ユニバーサル ミュージック universal music store・the beatles store",
+  "count": "3,105,585件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "購入・配送・利用履歴"
+  ],
+  "note": "旧・新ストアで対象項目が異なります。購入履歴と生年月日・性別は対象サイトや登録状況によります。パスワードとカード情報は対象外。",
+  "url": "https://www.universal-music.co.jp/press-releases/2026-05-18/",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "個人情報に関するお客様ご相談窓口",
+   "tels": [
+    "0120-293-026"
+   ],
+   "hours": "平日10:00〜18:00（祝日を除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-17",
+  "date_label": "2026年7月17日",
+  "org": "アサヒグループホールディングス",
+  "service": "顧客相談室・取引先等の保有情報",
+  "kana": "アサヒグループホールディングス 顧客相談室・取引先等の保有情報",
+  "count": "相談室152.5万件／取引先等37.8万件ほか",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "勤務先・所属",
+   "家族情報"
+  ],
+  "note": "2025年9月の攻撃の続報。サーバー内情報の外部流出は未確認ですが、漏えいのおそれを通知。顧客相談室152.5万件、社外慶弔11.7万件、従業員10.7万件、家族16.2万件、取引先等37.8万件は区分別で合計人数ではありません。2026年2月公表の確認済み流出分は別区分。カード情報は対象外。",
+  "url": "https://www.asahigroup-holdings.com/en/newsroom/detail/20260717-0101.html",
+  "src": "公式",
+  "category": "food",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-12",
+  "date_label": "2026年6月12日",
+  "org": "日本テレネット",
+  "service": "受託業務・社内ファイルサーバー",
+  "kana": "日本テレネット 受託業務・社内ファイルサーバー",
+  "count": "CSS60.2万件／BPO40.4万件ほか",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属",
+   "家族情報",
+   "その他（詳細は出典）"
+  ],
+  "note": "ランサムウェアによる暗号化を確認。外部転送の痕跡・情報の公開・不正利用は未確認。CSS60.2万件、BPO40.4万件、営業等3.3万件、従業員等2,044件は重複不明で合算しません。対象ごとに項目は異なります。",
+  "url": "https://www.nippon-tele.net/release/20260612_4675/",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-02-27",
+  "date_label": "2026年2月27日",
+  "org": "日本医科大学武蔵小杉病院",
+  "service": "ナースコールシステム",
+  "kana": "日本医科大学武蔵小杉病院 ナースコールシステム",
+  "count": "患者約13万人／職員等約1,700人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "生年月日",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "患者IDを含む基本情報の窃取と攻撃者サイトへの公開を確認。職員・実習医学生の職員ID等も別区分。診療録、カード、マイナンバーカード情報の流出は確認されていません。",
+  "url": "https://www.nms.ac.jp/kosugi-h/news/_28850.html",
+  "src": "公式",
+  "category": "health",
+  "contact": {
+   "name": "個人情報漏えいに関する専用窓口",
+   "tels": [
+    "0120-390094"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-01",
+  "date_label": "2026年10月1日",
+  "org": "日本原子力研究開発機構",
+  "service": "JRR-3研究支援サイト",
+  "kana": "日本原子力研究開発機構 jrr-3研究支援サイト",
+  "count": "175人分（367ファイル）",
+  "status": "確認",
+  "items": [
+   "本人確認書類の画像",
+   "本人確認書類の番号",
+   "その他（詳細は出典）",
+   "パスポート情報"
+  ],
+  "note": "外部から367ファイルが不正取得され、うち200ファイルに本人確認書類画像、146ファイルに放射線業務の健康診断結果等。個人番号を含むのは6人。ファイル数と人数は一致しません。サイトのID・パスワードは対象外。",
+  "url": "https://www.jaea.go.jp/02/press2026/p26100105/",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-02",
+  "date_label": "2026年9月2日",
+  "org": "カインドオル",
+  "service": "公式ECサイト",
+  "kana": "カインドオル 公式ecサイト",
+  "count": "136,464人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "生年月日",
+   "メールアドレス",
+   "会員ID",
+   "購入・配送・利用履歴"
+  ],
+  "note": "スタッフアカウントへの侵入後、顧客情報のエクスポートとダウンロードを確認。購読設定・購入額・ポイント履歴等も対象になり得ます。全項目が全員に含まれるわけではありません。カード情報・パスワードは対象外。",
+  "url": "https://www.kind.co.jp/notice-20260902",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "本件専用お問い合わせ窓口",
+   "tels": [
+    "0120-721-616"
+   ],
+   "hours": "平日9:00〜18:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-01-26",
+  "date_label": "2026年1月26日",
+  "org": "インテリックス",
+  "service": "ジャストカーテンオンラインショップ",
+  "kana": "インテリックス ジャストカーテンオンラインショップ",
+  "count": "顧客情報60,663人／カード情報10,423人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "パスワード",
+   "カード情報"
+  ],
+  "note": "決済アプリの改ざんを確認。カード名義・番号・有効期限・セキュリティコードが対象となる可能性があり、一部で不正利用のおそれ。顧客情報とカード情報の対象数は重複し得ます。生年月日は任意登録。",
+  "url": "https://www.justcurtain.com/html/user_data/justcurtain_news2.pdf",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "ジャストカーテンオンラインショップ お客様相談窓口",
+   "tels": [
+    "0120-813-016"
+   ],
+   "emails": [
+    "info@justcurtain.com"
+   ],
+   "hours": "10:00〜19:00（土日祝を含む）"
+  },
+  "contact_source": "https://www.justcurtain.com/html/user_data/justcurtain_news2.pdf",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-15",
+  "date_label": "2026年6月15日",
+  "org": "佐嘉平川屋",
+  "service": "公式オンラインショップ",
+  "kana": "佐嘉平川屋 公式オンラインショップ",
+  "count": "顧客情報30,170人／カード情報5,783人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "カード情報"
+  ],
+  "note": "カード番号・有効期限・セキュリティコードを含む可能性があり、一部に不正利用のおそれ。顧客情報とカード情報の対象数は重複し得ます。楽天店・実店舗のカードは対象外。",
+  "url": "https://www.saga-hirakawaya.jp/security-notice/",
+  "src": "公式",
+  "category": "food",
+  "contact": {
+   "name": "佐嘉平川屋オンラインショップ お客様相談窓口",
+   "tels": [
+    "0120-35-4112"
+   ],
+   "emails": [
+    "support@saga-hirakawaya.co.jp"
+   ],
+   "hours": "9:00〜18:00（土日を除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-02",
+  "date_label": "2026年10月2日",
+  "org": "ムーンスター",
+  "service": "公式オンラインストア",
+  "kana": "ムーンスター 公式オンラインストア",
+  "count": "件数未公表",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "購入・配送・利用履歴"
+  ],
+  "note": "サーバーへの不正ログインと情報取得の可能性を公表。不特定多数への公開は未確認ですが、なりすましメールの配信を確認。カード番号・パスワードは対象外。",
+  "url": "https://www.moonstar.co.jp/information/2026/10/post-4.html",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "本件指定 カスタマーセンター",
+   "tels": [
+    "0800-800-1792"
+   ],
+   "emails": [
+    "cs@moonstar.co.jp"
+   ],
+   "hours": "平日10:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-02",
+  "date_label": "2026年9月2日",
+  "org": "チャーム",
+  "service": "チャーム本店",
+  "kana": "チャーム チャーム本店",
+  "count": "流出確認約37万件／おそれ約2万件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "パスワード",
+   "会員ID",
+   "購入・配送・利用履歴"
+  ],
+  "note": "9月2日の訂正後の数値。パスワードはハッシュ値で、対象項目は利用者ごとに異なります。別途239人への不正ログインを確認しましたが、ログイン情報の入手経路は不明。",
+  "url": "https://www.charm.co.jp/honten/info/notice/20260901.html",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "本件指定 チャームカスタマーサポート",
+   "tels": [
+    "0120-89-4828"
+   ],
+   "emails": [
+    "shop@charm.co.jp"
+   ],
+   "hours": "電話8:00〜17:00（年中無休）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-11",
+  "date_label": "2026年5月11日",
+  "org": "エネサンスグループ",
+  "service": "顧客・従業員情報",
+  "kana": "エネサンスグループ 顧客・従業員情報",
+  "count": "顧客約36.5万件／従業員等約2千件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "攻撃者による一部情報の公開を確認。顧客約36.5万件は漏えい確認とおそれを含む対象規模で、全項目が全員に含まれるわけではありません。",
+  "url": "https://www.enessance.co.jp/tohoku/topics/システム障害に関するお知らせ（第4報）",
+  "src": "公式",
+  "category": "energy",
+  "contact": {
+   "name": "本件専用お問い合わせ窓口",
+   "tels": [
+    "0120-363-385"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-21",
+  "date_label": "2026年5月21日",
+  "org": "穴吹ハウジングサービス",
+  "service": "グループの顧客・社内ファイル",
+  "kana": "穴吹ハウジングサービス グループの顧客・社内ファイル",
+  "count": "207,773件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "口座情報",
+   "本人確認書類の画像",
+   "その他（詳細は出典）"
+  ],
+  "note": "ファイルの外部流出を確認し、含まれる個人情報の対象を精査。207,773件は漏えいの可能性がある情報の最終件数で、対象項目は人により異なります。一部に生活保護・障害に関する情報等。",
+  "url": "https://www.anabuki-housing.co.jp/news/content.php?news_category_cd=6&news_id=530",
+  "src": "公式",
+  "category": "real_estate",
+  "contact": {
+   "name": "ランサムウェア事案専用お問い合わせ窓口",
+   "tels": [
+    "0800-111-7120"
+   ],
+   "hours": "9:00〜18:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-30",
+  "date_label": "2026年9月30日",
+  "org": "VOISING",
+  "service": "VOISING ID・公式ストア等",
+  "kana": "voising voising id・公式ストア等",
+  "count": "約17万件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "購入・配送・利用履歴"
+  ],
+  "note": "9月30日の第四報で漏えい件数を公表。決済金額・加入状況・応援対象タレントも含みます。カード番号・有効期限・セキュリティコード・ログインパスワードは対象外。",
+  "url": "https://voising-official.com/news/1015",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "本件専用お問い合わせフォーム",
+   "forms": [
+    {
+     "label": "専用フォーム",
+     "url": "https://voising-official.com/contact?gr=voising&cat=security_support"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-17",
+  "date_label": "2026年8月17日",
+  "org": "加賀ソルネット",
+  "service": "アカデミコナビ",
+  "kana": "加賀ソルネット アカデミコナビ",
+  "count": "165,587人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "会員ID",
+   "勤務先・所属",
+   "購入・配送・利用履歴"
+  ],
+  "note": "保護者または学生の情報を不正取得。所属校・購入情報を含み、全項目が全員の情報ではありません。続報で会員パスワードとカード情報は対象外と確認。",
+  "url": "https://www.solnet.ne.jp/news/20260817",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "お客様お問い合わせ専用窓口",
+   "tels": [
+    "0120-558-044"
+   ],
+   "emails": [
+    "em_support@solnet.ne.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-13",
+  "date_label": "2026年5月13日",
+  "org": "メディカ出版",
+  "service": "メディカID等の顧客・関係者情報",
+  "kana": "メディカ出版 メディカid等の顧客・関係者情報",
+  "count": "概算641,000人（重複の可能性）",
+  "status": "可能性",
+  "items": [],
+  "note": "ランサムウェア被害。外部持ち出しの確定証拠はないものの否定できないため通知。対象は顧客・医療教育関係者・従業員等で、個別の情報項目は公表されていません。侵入に使われた認証情報の漏れ経路も不明。",
+  "url": "https://www.medica.co.jp/news/information/3544/",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "本件指定 メディカ出版 お客様センター",
+   "tels": [
+    "0120-276-115",
+    "06-6398-5008"
+   ],
+   "emails": [
+    "soudan@medica.co.jp"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-04-27",
+  "date_label": "2026年4月27日",
+  "org": "YCC情報システム",
+  "service": "東根市の住民・税・保険データ等",
+  "kana": "ycc情報システム 東根市の住民・税・保険データ等",
+  "count": "東根市分：住民約11万件ほか",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "生年月日",
+   "勤務先・所属",
+   "その他（詳細は出典）",
+   "マイナンバー（個人番号）"
+  ],
+  "note": "東根市公表分。住民約11万件、国保約5.5万件、固定資産税約1.9万件、軽自動車税約3.4万件、申告支援10件は重複を含み合算不可。一部に個人番号・給与情報。4月27日時点で実流出は未確認。他自治体全体の人数を示すものではありません。 個人番号を含む区分があることは保持",
+  "url": "https://www.city.higashine.yamagata.jp/news/3508",
+  "src": "公式",
+  "category": "government",
+  "contact": {
+   "name": "YCC情報システム 個人情報に関する相談窓口",
+   "tels": [
+    "023-641-4727"
+   ],
+   "hours": "平日8:30〜17:30"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-02",
+  "date_label": "2026年6月2日",
+  "org": "CAMPFIRE",
+  "service": "クラウドファンディングサービス",
+  "kana": "campfire クラウドファンディングサービス",
+  "count": "対象225,846ユーザー",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "口座情報"
+  ],
+  "note": "個人情報1件のクエリ出力を確認。ほかの対象情報の取得は未確認のため可能性として扱います。口座情報を含むのは一部。225,846は重複除去後の対象者数。カード情報は対象外。",
+  "url": "https://campfire.co.jp/press/2026/06/02/campfire/",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "CAMPFIRE 個人情報お問い合わせ専用窓口",
+   "tels": [
+    "0120-188-070"
+   ],
+   "hours": "10:00〜19:00（土日祝を含む）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-07",
+  "date_label": "2026年9月7日",
+  "org": "コープやまぐち",
+  "service": "LINEミニアプリ・組合員情報",
+  "kana": "コープやまぐち lineミニアプリ・組合員情報",
+  "count": "ここカード保有143,126件／非保有69,586件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "会員ID",
+   "その他（詳細は出典）"
+  ],
+  "note": "流出事実は未確認。カード保有者の情報にはここカード番号とPIN番号を含みますが、この組合せだけで残高照会・決済はできないと公表。氏名は名字のみ、住所は郵便番号。ログインパスワード・金融機関口座・クレジットカードは対象外。",
+  "url": "https://www.yamaguti-coop.or.jp/line-miniapp-incident-report2/",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "コープやまぐち 問合せセンター",
+   "tels": [
+    "0120-49-5657"
+   ],
+   "hours": "平日8:30〜20:00、土曜9:00〜17:00（年末年始を除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-04-01",
+  "date_label": "2026年4月1日",
+  "org": "ウエーブ",
+  "service": "Webアップロードサービス",
+  "kana": "ウエーブ webアップロードサービス",
+  "count": "最大176,810件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "会員ID",
+   "保存ファイル・画像"
+  ],
+  "note": "印刷入稿データ・見積書も対象の可能性。外部転送やデータベースへのアクセス痕跡は確認されておらず、実流出は未確認。カード情報は保持していません。",
+  "url": "https://www.wave-inc.co.jp/corporate/info/20260401/",
+  "src": "公式",
+  "category": "other",
+  "contact": {
+   "name": "ウエーブ 個人情報相談窓口",
+   "tels": [
+    "0120-554-505"
+   ],
+   "emails": [
+    "customer_helpdesk@wave-inc.co.jp"
+   ],
+   "hours": "平日10:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-28",
+  "date_label": "2026年7月28日",
+  "org": "タカラトミー",
+  "service": "デュエル・マスターズ サポートアプリ",
+  "kana": "タカラトミー デュエル・マスターズ サポートアプリ",
+  "count": "最大約155,000人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "会員ID"
+  ],
+  "note": "認証機能の不備で特定条件下に第三者が閲覧できた可能性。ハンドルネーム・XユーザーIDも対象。実際の閲覧・不正利用は確認されていません。",
+  "url": "https://www.takaratomy.co.jp/support/pdf/dmp20260728.pdf",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "デュエル・マスターズ サポートアプリ 個人向けお問い合わせフォーム",
+   "forms": [
+    {
+     "label": "本件指定フォーム",
+     "url": "https://inquiry.takaratomy.co.jp/dmp_ranking/user/"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-04-16",
+  "date_label": "2026年4月16日",
+  "org": "エフワン",
+  "service": "さとうのスーツ購入者情報",
+  "kana": "エフワン さとうのスーツ購入者情報",
+  "count": "氏名等109人／勤務先等131人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "勤務先・所属",
+   "購入・配送・利用履歴"
+  ],
+  "note": "さとうが公表した顧客範囲。109人は氏名と購入事業所、131人は氏名・勤務先・購入事業所。エフワン全体の被害人数ではありません。",
+  "url": "https://www.sato-kyoto.com/dnt2/_sato/access/files/7/1776329219_f_one_osirase.pdf",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "株式会社さとう お客様サービス室（本件指定）",
+   "tels": [
+    "0773-27-0100"
+   ],
+   "hours": "9:00〜18:00"
+  },
+  "contact_source": "https://www.sato-kyoto.com/dnt2/_sato/access/files/7/1776329219_f_one_osirase.pdf",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-31",
+  "date_label": "2026年3月31日",
+  "org": "マイナビ",
+  "service": "利用クラウド内の顧客・従業員情報",
+  "kana": "マイナビ 利用クラウド内の顧客・従業員情報",
+  "count": "一般利用者74,224件／法人担当21,609件／従業員15,672件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "区分ごとに項目が異なり、件数は人数を意味しません。サービスサイトのデータベースへの侵入ではなく、カード情報と個人番号は対象外。",
+  "url": "https://www.mynavi.jp/json-topic/52681/",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "臨時お問い合わせ専用サイト",
+   "forms": [
+    {
+     "label": "本件専用サイト",
+     "url": "https://survey.mynavi.jp/cre/?enq=JiXk%2bDrb6Ik%3d"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-20",
+  "date_label": "2026年8月20日",
+  "org": "コタ",
+  "service": "顧客・取引先・株主等の保有情報",
+  "kana": "コタ 顧客・取引先・株主等の保有情報",
+  "count": "株主55,408件ほか",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "性別",
+   "生年月日",
+   "勤務先・所属",
+   "購入・配送・利用履歴"
+  ],
+  "note": "従業員591件、応募者684件、直送顧客35,274件、取引先16,133件、株主55,408件等の区分。株主番号・所有株式数も対象。実流出と不正利用は未確認。",
+  "url": "https://media.cota.co.jp/media/c461e507-b70e-4543-81b6-38210d442a3b.pdf",
+  "src": "公式",
+  "category": "manufacturing",
+  "contact": {
+   "name": "個人情報に関するお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://www.cota.co.jp/contact#Contact"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-02",
+  "date_label": "2026年10月2日",
+  "org": "日本エネルギー経済研究所",
+  "service": "職員メール・保存ファイル",
+  "kana": "日本エネルギー経済研究所 職員メール・保存ファイル",
+  "count": "パスポート13件確認／メール759件のおそれ",
+  "status": "確認",
+  "items": [
+   "パスポート情報",
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "口座情報",
+   "勤務先・所属"
+  ],
+  "note": "パスポート情報13件の流出を確認。メール759件は可能性の区分で、口座名義・番号等を含む5件はその内数。閲覧・ダウンロードの操作件数を被害人数として数えません。",
+  "url": "https://eneken.ieej.or.jp/press/press261002.pdf",
+  "src": "公式",
+  "category": "energy",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-02",
+  "date_label": "2026年10月2日",
+  "org": "サミーネットワークス",
+  "service": "777CON-PASS",
+  "kana": "サミーネットワークス 777con-pass",
+  "count": "件数調査中",
+  "status": "可能性",
+  "items": [
+   "電話番号",
+   "生年月日",
+   "性別",
+   "会員ID",
+   "保存ファイル・画像",
+   "購入・配送・利用履歴"
+  ],
+  "note": "不正な情報取得リクエストを確認。プロフィール写真・お気に入りホール・位置情報から生成した行動エリアが対象の可能性。電話番号は店頭予約利用者のみ。氏名・ログイン用メール・パスワード・認証用顔画像は対象外。",
+  "url": "https://www.sammy-net.jp/news/2026/10/777con-pass-6.html",
+  "src": "公式",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-17",
+  "date_label": "2026年8月17日",
+  "org": "ロジックベイン",
+  "service": "顧客・取引先等の保有情報",
+  "kana": "ロジックベイン 顧客・取引先等の保有情報",
+  "count": "対象約97,338人（うち公開確認17,559人）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属",
+   "購入・配送・利用履歴"
+  ],
+  "note": "17,559人の情報の攻撃者サイト掲載を確認。残る範囲は漏えいのおそれで、97,338人には確認分を含みます。カード情報と個人番号の流出は未確認。",
+  "url": "https://www.lvi.co.jp/company-news/2026/08/17/post-2244/",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-04-27",
+  "date_label": "2026年4月27日",
+  "org": "村田製作所",
+  "service": "従業員・社外関係者情報",
+  "kana": "村田製作所 従業員・社外関係者情報",
+  "count": "従業員等約7.3万件／社外約1.5万件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "口座情報",
+   "勤務先・所属",
+   "家族情報",
+   "その他（詳細は出典）"
+  ],
+  "note": "外部取得確認分とおそれを含む範囲。従業員の健康・人事情報等は一部のみで、全項目が全員に含まれるわけではありません。同一人の重複の可能性もあります。",
+  "url": "https://corporate.murata.com/ja-jp/newsroom/news/company/general/2026/0427",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-04",
+  "date_label": "2026年8月4日",
+  "org": "中部電力",
+  "service": "役職員メール・グループ連絡先",
+  "kana": "中部電力 役職員メール・グループ連絡先",
+  "count": "関係者約2,400人／連絡先約71,700人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "資格情報が不正利用されメールと連絡先が不正閲覧された可能性。電気・ガス顧客情報の漏えいと供給への影響は確認されていません。メール本文の内容は調査中。",
+  "url": "https://www.chuden.co.jp/publicity/press/1218169_3273.html",
+  "src": "公式",
+  "category": "energy",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-08",
+  "date_label": "2026年9月8日",
+  "org": "ファイブフォックス",
+  "service": "メンバーズカード・顧客相談等",
+  "kana": "ファイブフォックス メンバーズカード・顧客相談等",
+  "count": "会員59,504件／相談8,403件／従業員5,278件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "生年月日",
+   "性別",
+   "会員ID",
+   "口座情報",
+   "勤務先・所属"
+  ],
+  "note": "会員・相談・従業員の区分。口座情報はコムサ従業員2,828件の一部に限ります。会員ランクや登録店、人事情報も対象。カード情報・個人番号は対象外。",
+  "url": "https://www.fivefoxes.co.jp/2026/09/post-23.html",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "ファイブフォックス お客様お問い合わせ窓口",
+   "tels": [
+    "0120-114563"
+   ],
+   "hours": "平日10:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-10",
+  "date_label": "2026年8月10日",
+  "org": "イノベーション",
+  "service": "GitHubに保管された顧客情報",
+  "kana": "イノベーション githubに保管された顧客情報",
+  "count": "62,689人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号"
+  ],
+  "note": "訂正後の対象数。氏名62,631件、メール62,689件、電話506件。GitHubへの不正アクセスで流出を確認。",
+  "url": "https://www.innovation.co.jp/2026/08/githubへの不正アクセスに関するお知らせ（確定報）/",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-28",
+  "date_label": "2026年9月28日",
+  "org": "三井不動産",
+  "service": "社内システムの連絡先情報",
+  "kana": "三井不動産 社内システムの連絡先情報",
+  "count": "役職員等最大19,000件／社外最大36,000件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "資格情報の不正利用で閲覧された可能性。社外対象はメール表示名も含みます。メール本文・チャット・ファイル・パスワードの漏えいと二次被害は確認されていません。",
+  "url": "https://www.mitsuifudosan.co.jp/letter/260928/download/260928.pdf",
+  "src": "公式",
+  "category": "real_estate",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-03",
+  "date_label": "2026年6月3日",
+  "org": "阿波銀行",
+  "service": "顧客・取引先情報",
+  "kana": "阿波銀行 顧客・取引先情報",
+  "count": "延べ27,745件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "メールアドレス",
+   "口座情報",
+   "その他（詳細は出典）"
+  ],
+  "note": "法人契約者、株主、その他関係者の延べ27,745件。株主番号・保有株数、配当金受取口座番号（一部5,271件）、預貸金取引情報（一部127件）を含みます。人数ではなく、暗証番号・パスワードは対象外。",
+  "url": "https://www.awabank.co.jp/kojin/benri/awagin_app/news/2026/news20260603a/index.html",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "あわぎんお客さまサポートセンター",
+   "tels": [
+    "0120-39-8689"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-30",
+  "date_label": "2026年9月30日",
+  "org": "吉野家・はなまる",
+  "service": "ApplyNow採用管理サービス",
+  "kana": "吉野家・はなまる applynow採用管理サービス",
+  "count": "吉野家応募4,998件／はなまる応募368件／採用担当418アカウント",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "パスワード",
+   "その他（詳細は出典）"
+  ],
+  "note": "応募者は吉野家4,998件・はなまる368件。住所等は一部のみ。採用担当者418件には暗号化パスワードを含みます。重複があるため件数は人数と一致しません。面接動画は対象外。 応募者側の職業は一部のみ。暗号化パスワードは採用担当者アカウントだけ。区分間の重複があるため人数として合計しない。",
+  "url": "https://www.yoshinoya.com/wp-content/uploads/2026/09/30185541/news_2026093004.pdf",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "ApplyNow 本件お問い合わせ窓口",
+   "tels": [
+    "0120-401-373"
+   ],
+   "emails": [
+    "support_biz@applynow.co.jp"
+   ],
+   "hours": "全日9:00〜18:00"
+  },
+  "contact_source": "https://www.yoshinoya.com/wp-content/uploads/2026/09/30185541/news_2026093004.pdf",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-25",
+  "date_label": "2026年5月25日",
+  "org": "東京都",
+  "service": "東京デジタルアカデミー ポータル",
+  "kana": "東京都 東京デジタルアカデミー ポータル",
+  "count": "最大2,438人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "パスワード"
+  ],
+  "note": "設定不備によるCSVの不正ダウンロードを確認。主に行政職員の業務メールとハッシュ化パスワード。一般市民2人は最大2,438人の内数。",
+  "url": "https://www.metro.tokyo.lg.jp/information/press/2026/05/2026052601",
+  "src": "公式",
+  "category": "work_education",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-29",
+  "date_label": "2026年9月29日",
+  "org": "損害保険ジャパン",
+  "service": "保険料控除証明書発行サービス",
+  "kana": "損害保険ジャパン 保険料控除証明書発行サービス",
+  "count": "177,426名（重複の可能性）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "その他（詳細は出典）"
+  ],
+  "note": "TOPPANが別の損保1社に誤送付し、送付先で完全削除を確認。氏名はカナ、保険証券番号・証明書の業務IDはログインIDではありません。住所・口座・カード・個人番号は対象外。",
+  "url": "https://www.sompo-japan.co.jp/-/media/SJNK/files/news/2026/20260929_1.pdf?la=ja-JP",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "損害保険ジャパン お客さま専用窓口",
+   "tels": [
+    "0120-175-675"
+   ],
+   "hours": "平日9:00〜17:00（土日祝・年末年始を除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-03",
+  "date_label": "2026年7月3日",
+  "org": "ユニマットライフ",
+  "service": "注文書フォームに残った顧客リスト",
+  "kana": "ユニマットライフ 注文書フォームに残った顧客リスト",
+  "count": "126,947件（人）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "一部取引先へ誤送付。送付先全てで外部転送なし・削除完了を確認。カード・口座番号は対象外。",
+  "url": "https://www.unimat-life.co.jp/pages/news/333",
+  "src": "公式",
+  "category": "other",
+  "contact": {
+   "name": "本件お問い合わせ専用窓口",
+   "tels": [
+    "0120-102-349"
+   ],
+   "hours": "平日9:00〜17:45"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-16",
+  "date_label": "2026年6月16日",
+  "org": "コマツ",
+  "service": "利用者管理システム",
+  "kana": "コマツ 利用者管理システム",
+  "count": "139,302人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "購入・配送・利用履歴"
+  ],
+  "note": "設定不備で登録ユーザー同士が氏名・業務メール・種別・一部のアクセス日時を閲覧可能。インターネットの不特定多数には公開されていません。",
+  "url": "https://www.komatsu.jp/ja/newsroom/2026/20260616_3",
+  "src": "公式",
+  "category": "telecom_it",
+  "contact": {
+   "name": "コマツ 本件個人情報お問い合わせ先",
+   "emails": [
+    "JP00MB-privacy@global.komatsu"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-21",
+  "date_label": "2026年8月21日",
+  "org": "楽天ブックスネットワーク",
+  "service": "楽天ブックス配送先情報等",
+  "kana": "楽天ブックスネットワーク 楽天ブックス配送先情報等",
+  "count": "配送先33,333件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "勤務先・所属"
+  ],
+  "note": "ランサムウェア被害を受けた端末に配送先情報が保存。実流出は未確認。郵便番号を含み、カードなど金融情報は対象外。従業員・取引先は別区分で人数未公表。",
+  "url": "https://www.rakuten-booksnetwork.co.jp/2026/08/21/unauthorized-access-notice/index.html",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "楽天ブックス カスタマーサポート",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://books.faq.rakuten.net/s/ask"
+    }
+   ],
+   "emails": [
+    "books-reference@faq.rakuten.co.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-28",
+  "date_label": "2026年8月28日",
+  "org": "コロナ",
+  "service": "施工情報管理クラウド",
+  "kana": "コロナ 施工情報管理クラウド",
+  "count": "最大35,000人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "保存ファイル・画像"
+  ],
+  "note": "施工関連資料も対象の可能性。具体的な資料内容・侵入経路は調査中で、不正利用は未確認。",
+  "url": "https://www.corona.co.jp/news/other/post-439.html",
+  "src": "公式",
+  "category": "manufacturing",
+  "contact": {
+   "name": "コロナ 個人情報相談窓口",
+   "tels": [
+    "0120-560-782"
+   ],
+   "emails": [
+    "privacy-contact@corona.co.jp"
+   ],
+   "hours": "平日9:00〜17:00（土日祝を除く）",
+   "note": "原発表は2026年8月31日開設予定と記載。番号・メールの案内は確認済みだが、現在の稼働は未確認。"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-14",
+  "date_label": "2026年9月14日",
+  "org": "生命保険協会",
+  "service": "生命保険契約照会システム",
+  "kana": "生命保険協会 生命保険契約照会システム",
+  "count": "重複除去後27,407件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "その他（詳細は出典）"
+  ],
+  "note": "設定不備で外部から閲覧可能。アクセスは確認したが実際の取得は特定できていません。IDは内部管理用。契約内容・提出書類・口座・カード情報は対象外。",
+  "url": "https://www.seiho.or.jp/info/news/shared/mt-item/20260914.pdf",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "生命保険契約照会制度に関するお問い合わせ先",
+   "tels": [
+    "03-3286-2648"
+   ],
+   "hours": "平日9:00〜17:00（土日祝を除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-10",
+  "date_label": "2026年9月10日",
+  "org": "扶桑電通",
+  "service": "クラウドストレージの共有フォルダ",
+  "kana": "扶桑電通 クラウドストレージの共有フォルダ",
+  "count": "26,489件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号"
+  ],
+  "note": "認証情報の不正利用で共有フォルダに侵入。資格情報の入手経路は不明。決済情報は対象外。",
+  "url": "https://www.fusodentsu.co.jp/news/news_cp_20260910.html",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-14",
+  "date_label": "2026年7月14日",
+  "org": "メディア4u",
+  "service": "SMS配信システムの管理コンソール",
+  "kana": "メディア4u sms配信システムの管理コンソール",
+  "count": "個人情報の精査対象22,928レコード",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "住所",
+   "その他（詳細は出典）",
+   "勤務先・所属"
+  ],
+  "note": "アカウントIDを含む管理一覧95,412レコードの外部流出を確認し、うち22,928レコードを個人情報を含み得る範囲として精査。人数ではありません。配信先の電話番号・SMS本文、パスワード・APIキー・トークンは確認済みファイルの対象外。 「住所」タグの対象は都道府県・郵便番号で、番地を含む住所は原発表に記載されていない。",
+  "url": "https://www.media4u.co.jp/news/3351",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-01-21",
+  "date_label": "2026年1月21日",
+  "org": "STNet",
+  "service": "STクラウド構築・運用専用ネットワーク",
+  "kana": "stnet stクラウド構築・運用専用ネットワーク",
+  "count": "担当者20,846人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "勤務先・所属",
+   "会員ID",
+   "パスワード"
+  ],
+  "note": "担当者の電話番号・生年月日は一部のみ。顧客システムのID・パスワード等は別区分で人数未公表。約44万ファイルは調査対象数で漏えい人数ではありません。",
+  "url": "https://www.stnet.co.jp/news/oshirase_20260121.html",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-30",
+  "date_label": "2026年5月30日",
+  "org": "キャリアデザインセンター",
+  "service": "女の転職type アプリ",
+  "kana": "キャリアデザインセンター 女の転職type アプリ",
+  "count": "不正ログイン18,253人（38,442件）",
+  "status": "調査中",
+  "items": [],
+  "note": "リスト型攻撃による不正ログインは確認。ログイン後の会員ページ閲覧と個人情報流出の範囲は調査中。同社内からのID・パスワード流出の形跡は確認されていません。",
+  "url": "https://cdc.type.jp/uploads/important/common/20260530_1.pdf",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "本件お問い合わせ窓口",
+   "emails": [
+    "woman.webmaster@type.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-01-19",
+  "date_label": "2026年1月19日",
+  "org": "JR九州グループ",
+  "service": "グループ会社の従業員情報",
+  "kana": "jr九州グループ グループ会社の従業員情報",
+  "count": "14,638人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）",
+   "勤務先・所属"
+  ],
+  "note": "従業員・退職者等の業務メールとPCログインIDを含む。流出事実は未確認。JR九州本体の従業員はこの件数に含みません。",
+  "url": "https://www.jrkyushu.co.jp/news/__icsFiles/afieldfile/2026/01/19/20260119_noticeforthosewithexperienceworkingatjrkyushugroupcompanies.pdf",
+  "src": "公式",
+  "category": "transport",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-29",
+  "date_label": "2026年6月29日",
+  "org": "石川コンピュータ・センター",
+  "service": "添付ファイル分離メールサーバー",
+  "kana": "石川コンピュータ・センター 添付ファイル分離メールサーバー",
+  "count": "添付メール1,929件／添付2,551ファイル",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "保存ファイル・画像",
+   "その他（詳細は出典）"
+  ],
+  "note": "送受信ログの社外メールアドレスは重複除去後14,071件。件数は人数を意味しません。ファイルの窃取痕跡は未確認で、メール本文は保存対象外。件名・添付ファイルは対象の可能性。",
+  "url": "https://www.icc.co.jp/news/2026/20260629.html",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-16",
+  "date_label": "2026年9月16日",
+  "org": "アイスタイル",
+  "service": "@cosme通信の登録情報",
+  "kana": "アイスタイル @cosme通信の登録情報",
+  "count": "10,997人",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "会員ID"
+  ],
+  "note": "ファイルが約20分間URLを知る者に閲覧可能な状態。URLは社内関係者のみで共有し、第三者による取得は未確認。配信設定を含み、氏名・住所・パスワード・カード情報は対象外。",
+  "url": "https://www.istyle.co.jp/news/info/2026/09/20260916-3.html",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "本件 個人情報お問い合わせ窓口",
+   "emails": [
+    "i-infosec@istyle.co.jp"
+   ],
+   "hours": "平日10:00〜18:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-04",
+  "date_label": "2026年10月4日",
+  "org": "日本経済新聞社",
+  "service": "Google Workspace業務アカウント",
+  "kana": "日本経済新聞社 Google Workspace業務アカウント",
+  "count": "1,646人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス"
+  ],
+  "note": "Google Workspaceの社員アカウントに不正ログイン。社員・取引先の情報が対象のおそれ。読者・取材先は含まれないと発表。",
+  "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1547.html",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "日本経済新聞社 本件お問い合わせ",
+   "emails": [
+    "privacycontact@nex.nikkei.co.jp"
+   ]
+  },
+  "contact_source": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1547.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-04",
+  "date_label": "2026年10月4日",
+  "org": "日本経済新聞社",
+  "service": "Microsoft 365業務アカウント",
+  "kana": "日本経済新聞社 Microsoft 365業務アカウント",
+  "count": "漏えい人数は調査中（不審メール約9,000件）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "Microsoft 365社員アカウントが侵害され、社内・取材先等へ不審メールを送信。約9,000件は送信数。送信先の連絡先と一部メール内容が漏えいしたとみられ、範囲は調査中。",
+  "url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1554.html",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "日本経済新聞社 本件お問い合わせ",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://support.nikkei.com/app/ask_0101/p/19"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "ニモカ",
+  "service": "nimoca利用履歴照会サービス",
+  "kana": "ニモカ nimoca利用履歴照会サービス",
+  "count": "521件",
+  "status": "確認",
+  "items": [
+   "生年月日",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "nimocaカード番号・生年月日・登録メールが対象。利用履歴、氏名、住所、電話番号の漏えいは確認されていない。",
+  "url": "https://www.nimoca.jp/storage/files/information/107/20261006.pdf",
+  "src": "公式",
+  "category": "transport",
+  "contact": {
+   "name": "nimoca コールセンター",
+   "tels": [
+    "050-3616-2155"
+   ],
+   "hours": "8:00〜20:00（年中無休）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-18",
+  "date_label": "2026年5月18日",
+  "org": "三浦工業",
+  "service": "社内ネットワークの従業員情報",
+  "kana": "三浦工業 社内ネットワークの従業員情報",
+  "count": "最大5,021件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "パスワード",
+   "勤務先・所属"
+  ],
+  "note": "グループ社員・派遣先社員等の暗号化されたデータベース。外部流出またはその可能性があるとの最終報。カード・口座情報は対象外。",
+  "url": "https://www.miuraz.co.jp/news/newsrelease/2026/1956.php",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-31",
+  "date_label": "2026年8月31日",
+  "org": "安藤ハザマ",
+  "service": "名刺管理システム",
+  "kana": "安藤ハザマ 名刺管理システム",
+  "count": "約5,000件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "警察官を装った相手へ社員が名刺データを送信。会社名、部署、役職、FAX番号も含む。",
+  "url": "https://www.ad-hzm.co.jp/info/2026/20260831_03.php",
+  "src": "公式",
+  "category": "other",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-17",
+  "date_label": "2026年8月17日",
+  "org": "教育ソフトウェア",
+  "service": "旧自己採点システム",
+  "kana": "教育ソフトウェア 旧自己採点システム",
+  "count": "4,627件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "会員ID",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "旧自己採点システムの顧客情報・大学名・学籍番号の一部等。閲覧の可能性はあるが外部調査では流出の事実を確認していない。",
+  "url": "https://www.kyoikusw.co.jp/news/20260817/",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "本件に関する問合せ窓口（ISMS推進室）",
+   "emails": [
+    "info@kyoikusw.co.jp"
+   ],
+   "hours": "平日9:00〜18:00"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-16",
+  "date_label": "2026年3月16日",
+  "org": "ニッタイ工業",
+  "service": "エヌ・トレーディング",
+  "kana": "ニッタイ工業 エヌ・トレーディング",
+  "count": "会員情報3,887件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "性別",
+   "生年月日",
+   "パスワード",
+   "購入・配送・利用履歴",
+   "勤務先・所属"
+  ],
+  "note": "通販サイトの顧客情報と購入商品履歴。パスワードは暗号化保存。カード・決済情報は外部決済会社が保有し対象外。実際の流出は未確認。",
+  "url": "https://ssl4.eir-parts.net/doc/3440/tdnet/2776597/00.pdf",
+  "src": "公式",
+  "category": "retail",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-07",
+  "date_label": "2026年7月7日",
+  "org": "フラウ・インターナショナル",
+  "service": "メール問い合わせ管理",
+  "kana": "フラウ・インターナショナル メール問い合わせ管理",
+  "count": "対象人数は調査中",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号"
+  ],
+  "note": "委託先の問い合わせ管理サービスが侵害。過去にメールで問い合わせた顧客の情報で、項目は顧客ごとに異なる。",
+  "url": "https://www.frau-inter.co.jp/other/20260707_6444/",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "フラウ・インターナショナル 本件お問い合わせ窓口",
+   "tels": [
+    "06-4791-2400"
+   ],
+   "emails": [
+    "info@frau-inter.co.jp"
+   ],
+   "hours": "平日10:00〜18:00"
+  },
+  "contact_source": "https://www.frau-inter.co.jp/other/20260707_6444/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-30",
+  "date_label": "2026年6月30日",
+  "org": "JAさっぽろ",
+  "service": "JAバンク委託業務",
+  "kana": "JAさっぽろ JAバンク委託業務",
+  "count": "3,176件",
+  "status": "確認",
+  "items": [
+   "住所",
+   "口座情報",
+   "その他（詳細は出典）"
+  ],
+  "note": "農林中央金庫がJA関係団体と委託先へ誤提供。顧客番号、建物名・部屋番号、預金・貸出残高、口座開設日等。受領先の削除を確認。",
+  "url": "https://www.ja-sapporo.or.jp/notices/20260630/",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "農林中央金庫 JAバンクリテール実践部 本件窓口",
+   "tels": [
+    "0120-220-805"
+   ],
+   "hours": "平日9:00〜17:00（祝日・年末年始除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-28",
+  "date_label": "2026年9月28日",
+  "org": "集英社",
+  "service": "HAPPY PLUS COMMUNITY",
+  "kana": "集英社 HAPPY PLUS COMMUNITY",
+  "count": "ブロガー2,835名／案件630件／送信メール11,237件／取引先一覧10,780レコード（うちメール26件・電話113件）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "家族情報",
+   "保存ファイル・画像",
+   "その他（詳細は出典）"
+  ],
+  "note": "ブロガー登録情報には職業、プロフィール画像、SNS、結婚状況、子の有無等を含み、入力内容は人により異なる。取引先一覧のメールは26件、電話は113件。区分を合算しない。",
+  "url": "https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "本件に関するお問い合わせ（集英社デジタルソリューション部）",
+   "emails": [
+    "hpc-contact@ms.shueisha.co.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-27",
+  "date_label": "2026年8月27日",
+  "org": "チューリッヒ保険",
+  "service": "Z-Dash",
+  "kana": "チューリッヒ保険 Z-Dash",
+  "count": "最大1,668人",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "Z-Dashにドラレコデータをアップロードした顧客の氏名・メール・事案管理番号。各項目の組み合わせは調査中。映像・決済情報は対象外。",
+  "url": "https://www.zurich.co.jp/aboutus/news/news/2026/0827/",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "チューリッヒ保険 お客さま相談室 本件窓口",
+   "tels": [
+    "0120-860-697"
+   ],
+   "hours": "9:00〜17:00（土日祝・年末年始除く）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-03",
+  "date_label": "2026年8月3日",
+  "org": "M&Sフードサービス",
+  "service": "宮本むなし持ち帰り注文サイト",
+  "kana": "M&Sフードサービス 宮本むなし持ち帰り注文サイト",
+  "count": "最大1,895件（1,030人）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "購入・配送・利用履歴"
+  ],
+  "note": "持ち帰り注文サイトの注文情報。キャンセル・ゲスト注文を含む。カード等の決済情報はサイトで保持しておらず対象外。",
+  "url": "https://m-munashi.com/pages/incident202607",
+  "src": "公式",
+  "category": "food",
+  "contact": {
+   "name": "M&Sフードサービス お客様お問い合わせ専用窓口",
+   "tels": [
+    "06-7663-0071"
+   ],
+   "hours": "10:00〜17:00（土日祝除く）",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://m-munashi.com/pages/contact"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-02",
+  "date_label": "2026年9月2日",
+  "org": "西武鉄道",
+  "service": "52席の至福予約サイト",
+  "kana": "西武鉄道 52席の至福予約サイト",
+  "count": "約500人（うち配慮事項約30人）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "会員ID",
+   "その他（詳細は出典）"
+  ],
+  "note": "予約サイトの設定不備で外部から閲覧可能。連絡先、要望のほか一部にアレルギーや車いす利用等の情報を含む。",
+  "url": "https://www.seiburailway.jp/newsroom/news/file/20260902_owabi.pdf",
+  "src": "公式",
+  "category": "travel",
+  "contact": {
+   "name": "西武鉄道 本社営業所 本件お問い合わせ",
+   "emails": [
+    "seibu52-honsya-eigyou@seibugroup.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-30",
+  "date_label": "2026年9月30日",
+  "org": "ジー・プラン",
+  "service": "Gポイント",
+  "kana": "ジー・プラン Gポイント",
+  "count": "会員識別子 最大約7万件",
+  "status": "可能性",
+  "items": [
+   "会員ID"
+  ],
+  "note": "Gポイントの不正アクセス。公表時点では識別子以外の対象項目は示されていない。",
+  "url": "https://www.g-plan.net/news/details/20260930.html",
+  "src": "公式",
+  "category": "finance",
+  "contact": {
+   "name": "Gポイント サポートセンター",
+   "forms": [
+    {
+     "label": "サポートセンターお問い合わせ",
+     "url": "https://support.gpoint.co.jp/hc/ja/requests/new"
+    }
+   ]
+  },
+  "contact_source": "https://www.g-plan.net/news/details/20260930.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-03",
+  "date_label": "2026年10月3日",
+  "org": "スタディサプリ",
+  "service": "スタディサプリ",
+  "kana": "スタディサプリ スタディサプリ",
+  "count": "3,687件",
+  "status": "可能性",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "第三者に登録の有無を判別された可能性。氏名・パスワード・決済情報の外部流出やアカウント不正ログインは確認されていない。",
+  "url": "https://studysapuri.jp/info/important/",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "スタディサプリ 本件お問い合わせ",
+   "forms": [
+    {
+     "label": "本件指定お問い合わせフォーム",
+     "url": "https://studysapuri.jp/info/inquiry/customer/"
+    }
+   ]
+  },
+  "contact_source": "https://studysapuri.jp/info/important/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-02",
+  "date_label": "2026年10月2日",
+  "org": "JOGMEC",
+  "service": "情報システム",
+  "kana": "JOGMEC 情報システム",
+  "count": "約8,500件",
+  "status": "可能性",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "内訳は役職員約1,100件、機構外約7,400件。個人情報の外部流出は可能性段階で、対象者を確認中。",
+  "url": "https://www.jogmec.go.jp/news/information/information_00706.html",
+  "src": "公式",
+  "category": "energy",
+  "contact": {
+   "name": "JOGMEC 本件お問い合わせ窓口",
+   "tels": [
+    "050-2027-0001"
+   ],
+   "hours": "平日10:00〜17:00（祝日除く、12:30〜13:15を除く）",
+   "note": "関係者向け。一般消費者サービスの窓口ではありません。"
+  },
+  "contact_source": "https://www.jogmec.go.jp/news/information/information_00706.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-19",
+  "date_label": "2026年3月19日",
+  "org": "マツダ",
+  "service": "タイ部品倉庫管理",
+  "kana": "マツダ タイ部品倉庫管理",
+  "count": "692件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "タイの部品倉庫管理システムの従業員・取引先情報。会社発行ユーザーIDと取引先IDを含む。一般顧客の情報は登録されていない。",
+  "url": "https://newsroom.mazda.com/ja/publicity/release/2026/202603/260319b.pdf",
+  "src": "公式",
+  "category": "manufacturing",
+  "contact": {
+   "name": "マツダ 本件お問い合わせ",
+   "forms": [
+    {
+     "label": "本件指定フォーム",
+     "url": "https://mag.mazda.jp/enq/pub/common/svaccinq"
+    }
+   ],
+   "note": "対象は従業員・取引先で、一般顧客情報は対象外。"
+  },
+  "contact_source": "https://newsroom.mazda.com/ja/publicity/release/2026/202603/260319b.pdf",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-02-05",
+  "date_label": "2026年2月5日（2月17日に再開続報）",
+  "org": "アットホーム",
+  "service": "引越し見積もり管理",
+  "kana": "アットホーム 引越し見積もり管理",
+  "count": "引越し見積もり利用者408件ほか",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "口座情報",
+   "勤務先・所属"
+  ],
+  "note": "見積もり利用者408件のほか取引先14件、加盟会社情報315件と5,143件が別区分で対象。口座情報は加盟会社側の情報。 2月17日の続報で再開・対応状況を公表。",
+  "url": "https://www.athome.co.jp/corporate/news/topics/oshirase-202602/",
+  "src": "公式",
+  "category": "real_estate",
+  "contact": {
+   "name": "アットホームカスタマーセンター",
+   "tels": [
+    "0120-337-189"
+   ],
+   "hours": "9:00〜17:00（日祝・夏季・年末年始を除く）"
+  },
+  "contact_source": "https://www.athome.co.jp/corporate/news/topics/oshirase-202602/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-07",
+  "date_label": "2026年8月7日",
+  "org": "デジタル庁",
+  "service": "国家資格等情報連携システム",
+  "kana": "デジタル庁 国家資格等情報連携システム",
+  "count": "150人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "ログイン履歴ファイルを別の省庁担当へ誤送付。氏名、ユーザーID、所属等のコードが対象。送付先で第三者への転送がなく削除済みと確認。",
+  "url": "https://www.digital.go.jp/news/6d720c40-a064-4e48-a698-c8123ba53299",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-31",
+  "date_label": "2026年3月31日",
+  "org": "消費者庁",
+  "service": "給与支払報告書",
+  "kana": "消費者庁 給与支払報告書",
+  "count": "職員8人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "生年月日",
+   "その他（詳細は出典）"
+  ],
+  "note": "給与支払報告書の居住地転記ミスで別自治体へ送信。個人番号と給与支払額等を含む。el-taxで無効手続を実施したが受領済みデータの削除は発表されていない。",
+  "url": "https://www.caa.go.jp/notice/entry/045704/",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-24",
+  "date_label": "2026年9月24日",
+  "org": "大阪市立美術館",
+  "service": "大阪市立美術館の講座連絡",
+  "kana": "大阪市立美術館 大阪市立美術館の講座連絡",
+  "count": "30人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス"
+  ],
+  "note": "講座受講者のグループアドレスを誤って宛先に指定し、互いに氏名とメールアドレスを確認できる状態で送信。",
+  "url": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000687654.html",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-15",
+  "date_label": "2026年7月15日",
+  "org": "GovTech東京",
+  "service": "東京アプリ問い合わせ窓口",
+  "kana": "GovTech東京 東京アプリ問い合わせ窓口",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス"
+  ],
+  "note": "東京アプリの問い合わせ対応で、委託先が利用者Aの情報を利用者Bへ誤送信。送信先へ削除を依頼。",
+  "url": "https://www.govtechtokyo.or.jp/news/2026/07/15/5185/",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-12",
+  "date_label": "2026年8月12日",
+  "org": "ヨネックス",
+  "service": "ヨネックス公式オンラインショップ",
+  "kana": "ヨネックス ヨネックス公式オンラインショップ",
+  "count": "不正ログイン3件、情報閲覧のおそれ1件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "性別",
+   "生年月日",
+   "購入・配送・利用履歴"
+  ],
+  "note": "外部で取得された認証情報を用いたリスト型攻撃。対象1件は配送先情報も含む。ヨネックスからパスワードが流出したとの発表ではない。",
+  "url": "https://www.yonex.co.jp/news/2026/4022.html",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "ヨネックス 本件お問い合わせフォーム",
+   "forms": [
+    {
+     "label": "本件指定フォーム",
+     "url": "https://www.yonex.co.jp/support/contact/other/"
+    }
+   ],
+   "hours": "平日9:30〜12:00、13:00〜17:00（所定休業日除く）"
+  },
+  "contact_source": "https://www.yonex.co.jp/news/2026/4022.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "旭化成セラピューティクス",
+  "service": "Pharma DIGITAL",
+  "kana": "旭化成セラピューティクス Pharma DIGITAL",
+  "count": "医療従事者の氏名・所属施設等 最大約51万4,000名／メールアドレス等を含む別区分 最大約4万4,000名／従業員 最大約700名",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "Pharma DIGITAL連携データベースへの不正アクセスです。医療従事者の所属施設名・施設住所・職種・診療科などと、従業員の写真が対象です。約4万4,000名はメールアドレス等を含む表の別区分で、各群を合算しません。個人の自宅住所が対象とは公表されていません。カード情報と要配慮個人情報は保管していません。閲覧・取得は可能性の段階です。",
+  "url": "https://www.asahi-kasei.co.jp/pharma/oshirase_20261006.html",
+  "src": "公式",
+  "category": "health",
+  "contact": {
+   "name": "株式会社医薬情報ネットセキュリティ事案お問い合わせ受付窓口",
+   "tels": [
+    "0120-88-2566"
+   ],
+   "emails": [
+    "security_team@pin-japan.com"
+   ],
+   "forms": [
+    {
+     "label": "本件指定フォーム",
+     "url": "https://x.gd/J0FpK"
+    }
+   ],
+   "note": "電話番号は2026年10月8日以降の本件窓口"
+  },
+  "contact_source": "https://www.asahi-kasei.co.jp/pharma/oshirase_20261006.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "ナカバヤシ",
+  "service": "ApplyNow採用管理",
+  "kana": "ナカバヤシ ApplyNow採用管理",
+  "count": "応募者情報1,826件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "メールアドレス",
+   "電話番号",
+   "生年月日",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "ApplyNow提供元は応募者情報の外部漏えいの可能性と報告。職業を含み、動画データは対象外と発表。",
+  "url": "https://www.nakabayashi.co.jp/news/2026/info/1384",
+  "src": "公式",
+  "category": "work_education",
+  "contact": {
+   "name": "ApplyNow お客様サポート事務室",
+   "tels": [
+    "0120-401-373"
+   ],
+   "emails": [
+    "support_biz@applynow.co.jp"
+   ],
+   "hours": "9:00〜18:00（全日）"
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-07",
+  "date_label": "2026年10月7日",
+  "org": "戸田建設",
+  "service": "支払い管理システム等",
+  "kana": "戸田建設 支払い管理システム等",
+  "count": "取引先担当者のメールアドレス 最大7,200件／取引データ 最大6,000件／従業員 4,778名分",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "支払い管理システム等からの情報漏えいの形跡を確認しています。取引先担当者のメールアドレス、取引データ、従業員の氏名・住所・電話番号・メールアドレス・所属部署は別の対象群です。取引データ6,000件を6,000人と扱わず、各群を合算しません。影響の全容は調査中です。",
+  "url": "https://www.toda.co.jp/news/2026/20261007_006350.html",
+  "src": "公式",
+  "category": "other",
+  "contact": {
+   "name": "本件に関するお問い合わせ窓口",
+   "emails": [
+    "security_m@toda.co.jp"
+   ],
+   "tels": [
+    "0120-805-106"
+   ],
+   "note": "取引先・従業員等の関係者向け。"
+  },
+  "contact_source": "https://www.toda.co.jp/news/2026/20261007_006350.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "アクティブ",
+  "service": "通販サイト",
+  "kana": "アクティブ 通販サイト",
+  "count": "顧客・受注情報 最大54,916件",
+  "status": "可能性",
+  "items": [
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
+  ],
+  "note": "通販サイトで不正作成された管理者アカウントからデータ出力の形跡。店名・屋号、注文商品・金額・配送先等を含み、氏名は項目として明記されていない。カード・口座・パスワードは対象外。",
+  "url": "https://www.active-pro.jp/news/4303/",
+  "src": "公式",
+  "category": "food",
+  "contact": {
+   "name": "アクティブ お客様相談室",
+   "tels": [
+    "0120-30-6550"
+   ],
+   "hours": "平日9:00〜17:30",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://shop.active-pro.jp/contact"
+    }
+   ],
+   "note": "プロ向け通販の利用者窓口。"
+  },
+  "contact_source": "https://www.active-pro.jp/news/4303/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "エバーグリーン・マーケティング",
+  "service": "取引先・法人顧客メール",
+  "kana": "エバーグリーン・マーケティング 取引先・法人顧客メール",
+  "count": "取引先237件、法人顧客763件",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "住所",
+   "口座情報",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "従業員メールの不正利用後、保存情報が閲覧された可能性。口座情報と電気料金請求額は法人顧客側の区分で、一部口座名義に個人名を含む。",
+  "url": "https://www.egmkt.co.jp/newsroom/news/2026/10982/",
+  "src": "公式",
+  "category": "energy",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "霧島市",
+  "service": "子ども医療給付受給資格者証",
+  "kana": "霧島市 子ども医療給付受給資格者証",
+  "count": "児童・保護者の情報（人数の明記なし）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "生年月日",
+   "家族情報"
+  ],
+  "note": "子ども医療給付受給資格者証を別住所へ誤配達し、開封後に回収。生年月日は児童側の情報。診療内容や個人番号の記載は発表されていない。",
+  "url": "https://www.city-kirishima.jp/soumu/kojinnjyouhou/rouei/documents/2026_10_6kosodatesiennka.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "気象キャスターネットワーク",
+  "service": "会員・催事・問い合わせサイト",
+  "kana": "気象キャスターネットワーク 会員・催事・問い合わせサイト",
+  "count": "最大15,959件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "住所",
+   "電話番号"
+  ],
+  "note": "入会・催事申込・問い合わせの登録情報。住所・電話番号は一部の登録に限る。",
+  "url": "https://weathercaster.jp/notices/20261006_notice.pdf",
+  "src": "公式",
+  "category": "media_entertainment",
+  "contact": {
+   "name": "気象キャスターネットワーク事務局 本件お問い合わせ",
+   "emails": [
+    "wcn-privacy@weathercaster.jp"
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "山口大学",
+  "service": "教職員メール",
+  "kana": "山口大学 教職員メール",
+  "count": "連絡先967件、不審メール463宛先",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス"
+  ],
+  "note": "教職員1名の認証情報がフィッシングで窃取され、連絡先を取得。967件中336件はメールのみ。パスワードは当該教職員のものに限る。 窃取されたパスワードは原因となった教職員1人の認証情報で、連絡先967件のパスワードではありません。",
+  "url": "https://www.yamaguchi-u.ac.jp/news/52728/index.html",
+  "src": "公式",
+  "category": "work_education",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "関西国際大学",
+  "service": "eポートフォリオ",
+  "kana": "関西国際大学 eポートフォリオ",
+  "count": "対象人数は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "2023年3月までに在籍した学生の経験・振り返り等の文字情報が流出。氏名・学籍番号との結び付きや在学生への影響は調査中。 氏名・学籍番号を含むか、個人識別情報と結び付くかは調査中です。",
+  "url": "https://www.kuins.ac.jp/news/2026/10/post_1450.html",
+  "src": "公式",
+  "category": "work_education",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-04",
+  "date_label": "2026年10月4日",
+  "org": "日経BP",
+  "service": "従業員メール",
+  "kana": "日経BP 従業員メール",
+  "count": "氏名・メールアドレス26件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス"
+  ],
+  "note": "従業員メールがフィッシングで侵害。送受信先の連絡先26件が対象のおそれで、従業員の認証情報窃取とは別に扱う。",
+  "url": "https://www.nikkeibp.co.jp/atcl/newsrelease/corp/100200417/",
+  "src": "公式",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "特別徴収税額決定通知",
+  "kana": "長崎市 特別徴収税額決定通知",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "長崎市上半期一覧の1番。特別徴収税額決定通知書を同名の別事業者へ誤送付。具体的な全項目は公表されていない。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "創業支援同意書",
+  "kana": "長崎市 創業支援同意書",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所"
+  ],
+  "note": "長崎市上半期一覧の2番。創業支援同意書のひな型の代わりに第三者の氏名・住所入りデータをメール送信。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "屋外広告物申請書",
+  "kana": "長崎市 屋外広告物申請書",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "勤務先・所属"
+  ],
+  "note": "長崎市上半期一覧の3番。別法人の職員氏名入りの屋外広告物申請書を誤同封。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "施設利用許可証等",
+  "kana": "長崎市 施設利用許可証等",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "その他（詳細は出典）"
+  ],
+  "note": "長崎市上半期一覧の4番。別団体へ代表者・担当者の氏名と連絡先のある利用許可証等を誤送付。連絡先の種別は未記載。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "集団健診予約者名簿",
+  "kana": "長崎市 集団健診予約者名簿",
+  "count": "69人",
+  "status": "調査中",
+  "items": [
+   "氏名",
+   "生年月日",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "長崎市上半期一覧の5番。健診予約者名簿を会場に残置。第三者閲覧・回収の有無と健診結果の記載は公表資料にない。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "資源回収奨励金書類",
+  "kana": "長崎市 資源回収奨励金書類",
+  "count": "1人",
+  "status": "調査中",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号"
+  ],
+  "note": "長崎市上半期一覧の6番。資源回収奨励金の提出書類を紛失。第三者取得と回収の有無は公表資料にない。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "リサイクル推進員書類",
+  "kana": "長崎市 リサイクル推進員書類",
+  "count": "6人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "その他（詳細は出典）"
+  ],
+  "note": "長崎市上半期一覧の7番。リサイクル推進員の辞令書・推進員証を2自治会間で取り違えて送付。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-08",
+  "date_label": "2026年9月8日",
+  "org": "長崎市",
+  "service": "マイナンバーカード特急発行書類",
+  "kana": "長崎市 マイナンバーカード特急発行書類",
+  "count": "4人",
+  "status": "調査中",
+  "items": [
+   "氏名",
+   "生年月日",
+   "家族情報",
+   "その他（詳細は出典）",
+   "性別",
+   "住所",
+   "電話番号"
+  ],
+  "note": "カード特急発行の申請書、出生届・母子手帳の写しが所在不明。誤廃棄の可能性が高いと市は説明。個人番号の記載はなく、外部取得は未確認。 出生児の性別・出生場所の住所、父の携帯電話番号、母の妊娠週数等を含み、個人番号は含まれません。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624631_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "イベント招待文",
+  "kana": "長崎市 イベント招待文",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所"
+  ],
+  "note": "長崎市上半期一覧の9番。民生委員向けイベント案内を別の委員の封筒へ誤同封。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-06",
+  "date_label": "2026年10月6日",
+  "org": "長崎市",
+  "service": "特別徴収税額変更通知",
+  "kana": "長崎市 特別徴収税額変更通知",
+  "count": "1人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "長崎市上半期一覧の10番。特別徴収税額変更通知書を別事業者へ誤送付。切替後の税額等を含む。",
+  "url": "https://www.city.nagasaki.lg.jp/uploaded/life/92629_624655_misc.pdf",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-07",
+  "date_label": "2026年10月7日",
+  "org": "IDCフロンティア",
+  "service": "IDCFクラウド東日本リージョン1",
+  "kana": "IDCフロンティア IDCFクラウド東日本リージョン1",
+  "count": "影響495の企業・自治体",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "IDCFクラウド東日本リージョン1へのランサムウェア攻撃と障害。495は契約先数で漏えい人数ではない。個人情報流出は公表資料で確認できない。",
+  "url": "https://www.idcf.jp/news/topics/20261007002",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-07",
+  "date_label": "2026年10月7日（10月9日に第2報）",
+  "org": "日水物流",
+  "service": "日水物流の入出荷システム",
+  "kana": "日水物流 日水物流の入出荷システム",
+  "count": "被害サーバーに個人情報・顧客情報なし",
+  "status": "対象情報なし",
+  "items": [],
+  "note": "10月9日の第2報で、被害サーバーにニッスイグループが管理する個人情報・顧客情報は含まれないと確認。IDCフロンティア側の攻撃による同一障害の続報です。入出荷障害は継続し、同日一部再開しています。",
+  "url": "https://www.nissui.co.jp/news/20261009.html",
+  "src": "公式",
+  "category": "transport",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-26",
+  "date_label": "2026年9月26日",
+  "org": "京王電鉄グループ",
+  "service": "グループ営業系システム",
+  "kana": "京王電鉄グループ グループ営業系システム",
+  "count": "対象人数・項目は未公表",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "グループの一部営業系システムにランサムウェアによる障害。鉄道運行への影響はない。情報漏えいは発表時点で未確認。",
+  "url": "https://www.keio.co.jp/news/update/announce/nr260926v13404/",
+  "src": "公式",
+  "category": "transport",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-19",
+  "date_label": "2026年8月19日",
+  "org": "日本交通",
+  "service": "配車・予約等の社内システム",
+  "kana": "日本交通 配車・予約等の社内システム",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [],
+  "note": "不正アクセス後に保有ファイルの一部が外部流出。個人情報の内容・対象範囲は調査中で、ファイル流出を個人情報流出と同一視しない。",
+  "url": "https://www.nihon-kotsu.co.jp/news/20260819-3385/",
+  "src": "公式",
+  "category": "transport",
+  "contact": {
+   "name": "日本交通 不正アクセスに関するお問い合わせ窓口",
+   "tels": [
+    "0120-009-098"
+   ],
+   "hours": "平日9:00〜17:00（土日祝除く）"
+  },
+  "contact_source": "https://www.nihon-kotsu.co.jp/news/20260819-3385/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-06-24",
+  "date_label": "2026年6月24日",
+  "org": "マルタケ",
+  "service": "業務システム",
+  "kana": "マルタケ 業務システム",
+  "count": "対象人数・項目は調査中",
+  "status": "確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "データ持ち出し後、取引先・株主・役職員等の情報が外部公開。具体的な個人情報項目と対象人数は公表資料では特定できない。",
+  "url": "https://www.kk-marutake.co.jp/2026/06/24/6737",
+  "src": "公式",
+  "category": "health",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-19",
+  "date_label": "2026年8月19日",
+  "org": "ジェックス",
+  "service": "問い合わせ情報",
+  "kana": "ジェックス 問い合わせ情報",
+  "count": "連絡先等77,619件、氏名のみ1,360件",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス"
+  ],
+  "note": "顧客問い合わせ情報が侵入者に一時閲覧可能。外部へのデータ流出・不正利用の事実は確認されていない。",
+  "url": "https://www.gex-fp.co.jp/news/20260819/",
+  "src": "公式",
+  "category": "retail",
+  "contact": {
+   "name": "ジェックス ランサムウェア被害に関するお問い合わせ窓口",
+   "tels": [
+    "0120-787-858"
+   ],
+   "hours": "平日10:00〜16:00"
+  },
+  "contact_source": "https://www.gex-fp.co.jp/news/20260819/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-21",
+  "date_label": "2026年7月21日",
+  "org": "精電舎電子工業",
+  "service": "社内ネットワーク",
+  "kana": "精電舎電子工業 社内ネットワーク",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "ADサーバーのデータ送信は確認。他機器の顧客・取引先情報の送信痕跡は未確認。個人情報の対象範囲は示されていない。",
+  "url": "https://www.sedeco.co.jp/news/detail/?dispmid=567&itemid=111",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-28",
+  "date_label": "2026年8月28日",
+  "org": "T&K TOKA",
+  "service": "業務システム",
+  "kana": "T&K TOKA 業務システム",
+  "count": "対象人数・項目は未公表",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "一部システムがランサムウェア被害で業務停止。個人情報の流出や対象項目は原発表で確認できない。",
+  "url": "https://www.toka-global.com/news/detail/post_210.html",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-02",
+  "date_label": "2026年10月2日",
+  "org": "池上通信機",
+  "service": "社内サーバー",
+  "kana": "池上通信機 社内サーバー",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "同社保有とみられる情報が外部掲載。内容と個人情報の有無・範囲を調査中。",
+  "url": "https://www.ikegami.co.jp/news/detail/574/",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-21",
+  "date_label": "2026年7月21日",
+  "org": "新エフエイコム",
+  "service": "取引関連情報",
+  "kana": "新エフエイコム 取引関連情報",
+  "count": "対象人数・項目は調査中",
+  "status": "可能性",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "認証情報窃取を経て侵入。一部取引先の個人情報を含む取引情報が閲覧・取得された可能性がある。具体的な項目は未公表。",
+  "url": "https://www.okaya.co.jp/newsreleases/2026/1277",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-18",
+  "date_label": "2026年9月18日",
+  "org": "ニチレイグループ",
+  "service": "グループ物流・業務システム",
+  "kana": "ニチレイグループ グループ物流・業務システム",
+  "count": "配送先3,308件、取引先6,849件、従業員等43,709件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "勤務先・所属",
+   "家族情報",
+   "その他（詳細は出典）"
+  ],
+  "note": "区分間の重複有無は不明で合算しない。従業員側には給与・在留資格等も含むが、全項目が全員に含まれるわけではない。カード情報は対象外。",
+  "url": "https://www.nichirei.co.jp/news/2026/524.html",
+  "src": "公式",
+  "category": "transport",
+  "contact": {
+   "name": "ニチレイグループ 個人情報に関するお問い合わせ窓口",
+   "tels": [
+    "0120-12-4099"
+   ],
+   "emails": [
+    "N1000X074@nichirei.co.jp"
+   ],
+   "hours": "平日9:00〜17:00（土日祝除く）"
+  },
+  "contact_source": "https://www.nichirei.co.jp/news/2026/524.html",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-01-07",
+  "date_label": "2026年1月7日",
+  "org": "興和江守",
+  "service": "受発注システム",
+  "kana": "興和江守 受発注システム",
+  "count": "対象人数・項目は未公表",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "ランサムウェア障害で受発注・出荷に遅延。4月27日の続報でも明確な情報流出痕跡は未確認。",
+  "url": "https://www.emori.co.jp/wp-content/uploads/2026/01/information_20260107.pdf",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-01-29",
+  "date_label": "2026年1月29日",
+  "org": "カンバス",
+  "service": "ライセンス等のマイページ",
+  "kana": "カンバス ライセンス等のマイページ",
+  "count": "対象人数は未公表",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "ライセンス等のマイページとDBバックアップが暗号化。情報の外部送信可能性は低いが完全には否定できないとの発表。カード情報は非保有。",
+  "url": "https://canvass.co.jp/wp-content/uploads/2026/01/20260129_RansomwareReport.pdf",
+  "src": "公式",
+  "category": "telecom_it",
+  "contact": {
+   "name": "カンバス 情報流出お問い合わせ窓口",
+   "emails": [
+    "sales@canvass.co.jp"
+   ]
+  },
+  "contact_source": "https://canvass.co.jp/wp-content/uploads/2026/01/20260129_RansomwareReport.pdf",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-08-05",
+  "date_label": "2026年8月5日",
+  "org": "ソディック",
+  "service": "社内ネットワーク",
+  "kana": "ソディック 社内ネットワーク",
+  "count": "対象人数は未公表",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属"
+  ],
+  "note": "従業員・取引関係者の連絡先等が対象のおそれ。流出痕跡や不正利用・外部掲載は確認されていない。",
+  "url": "https://www.sodick.co.jp/pdf/260805130030_20260805_husei_saisyu_JP.pdf",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-11",
+  "date_label": "2026年3月11日",
+  "org": "日本スウェージロックFST",
+  "service": "社内ネットワーク",
+  "kana": "日本スウェージロックFST 社内ネットワーク",
+  "count": "対象人数・項目は未公表",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "ランサムウェアで受発注・出荷など全業務が停止。個人情報の漏えいについては原発表で確認できない。",
+  "url": "https://www.japan.swagelok.com/whatsnew/system.outage.notification2",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-04",
+  "date_label": "2026年3月4日",
+  "org": "アドバンテスト",
+  "service": "一部ITシステム",
+  "kana": "アドバンテスト 一部ITシステム",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "限定されたシステムが攻撃を受け一部を予防的に停止。データアクセス・持ち出しは調査中で、公開の兆候はないとの発表。",
+  "url": "https://www.advantest.com/en/news/2026/20260304.html",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-07-06",
+  "date_label": "2026年7月6日",
+  "org": "ワサビ",
+  "service": "WASABI SWITCH開発環境",
+  "kana": "ワサビ WASABI SWITCH開発環境",
+  "count": "実顧客の個人情報は含まれない",
+  "status": "対象情報なし",
+  "items": [],
+  "note": "開発DBと管理者情報、APIキー等の窃取を確認。パスワードは管理者のソルト付きハッシュ。実顧客の個人情報・注文データは含まれないと発表。 開発用ダミーデータと管理者パスワードハッシュ・APIキーの窃取は確認済みですが、実顧客の個人情報は含まれないと公表しています。",
+  "url": "https://wasabi-inc.biz/help/news/20260706-04/",
+  "src": "公式",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-03-02",
+  "date_label": "2026年3月2日",
+  "org": "トンボ飲料",
+  "service": "会計ソフト",
+  "kana": "トンボ飲料 会計ソフト",
+  "count": "仕入先口座情報（件数未公表）",
+  "status": "可能性",
+  "items": [
+   "口座情報"
+  ],
+  "note": "会計ソフトに登録された仕入先の銀行口座情報が対象のおそれ。追加の漏えい痕跡は確認されていない。",
+  "url": "https://www.tombow-b.jp/4029/",
+  "src": "公式",
+  "category": "food",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-05-11",
+  "date_label": "2026年5月11日",
+  "org": "ホクヨー",
+  "service": "社内システム",
+  "kana": "ホクヨー 社内システム",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "ランサムウェア障害は復旧済み。個人情報の流出については外部専門家が調査中。",
+  "url": "https://hokuyo2006.co.jp/common/docs/topics_260511.pdf",
+  "src": "公式",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-01",
+  "date_label": "2026年10月1日",
+  "org": "ローソン",
+  "service": "メールサーバー",
+  "kana": "ローソン メールサーバー",
+  "count": "不審メール約70万件（送信数）",
+  "status": "未確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "メールサーバーが不正利用された別事案。約70万件は不審メールの送信数で漏えい人数ではない。個人情報流出は発表時点で未確認。",
+  "url": "https://www.lawson.co.jp/contents/cont07/1532969_3310.html",
+  "src": "公式",
+  "category": "retail",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-05",
+  "date_label": "2026年10月5日",
+  "org": "アマナ",
+  "service": "社内ネットワーク",
+  "kana": "アマナ 社内ネットワーク",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "VPN経由の不正ログインを確認。一部操作ログが残らず個人情報への影響を調査中。対象項目と人数は未公表。",
+  "url": "https://amana.jp/news/6782/",
+  "src": "公式",
+  "category": "other",
+  "contact": {
+   "name": "アマナ セキュリティインシデント対応チーム",
+   "emails": [
+    "info-security@amana.co.jp"
+   ],
+   "note": "関係者向け本件窓口。"
+  },
+  "contact_source": "https://amana.jp/news/6782/",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-08",
+  "date_label": "2026年10月8日",
+  "org": "大阪歴史博物館",
+  "service": "大阪歴史博物館のボランティア連絡",
+  "kana": "大阪歴史博物館 大阪歴史博物館のボランティア連絡",
+  "count": "4人（うち氏名1人）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス"
+  ],
+  "note": "ボランティア連絡の再送時に4人の宛先をCCで誤送信。氏名は1人分に限る。大阪市立美術館の別事案とは区別する。",
+  "url": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000688772.html",
+  "src": "公式",
+  "category": "government",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-16",
+  "date_label": "2026年9月16日",
+  "org": "GMOグローバルサイン",
+  "service": "GMOトラスト・ログイン",
+  "kana": "GMOグローバルサイン GMOトラスト・ログイン",
+  "count": "暫定2,007社・37,747人",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "公開設定のクラウドストレージから第三者が取得。氏名・住所・電話が揃うのは請求先情報。ログイン・SSOパスワード、多要素認証情報、決済情報は含まれない。",
+  "url": "https://news.trustlogin.com/20260916",
+  "src": "公式",
+  "category": "telecom_it",
+  "contact": {
+   "name": "GMOトラスト・ログイン お客様窓口",
+   "tels": [
+    "03-4545-2303"
+   ],
+   "hours": "平日10:00〜18:00（土日祝除く）",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://trustlogin.com/contact/"
+    }
+   ],
+   "note": "法人向けID管理サービスの利用者窓口。"
+  },
+  "contact_source": "https://news.trustlogin.com/20260916",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日",
+  "org": "東日本旅客鉄道（JR東日本）",
+  "service": "えきねっと・大人の休日倶楽部（メール配信用外部サービス）",
+  "kana": "ひがしにほんりょかくてつどう じぇいあーるひがしにほん えきねっと おとなのきゅうじつくらぶ",
+  "category": "transport",
+  "count": "最大 えきねっと会員 約167万件／大人の休日倶楽部会員 約39万件",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "会員ID",
+   "カード情報の一部",
+   "生年月日"
+  ],
+  "note": "IDCフロンティア社への不正アクセスに伴う外部メール配信サービスの事案です。えきねっと（ビジネスえきねっとを除く）はメールアドレス、大人の休日倶楽部はメールアドレス・会員番号・クレジットカード有効期限・生年月日が対象です。氏名・住所・電話番号・クレジットカード番号は対象外です。電子メールログデータ等を第三者が閲覧・取得した可能性を否定できない段階で、実際の漏えい件数は未確定です。",
+  "url": "https://www.jreast.co.jp/press/2026/20261009_ho02.pdf",
+  "src": "公式",
+  "source_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-08",
+  "date_label": "2026年10月8日",
+  "org": "ユーザベース",
+  "service": "NewsPicks",
+  "kana": "ゆーざべーす にゅーずぴっくす newspicks",
+  "category": "media_entertainment",
+  "count": "件数未公表（対象範囲を調査中）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "勤務先・所属",
+   "メールアドレス",
+   "住所",
+   "電話番号",
+   "カード情報の一部"
+  ],
+  "note": "業務用管理ツールへの不正アクセスです。2026年10月8日までにサービスを利用したお客様の一部が対象で、クレジットカード関連は名義と番号の下3桁または下4桁などです。暗号化されたパスワードの漏えいは確認されていません。対象人数と漏えいの有無・範囲は調査中です。",
+  "url": "https://newspicks.com/news/17661120/body/",
+  "src": "公式",
+  "contact": {
+   "name": "NewsPicks 本件に関するお客様お問い合わせ窓口",
+   "emails": [
+    "info@newspicks.com"
+   ],
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://newspicks.zendesk.com/hc/ja/requests/new"
+    }
+   ]
+  },
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-10-08",
+  "date_label": "2026年10月8日",
+  "org": "フューチャーショップ",
+  "service": "future Scenario Cast・futureCartRecovery",
+  "kana": "ふゅーちゃーしょっぷ future Scenario Cast futureCartRecovery",
+  "category": "telecom_it",
+  "count": "対象件数・期間は調査中（情報流出の有無も未確認）",
+  "status": "調査中",
+  "items": [
+   "メールアドレス",
+   "氏名",
+   "生年月日",
+   "会員ID"
+  ],
+  "note": "委託先のIDCFクラウドが攻撃を受け、両サービスのメール配信を予防的に停止しました。同クラウドのメール送信用サーバーには宛先メールアドレスと、一部のメール本文中の氏名・誕生日・会員IDが保存されていましたが、情報流出の有無と対象期間を調査中です。データは保存時に暗号化され、送信から14日間で自動削除されます。住所・電話番号は別サーバーに保管され本件の対象外で、ログインパスワードとカード情報は対象サービスに連携されていません。",
+  "url": "https://www.future-shop.jp/news/2026/10/08.html",
+  "src": "公式",
+  "source_checked_on": "2026-10-09"
  }
 ]

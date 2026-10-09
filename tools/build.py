@@ -62,6 +62,7 @@ TAG_TO_PLAN = {
     "家族情報": "family", "カード情報": "card", "認証トークン": "token", "保存ファイル・画像": "files",
 }
 STATUS = {
+    "対象情報なし": ("s-unconfirmed", "対象に個人情報なし"),
     "確認": ("s-confirmed", "漏えい確認"),
     "可能性": ("s-possible", "可能性・おそれ"),
     "調査中": ("s-investigating", "調査中"),
@@ -159,7 +160,7 @@ def tel_href(tel: str) -> str:
 
 def contact_html(e: dict) -> str:
     c = e.get("contact")
-    official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
+    official = e.get("contact_source") or e.get("official") or (e["url"] if e["src"] == "公式" else None)
     src_link = (
         f'<a href="{esc(official)}" rel="noopener">公式発表で確認</a>' if official else ""
     )
@@ -195,18 +196,18 @@ def breach_cards(entries: list[dict]) -> str:
     for e in sorted(entries, key=lambda x: x["date"], reverse=True):
         tags = e["items"]
         keys = sorted({k for k, v in FILTER_KEYS.items() if v & set(tags)})
-        plan = sorted({TAG_TO_PLAN[t] for t in tags if t in TAG_TO_PLAN}) or ["unknown"]
+        plan = [] if e["status"] == "対象情報なし" else (sorted({TAG_TO_PLAN[t] for t in tags if t in TAG_TO_PLAN}) or ["unknown"])
         st_cls, st_label = STATUS[e["status"]]
         tag_html = "".join(
             f'<li class="{TAG_CLASS.get(t, "")}">{esc(t)}</li>' if TAG_CLASS.get(t) else f"<li>{esc(t)}</li>"
             for t in tags
         )
         if not tags:
-            tag_html = '<li>対象項目は未公表</li>'
+            tag_html = '<li>対象に個人情報は含まれないと公表</li>' if e["status"] == "対象情報なし" else '<li>対象項目は未公表</li>'
         search = " ".join([e["org"], e.get("service", ""), e.get("kana", "")])
         cls = "breach has-id" if "id" in keys else "breach"
         official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
-        links = [] if official == e["url"] else [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
+        links = [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
         if plan:
             links.append(f'<a href="plan.html#items={",".join(plan)}">この事案の対策を確認する</a>')
         service = f'<span class="muted">｜{esc(e["service"])}</span>' if e.get("service") else ""
@@ -269,7 +270,7 @@ ALLOWED_TAGS = {
     "氏名", "住所", "電話番号", "メールアドレス", "生年月日", "性別", "会員ID", "パスワード",
     "本人確認書類の画像", "免許証番号", "パスポート情報", "本人確認書類の番号",
     "カード情報の一部", "カード情報（番号・有効期限など）", "カード情報", "認証トークン", "保存ファイル・画像", "口座情報", "購入・配送・利用履歴", "家族情報", "勤務先・所属",
-    "その他（詳細は出典）",
+    "その他（詳細は出典）", "マイナンバー（個人番号）",
 }
 CONTACT_KEYS = {"name", "tels", "hours", "emails", "forms", "note"}
 
@@ -302,7 +303,7 @@ def validate(entries: list[dict]) -> None:
         for t in e.get("items", []) if isinstance(e.get("items"), list) else []:
             if t not in ALLOWED_TAGS:
                 errors.append(f"{where}: 未知のタグ {t}")
-        for k in ("url", "official"):
+        for k in ("url", "official", "contact_source"):
             if e.get(k) and not e[k].startswith("https://"):
                 errors.append(f"{where}: {k} は https:// で始めてください")
         c = e.get("contact")
