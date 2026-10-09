@@ -190,7 +190,6 @@ HERO_RE = re.compile(
 )
 TRUST = (
     '<ul class="trust" aria-label="このページについて">'
-    '<li>作成 生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></li>'
     "<li>事実には出典を明記</li>"
     "<li>最終更新 {updated}</li>"
     "</ul>"
