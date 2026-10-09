@@ -23,9 +23,21 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.event.pull_request.head.ref }}
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          if gh api -X DELETE "repos/${REPO}/git/refs/heads/${BRANCH}"; then
-            echo "Deleted ${BRANCH}"
+          git check-ref-format "refs/heads/${BRANCH}"
+          if [[ ! "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::Invalid original head SHA"
+            exit 1
+          fi
+          cleanup_dir=$(mktemp -d "${RUNNER_TEMP}/merged-branch.XXXXXX")
+          git init --quiet "$cleanup_dir"
+          cd "$cleanup_dir"
+          git remote add origin "https://github.com/${REPO}.git"
+          gh auth setup-git
+          # ref名の再利用やチェック後の更新も、サーバー側のSHA照合で保護する。
+          if git push --force-with-lease="refs/heads/${BRANCH}:${EXPECTED_SHA}" origin ":refs/heads/${BRANCH}"; then
+            echo "Deleted the original merged branch"
           else
-            echo "Branch ${BRANCH} was already deleted or could not be deleted"
+            echo "::warning::Branch was absent, changed, or could not be deleted; no unconditional deletion attempted"
           fi

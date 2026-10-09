@@ -67,6 +67,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .alertbar-tag { display: inline-block; margin-right: .6em; padding: 0 .5em; border-radius: 4px; background: var(--brand); color: #fff; font-weight: 700; font-size: .74rem; vertical-align: .08em; }
 
 .alertbar a { color: var(--link); font-weight: 700; }
+.alertbar-details { display: inline; }
+@media (max-width: 759px) { .alertbar-details { display: block; } }
 
 .site-header { background: var(--surface); border-top: 4px solid var(--brand); border-bottom: 1px solid var(--line); }
 .site-header .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; }

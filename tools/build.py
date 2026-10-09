@@ -11,6 +11,8 @@ import html
 import json
 import re
 import shutil
+import tempfile
+import uuid
 from collections import Counter
 from datetime import date
 import urllib.parse
@@ -330,22 +332,25 @@ def validate(entries: list[dict]) -> None:
         raise SystemExit("breaches.json の検査に失敗しました:\n  " + "\n  ".join(errors))
 
 
-def main() -> None:
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    (OUT / "assets").mkdir(parents=True)
+def build_into(output: Path) -> tuple[int, int, str]:
+    breaches = json.loads((SRC / "data" / "breaches.json").read_text(encoding="utf-8"))
+    validate(breaches)
+    pages = sorted((SRC / "pages").glob("*.html"))
+    required = {s for s, _ in NAV} | {"404"}
+    missing = required - {p.stem for p in pages}
+    if missing:
+        raise SystemExit(f"原稿がありません: {sorted(missing)}")
+    (output / "assets").mkdir(parents=True)
 
     for f in (SRC / "assets").iterdir():
         if f.is_file():
-            shutil.copy2(f, OUT / "assets" / f.name)
+            shutil.copy2(f, output / "assets" / f.name)
 
     ver = hashlib.sha256(
         (SRC / "assets" / "style.css").read_bytes() + (SRC / "assets" / "app.js").read_bytes()
     ).hexdigest()[:10]
 
     layout = (SRC / "layout.html").read_text(encoding="utf-8")
-    breaches = json.loads((SRC / "data" / "breaches.json").read_text(encoding="utf-8"))
-    validate(breaches)
     replacements = {
         "{{breach_cards}}": breach_cards(breaches),
         "{{breach_total}}": str(len(breaches)),
@@ -353,7 +358,6 @@ def main() -> None:
         "{{updated}}": UPDATED,
     }
 
-    pages = sorted((SRC / "pages").glob("*.html"))
     for p in pages:
         slug = p.stem
         meta, body = parse_page(p.read_text(encoding="utf-8"))
@@ -388,20 +392,40 @@ def main() -> None:
         leftover = re.findall(r"\{\{[a-z_]+\}\}", page)
         if leftover:
             raise SystemExit(f"{p.name}: unresolved placeholders {leftover}")
-        (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
+        (output / f"{slug}.html").write_text(page, encoding="utf-8")
 
     urls = "".join(
         f"<url><loc>{BASE_URL if s == 'index' else BASE_URL + s + '.html'}</loc><lastmod>{UPDATED_ISO}</lastmod></url>"
         for s, _ in NAV
     )
-    (OUT / "sitemap.xml").write_text(
+    (output / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n',
         encoding="utf-8",
     )
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}sitemap.xml\n", encoding="utf-8")
-    (OUT / ".nojekyll").write_text("", encoding="utf-8")
-    print(f"built {len(pages)} pages, {len(breaches)} breach entries -> {OUT.relative_to(ROOT)}/ (v={ver})")
+    (output / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}sitemap.xml\n", encoding="utf-8")
+    (output / ".nojekyll").write_text("", encoding="utf-8")
+    return len(pages), len(breaches), ver
+
+
+def main() -> None:
+    # 生成中のエラーでは配信済みのdocsを触らない。
+    with tempfile.TemporaryDirectory(prefix=".site-build-", dir=ROOT) as temp:
+        stage = Path(temp) / "docs"
+        page_count, breach_count, ver = build_into(stage)
+        # 復元にも失敗した場合はバックアップを削除せず、回復可能なまま残す。
+        previous = ROOT / (".site-previous-" + uuid.uuid4().hex)
+        if OUT.exists():
+            OUT.rename(previous)
+        try:
+            stage.rename(OUT)
+        except BaseException:
+            if previous.exists():
+                previous.rename(OUT)
+            raise
+        if previous.exists():
+            shutil.rmtree(previous)
+    print(f"built {page_count} pages, {breach_count} breach entries -> {OUT.relative_to(ROOT)}/ (v={ver})")
 
 
 if __name__ == "__main__":

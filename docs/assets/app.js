@@ -4,14 +4,25 @@
   "use strict";
 
   var STORE_PREFIX = "moreta:";
+  function storageWarning() {
+    if (document.getElementById("storage-warning")) return;
+    var main = document.querySelector("main .prose") || document.querySelector("main");
+    if (!main) return;
+    var warning = document.createElement("p");
+    warning.id = "storage-warning";
+    warning.className = "callout warn";
+    warning.setAttribute("role", "status");
+    warning.textContent = "このブラウザではチェックの記録を保存できません。今の画面ではチェックできますが、再読込すると記録が失われる場合があります。必要なら画面を印刷して残してください。";
+    main.insertBefore(warning, main.firstChild);
+  }
   function load(key) {
-    try { return window.localStorage.getItem(STORE_PREFIX + key); } catch (e) { return null; }
+    try { return window.localStorage.getItem(STORE_PREFIX + key); } catch (e) { storageWarning(); return null; }
   }
   function save(key, value) {
     try {
       if (value === null) window.localStorage.removeItem(STORE_PREFIX + key);
       else window.localStorage.setItem(STORE_PREFIX + key, value);
-    } catch (e) { /* 保存できない環境でも表示は続ける */ }
+    } catch (e) { storageWarning(); }
   }
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $all(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
