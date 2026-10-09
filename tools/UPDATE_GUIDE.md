@@ -12,12 +12,18 @@ git checkout main
 git pull --ff-only origin main
 git log -1 --format='%cI %s' origin/main   # 前回の更新時刻
 
-# コミットの作成者はリポジトリのオーナーにする（必須）
-git config user.name "Ikki Shoka"
-git config user.email "16469483+skikkh@users.noreply.github.com"
+# git config の user.name / user.email は変えない（コミッターは Claude のまま。署名が付く）
+git config --unset user.name 2>/dev/null; git config --unset user.email 2>/dev/null
 ```
 
-コミットメッセージの末尾には、セッションの案内どおり Claude を共同作成者（Co-Authored-By）として付けてよい。作成者（author）は必ず上の設定にする。
+**コミットの作成者（author）はリポジトリのオーナーにする（必須）。** 次のように `--author` を付けてコミットする。
+コミッターは環境の設定（Claude）のままにする。そうすると署名が付き、GitHub で「Verified」と表示される。
+
+```sh
+git commit --author="Ikki Shoka <16469483+skikkh@users.noreply.github.com>" -m "..."
+```
+
+コミットメッセージの末尾には、セッションの案内どおり Claude を共同作成者（Co-Authored-By）として付けてよい。
 
 `src/pages/about.html` の「更新履歴」と `src/data/breaches.json` を読み、すでに載っている事案を把握します。
 
