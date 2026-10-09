@@ -90,11 +90,15 @@ git commit --author="Ikki Shoka <16469483+skikkh@users.noreply.github.com>" -m "
 4. `tools/build.py` の `UPDATED`（例：`2026年10月9日`）と `UPDATED_ISO` を日本時間の今日にする
 5. `src/pages/about.html` の「更新履歴」の先頭に1行足す
    例：`<li>2026年10月10日：漏えい事案に〇〇を追加。△△の窓口を更新</li>`
-6. `python3 tools/build.py` を実行する。検査に失敗したら直す
-7. 追加・変更したURLを `curl -sSL -o /dev/null -w '%{http_code}'` で確かめる。403 はボット対策のことがあるので、ブラウザ相当のUAで再確認する
-8. コミットして `git push origin HEAD:main`
+6. **公開前の敵対的監査（必須）**：追加・更新した行だけを、別のサブエージェント（Agent ツールで model に `fable` を指定）に渡し、
+   「すべて誤りである前提で、各社の公式発表と1項目ずつ照合して崩しにいく」よう依頼する。
+   監査役には、公式発表のURL、`status`・`count`・`items`・`contact` の各値を渡し、根拠（URLと原文の引用）付きで指摘を返させる。
+   指摘のうち根拠があるものはすべて反映する。根拠を確かめられない行は追加しない
+7. `python3 tools/build.py` を実行する。検査に失敗したら直す
+8. 追加・変更したURLを `curl -sSL -o /dev/null -w '%{http_code}'` で確かめる。403 はボット対策のことがあるので、ブラウザ相当のUAで再確認する
+9. コミットして `git push origin HEAD:main`
    拒否されたら `git pull --rebase origin main`。`docs/` が衝突したら `python3 tools/build.py` で作り直して解決し、再度 push（最大3回）
-9. 変更がなければ、何もコミットしない
+10. 変更がなければ、何もコミットしない
 
 ## 6. してはいけないこと
 
