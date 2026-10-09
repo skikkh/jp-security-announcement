@@ -35,8 +35,8 @@ description: 今回の大量漏えいで何が盗まれ、攻撃者はそれを�
 <table class="stack">
   <thead><tr><th scope="col">漏れた情報</th><th scope="col">あとから変えられるか</th><th scope="col">攻撃者にとっての使い道</th></tr></thead>
   <tbody>
-    <tr><th scope="row">パスワード</th><td data-label="変えられるか" class="yes">すぐ変えられる</td><td data-label="使い道">ほかのサービスへの不正ログイン。使い回しをやめれば無力化できる</td></tr>
-    <tr><th scope="row">メールアドレス</th><td data-label="変えられるか">手間はかかるが変えられる</td><td data-label="使い道">フィッシングの宛先。サービスごとに別アドレスにすれば無力化できる</td></tr>
+    <tr><th scope="row">パスワード</th><td data-label="変えられるか" class="yes">変更できる</td><td data-label="使い道">そのサービスや使い回した先への不正ログイン。流出・使い回しがあれば、それぞれ変更する</td></tr>
+    <tr><th scope="row">メールアドレス</th><td data-label="変えられるか">手間はかかるが変えられる</td><td data-label="使い道">フィッシングの宛先。別アドレスにしても、漏れた宛先への詐欺は続き得る</td></tr>
     <tr><th scope="row">電話番号</th><td data-label="変えられるか">変えにくい</td><td data-label="使い道">SMS詐欺、詐欺電話、SIM乗っ取りの入口</td></tr>
     <tr><th scope="row">住所</th><td data-label="変えられるか" class="no">ほぼ変えられない</td><td data-label="使い道">郵便・訪問による詐欺、名簿化、強盗の下見</td></tr>
     <tr><th scope="row">氏名・生年月日</th><td data-label="変えられるか" class="no">変えられない</td><td data-label="使い道">電話での「本人確認」の突破、信用させる材料</td></tr>
@@ -50,7 +50,7 @@ description: 今回の大量漏えいで何が盗まれ、攻撃者はそれを�
   <p>インターネット接続サービスのhi-hoでは、他社への乗り換えを勧誘する第三者が電話で顧客からログイン情報を聞き出し、38,509件（契約単位）の不正ログインが起きました。同社は、<strong>電話番号・郵便番号・生年月日でログインできる方式を廃止</strong>しました。「知っている情報」で本人確認をする仕組みが、もう通用しないことを示す例です。</p>
   <p class="src">出典：<a href="https://brand.hi-ho.jp/category/uncategorized/" rel="noopener">hi-ho お知らせ（2026年10月8日）</a></p>
 </div>
-<p>今回の漏えいの主役は、パスワードではなく<strong>「あなたが本人であることを示す情報」</strong>です。これまで銀行や携帯会社が電話で本人確認に使ってきた「氏名・住所・生年月日」は、もう秘密ではありません。消すことも変えることもできないので、守る対象を情報そのものから、<strong>情報がお金に変わる道筋</strong>へ移します。</p>
+<p>今回の漏えいには、パスワード以外に<strong>本人確認に使われ得る情報</strong>も含まれます。どの情報が漏れたかは事案ごとに違います。氏名・住所・生年月日だけを秘密の証拠にできないため、情報が悪用される道筋も点検します。</p>
 
 <h2 id="routes">攻撃者の5つの換金ルートと、断ち方</h2>
 <p>盗んだ情報は、それだけではお金になりません。攻撃者は次のどれかの道を通ってお金に変えます。どの道も、途中のどこかで断ち切れます。</p>
@@ -72,7 +72,7 @@ description: 今回の大量漏えいで何が盗まれ、攻撃者はそれを�
       <div class="arrow" aria-hidden="true"></div>
       <div class="step"><b>攻撃者の動き</b>同じ組み合わせでほかのサービスに自動ログイン。偽サイトでSMSコードをその場で横取りする</div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="step defense"><b>断ち方</b>サービスごとに別のパスワード。大事なサービスはパスキーに。<a href="accounts.html#passkey">パスキーとは</a></div>
+      <div class="step defense"><b>断ち方</b>長く、推測しにくい別々のパスワード。可能ならパスキー。SMSの追加認証も、認証なしより安全。<a href="accounts.html#passkey">パスキーとは</a></div>
     </div>
   </li>
   <li>
@@ -82,7 +82,7 @@ description: 今回の大量漏えいで何が盗まれ、攻撃者はそれを�
       <div class="arrow" aria-hidden="true"></div>
       <div class="step"><b>攻撃者の動き</b>偽造の身分証で携帯ショップに行き、SIMを再発行させる。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="step defense"><b>断ち方</b>携帯会社のIDのパスワードと、契約の暗証番号を見直す。大事なサービスの認証をSMS以外に。突然圏外になったらすぐ連絡。<a href="accounts.html#carrier">携帯電話の守り方</a></div>
+      <div class="step defense"><b>断ち方</b>携帯会社のIDのパスワードと、契約の暗証番号を見直す。対応していれば新しい認証と復旧方法を確認してからSMSを移す。突然圏外になったらすぐ連絡。<a href="accounts.html#carrier">携帯電話の守り方</a></div>
     </div>
   </li>
   <li>
@@ -117,8 +117,8 @@ description: 今回の大量漏えいで何が盗まれ、攻撃者はそれを�
 <table class="stack">
   <thead><tr><th scope="col">国の呼びかけ</th><th scope="col">評価</th><th scope="col">足りない点と、このサイトの対策</th></tr></thead>
   <tbody>
-    <tr><th scope="row">パスワードの使い回しをやめる</th><td data-label="評価">正しい</td><td data-label="足りない点">今回漏れた情報の大半はパスワードではない。これだけでは、詐欺、SIM乗っ取り、なりすまし契約、訪問は防げない</td></tr>
-    <tr><th scope="row">多要素認証を使う</th><td data-label="評価">正しいが、中身が大事</td><td data-label="足りない点">SMSの認証コードは、電話番号の乗っ取りと、偽サイトでコードを横取りする手口に弱い。2025年に証券口座の乗っ取りが多発した後、業界はフィッシングに強い認証（パスキー）を求める方向に進んだ。選べるならパスキー</td></tr>
+    <tr><th scope="row">パスワードの使い回しをやめる</th><td data-label="評価">正しい</td><td data-label="足りない点">事案によっては氏名や住所、本人確認書類なども漏れる。これだけでは、詐欺、SIM乗っ取り、なりすまし契約、訪問は防げない</td></tr>
+    <tr><th scope="row">多要素認証を使う</th><td data-label="評価">正しいが、中身が大事</td><td data-label="足りない点">SMSも認証なしより安全。ただし、電話番号の乗っ取りと、偽サイトでコードを横取りする手口に弱い。選べるならパスキーなど偽サイトに強い方式を使い、移行時は予備の手段も確認する</td></tr>
     <tr><th scope="row">不審なメールやSNSに注意する</th><td data-label="評価">方向は正しいが、実行が難しい</td><td data-label="足りない点">漏れた情報を使った詐欺は「不審に見えない」のが問題。見た目で見分ける方法は、いずれ破られる前提で考える。だから「届いた連絡からは動かない」という行動のルールにする</td></tr>
     <tr><th scope="row">「自分の情報は自分で守る」</th><td data-label="評価">誤解を生みやすい</td><td data-label="足りない点">企業に預けた情報は、個人では守れない。個人にできるのは、漏れても使えなくすること、被害の上限を決めること、早く気づくこと</td></tr>
   </tbody>

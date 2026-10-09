@@ -30,8 +30,8 @@ description: 2026年秋、国内で個人情報の大量漏えいが続いてい
 <p class="src">出典：<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ セキュリティ研究センター（2026年10月7日）</a>、<a href="https://www.jpcert.or.jp/at/2026/at260030.html" rel="noopener">JPCERT/CC 注意喚起（10月8日）</a>、各社の発表。件数は公表時点の数字で、今後変わることがあります。</p>
 
 <div class="callout engineer">
-  <span class="callout-title">今回漏れたのは、パスワードより「あなたが本人である証拠」です</span>
-  <p>パスワードは変えられます。でも、氏名・住所・生年月日・顔写真は変えられません。これまで「本人確認」に使われてきた情報が、もう秘密ではなくなりました。だから、守る対象を<strong>「情報そのもの」から「情報がお金に変わる道筋」</strong>に切り替えます。詳しくは<a href="threat.html">なぜこの対策なのか</a>で説明しています。</p>
+  <span class="callout-title">パスワード以外の情報も漏えいしています</span>
+  <p>漏れた項目は事案ごとに違います。氏名・生年月日・顔写真はパスワードのように変えられず、住所も簡単には変えられません。本人確認に使われ得る情報だけを秘密の証拠にせず、<strong>悪用される道筋</strong>に合わせて対策します。詳しくは<a href="threat.html">なぜこの対策なのか</a>で説明しています。</p>
 </div>
 
 <h2 id="principles">覚えておく3つの原則</h2>
@@ -51,18 +51,18 @@ description: 2026年秋、国内で個人情報の大量漏えいが続いてい
 </ol>
 
 <h2 id="today">今日の30分でやること</h2>
-<div class="callout warn"><span class="callout-title">被害が進行中なら、共通の点検より先に対応してください</span><p>不正な支払い・送金、カード番号の流出、パスワードの使い回し、突然の「圏外」などがあれば、<a href="help.html#first">被害時の初動</a>を優先してください。漏れた項目が分かる場合は<a href="plan.html">自分専用の対策</a>を作れます。</p></div>
+<div class="callout warn"><span class="callout-title">被害が進行中なら、共通の点検より先に対応してください</span><p>不正な支払い・送金や証券取引、カード番号やパスワードの流出、突然の「圏外」などがあれば、<a href="help.html#first">被害時の初動</a>を優先してください。金融機関に関わるときは連絡を急ぎます。漏れた項目が分かる場合は<a href="plan.html">自分専用の対策</a>を作れます。</p></div>
 <p>以下は被害が確認されていない人向けの共通の点検です。必要性と順番は、漏れた情報や利用中のサービスによって変わります。チェックを入れると、この端末に記録されます。</p>
 <div class="progress" data-progress-for="today"><span data-progress-text>0 / 6 完了</span><span class="bar"><span></span></span><button type="button" class="btn small" data-reset="today">チェックを消す</button></div>
 <ol class="checklist" data-checklist="today">
   <li>
-    <div class="check-head"><input type="checkbox" id="t1" data-save="today:mail"><label for="t1">メールを乗っ取られないようにする<span class="meta">約10分｜最優先｜パスワードの変更と2段階認証</span></label></div>
+    <div class="check-head"><input type="checkbox" id="t1" data-save="today:mail"><label for="t1">メールを乗っ取られないようにする<span class="meta">約10分｜最優先｜パスワードと追加の認証を点検</span></label></div>
     <details><summary>なぜ・やり方</summary>
-      <p class="why">ほぼすべてのサービスの「パスワード再設定」はメールに届きます。メールを取られると、ほかのアカウントを次々に取られます。メールは全アカウントの<strong>合鍵</strong>です。</p>
+      <p class="why">多くのサービスの「パスワード再設定」はメールに届きます。メールを取られると、ほかのアカウントも狙われます。メールは多くのアカウントの<strong>合鍵</strong>です。</p>
       <ul>
-        <li>Gmail、iCloud、Yahoo!メール、キャリアメールなど、普段使うメールのパスワードを、ほかで使っていない長いものに変える</li>
+        <li>Gmail、iCloud、Yahoo!メール、キャリアメールなど、普段使うメールのパスワードが長く、推測しにくく、ほかで使っていないものか確認する。流出・使い回し・不審なログインがあれば変える</li>
         <li>設定の「セキュリティ」から、<strong>パスキー</strong>か<strong>2段階認証</strong>をオンにする</li>
-        <li>再設定用の電話番号と予備のメールアドレスが、今も自分のものか確認する</li>
+        <li>再設定用の電話番号と予備のメールアドレスが、今も自分のものか確認する。不審なログインがあれば<a href="help.html#first">ログイン中の端末や転送設定も点検する</a></li>
       </ul>
     </details>
   </li>
@@ -114,10 +114,10 @@ description: 2026年秋、国内で個人情報の大量漏えいが続いてい
   <li>
     <div class="check-head"><input type="checkbox" id="t6" data-save="today:reuse"><label for="t6">漏えいしたサービスと同じパスワードを、ほかで使っていたら変える<span class="meta">約5分｜使い回し対策</span></label></div>
     <details><summary>なぜ・やり方</summary>
-      <p class="why">パスワードが暗号化されて保存されていても、短いものやよくあるものは解読されることがあります。解読されたパスワードは、ほかのサービスへのログインに自動で試されます。</p>
+      <p class="why">パスワードが流出した場合、保存方法によっても危険は変わります。元に戻せない形（ハッシュ化）で保存されていても、短いものやよくあるものは推測され得ます。メールアドレスだけが漏れた場合とは分けて考えます。</p>
       <ul>
-        <li>漏えいが公表されたサービスで使っていたパスワードを思い出す</li>
-        <li>同じ、または似たパスワードを使っているサービスを、メール、銀行・証券、買い物、SNSの順に変える</li>
+        <li>漏えいした項目にパスワードが含まれるか、サービスの公式発表で確認する</li>
+        <li>パスワードが漏れた、または使い回していた場合は、同じ・似たパスワードのサービスを、メール、銀行・証券、買い物、SNSの順に変える</li>
         <li>覚えきれない場合は、スマホに標準で入っているパスワード管理（iPhoneの「パスワード」アプリ、Googleパスワードマネージャー）に保存させる</li>
       </ul>
     </details>
@@ -126,10 +126,10 @@ description: 2026年秋、国内で個人情報の大量漏えいが続いてい
 
 <h2 id="week">今週中にやること</h2>
 <ul class="cards">
-  <li><a class="card" href="accounts.html#password"><span class="card-kicker">使い回しを根絶</span><span class="card-title">パスワード管理を使い、全部を別々にする</span><span class="card-body">1つ漏れても、ほかに広がらなくなります。</span></a></li>
-  <li><a class="card" href="accounts.html#passkey"><span class="card-kicker">偽サイトに強いログイン</span><span class="card-title">大事なサービスをパスキーに切り替える</span><span class="card-body">SMSの認証コードは横取りされることがあります。パスキーは偽サイトでは使えません。</span></a></li>
+  <li><a class="card" href="accounts.html#password"><span class="card-kicker">使い回しを根絶</span><span class="card-title">パスワード管理を使い、長く、ランダムで別々にする</span><span class="card-body">1つ漏れても、ほかへの悪用を防ぎやすくなります。</span></a></li>
+  <li><a class="card" href="accounts.html#passkey"><span class="card-kicker">偽サイトに強いログイン</span><span class="card-title">大事なサービスでパスキーを使う</span><span class="card-body">SMSも認証なしより安全です。パスキーを設定する際は復旧手段も確認します。</span></a></li>
   <li><a class="card" href="id.html"><span class="card-kicker">免許証などが漏れた人</span><span class="card-title">信用情報機関への本人申告を検討する</span><span class="card-body">カードやローンの審査で参考にされる制度です。機関ごとの受付条件と限界を確かめてください。</span></a></li>
-  <li><a class="card" href="accounts.html#carrier"><span class="card-kicker">SMS詐欺を減らす</span><span class="card-title">携帯会社の迷惑SMSフィルタをオンにする</span><span class="card-body">多くは無料です。危険なリンク付きのSMSを受信前に止めます。</span></a></li>
+  <li><a class="card" href="accounts.html#carrier"><span class="card-kicker">SMS詐欺を減らす</span><span class="card-title">携帯会社の迷惑SMSフィルタをオンにする</span><span class="card-body">多くは無料です。怪しいSMSの一部を受信前に止められます。</span></a></li>
   <li><a class="card" href="family.html#phone"><span class="card-kicker">固定電話がある家</span><span class="card-title">国際電話の発着信を無料で止める</span><span class="card-body">詐欺電話には国際電話番号がよく使われています。</span></a></li>
   <li><a class="card" href="delete.html"><span class="card-kicker">将来の漏えいを減らす</span><span class="card-title">使っていないサービスの退会と保存データを確認する</span><span class="card-body">退会後も一部の情報が残る場合があります。条件に合えば、利用停止や消去を請求できます。</span></a></li>
 </ul>
@@ -147,8 +147,8 @@ description: 2026年秋、国内で個人情報の大量漏えいが続いてい
 <h2 id="why">国の呼びかけだけでは足りない理由</h2>
 <p>デジタル大臣は10月6日、国民に「パスワードの使い回しをやめる」「多要素認証を使う」「不審なメールやSNSに注意する」の3つを呼びかけました。どれも正しい対策です。ただ、今回の漏えいの性質を考えると、それだけでは防げない被害があります。</p>
 <ul>
-  <li><strong>漏れた情報の多くは、パスワードではありません。</strong>住所、生年月日、免許証の画像は、パスワードを変えても守れません。</li>
-  <li><strong>SMSの認証コードは万全ではありません。</strong>電話番号の乗っ取りや、偽サイトでコードをその場で横取りする手口に弱いからです。</li>
+  <li><strong>漏れた情報は、パスワードだけではありません。</strong>住所、生年月日、免許証の画像は、パスワードを変えても守れません。</li>
+  <li><strong>SMSの認証コードは万全ではありません。</strong>認証なしより安全ですが、電話番号の乗っ取りや、偽サイトでコードをその場で横取りする手口に弱いからです。</li>
   <li><strong>漏れた情報を使った詐欺は、不審に見えません。</strong>見分ける力に頼らず、「届いた連絡からは動かない」という行動のルールで防ぎます。</li>
 </ul>
 <p><a href="threat.html">攻撃者の目線で見た、なぜこの対策なのか</a></p>
