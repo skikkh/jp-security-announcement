@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="漏れた後の守り方">
+  <path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#123b63"/>
+  <path d="M32 10.5 14 17.3V30c0 11.6 7.6 20.6 18 23.6 10.4-3 18-12 18-23.6V17.3L32 10.5Z" fill="#f6f5f1"/>
+  <path d="M32 18c-1.8 4.8-7 9.3-7 15a7 7 0 0 0 14 0c0-5.7-5.2-10.2-7-15Z" fill="#b3261e"/>
+  <path d="m26.5 45.5 11-11" stroke="#123b63" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

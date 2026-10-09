@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>自分専用の対策を作る ── 漏れた情報を選ぶだけ｜漏れた後の守り方</title>
+<meta name="description" content="漏れた（可能性がある）情報と、あなたの状況を選ぶと、今日・今週・これから続けることに分けた対策リストを作ります。入力内容はどこにも送信されません。">
+<link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/plan.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漏れた後の守り方">
+<meta property="og:title" content="自分専用の対策を作る ── 漏れた情報を選ぶだけ｜漏れた後の守り方">
+<meta property="og:description" content="漏れた（可能性がある）情報と、あなたの状況を選ぶと、今日・今週・これから続けることに分けた対策リストを作ります。入力内容はどこにも送信されません。">
+<meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/plan.html">
+<meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#123b63">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=cedd5bc39a">
+<script src="assets/app.js?v=cedd5bc39a" defer></script>
+</head>
+<body class="page-plan">
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="alertbar"><div class="wrap">2026年10月、国内で個人情報の大量漏えいが続いています。<a href="breaches.html">主な漏えい事案</a>｜最終更新 2026年10月9日</div></div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#123b63"/><path d="M32 10.5 14 17.3V30c0 11.6 7.6 20.6 18 23.6 10.4-3 18-12 18-23.6V17.3L32 10.5Z" fill="#f6f5f1"/><path d="M32 18c-1.8 4.8-7 9.3-7 15a7 7 0 0 0 14 0c0-5.7-5.2-10.2-7-15Z" fill="#b3261e"/><path d="m26.5 45.5 11-11" stroke="#123b63" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <span class="brand-text"><span class="brand-name">漏れた後の守り方</span><span class="brand-sub">個人情報漏えい 市民のための自衛ガイド</span></span>
+    </a>
+    <div class="header-right">
+      <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html" aria-current="page">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
+      <details class="menu-mobile">
+        <summary>メニュー</summary>
+        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html">トップ</a></li><li><a href="plan.html" aria-current="page">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">アカウントの守りを固める</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
+      </details>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap">
+<div class="prose">
+<p class="updated">最終更新 2026年10月9日</p>
+<h1>自分専用の対策を作る</h1>
+<p class="lead">漏れた（可能性がある）情報と、あなたの状況を選んでください。効く順に並べた対策リストを作ります。選んだ内容は、この端末の中だけで処理し、どこにも送信しません。</p>
+<p class="muted">企業からの通知に書かれた「漏えいした項目」を見ながら選ぶと正確です。通知が来ていなくても心配なら「わからない」を選んでください。</p>
+
+<form id="plan-form" class="no-print" autocomplete="off">
+  <fieldset>
+    <legend>漏れた（可能性がある）情報</legend>
+    <div class="opt-grid">
+      <label class="opt"><input type="checkbox" name="items" value="email"><span>メールアドレス</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="password"><span>パスワード<small>暗号化・ハッシュ化されたものを含む</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="phone"><span>電話番号</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="address"><span>氏名・住所</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="birth"><span>生年月日</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="idimg"><span>運転免許証・パスポート・マイナンバーカードなどの画像や番号</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="card"><span>クレジットカード情報<small>番号の一部や有効期限を含む</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="bank"><span>銀行や証券の口座情報</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="history"><span>購入・配送・予約・利用の履歴</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="family"><span>家族の情報</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="unknown"><span>わからない<small>通知は来ていないが心配</small></span></label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>あなたの状況（当てはまるもの）</legend>
+    <div class="opt-grid">
+      <label class="opt"><input type="checkbox" name="items" value="elderly"><span>高齢の家族がいる／自分が65歳以上</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="landline"><span>固定電話がある</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="netbank"><span>ネットバンキングやネット証券を使っている</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="qr"><span>スマホ決済（PayPayなど）を使っている</span></label>
+    </div>
+  </fieldset>
+  <div class="btn-row">
+    <button type="submit" class="btn primary">対策リストを作る</button>
+    <button type="reset" class="btn">選択を消す</button>
+  </div>
+</form>
+
+<section id="plan-result" aria-live="polite">
+  <noscript><p class="plan-empty">この機能はJavaScriptを使います。使えない場合は、<a href="index.html#today">今日の30分でやること</a>と、各ページをご覧ください。</p></noscript>
+</section>
+<div class="btn-row no-print" id="plan-tools" hidden>
+  <button type="button" class="btn" data-print>このリストを印刷する</button>
+  <button type="button" class="btn" data-copy-url>このリストのURLをコピー</button>
+</div>
+<p class="muted no-print" id="plan-share-note" hidden>URLには選んだ項目だけが入ります（例：#items=email,phone）。家族に送れば、同じリストを開けます。</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>漏れた後の守り方</h2>
+      <p>個人が運営する非公式の情報サイトです。政府・企業・各機関の公式発表を優先してください。事実関係には出典を付けています。最終更新：2026年10月9日。</p>
+      <p>このサイトは外部のスクリプト、アクセス解析、広告、Cookieを一切使っていません。チェックの記録は、あなたの端末の中にだけ保存されます。</p>
+      <p>誤りのご指摘：<a href="https://github.com/skikkh/jp-security-announcement/issues">GitHub Issues</a></p>
+    </div>
+    <div>
+      <h2>ページ一覧</h2>
+      <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html" aria-current="page">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">アカウントの守りを固める</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

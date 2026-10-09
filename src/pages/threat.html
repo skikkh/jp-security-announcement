@@ -1,0 +1,142 @@
+<!--meta
+title: なぜこの対策なのか ── 攻撃者の目線で見た今回の漏えい｜漏れた後の守り方
+description: 今回の大量漏えいで何が盗まれ、攻撃者はそれをどうお金に変えるのか。5つの換金ルートと、それぞれを断つ方法を、セキュリティエンジニアの目線で整理しました。
+-->
+<p class="updated">最終更新 {{updated}}</p>
+<h1>なぜこの対策なのか<br><small class="muted">攻撃者の目線で見た、今回の漏えい</small></h1>
+<p class="lead">このサイトの対策は、国の呼びかけを並べ直したものではありません。「盗まれた情報を、攻撃者はどうやってお金に変えるのか」から逆算して、断ち切る場所を選んでいます。</p>
+
+<nav class="toc" aria-label="このページの目次"><strong>このページの内容</strong>
+<ol>
+  <li><a href="#what">何が起きているか（事実）</a></li>
+  <li><a href="#nature">漏れたものの性質</a></li>
+  <li><a href="#routes">攻撃者の5つの換金ルートと断ち方</a></li>
+  <li><a href="#gov">国の呼びかけをどう見るか</a></li>
+  <li><a href="#limits">個人にできないこと</a></li>
+</ol></nav>
+
+<h2 id="what">何が起きているか（事実）</h2>
+<p>JPCERT/CC（国内のセキュリティ事故対応の調整機関）は10月8日、相次ぐ不正アクセスについて注意喚起を出しました。確認された手口は次のとおりです。</p>
+<ul>
+  <li><strong>既知の弱点や設定ミスを探す。</strong>ソフトウェアの公表済みの脆弱性や、設定ファイル・バックアップファイルの置きっぱなしを、標的ごとに探しています。</li>
+  <li><strong>スマホアプリを分解して、裏口のAPIを操作する。</strong>アプリの中から通信の宛先や鍵を見つけ出し、画面からはできない操作（権限の変更、アカウントの作成など）を実行します。</li>
+  <li><strong>分析ツールの脆弱性を突く。</strong>データ分析ツール「Metabase」の重大な脆弱性が悪用されました。分析ツールは、会員データベースの<strong>コピー</strong>につながっていることが多い点が重要です。</li>
+  <li><strong>サーバーに遠隔操作の仕掛けを置く。</strong>公開サーバーから届く内部のサーバーに、命令を実行させるファイルが置かれた例があります。</li>
+</ul>
+<p>マクニカの分析では、攻撃は特定企業を狙うのではなく、弱いシステムを広く探しています。2026年に公表された119件のうち81件が7月以降に集中しました。人工知能（AI）が攻撃に使われている可能性も指摘されていますが、断定はされていません。</p>
+<div class="callout engineer">
+  <span class="callout-title">個人の注意では止められない種類の攻撃です</span>
+  <p>あなたがどれだけ気をつけていても、情報を預けた先が破られれば漏れます。だから個人の対策は「漏れないようにする」ではなく、<strong>「漏れても被害にならないようにする」</strong>ことが中心になります。</p>
+</div>
+<p class="src">出典：<a href="https://www.jpcert.or.jp/at/2026/at260030.html" rel="noopener">JPCERT/CC「直近で相次いでいる国内組織における不正アクセスに関する注意喚起」（2026年10月8日、9日更新）</a>、<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ「相次ぐWEBシステムからの情報漏洩事案について」</a></p>
+
+<h2 id="nature">漏れたものの性質 ── 変えられるもの、変えられないもの</h2>
+<div class="table-wrap">
+<table class="stack">
+  <thead><tr><th scope="col">漏れた情報</th><th scope="col">あとから変えられるか</th><th scope="col">攻撃者にとっての使い道</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">パスワード</th><td data-label="変えられるか" class="yes">すぐ変えられる</td><td data-label="使い道">ほかのサービスへの不正ログイン。使い回しをやめれば無力化できる</td></tr>
+    <tr><th scope="row">メールアドレス</th><td data-label="変えられるか">手間はかかるが変えられる</td><td data-label="使い道">フィッシングの宛先。サービスごとに別アドレスにすれば無力化できる</td></tr>
+    <tr><th scope="row">電話番号</th><td data-label="変えられるか">変えにくい</td><td data-label="使い道">SMS詐欺、詐欺電話、SIM乗っ取りの入口</td></tr>
+    <tr><th scope="row">住所</th><td data-label="変えられるか" class="no">ほぼ変えられない</td><td data-label="使い道">郵便・訪問による詐欺、名簿化、強盗の下見</td></tr>
+    <tr><th scope="row">氏名・生年月日</th><td data-label="変えられるか" class="no">変えられない</td><td data-label="使い道">電話での「本人確認」の突破、信用させる材料</td></tr>
+    <tr><th scope="row">免許証などの画像</th><td data-label="変えられるか" class="no">番号の末尾と写真は再交付で変わる。顔と生年月日は変わらない</td><td data-label="使い道">偽造身分証の材料、なりすまし契約、詐欺の小道具</td></tr>
+    <tr><th scope="row">購入・配送・予約の履歴</th><td data-label="変えられるか" class="no">変えられない</td><td data-label="使い道">「本物らしさ」の演出。実際の注文に合わせた偽の連絡</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout danger">
+  <span class="callout-title">実例：生年月日でログインできた会員ページ</span>
+  <p>インターネット接続サービスのhi-hoでは、他社への乗り換えを勧誘する第三者が電話で顧客からログイン情報を聞き出し、38,509件（契約単位）の不正ログインが起きました。同社は、<strong>電話番号・郵便番号・生年月日でログインできる方式を廃止</strong>しました。「知っている情報」で本人確認をする仕組みが、もう通用しないことを示す例です。</p>
+  <p class="src">出典：<a href="https://brand.hi-ho.jp/category/uncategorized/" rel="noopener">hi-ho お知らせ（2026年10月8日）</a></p>
+</div>
+<p>今回の漏えいの主役は、パスワードではなく<strong>「あなたが本人であることを示す情報」</strong>です。これまで銀行や携帯会社が電話で本人確認に使ってきた「氏名・住所・生年月日」は、もう秘密ではありません。消すことも変えることもできないので、守る対象を情報そのものから、<strong>情報がお金に変わる道筋</strong>へ移します。</p>
+
+<h2 id="routes">攻撃者の5つの換金ルートと、断ち方</h2>
+<p>盗んだ情報は、それだけではお金になりません。攻撃者は次のどれかの道を通ってお金に変えます。どの道も、途中のどこかで断ち切れます。</p>
+<ol class="routes">
+  <li>
+    <div class="route-head"><strong>信じ込ませる（フィッシング・詐欺電話）</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>氏名、メール、電話、使っているサービス、注文や配送の内容</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>本物そっくりの「お詫び」「再登録」「不在通知」を送り、偽サイトで情報を入力させる</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>届いた連絡からは動かない。見分けようとせず、自分で公式の入口から確かめる。<a href="scams.html">便乗詐欺の手口</a></div>
+    </div>
+  </li>
+  <li>
+    <div class="route-head"><strong>ログインを奪う（使い回し・中継型フィッシング）</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>漏れたパスワード、メールアドレス</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>同じ組み合わせでほかのサービスに自動ログイン。偽サイトでSMSコードをその場で横取りする</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>サービスごとに別のパスワード。大事なサービスはパスキーに。<a href="accounts.html#passkey">パスキーとは</a></div>
+    </div>
+  </li>
+  <li>
+    <div class="route-head"><strong>電話番号を奪う（SIM乗っ取り）</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>氏名、住所、生年月日、免許証の画像</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>偽造の身分証で携帯ショップに行き、SIMを再発行させる。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>携帯会社のアカウントと暗証番号を固める。大事なサービスの認証をSMS以外に。突然圏外になったらすぐ連絡。<a href="accounts.html#carrier">携帯電話の守り方</a></div>
+    </div>
+  </li>
+  <li>
+    <div class="route-head"><strong>あなたになりすまして契約する</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>免許証などの画像、氏名、住所、生年月日</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>券面を目で見るだけの確認を偽造品で通り、カード、ローン、携帯、口座を契約する</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>信用情報機関への本人申告と、定期的な開示で早く気づく。<a href="id.html">免許証が漏れたら</a></div>
+    </div>
+  </li>
+  <li>
+    <div class="route-head"><strong>物理的に狙う（郵便・訪問・強盗）</strong></div>
+    <div class="route-flow">
+      <div class="step"><b>使う情報</b>住所、年齢、家族構成、購入履歴</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step"><b>攻撃者の動き</b>名簿にして売買する。業者や役所を名乗って訪問する。在宅状況や資産を電話で探る</div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="step defense"><b>断ち方</b>アポなしの訪問には開けない。電話で資産や在宅の話をしない。<a href="family.html">家族を守る</a></div>
+    </div>
+  </li>
+</ol>
+<div class="callout ok">
+  <span class="callout-title">すべてのルートに効く「最後の防壁」</span>
+  <p>振込限度額を下げる、カードと決済の通知をオンにする。この2つは、どのルートで破られても<strong>被害の上限</strong>を決め、<strong>早く気づく</strong>ことにつながります。手間に対して効果が最も大きい対策なので、トップページの「今日の30分」に入れています。</p>
+</div>
+
+<h2 id="gov">国の呼びかけを、エンジニアとしてどう見るか</h2>
+<p>デジタル大臣は10月6日の会見で、国民に3つの対策を呼びかけました。どれも正しい対策です。そのうえで、今回の漏えいに当てはめたときの足りない点を挙げます。</p>
+<div class="table-wrap">
+<table class="stack">
+  <thead><tr><th scope="col">国の呼びかけ</th><th scope="col">評価</th><th scope="col">足りない点と、このサイトの対策</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">パスワードの使い回しをやめる</th><td data-label="評価">正しい</td><td data-label="足りない点">今回漏れた情報の大半はパスワードではない。これだけでは、詐欺、SIM乗っ取り、なりすまし契約、訪問は防げない</td></tr>
+    <tr><th scope="row">多要素認証を使う</th><td data-label="評価">正しいが、中身が大事</td><td data-label="足りない点">SMSの認証コードは、電話番号の乗っ取りと、偽サイトでコードを横取りする手口に弱い。2025年に証券口座の乗っ取りが多発した後、業界はフィッシングに強い認証（パスキー）を求める方向に進んだ。選べるならパスキー</td></tr>
+    <tr><th scope="row">不審なメールやSNSに注意する</th><td data-label="評価">方向は正しいが、実行が難しい</td><td data-label="足りない点">漏れた情報を使った詐欺は「不審に見えない」のが問題。見た目で見分ける方法は、いずれ破られる前提で考える。だから「届いた連絡からは動かない」という行動のルールにする</td></tr>
+    <tr><th scope="row">「自分の情報は自分で守る」</th><td data-label="評価">誤解を生みやすい</td><td data-label="足りない点">企業に預けた情報は、個人では守れない。個人にできるのは、漏れても使えなくすること、被害の上限を決めること、早く気づくこと</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="src">出典：<a href="https://www.itmedia.co.jp/news/article/2610/06/2000002060/" rel="noopener">ITmedia NEWS（2026年10月6日）</a>、<a href="https://www.watch.impress.co.jp/docs/news/2146926.html" rel="noopener">Impress Watch（2026年10月8日）</a>、<a href="https://www.nippon.com/ja/in-depth/d01153/" rel="noopener">nippon.com 証券口座乗っ取りの解説</a></p>
+
+<h2 id="limits">個人にできないこと（正直に）</h2>
+<ul>
+  <li><strong>企業のデータベースに残った情報を、確実に消すこと。</strong>退会しても、履歴やバックアップに残ります。詳しくは<a href="delete.html">退会・削除・書き換えの真実</a>で説明します。</li>
+  <li><strong>漏えいそのものを止めること。</strong>攻撃されるのは、あなたの端末ではなく企業のシステムです。</li>
+  <li><strong>顔写真や生年月日を「無効」にすること。</strong>パスワードのように変更できません。</li>
+</ul>
+<p>だからこそ、市民として企業や行政に求めてよいことがあります。</p>
+<ul>
+  <li><strong>必要以上に集めない、必要がなくなったら消す。</strong>国家サイバー統括室と個人情報保護委員会も、10月に事業者へ同じことを求めています。</li>
+  <li><strong>本人確認書類の画像を長く保存しない。</strong>タイムズカーは退会後も免許証の画像を7年間保存しており、退会者も漏えいの対象になりました。</li>
+  <li><strong>本人確認を「知っているか」から「持っているか」へ。</strong>生年月日や住所を聞く確認ではなく、ICチップやパスキーで確かめる方式にする。hi-hoは生年月日などでのログインを廃止しました。携帯電話の店頭契約でICチップの読み取りが義務になるのは2027年4月です。</li>
+  <li><strong>退会時にデータを消す仕組みを、最初から作る。</strong></li>
+</ul>
+<p class="src">出典：<a href="https://www.cyber.go.jp/pdf/press/taiou.pdf" rel="noopener">内閣官房国家サイバー統括室「不正アクセスによる漏えい等の事案を踏まえた対応について」（2026年10月9日）</a>、<a href="https://www.ppc.go.jp/news/press/2026/261007_houdou/" rel="noopener">個人情報保護委員会 注意喚起（2026年10月7日）</a>、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー「ご質問と回答」</a></p>

@@ -1,0 +1,49 @@
+<!--meta
+title: 自分専用の対策を作る ── 漏れた情報を選ぶだけ｜漏れた後の守り方
+description: 漏れた（可能性がある）情報と、あなたの状況を選ぶと、今日・今週・これから続けることに分けた対策リストを作ります。入力内容はどこにも送信されません。
+-->
+<p class="updated">最終更新 {{updated}}</p>
+<h1>自分専用の対策を作る</h1>
+<p class="lead">漏れた（可能性がある）情報と、あなたの状況を選んでください。効く順に並べた対策リストを作ります。選んだ内容は、この端末の中だけで処理し、どこにも送信しません。</p>
+<p class="muted">企業からの通知に書かれた「漏えいした項目」を見ながら選ぶと正確です。通知が来ていなくても心配なら「わからない」を選んでください。</p>
+
+<form id="plan-form" class="no-print" autocomplete="off">
+  <fieldset>
+    <legend>漏れた（可能性がある）情報</legend>
+    <div class="opt-grid">
+      <label class="opt"><input type="checkbox" name="items" value="email"><span>メールアドレス</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="password"><span>パスワード<small>暗号化・ハッシュ化されたものを含む</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="phone"><span>電話番号</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="address"><span>氏名・住所</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="birth"><span>生年月日</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="idimg"><span>運転免許証・パスポート・マイナンバーカードなどの画像や番号</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="card"><span>クレジットカード情報<small>番号の一部や有効期限を含む</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="bank"><span>銀行や証券の口座情報</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="history"><span>購入・配送・予約・利用の履歴</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="family"><span>家族の情報</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="unknown"><span>わからない<small>通知は来ていないが心配</small></span></label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>あなたの状況（当てはまるもの）</legend>
+    <div class="opt-grid">
+      <label class="opt"><input type="checkbox" name="items" value="elderly"><span>高齢の家族がいる／自分が65歳以上</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="landline"><span>固定電話がある</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="netbank"><span>ネットバンキングやネット証券を使っている</span></label>
+      <label class="opt"><input type="checkbox" name="items" value="qr"><span>スマホ決済（PayPayなど）を使っている</span></label>
+    </div>
+  </fieldset>
+  <div class="btn-row">
+    <button type="submit" class="btn primary">対策リストを作る</button>
+    <button type="reset" class="btn">選択を消す</button>
+  </div>
+</form>
+
+<section id="plan-result" aria-live="polite">
+  <noscript><p class="plan-empty">この機能はJavaScriptを使います。使えない場合は、<a href="index.html#today">今日の30分でやること</a>と、各ページをご覧ください。</p></noscript>
+</section>
+<div class="btn-row no-print" id="plan-tools" hidden>
+  <button type="button" class="btn" data-print>このリストを印刷する</button>
+  <button type="button" class="btn" data-copy-url>このリストのURLをコピー</button>
+</div>
+<p class="muted no-print" id="plan-share-note" hidden>URLには選んだ項目だけが入ります（例：#items=email,phone）。家族に送れば、同じリストを開けます。</p>

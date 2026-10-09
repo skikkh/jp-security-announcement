@@ -1,0 +1,29 @@
+<!--meta
+title: 主な漏えい事案の一覧（2026年）｜漏れた後の守り方
+description: 2026年に公表された国内の主な個人情報漏えい事案を、漏れた項目つきで一覧にしました。運転免許証などの本人確認書類、パスワード、住所、カード・口座で絞り込めます。
+-->
+<p class="updated">最終更新 {{updated}}（この日までの各社発表・報道をもとに作成）</p>
+<h1>主な漏えい事案の一覧</h1>
+<p class="lead">2026年に公表された国内の主な事案から、一般の利用者に関係が深いものを{{breach_total}}件まとめました。使っていたサービスがあれば、<strong>そのサービスの公式サイトを自分で開いて</strong>、通知の内容を確かめてください。</p>
+<div class="callout warn">
+  <span class="callout-title">この一覧の読み方</span>
+  <ul>
+    <li>件数と項目は、公表時点の各社発表と報道によるものです。調査が進むと変わります。必ず出典の最新情報を確認してください。</li>
+    <li>「漏えい確認」「可能性・おそれ」「調査中」は、各社の表現をもとに分類しています。</li>
+    <li>一覧にない事案も多数あります。マクニカの集計では、2026年に公表されたWebシステムからの流出は10月6日時点で119件です。</li>
+    <li>「この漏えいの対策を見る」を押すと、漏れた項目に合わせた対策リストが開きます。</li>
+  </ul>
+</div>
+<div class="filters no-print" role="search">
+  <div class="field"><label for="breach-q">会社名・サービス名で探す</label><input type="search" id="breach-q" placeholder="例：タイムズ、ローソン、アプリ"></div>
+  <div class="chips" role="group" aria-label="漏れた項目で絞り込む">
+    <button type="button" class="chip" data-filter="all" aria-pressed="true">すべて</button>
+    <button type="button" class="chip" data-filter="id" aria-pressed="false">本人確認書類・旅券</button>
+    <button type="button" class="chip" data-filter="password" aria-pressed="false">パスワード</button>
+    <button type="button" class="chip" data-filter="address" aria-pressed="false">住所</button>
+    <button type="button" class="chip" data-filter="money" aria-pressed="false">カード・口座</button>
+  </div>
+  <p class="muted" id="breach-count" aria-live="polite"></p>
+</div>
+{{breach_cards}}
+<p class="src">主な集計元：<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ</a>、<a href="https://smartscope.blog/en/blog/japan-data-breach-list-tier-2026-09-10/" rel="noopener">SmartScope</a>、<a href="https://qiita.com/nnnnnnnok/items/95cb61994478d827fee3" rel="noopener">Qiita「2026年の大規模な情報漏洩まとめ」</a>、<a href="https://enterprisezine.jp/news/detail/25188" rel="noopener">EnterpriseZine</a>、各社の発表。誤りや更新があれば<a href="https://github.com/skikkh/jp-security-announcement/issues">GitHub Issues</a>でお知らせください。</p>
