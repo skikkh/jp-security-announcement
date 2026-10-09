@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=f8c2e0ee28">
-<script src="assets/app.js?v=f8c2e0ee28" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=707e2fcbd9">
+<script src="assets/app.js?v=707e2fcbd9" defer></script>
 </head>
 <body class="page-delete">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -167,7 +167,7 @@
 
 <h2 id="request">消去請求の文面を作る</h2>
 <p>入力した内容は、この端末の中だけで文章に組み立てます。どこにも送信されません。実際の利用状況と請求理由を選んでから文面を作り、送る前に内容を確認してください。会社の窓口に専用の書式がある場合は、そちらを優先してください。</p>
-<form id="erase-form" class="no-print" autocomplete="off">
+<form id="erase-form" class="no-print" autocomplete="off" novalidate>
   <fieldset>
     <legend>宛先とあなたの情報</legend>
     <div class="field-row">
@@ -198,8 +198,9 @@
       <label class="opt"><input type="checkbox" id="f-c-disclose"><span>あわせて、保有データの開示も請求する<small>第33条。手数料がかかる場合があります</small></span></label>
     </div>
   </fieldset>
-  <p id="erase-error" role="alert" hidden></p>
-  <div class="btn-row"><button type="submit" class="btn primary">文面を作る</button></div>
+  <p id="erase-error" role="alert" tabindex="-1" hidden></p>
+  <div class="btn-row"><button type="submit" class="btn primary">文面を作る</button><button type="button" class="btn" id="erase-template">個人情報なしでひな形を作る</button></div>
+  <p class="muted">入力せずに使いたい場合は、ひな形を作ってから編集できます。ひな形の括弧内は、送る前に事実に合う内容へ置き換えてください。</p>
 </form>
 <div class="field">
   <label for="erase-output">請求文（コピーして、会社の窓口やメールに貼り付けてください）</label>
