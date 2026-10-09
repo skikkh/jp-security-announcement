@@ -183,6 +183,99 @@ def breach_cards(entries: list[dict]) -> str:
     return '<ul class="breach-list" id="breach-list">' + "".join(out) + "</ul>"
 
 
+HERO_RE = re.compile(
+    r'\A\s*<p class="updated">.*?</p>\s*<h1>(?P<h1>.*?)</h1>\s*'
+    r'(?P<lead><p class="lead">.*?</p>)?\s*(?:<p class="byline">.*?</p>)?',
+    re.S,
+)
+TRUST = (
+    '<ul class="trust" aria-label="このページについて">'
+    '<li>作成 生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></li>'
+    "<li>事実には出典を明記</li>"
+    "<li>最終更新 {updated}</li>"
+    "</ul>"
+)
+
+
+def page_hero(slug: str, body: str, root: str) -> str:
+    """各ページ冒頭（最終更新・h1・リード）を、トップと同じ見出し枠に組み立てる"""
+    if slug == "index":
+        return body
+    label = dict(NAV).get(slug, "")
+    crumbs = (
+        f'<nav class="crumbs" aria-label="現在地"><a href="{root}index.html">トップ</a>'
+        f'<span aria-hidden="true">›</span><span aria-current="page">{esc(label)}</span></nav>'
+    ) if label else ""
+    m = HERO_RE.match(body)
+    if m:
+        hero = (
+            f'{crumbs}<header class="hero page-hero">'
+            '<p class="eyebrow">2026年10月版 市民のための自衛ガイド</p>'
+            f'<h1>{m.group("h1")}</h1>{m.group("lead") or ""}'
+            f'{TRUST.format(updated=UPDATED)}</header>'
+        )
+        return hero + body[m.end():]
+    # 404 など：h1 だけ枠に入れる
+    m = re.match(r"\A\s*<h1>(.*?)</h1>", body, re.S)
+    if m:
+        return f'<header class="hero page-hero"><h1>{m.group(1)}</h1></header>' + body[m.end():]
+    return body
+
+
+ALLOWED_TAGS = {
+    "氏名", "住所", "電話番号", "メールアドレス", "生年月日", "性別", "会員ID", "パスワード",
+    "本人確認書類の画像", "免許証番号", "パスポート情報", "本人確認書類の番号",
+    "カード情報の一部", "口座情報", "購入・配送・利用履歴", "家族情報", "勤務先・所属",
+    "その他（詳細は出典）",
+}
+CONTACT_KEYS = {"name", "tels", "hours", "emails", "forms", "note"}
+
+
+def validate(entries: list[dict]) -> None:
+    """データの誤りをビルド時に止める（毎時ルーティンの安全装置）"""
+    errors = []
+    seen = set()
+    for i, e in enumerate(entries):
+        where = f"#{i} {e.get('org', '?')}"
+        for k in ("date", "date_label", "org", "count", "status", "items", "url", "src"):
+            if not e.get(k):
+                errors.append(f"{where}: {k} がありません")
+        if e.get("date") and not re.fullmatch(r"20\d\d-\d\d-\d\d", e["date"]):
+            errors.append(f"{where}: date は YYYY-MM-DD 形式にしてください")
+        if e.get("status") not in STATUS:
+            errors.append(f"{where}: status は {list(STATUS)} のいずれか")
+        if e.get("src") not in ("公式", "報道"):
+            errors.append(f"{where}: src は 公式 か 報道")
+        for t in e.get("items", []):
+            if t not in ALLOWED_TAGS:
+                errors.append(f"{where}: 未知のタグ {t}")
+        for k in ("url", "official"):
+            if e.get(k) and not e[k].startswith("https://"):
+                errors.append(f"{where}: {k} は https:// で始めてください")
+        c = e.get("contact")
+        if c is not None:
+            if not isinstance(c, dict) or set(c) - CONTACT_KEYS:
+                errors.append(f"{where}: contact のキーは {sorted(CONTACT_KEYS)} のみ")
+            else:
+                for tel in c.get("tels", []):
+                    if not (re.fullmatch(r"0[0-9-]+", tel) and 10 <= len(re.sub(r"\D", "", tel)) <= 11):
+                        errors.append(f"{where}: 電話番号の形式 {tel}")
+                for m in c.get("emails", []):
+                    if "@" not in m or " " in m:
+                        errors.append(f"{where}: メールの形式 {m}")
+                for f in c.get("forms", []):
+                    if not f.get("url", "").startswith("https://") or not f.get("label"):
+                        errors.append(f"{where}: forms は label と https の url が必要")
+                if (c.get("tels") or c.get("emails") or c.get("forms")) and not (e.get("official") or e.get("src") == "公式"):
+                    errors.append(f"{where}: 窓口を載せるときは公式発表のURL（official）が必要")
+        key = (e.get("org"), e.get("service", ""), e.get("date"))
+        if key in seen:
+            errors.append(f"{where}: 重複しています")
+        seen.add(key)
+    if errors:
+        raise SystemExit("breaches.json の検査に失敗しました:\n  " + "\n  ".join(errors))
+
+
 def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -198,6 +291,7 @@ def main() -> None:
 
     layout = (SRC / "layout.html").read_text(encoding="utf-8")
     breaches = json.loads((SRC / "data" / "breaches.json").read_text(encoding="utf-8"))
+    validate(breaches)
     replacements = {
         "{{breach_cards}}": breach_cards(breaches),
         "{{breach_total}}": str(len(breaches)),
@@ -210,6 +304,7 @@ def main() -> None:
         meta, body = parse_page(p.read_text(encoding="utf-8"))
         for k, v in replacements.items():
             body = body.replace(k, v)
+        body = page_hero(slug, body, BASE_PATH if slug == "404" else "")
         is_404 = slug == "404"
         root = BASE_PATH if is_404 else ""
         canonical = BASE_URL if slug == "index" else f"{BASE_URL}{slug}.html"

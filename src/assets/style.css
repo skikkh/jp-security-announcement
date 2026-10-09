@@ -417,3 +417,12 @@ h1 small { display: block; font-size: .6em; margin-top: .2em; }
   .hero-actions .btn { width: 100%; }
   .trust { gap: 6px; }
 }
+
+/* ---------- 各ページの見出し枠・パンくず ---------- */
+.crumbs { font-size: .8rem; color: var(--muted); margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: .4em; align-items: center; }
+.crumbs a { color: var(--link); }
+.page-hero { margin-bottom: 1.6rem; }
+.page-hero h1 { font-size: clamp(1.4rem, 1.05rem + 1.8vw, 2.05rem); margin: .1em 0 .5em; }
+.page-hero h1 small { color: var(--ink-2); }
+.page-hero .lead { margin-bottom: 0; }
+@media (max-width: 520px) { .page-hero h1 { font-size: 1.38rem; } }
