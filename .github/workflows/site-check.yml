@@ -24,6 +24,7 @@ jobs:
       - name: データ・ビルド・配信ファイルの一致を確認
         run: |
           python3 tools/build.py
+          python3 -I tools/test_contact_validation.py
           git diff --exit-code -- docs
           if [[ -n "$(git status --porcelain --untracked-files=all -- docs)" ]]; then
             echo "::error::配信ファイルに未追跡または未反映の差分があります"

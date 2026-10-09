@@ -642,7 +642,7 @@
    "emails": [
     "infoq-support@gmo-research.ai"
    ],
-   "hours": "平日10:00〜18:00（メールは24時間受付）"
+   "hours": "対応時間：平日10:00〜18:00（土日祝・年末年始を除く）。メールは24時間受付。"
   },
   "category": "other",
   "source_checked_on": "2026-10-09",
@@ -680,7 +680,8 @@
    "hours": "10:00〜19:00。10月19日以降は平日のみ（10月18日までは土日祝も受付）",
    "emails": [
     "cust-qqsupport@whiteessence.co.jp"
-   ]
+   ],
+   "note": "メールでの対応は平日のみ（土日祝を除く）。電話は10月18日まで土日祝を含み、10月19日以降は平日のみ。"
   },
   "category": "health",
   "source_checked_on": "2026-10-09",
@@ -902,7 +903,8 @@
      "label": "お問い合わせフォーム（まずはこちら）",
      "url": "https://forms.cloud.microsoft/r/FqmSVGt9KW"
     }
-   ]
+   ],
+   "note": "原則はフォーム。フォームの利用が難しい場合は人事部の電話窓口。従業員・退職者向け。"
   },
   "category": "finance",
   "source_checked_on": "2026-10-09",
@@ -1211,7 +1213,7 @@
      "url": "https://mypage.jpid.pf.japanpost.jp/contact"
     }
    ],
-   "note": "0570-046-666は携帯電話から（有料）。ガイダンスで「*」のあと「5」を選びます。"
+   "note": "0570-046-666は携帯電話から（有料）。ガイダンスで「*」のあと「5」を選びます。 IP電話等、一部の電話では利用できない場合があります。"
   },
   "category": "transport",
   "source_checked_on": "2026-10-09",
@@ -1670,7 +1672,8 @@
   },
   "category": "telecom_it",
   "source_checked_on": "2026-10-09",
-  "contact_checked_on": "2026-10-09"
+  "contact_checked_on": "2026-10-09",
+  "contact_source": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-71_4593/kddi_nr_s-71_4593_pdf_01.pdf"
  },
  {
   "date": "2026-04-23",
@@ -1728,7 +1731,15 @@
   "url": "https://www.nipponrentacar.co.jp/info/202609.html",
   "src": "公式",
   "category": "transport",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "お客様サポート窓口（本件）",
+   "emails": [
+    "voice@nipponrentacar.co.jp"
+   ]
+  },
+  "contact_source": "https://www.nipponrentacar.co.jp/info/202609.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-07-08",
@@ -1834,7 +1845,16 @@
   "url": "https://www.nippon-tele.net/release/20260612_4675/",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "ネットワーク障害お問い合わせセンター（本件）",
+   "tels": [
+    "050-3207-1513"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "contact_source": "https://www.nippon-tele.net/release/20260612_4675/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-02-27",
@@ -2473,7 +2493,19 @@
   "url": "https://eneken.ieej.or.jp/press/press261002.pdf",
   "src": "公式",
   "category": "energy",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "日本エネルギー経済研究所 業務ユニット（本件）",
+   "tels": [
+    "03-5547-0222"
+   ],
+   "emails": [
+    "ieej-mail@tky.ieej.or.jp"
+   ],
+   "hours": "平日9:30〜17:00"
+  },
+  "contact_source": "https://eneken.ieej.or.jp/press/press261002.pdf",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-02",
@@ -2543,7 +2575,18 @@
   "url": "https://corporate.murata.com/ja-jp/newsroom/news/company/general/2026/0427",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "村田製作所 個人情報に関する本件窓口",
+   "forms": [
+    {
+     "label": "本件お問い合わせフォーム",
+     "url": "https://corporate.murata.com/ja-jp/contact/security-inquiry"
+    }
+   ]
+  },
+  "contact_source": "https://corporate.murata.com/ja-jp/newsroom/news/company/general/2026/0427",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-04",
@@ -2633,7 +2676,15 @@
   "url": "https://www.mitsuifudosan.co.jp/letter/260928/download/260928.pdf",
   "src": "公式",
   "category": "real_estate",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "三井不動産 本件専用窓口",
+   "emails": [
+    "mfirst@mitsuifudosan.co.jp"
+   ]
+  },
+  "contact_source": "https://www.mitsuifudosan.co.jp/letter/260928/download/260928.pdf",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-06-03",
@@ -2717,7 +2768,19 @@
   "url": "https://www.metro.tokyo.lg.jp/information/press/2026/05/2026052601",
   "src": "公式",
   "category": "work_education",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "東京都デジタルサービス局総務部 デジタル人材戦略課（TDA本件公表の照会先）",
+   "tels": [
+    "03-5388-2038"
+   ],
+   "emails": [
+    "S1100104@section.metro.tokyo.jp"
+   ],
+   "note": "TDAポータル事案の公表担当への照会先。対象は主に行政職員で一般市民2人も含む。受付時間・一般消費者相談の対応範囲は原文未記載。"
+  },
+  "contact_source": "https://www.metro.tokyo.lg.jp/information/press/2026/05/2026052601",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-29",
@@ -2955,7 +3018,17 @@
   "url": "https://www.stnet.co.jp/news/oshirase_20260121.html",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "STNetビジネス営業本部 お客さま専用窓口",
+   "tels": [
+    "087-887-2404"
+   ],
+   "hours": "平日9:00〜17:20",
+   "note": "STクラウドの利用企業の担当者等、本件の対象関係者向け。報道専用窓口とは区別。"
+  },
+  "contact_source": "https://www.stnet.co.jp/news/oshirase_20260121.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-05-30",
@@ -2997,7 +3070,15 @@
   "url": "https://www.jrkyushu.co.jp/news/__icsFiles/afieldfile/2026/01/19/20260119_noticeforthosewithexperienceworkingatjrkyushugroupcompanies.pdf",
   "src": "公式",
   "category": "transport",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "JR九州システムソリューションズ 本件専用窓口",
+   "emails": [
+    "privacy@ss.jrkyushu-g.co.jp"
+   ]
+  },
+  "contact_source": "https://www.jrkyushu.co.jp/news/__icsFiles/afieldfile/2026/01/19/20260119_noticeforthosewithexperienceworkingatjrkyushugroupcompanies.pdf",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-06-29",
@@ -3016,7 +3097,15 @@
   "url": "https://www.icc.co.jp/news/2026/20260629.html",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "石川コンピュータ・センター 品質管理室（本件）",
+   "tels": [
+    "076-268-8320"
+   ]
+  },
+  "contact_source": "https://www.icc.co.jp/news/2026/20260629.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-16",
@@ -3145,7 +3234,16 @@
   "url": "https://www.miuraz.co.jp/news/newsrelease/2026/1956.php",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "三浦工業 情報セキュリティ管理室（本件）",
+   "tels": [
+    "080-6559-6235"
+   ],
+   "hours": "平日9:00〜17:00"
+  },
+  "contact_source": "https://www.miuraz.co.jp/news/newsrelease/2026/1956.php",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-31",
@@ -3166,7 +3264,16 @@
   "url": "https://www.ad-hzm.co.jp/info/2026/20260831_03.php",
   "src": "公式",
   "category": "other",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "安藤ハザマ 管理本部 総務部 コンプライアンスグループ（本件）",
+   "tels": [
+    "03-3575-6090"
+   ],
+   "note": "同じ発表にある広報グループの電話番号とは区別。"
+  },
+  "contact_source": "https://www.ad-hzm.co.jp/info/2026/20260831_03.php",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-17",
@@ -3421,7 +3528,7 @@
    "forms": [
     {
      "label": "サポートセンターお問い合わせ",
-     "url": "https://support.gpoint.co.jp/hc/ja/requests/new"
+     "url": "https://support.gpoint.co.jp/hc/ja/requests/new?ticket_form_id=62691010154393"
     }
    ]
   },
@@ -3445,11 +3552,23 @@
   "src": "公式",
   "category": "work_education",
   "contact": {
-   "name": "スタディサプリ 本件お問い合わせ",
+   "name": "スタディサプリ 本件お問い合わせ（契約経路別）",
    "forms": [
     {
-     "label": "本件指定お問い合わせフォーム",
-     "url": "https://studysapuri.jp/info/inquiry/customer/"
+     "label": "個人契約のお客様",
+     "url": "https://studysapuri.jp/info/inquiry/customer/?qaid=k12_info_20261002"
+    },
+    {
+     "label": "学校・自治体経由の生徒",
+     "url": "https://studysapuri.jp/info/inquiry/student/"
+    },
+    {
+     "label": "学校・自治体経由の保護者",
+     "url": "https://studysapuri.jp/info/inquiry/parent/"
+    },
+    {
+     "label": "学校・自治体経由の先生",
+     "url": "https://studysapuri.jp/info/inquiry/teacher/"
     }
    ]
   },
@@ -3564,7 +3683,15 @@
   "url": "https://www.digital.go.jp/news/6d720c40-a064-4e48-a698-c8123ba53299",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "デジタル庁 国家資格システム担当（本件）",
+   "emails": [
+    "kjk-sys-ml@digital.go.jp"
+   ]
+  },
+  "contact_source": "https://www.digital.go.jp/news/6d720c40-a064-4e48-a698-c8123ba53299",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-03-31",
@@ -3583,7 +3710,16 @@
   "url": "https://www.caa.go.jp/notice/entry/045704/",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "消費者庁総務課管理室（職員8人の給与情報事案の問合せ先）",
+   "tels": [
+    "03-3507-9247"
+   ],
+   "note": "本件は職員8人の給与支払報告書の誤送信。一般消費者の契約・商品トラブルの相談窓口ではない。受付時間は原文未記載。"
+  },
+  "contact_source": "https://www.caa.go.jp/notice/entry/045704/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-24",
@@ -3620,7 +3756,20 @@
   "url": "https://www.govtechtokyo.or.jp/news/2026/07/15/5185/",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "東京アプリ事務局・GovTech東京等（本件公表の問合せ先）",
+   "tels": [
+    "03-6901-7979"
+   ],
+   "emails": [
+    "gtt-tokyoapp-jimu@govtechtokyo.or.jp",
+    "S1100506@section.metro.tokyo.jp"
+   ],
+   "note": "電話は東京アプリ事務局。gtt-tokyoapp-jimuはGovTech東京デジタルサービス企画運用グループ、S1100506は東京都デジタルサービス局デジタル企画調整課。受付時間は本件原文未記載。"
+  },
+  "contact_source": "https://www.govtechtokyo.or.jp/news/2026/07/15/5185/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-12",
@@ -3818,7 +3967,15 @@
   "url": "https://www.egmkt.co.jp/newsroom/news/2026/10982/",
   "src": "公式",
   "category": "energy",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "エバーグリーン・マーケティング 企画管理部（本件）",
+   "emails": [
+    "egm_planning@egmkt.co.jp"
+   ]
+  },
+  "contact_source": "https://www.egmkt.co.jp/newsroom/news/2026/10982/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -4125,7 +4282,19 @@
   "url": "https://www.idcf.jp/news/topics/20261007002",
   "src": "公式",
   "category": "telecom_it",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "IDCフロンティア お客さまからの本件問い合わせ",
+   "forms": [
+    {
+     "label": "お客さま向けお問い合わせフォーム",
+     "url": "https://www.idcf.jp/inquiry/contact/"
+    }
+   ],
+   "note": "公式発表のお客さま向け窓口。報道用pr@idcf.jpは使わない。"
+  },
+  "contact_source": "https://www.idcf.jp/news/topics/20261007002",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-07",
@@ -4198,7 +4367,16 @@
   "url": "https://www.kk-marutake.co.jp/2026/06/24/6737",
   "src": "公式",
   "category": "health",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "マルタケ ランサムウェア対策本部（本件）",
+   "tels": [
+    "025-268-6311"
+   ],
+   "hours": "平日10:00〜17:00"
+  },
+  "contact_source": "https://www.kk-marutake.co.jp/2026/06/24/6737",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-19",
@@ -4244,7 +4422,17 @@
   "url": "https://www.sedeco.co.jp/news/detail/?dispmid=567&itemid=111",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "精電舎電子工業 本件お問い合わせ先",
+   "tels": [
+    "03-3802-5101"
+   ],
+   "hours": "平日9:00〜17:00",
+   "note": "ページフッターの製品相談の8:30開始とは区別。"
+  },
+  "contact_source": "https://www.sedeco.co.jp/news/detail/?dispmid=567&itemid=111",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-28",
@@ -4261,7 +4449,16 @@
   "url": "https://www.toka-global.com/news/detail/post_210.html",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "T&K TOKA 本件お問い合わせ先",
+   "tels": [
+    "049-258-1611"
+   ],
+   "hours": "8:30〜17:30（土日祝を除く）"
+  },
+  "contact_source": "https://www.toka-global.com/news/detail/post_210.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-02",
@@ -4463,7 +4660,16 @@
   "url": "https://www.tombow-b.jp/4029/",
   "src": "公式",
   "category": "food",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "トンボ飲料 経営統括本部（本件）",
+   "tels": [
+    "076-441-4456"
+   ],
+   "hours": "9:00〜17:00"
+  },
+  "contact_source": "https://www.tombow-b.jp/4029/",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-05-11",
@@ -4480,7 +4686,16 @@
   "url": "https://hokuyo2006.co.jp/common/docs/topics_260511.pdf",
   "src": "公式",
   "category": "manufacturing",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "ホクヨー 総務部（本件）",
+   "tels": [
+    "03-5298-5631"
+   ],
+   "hours": "10:00〜17:00（土日祝を除く）"
+  },
+  "contact_source": "https://hokuyo2006.co.jp/common/docs/topics_260511.pdf",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-01",
@@ -4541,7 +4756,15 @@
   "url": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000688772.html",
   "src": "公式",
   "category": "government",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "大阪歴史博物館 総務課（本件の個人情報漏えい・再発防止策）",
+   "tels": [
+    "06-6946-5728"
+   ]
+  },
+  "contact_source": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000688772.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-16",
@@ -4654,7 +4877,16 @@
   "note": "委託先のIDCFクラウドが攻撃を受け、両サービスのメール配信を予防的に停止しました。同クラウドのメール送信用サーバーには宛先メールアドレスと、一部のメール本文中の氏名・誕生日・会員IDが保存されていましたが、情報流出の有無と対象期間を調査中です。データは保存時に暗号化され、送信から14日間で自動削除されます。住所・電話番号は別サーバーに保管され本件の対象外で、ログインパスワードとカード情報は対象サービスに連携されていません。",
   "url": "https://www.future-shop.jp/news/2026/10/08.html",
   "src": "公式",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-09",
+  "contact": {
+   "name": "フューチャーショップ サポートセンター（本件）",
+   "emails": [
+    "support@future-shop.jp"
+   ],
+   "note": "本件発表の画像に記載されたメールアドレス。ご契約前専用の営業電話番号は載せない。"
+  },
+  "contact_source": "https://www.future-shop.jp/news/2026/10/08.html",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-09",
@@ -4742,5 +4974,22 @@
     "comm-marketing@inquiry.yamaha.com"
    ]
   }
+ },
+ {
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日",
+  "org": "九州旅客鉄道（JR九州）",
+  "service": "JR九州Web会員向けメールマガジン（メール配信用外部サービス）",
+  "kana": "きゅうしゅうりょかくてつどう じぇいあーるきゅうしゅう JR九州 Web会員 メールマガジン",
+  "category": "transport",
+  "count": "最大 約130万件（JR九州Web会員）",
+  "status": "可能性",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "IDCフロンティア社で発生した不正アクセスに伴う、一般利用者のJR九州Web会員向けメール配信サービスの事案です。メールアドレスを含む電子メールログデータが第三者に閲覧・取得された可能性を否定できない段階です。氏名・住所・電話番号・クレジットカード番号等、およびメールマガジンの件名・本文は本件の漏えい可能性の対象外です。対象の可能性があるお客さまへ、準備が整い次第、個別メールを送るとしています。1月公表のグループ会社従業員事案とは別です。同じIDCフロンティアの事案に関連する他サービスの件数とは合算しません。",
+  "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/09/202691009_mail_address_access_1.pdf",
+  "src": "公式",
+  "source_checked_on": "2026-10-09"
  }
 ]

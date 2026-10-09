@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import html
+import ipaddress
 import json
 import re
 import shutil
@@ -15,6 +16,8 @@ import tempfile
 import uuid
 from collections import Counter
 from datetime import date
+from email.errors import HeaderParseError
+from email.headerregistry import Address
 import urllib.parse
 from pathlib import Path
 
@@ -139,7 +142,7 @@ def report_text(title: str) -> str:
 
 def report_url(title: str, canonical: str) -> str:
     """X の投稿画面を、ページ名とURLが入った状態で開くリンク"""
-    return "https://x.com/intent/post?" + urllib.parse.urlencode({"text": report_text(title), "url": canonical})
+    return "https://x.com/intent/tweet?" + urllib.parse.urlencode({"text": report_text(title), "url": canonical})
 
 
 def nav_html(current: str, root: str) -> str:
@@ -167,6 +170,62 @@ def tel_href(tel: str) -> str:
     return "tel:" + re.sub(r"[^0-9+]", "", tel)
 
 
+def public_host(host: str) -> str:
+    """公開窓口のホストの構文を検査する。公式性やDNSの応答は保証しない。"""
+    if not isinstance(host, str) or not host or "%" in host:
+        raise ValueError("ホストがありません")
+    host = host.encode("idna").decode("ascii").lower().rstrip(".")
+    try:
+        address = ipaddress.ip_address(host)
+    except ValueError:
+        address = None
+    if address is not None:
+        if not address.is_global or address.is_multicast or address.is_reserved or getattr(address, "is_site_local", False):
+            raise ValueError("ローカル・予約済みIPは公開窓口にできません")
+        return host
+    if host == "localhost" or host.endswith((".localhost", ".local")):
+        raise ValueError("ローカルホストは公開窓口にできません")
+    labels = host.split(".")
+    if len(labels) < 2 or len(host) > 253 or any(not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?", label) for label in labels):
+        raise ValueError("公開ドメインの構文が不正です")
+    if re.fullmatch(r"(?:0x[0-9a-f]+|[0-9]+)", labels[-1]):
+        raise ValueError("省略・別表記のIPは使用できません")
+    return host
+
+
+def valid_https_url(value: object) -> bool:
+    if not isinstance(value, str) or re.search(r"[\x00-\x20\x7f-\x9f\\]", value):
+        return False
+    try:
+        parts = urllib.parse.urlsplit(value)
+        if parts.scheme != "https" or not parts.netloc or parts.hostname is None or parts.username is not None or parts.password is not None or "%" in parts.netloc:
+            return False
+        if parts.port is not None and not 1 <= parts.port <= 65535:
+            return False
+        public_host(parts.hostname)
+        return True
+    except (ValueError, UnicodeError):
+        return False
+
+
+def mailbox(value: object) -> str:
+    """単一のメールボックスを検査し、宛先のUnicodeを保持する。"""
+    if not isinstance(value, str) or re.search(r"[\x00-\x20\x7f-\x9f]", value):
+        raise ValueError("単一のメールアドレスが必要です")
+    try:
+        address = Address(addr_spec=value)
+    except (HeaderParseError, ValueError) as exc:
+        raise ValueError("単一のメールアドレスが必要です") from exc
+    if not address.username or not address.domain:
+        raise ValueError("単一のメールアドレスが必要です")
+    public_host(address.domain)
+    return address.addr_spec
+
+
+def mailto_href(value: str) -> str:
+    return "mailto:" + urllib.parse.quote(mailbox(value), safe="@._+-")
+
+
 def contact_html(e: dict) -> str:
     c = e.get("contact")
     official = e.get("contact_source") or e.get("official") or (e["url"] if e["src"] == "公式" else None)
@@ -176,7 +235,7 @@ def contact_html(e: dict) -> str:
     if not c:
         return (
             '<div class="contact contact-none"><span class="contact-title">公式の問い合わせ窓口</span>'
-            "<p>公式発表に、本件専用の窓口の記載を確認できていません。会社の公式サイトを自分で開き、問い合わせ窓口を探してください。"
+            "<p>このサイトでは、本件の利用者・関係者向けとして確認できた窓口をまだ掲載できていません。発表元の公式サイトを自分で開き、問い合わせ先と対象者を確認してください。"
             + (f" {src_link}" if src_link else "")
             + "</p></div>"
         )
@@ -189,7 +248,7 @@ def contact_html(e: dict) -> str:
     if not c.get("tels") and c.get("hours"):
         rows.append(f'<li>受付 {esc(c["hours"])}</li>')
     for mail in c.get("emails", []):
-        rows.append(f'<li>メール <a href="mailto:{esc(mail)}">{esc(mail)}</a></li>')
+        rows.append(f'<li>メール <a href="{esc(mailto_href(mail))}">{esc(mail)}</a></li>')
     for f in c.get("forms", []):
         rows.append(f'<li><a href="{esc(f["url"])}" rel="noopener">{esc(f["label"])}</a></li>')
     note = f'<p class="contact-note">{esc(c["note"])}</p>' if c.get("note") else ""
@@ -345,8 +404,8 @@ def validate(entries: list[dict]) -> None:
             if t not in ALLOWED_TAGS:
                 errors.append(f"{where}: 未知のタグ {t}")
         for k in ("url", "official", "contact_source"):
-            if e.get(k) and not e[k].startswith("https://"):
-                errors.append(f"{where}: {k} は https:// で始めてください")
+            if e.get(k) and not valid_https_url(e[k]):
+                errors.append(f"{where}: {k} は利用者情報・制御文字を含まない公開HTTPS URLにしてください")
         c = e.get("contact")
         if c is not None:
             if not isinstance(c, dict) or set(c) - CONTACT_KEYS:
@@ -356,11 +415,13 @@ def validate(entries: list[dict]) -> None:
                     if not (re.fullmatch(r"0[0-9-]+", tel) and 10 <= len(re.sub(r"\D", "", tel)) <= 11):
                         errors.append(f"{where}: 電話番号の形式 {tel}")
                 for m in c.get("emails", []):
-                    if "@" not in m or " " in m:
+                    try:
+                        mailbox(m)
+                    except (ValueError, TypeError, UnicodeError):
                         errors.append(f"{where}: メールの形式 {m}")
                 for f in c.get("forms", []):
-                    if not f.get("url", "").startswith("https://") or not f.get("label"):
-                        errors.append(f"{where}: forms は label と https の url が必要")
+                    if not valid_https_url(f.get("url")) or not f.get("label"):
+                        errors.append(f"{where}: forms は label と公開HTTPS URLが必要")
                 if (c.get("tels") or c.get("emails") or c.get("forms")) and not (e.get("official") or e.get("src") == "公式"):
                     errors.append(f"{where}: 窓口を載せるときは公式発表のURL（official）が必要")
         key = (e.get("org"), e.get("service", ""), e.get("date"))

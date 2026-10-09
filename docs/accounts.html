@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=4539eaecf1">
-<script src="assets/app.js?v=4539eaecf1" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=ed47406867">
+<script src="assets/app.js?v=ed47406867" defer></script>
 </head>
 <body class="page-accounts">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -105,6 +105,8 @@
 <p>切り替えるときは、新しい方法でログインできることと復旧手段を確認してから、不要になった古い方法を外します。パスキーを追加しただけでは、残るパスワードや再設定先まで安全にはなりません。</p>
 <p class="src">出典：<a href="https://pages.nist.gov/800-63-4/sp800-63b/authenticators/" rel="noopener">NIST（偽サイトに強い認証の条件）</a>、<a href="https://fidoalliance.org/wp-content/uploads/2024/05/Synced-Passkey-Deployment_-Emerging-Practices-for-Consumer-Use-Cases_2024-May-31.pdf" rel="noopener">FIDO Alliance（同期型と端末固定型）</a>、<a href="https://support.apple.com/en-gb/102195" rel="noopener">Apple（iCloudキーチェーンのパスキー）</a>、<a href="https://www.fsa.go.jp/ordinary/chuui/chuui_phishing.html" rel="noopener">金融庁（証券口座の不正取引）</a></p>
 
+<div class="callout info"><span class="callout-title">端末を紛失した・不審なログインがある場合</span><p>別の安全な端末から、サービスの公式手順でログイン中の端末やパスキーを確認し、必要な無効化を行います。端末を紛失・盗難した場合は、OSの紛失モードなどを使い、携帯会社へ必要な回線停止を相談してください。パスキーを設定していても、端末自体の侵害やログイン後のセッション情報の流出が疑われる場合は、<a href="help.html#account-recovery">ログイン後の点検</a>を行います。</p><p class="src">出典：<a href="https://support.google.com/accounts/answer/185834?hl=ja" rel="noopener">Google（パスキー等の紛失・盗難）</a>、<a href="https://pages.nist.gov/800-63-4/sp800-63b/session/" rel="noopener">NIST（認証後のセッション管理）</a></p></div>
+
 <h2 id="alias">メールアドレスをサービスごとに分ける（エイリアス）</h2>
 <p>エイリアスは、届いたメールを自分の本当のアドレスに転送してくれる「別名のアドレス」です。サービスごとに別のエイリアスで登録すると、3つの効果があります。</p>
 <ul>
@@ -137,7 +139,7 @@
   <li>ログイン、振込、出金、登録情報の変更のお知らせをオンにする</li>
   <li>パスキーに対応していれば利用する。「生体認証」は方式を確認し、ほかの認証や復旧方法も点検する</li>
   <li>使っていない口座とキャッシュカードは解約する</li>
-  <li>電話で「守るために別の口座へ移して」「手続きを代わりに進めます」と言われても応じない。銀行が、あなたのお金を別の口座へ移すよう頼むことはありません</li>
+  <li>突然の電話で「資産を守るために別の口座へ移して」「手続きを代わりに進めます」と言われても応じない。一度切り、以前から使っている銀行の公式窓口へ自分から確認する</li>
 </ul>
 <h3>証券</h3>
 <ul>
@@ -156,15 +158,15 @@
   <li>パスワードを固有のものにし、アプリのロックに生体認証を使う</li>
   <li>利用通知をオンにする</li>
   <li>銀行口座からの自動チャージは、オフにするか金額を低くする</li>
-  <li>QRコードを読んで「金額を入力してください」と出たら、すぐに操作をやめる。「代金は〇〇ペイで返金します」と送金用のQRコードを送ってくる相手は、詐欺を疑う</li>
+  <li>返金を受けるはずなのに、QRコードから金額入力や送金・支払いを求められたら、操作をやめる。通常の店頭決済では金額を入力する方式もあります。「代金は〇〇ペイで返金します」と操作を指示する相手には、その場で応じず、購入先の公式窓口で確認する</li>
   <li>お店のQRコードは、上からシールが貼られていないか、読み取る前に指で触って確かめる</li>
 </ul>
-<p class="src">出典：<a href="https://www.jcb.co.jp/member/article07/" rel="noopener">JCB「リアルタイム型フィッシング詐欺」</a>、<a href="https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html" rel="noopener">警視庁「QRコードを悪用した詐欺」</a></p>
+<p class="src">出典：<a href="https://www.jcb.co.jp/member/article07/" rel="noopener">JCB「リアルタイム型フィッシング詐欺」</a>、<a href="https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html" rel="noopener">警視庁「QRコードを悪用した詐欺」</a>、<a href="https://paypay.ne.jp/notice/20250227/s-01/" rel="noopener">PayPay（返金を装った送金の指示）</a>、<a href="https://paypay.ne.jp/help/c0421/" rel="noopener">PayPay（通常の支払いの金額入力）</a></p>
 
 <h2 id="device">スマホとパソコン</h2>
 <ul>
   <li><strong>OSとアプリを自動で更新する。</strong>公表済みの弱点を突く攻撃への基本対策です。今回の事案すべての侵入原因が判明しているわけではありません。</li>
-  <li><strong>アプリは公式ストアからだけ入れる。</strong>SMSやメールで案内されたアプリは入れません。「アクセシビリティ」「デバイスのフルコントロール」「VPN接続」の許可を求めるアプリは、本当に必要か確かめ、分からなければ入れません。</li>
+  <li><strong>アプリは公式ストアを使い、提供者も確かめる。</strong>サービスの公式案内からアプリと提供者名を確認します。SMSやメールからアプリを入れる操作はしません。「アクセシビリティ」「デバイスのフルコントロール」「VPN接続」の許可を求めるアプリは、本当に必要か確かめ、分からなければ入れません。</li>
   <li><strong>電話やチャットで言われたアプリは入れない。画面も共有しない。</strong>遠隔操作や画面共有を許すと、認証コードや暗証番号が相手に見えます。</li>
   <li><strong>自分で操作していないのに届いた認証コードや「承認しますか」は、断る。</strong>誰かがログインしようとしているおそれがあります。<a href="help.html#first">届いたときの手順</a></li>
   <li><strong>「ウイルスに感染しました」という画面の電話番号にかけない。</strong></li>
@@ -173,7 +175,7 @@
 
 <h2 id="check">漏えいの確認サービス</h2>
 <ul>
-  <li><strong><a href="https://haveibeenpwned.com/" rel="noopener">Have I Been Pwned</a></strong>：メールアドレスを入れると、世界の既知の漏えいに含まれているか分かります。国内の今回の事案は反映されていないことがあります。</li>
+  <li><strong><a href="https://haveibeenpwned.com/" rel="noopener">Have I Been Pwned</a></strong>：メールアドレスを入れると、HIBPに収録され、検索できる事案への掲載を確認できます。見つからなくても、漏えいしていない証明にはなりません。企業の公式通知と併せて確認してください。</li>
   <li><strong>信用情報の開示</strong>：あなたの名前でのカードやローンの申し込みを確認できます。<a href="id.html#todo">免許証が漏れたら</a>を参照。</li>
   <li>「無料で漏えいを調べます」とうたう知らないサイトに、氏名、住所、電話番号、カード番号を入力しないでください。それ自体が情報集めのことがあります。</li>
 </ul>
@@ -192,12 +194,7 @@
       <div class="report">
         <p class="report-title">誤りや古い情報を見つけたら</p>
         <p>X（旧Twitter）の @skikkh に、このページの名前とURLを添えてお知らせください。</p>
-        <a class="btn report-btn" data-share-report data-share-text="@skikkh 「情報漏えい対策ガイド」の「パスワードとログインの守り方 ── 優先順位とパスキー・エイリアス・振込限度額」で、誤りや古い情報を見つけました。
-
-（どこが違うか・正しい情報が載っているページのURL）
-" data-share-url="https://skikkh.github.io/jp-security-announcement/accounts.html" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E5%AF%BE%E7%AD%96%E3%82%AC%E3%82%A4%E3%83%89%E3%80%8D%E3%81%AE%E3%80%8C%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9+%E2%94%80%E2%94%80+%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%A8%E3%83%91%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E3%83%BB%E6%8C%AF%E8%BE%BC%E9%99%90%E5%BA%A6%E9%A1%8D%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Faccounts.html" target="_blank" rel="noopener noreferrer">Xで知らせる</a>
-        <p class="muted" data-share-help hidden>表示された共有メニューでXを選んでください。</p>
-        <p role="status" data-share-status hidden></p>
+        <a class="btn report-btn" data-share-report href="https://x.com/intent/tweet?text=%40skikkh+%E3%80%8C%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E5%AF%BE%E7%AD%96%E3%82%AC%E3%82%A4%E3%83%89%E3%80%8D%E3%81%AE%E3%80%8C%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9+%E2%94%80%E2%94%80+%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%A8%E3%83%91%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E3%83%BB%E6%8C%AF%E8%BE%BC%E9%99%90%E5%BA%A6%E9%A1%8D%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Faccounts.html" rel="noopener noreferrer">Xで知らせる</a>
       </div>
     </div>
     <div>
