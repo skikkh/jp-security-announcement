@@ -11,7 +11,13 @@ git fetch origin main
 git checkout main
 git pull --ff-only origin main
 git log -1 --format='%cI %s' origin/main   # 前回の更新時刻
+
+# コミットの作成者はリポジトリのオーナーにする（必須）
+git config user.name "Ikki Shoka"
+git config user.email "16469483+skikkh@users.noreply.github.com"
 ```
+
+コミットメッセージの末尾には、セッションの案内どおり Claude を共同作成者（Co-Authored-By）として付けてよい。作成者（author）は必ず上の設定にする。
 
 `src/pages/about.html` の「更新履歴」と `src/data/breaches.json` を読み、すでに載っている事案を把握します。
 
