@@ -6,13 +6,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>退会・削除・書き換えの真実 ── 退会すれば消える？書き換えは効く？｜漏れた後の守り方</title>
-<meta name="description" content="退会しても個人情報は消えないことが多く、退会前の書き換えも「今の1行」にしか効きません。データベースの中で実際に何が起きるかを図で説明し、法律にもとづく消去請求の文面を作れるようにしました。">
+<meta name="description" content="退会後も取引記録などが残る場合があり、会員画面の書き換えだけで履歴や複製まで変わるとは限りません。典型的な保存の例と、条件に合う場合の利用停止・消去請求の文面を紹介します。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/delete.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="漏れた後の守り方">
 <meta property="og:title" content="退会・削除・書き換えの真実 ── 退会すれば消える？書き換えは効く？｜漏れた後の守り方">
-<meta property="og:description" content="退会しても個人情報は消えないことが多く、退会前の書き換えも「今の1行」にしか効きません。データベースの中で実際に何が起きるかを図で説明し、法律にもとづく消去請求の文面を作れるようにしました。">
+<meta property="og:description" content="退会後も取引記録などが残る場合があり、会員画面の書き換えだけで履歴や複製まで変わるとは限りません。典型的な保存の例と、条件に合う場合の利用停止・消去請求の文面を紹介します。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/delete.html">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=f7802590ae">
-<script src="assets/app.js?v=f7802590ae" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=d934a93ce6">
+<script src="assets/app.js?v=d934a93ce6" defer></script>
 </head>
 <body class="page-delete">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -48,10 +48,10 @@
 <nav class="crumbs" aria-label="現在地"><a href="index.html">トップ</a><span aria-hidden="true">›</span><span aria-current="page">退会・削除・書き換えの真実</span></nav><header class="hero page-hero"><p class="eyebrow">2026年10月版 市民のための自衛ガイド</p><h1>退会・削除・書き換えの真実</h1><p class="lead">「漏れるのが怖いので、使っていないサービスを退会しまくる」「退会の前に住所や名前をでたらめに書き換える」。SNSで広がっているこの話を、データベースの中で実際に何が起きるかから検証します。</p><ul class="trust" aria-label="このページについて"><li>事実には出典を明記</li><li>最終更新 2026年10月9日</li></ul></header><div class="callout engineer">
   <span class="callout-title">結論</span>
   <ul>
-    <li><strong>退会は削除ではありません。</strong>退会フラグが立つだけで、データは残る設計が多いです。</li>
-    <li><strong>書き換え（UPDATE）は「いま見えている1行」にしか効きません。</strong>変更履歴、注文の記録、身分証の画像、分析用のコピー、バックアップ、委託先には、元の情報が残ります。</li>
-    <li><strong>履歴を追記していく設計（INSERT）なら、書き換えると古い住所の行が残り、新しい行が増えるだけです。</strong>利用者の側からはどうにもできません。</li>
-    <li>それでも、<strong>手間が小さい割に意味はあります。</strong>やるなら正しい順番で。そして本命は、法律にもとづく<strong>消去請求</strong>と、<strong>漏れても使えなくする対策</strong>です。</li>
+    <li><strong>退会は全面消去を保証しません。</strong>会員情報を消す事業者も、取引記録などを別に保存する事業者もあります。</li>
+    <li><strong>会員画面での書き換えだけでは、過去の記録や複製まで変更されるとは限りません。</strong>保存の仕方は事業者ごとに異なります。</li>
+    <li><strong>履歴を追記する設計では、古い値が残る場合があります。</strong>下の図は一例であり、実際の保存先や消去方法は事業者に確認する必要があります。</li>
+    <li>任意項目の削除や退会は将来の保存を減らすことがあります。あわせて、条件に当てはまる場合は<strong>利用停止・消去を請求</strong>し、<strong>漏れた情報が悪用されても被害が広がりにくい対策</strong>を進めてください。</li>
   </ul>
 </div>
 
@@ -71,40 +71,40 @@
     <div class="db-title">① 会員テーブル<span class="verdict gone">書き換えが効く</span></div>
     <div class="table-scroll"><table><thead><tr><th>id</th><th>氏名</th><th>住所</th><th>状態</th></tr></thead>
     <tbody><tr class="new"><td>1024</td><td>退会者</td><td>（空）</td><td>退会</td></tr></tbody></table></div>
-    <p class="db-note">いま画面に出ている情報。UPDATEで上書きされるのはここだけです。</p>
+    <p class="db-note">この例では、会員画面の書き換えがこの情報に反映されます。</p>
   </div>
   <div class="db">
-    <div class="db-title">② 変更履歴・監査ログ<span class="verdict stays">元の情報が残る</span></div>
+    <div class="db-title">② 変更履歴・監査ログ<span class="verdict stays">残る場合がある</span></div>
     <div class="table-scroll"><table><thead><tr><th>日時</th><th>項目</th><th>変更前</th><th>変更後</th></tr></thead>
     <tbody><tr class="old"><td>2026-10-09</td><td>住所</td><td>東京都〇〇区…</td><td>（空）</td></tr><tr class="old"><td>2026-10-09</td><td>氏名</td><td>山田 花子</td><td>退会者</td></tr></tbody></table></div>
-    <p class="db-note">変更のたびに行を追記（INSERT）する設計。書き換えるほど「変更前」が記録されます。</p>
+    <p class="db-note">変更前の値を履歴に残す設計の例です。すべてのサービスがこの方式とは限りません。</p>
   </div>
   <div class="db">
-    <div class="db-title">③ 注文・配送・請求の記録<span class="verdict stays">元の情報が残る</span></div>
+    <div class="db-title">③ 注文・配送・請求の記録<span class="verdict stays">残る場合がある</span></div>
     <div class="table-scroll"><table><thead><tr><th>注文日</th><th>お届け先</th><th>電話</th></tr></thead>
     <tbody><tr class="old"><td>2024-03-02</td><td>山田 花子 東京都〇〇区…</td><td>090-xxxx</td></tr></tbody></table></div>
     <p class="db-note">注文した時点の住所をそのまま保存します。会計や税務の記録として、何年も残ります。</p>
   </div>
   <div class="db">
-    <div class="db-title">④ 本人確認書類の画像<span class="verdict stays">残る</span></div>
+    <div class="db-title">④ 本人確認書類の画像<span class="verdict stays">別に保存される場合</span></div>
     <div class="table-scroll"><table><thead><tr><th>ファイル</th><th>登録日</th></tr></thead>
     <tbody><tr class="old"><td>license_1024_front.jpg</td><td>2021-05-10</td></tr></tbody></table></div>
     <p class="db-note">会員情報とは別の保管場所にあります。名前を書き換えても画像は消えません。</p>
   </div>
   <div class="db">
-    <div class="db-title">⑤ 分析用のコピー（データウェアハウス・BIツール）<span class="verdict stays">昨日の情報が残る</span></div>
+    <div class="db-title">⑤ 分析用のコピー（データウェアハウス・BIツール）<span class="verdict stays">複製がある場合</span></div>
     <div class="table-scroll"><table><thead><tr><th>集計日</th><th>id</th><th>住所</th></tr></thead>
     <tbody><tr class="old"><td>2026-10-08</td><td>1024</td><td>東京都〇〇区…</td></tr></tbody></table></div>
-    <p class="db-note">毎晩コピーされる分析用のデータ。今回Metabaseという分析ツール経由で漏れたのは、まさにこの層です。</p>
+    <p class="db-note">分析用の複製がある場合の例です。個別の漏えい事案で、どの保存先から流出したかは公式発表で確認してください。</p>
   </div>
   <div class="db">
-    <div class="db-title">⑥ バックアップ・委託先・ログ<span class="verdict stays">残る</span></div>
+    <div class="db-title">⑥ バックアップ・委託先・ログ<span class="verdict stays">残る場合がある</span></div>
     <div class="table-scroll"><table><thead><tr><th>場所</th><th>中身</th></tr></thead>
     <tbody><tr class="old"><td>バックアップ</td><td>数週間〜数年分</td></tr><tr class="old"><td>メール配信・問い合わせ管理</td><td>委託先の別システム</td></tr><tr class="old"><td>アプリのログ</td><td>入力内容が記録されることも</td></tr></tbody></table></div>
     <p class="db-note">大和証券、第一興商、シチズン時計の件は、委託先から漏れています。</p>
   </div>
 </div>
-<p>書き換えが確実に効くのは①だけです。②〜⑥に元の情報が残るかどうかは会社ごとの設計次第で、利用者からは確かめようがありません。だから<strong>「消す」だけに頼る作戦は成立しません。</strong></p>
+<p>どの保存先に元の情報が残るかは事業者ごとの設計次第です。会員画面の表示だけで全面消去を判断せず、保存する情報と理由を事業者に確認してください。</p>
 
 <h2 id="law">法律で「消せない」データ</h2>
 <p>法律で一定期間の保存が義務付けられている情報は、あなたが求めても、その期間は消されません。代表例です。</p>
@@ -145,7 +145,7 @@
       <li>でたらめの住所や電話番号が、実在する他人のものに当たることがあります</li>
       <li>本人確認済みの項目は変更できないか、変更の記録が残ります</li>
     </ul>
-    <p>やるなら「任意の項目を空にする」を中心にし、必須項目は明らかに架空と分かる値にとどめるのが安全です。</p>
+    <p>任意の項目だけを空にし、必須の氏名・住所などに虚偽の値を入れることは勧めません。削除できない理由と退会後の保存期間を事業者に確認してください。</p>
   </li>
   <li><strong>退会する</strong>
     <p>退会を完了した画面やメールを、日付が分かる形で保存しておきます。</p>
@@ -157,39 +157,48 @@
       <li>あなたのデータについて<strong>漏えいなどの事態が起きた場合</strong></li>
       <li>そのほか、扱い方によってあなたの<strong>権利や正当な利益が害されるおそれがある場合</strong></li>
     </ul>
-    <p>会社は、請求に理由があれば遅滞なく対応し、結果を本人に通知しなければなりません（同条第6項・第7項）。請求先は、各社のプライバシーポリシーにある「開示等の請求」の窓口です。下で文面を作れます。</p>
+    <p>請求の可否と対象範囲は、データごとの利用目的、漏えいの状況、法令上の保存義務などで変わります。理由が認められても、権利利益を守るために必要な範囲での利用停止や代替措置になる場合があり、全データの物理的な削除が保証されるわけではありません。会社は対応の結果を本人に通知する必要があります（同条第6項・第7項）。請求先は各社の「開示等の請求」の窓口です。</p>
   </li>
   <li><strong>回答を記録し、応じてもらえなければ相談する</strong>
     <p>回答がない、理由なく断られた場合は、<a href="help.html#contacts">個人情報保護委員会の相談ダイヤル</a>に相談できます。</p>
   </li>
 </ol>
-<p class="src">出典：<a href="https://laws.e-gov.go.jp/law/415AC0000000057" rel="noopener">個人情報の保護に関する法律（e-Gov法令検索）</a>第33条・第35条、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー Q5・Q8</a>、<a href="https://togetter.com/li/2755450" rel="noopener">退会と書き換えをめぐるSNS上の議論（Togetter）</a></p>
+<p class="src">出典：<a href="https://laws.e-gov.go.jp/law/415AC0000000057" rel="noopener">個人情報の保護に関する法律（e-Gov法令検索）</a>第33条・第35条、<a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/" rel="noopener">個人情報保護委員会ガイドライン（利用停止等の要件・範囲と代替措置）</a>、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー Q5・Q8</a></p>
 
 <h2 id="request">消去請求の文面を作る</h2>
-<p>入力した内容は、この端末の中だけで文章に組み立てます。どこにも送信されません。会社の窓口に専用の書式がある場合は、そちらを優先してください。</p>
+<p>入力した内容は、この端末の中だけで文章に組み立てます。どこにも送信されません。実際の利用状況と請求理由を選んでから文面を作り、送る前に内容を確認してください。会社の窓口に専用の書式がある場合は、そちらを優先してください。</p>
 <form id="erase-form" class="no-print" autocomplete="off">
   <fieldset>
     <legend>宛先とあなたの情報</legend>
     <div class="field-row">
-      <div class="field"><label for="f-company">会社名</label><input type="text" id="f-company" placeholder="例：株式会社〇〇"></div>
+      <div class="field"><label for="f-company">会社名（必須）</label><input type="text" id="f-company" placeholder="例：株式会社〇〇" required></div>
       <div class="field"><label for="f-service">サービス名</label><input type="text" id="f-service" placeholder="例：〇〇会員サービス"></div>
-      <div class="field"><label for="f-name">あなたの氏名</label><input type="text" id="f-name" placeholder="例：山田 花子"></div>
+      <div class="field"><label for="f-name">あなたの氏名（必須）</label><input type="text" id="f-name" placeholder="例：山田 花子" required></div>
       <div class="field"><label for="f-email">登録していたメールアドレス</label><input type="email" id="f-email" placeholder="例：hanako@example.com"></div>
       <div class="field"><label for="f-member">会員番号など（分かれば）</label><input type="text" id="f-member"></div>
       <div class="field"><label for="f-left">退会日（退会済みなら）</label><input type="date" id="f-left"></div>
+      <div class="field"><label for="f-target">請求の対象にしたい情報（必須）</label><input type="text" id="f-target" placeholder="例：会員情報、提出した免許証画像" required></div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>利用状況（必須）</legend>
+    <div class="opt-grid">
+      <label class="opt"><input type="radio" name="f-status" value="current" required><span>現在利用中</span></label>
+      <label class="opt"><input type="radio" name="f-status" value="former" required><span>退会済み</span></label>
     </div>
   </fieldset>
   <fieldset>
     <legend>請求の理由と内容</legend>
     <div class="opt-grid">
-      <label class="opt"><input type="checkbox" id="f-r-left" checked><span>退会した、または使っていない<small>「利用する必要がなくなった場合」</small></span></label>
+      <label class="opt"><input type="checkbox" id="f-r-left"><span>退会済みで、対象データの利用目的が終わったと考える<small>「利用する必要がなくなった場合」</small></span></label>
       <label class="opt"><input type="checkbox" id="f-r-leak"><span>漏えいの対象だと通知を受けた<small>「漏えい等の事態が生じた場合」</small></span></label>
-      <label class="opt"><input type="checkbox" id="f-c-id" checked><span>本人確認書類の画像と番号の消去を明記する</span></label>
-      <label class="opt"><input type="checkbox" id="f-c-copies" checked><span>バックアップ、分析用の複製、委託先も対象にする</span></label>
-      <label class="opt"><input type="checkbox" id="f-c-legal" checked><span>消せない場合は、法令名と保存期限の回答を求める</span></label>
+      <label class="opt"><input type="checkbox" id="f-c-id"><span>提出した本人確認書類の画像と番号を対象にする</span></label>
+      <label class="opt"><input type="checkbox" id="f-c-copies"><span>バックアップ、分析用の複製、委託先についても確認を求める</span></label>
+      <label class="opt"><input type="checkbox" id="f-c-legal"><span>消せない場合は、法令名と保存期限の回答を求める</span></label>
       <label class="opt"><input type="checkbox" id="f-c-disclose"><span>あわせて、保有データの開示も請求する<small>第33条。手数料がかかる場合があります</small></span></label>
     </div>
   </fieldset>
+  <p id="erase-error" role="alert" hidden></p>
   <div class="btn-row"><button type="submit" class="btn primary">文面を作る</button></div>
 </form>
 <div class="field">
@@ -200,15 +209,15 @@
 
 〇〇株式会社 個人情報保護ご担当者様
 
-私は、貴社サービス「〇〇」の元利用者です。個人情報の保護に関する法律第35条第5項に基づき、私が識別される保有個人データの利用停止及び消去を請求します。私は既に退会しており、貴社が当該データを利用する必要はなくなっています。消去できない情報がある場合は、その項目、根拠法令及び保存期限をご回答ください。対応結果は、同条第7項に基づきご通知ください。</textarea>
+私は、貴社サービス「〇〇」の（現在利用中／退会済み）の利用者です。個人情報の保護に関する法律第35条第5項に基づき、（該当する請求理由と対象データを記入）の利用停止又は消去を請求します。対応結果は、同条第7項に基づきご通知ください。</textarea>
 </div>
-<div class="btn-row no-print"><button type="button" class="btn" data-copy="#erase-output">文面をコピー</button></div>
+<div class="btn-row no-print"><button type="button" class="btn" data-copy="#erase-output" disabled>文面をコピー</button></div>
 <div class="callout info">
   <span class="callout-title">送る前に</span>
   <ul>
     <li>本人確認のため、会社から追加の書類を求められることがあります。その案内が本物かどうかは、会社の公式サイトで確かめてください。</li>
     <li>開示の請求には、手数料がかかる場合があります（法第38条）。</li>
-    <li>消去の請求をすると、そのサービスの利用履歴やポイントは戻りません。</li>
+    <li>請求が認められて実際にデータが消去されると、利用履歴やポイントを失う場合があります。必要な記録は請求前に確認してください。</li>
   </ul>
 </div>
 

@@ -99,18 +99,18 @@
       steps: ["パスワードを、ほかで使っていない長いものに変える", "設定の「セキュリティ」で、パスキーか2段階認証をオンにする", "再設定用の電話番号と予備のメールアドレスが今も自分のものか確認する"],
       link: ["accounts.html#order", "優先順位を見る"] },
     "bank-limit": { p: "now", t: "ネットバンキングの振込限度額を下げる",
-      why: "どの対策が破られても、被害の上限を決めておけます。最後の防壁です。",
+      why: "銀行振込による被害額を抑えるための設定です。カードの不正利用やなりすまし契約には効きません。",
       steps: ["銀行のアプリやサイトで、1日の振込限度額を普段必要な最小限にする", "ログイン、振込、出金のお知らせをオンにする"],
       link: ["accounts.html#money", "詳しく"] },
-    "card-notify": { p: "now", t: "クレジットカードとスマホ決済の利用通知をオンにする",
+    "card-notify": { p: "now", t: "利用中のカードやスマホ決済の通知をオンにする",
       why: "不正利用は、早く気づくほど止めやすくなります。",
-      steps: ["カード会社の公式アプリで、すべての利用を通知する設定にする", "スマホ決済の利用通知もオンにする"] },
+      steps: ["カードを使っている場合は、カード会社の公式アプリで利用通知をオンにする", "スマホ決済を使っている場合は、その利用通知もオンにする"] },
     "phish-email": { p: "now", t: "漏えいした会社を名乗るメールやSMSのリンクを開かない",
       why: "漏れたアドレスには、その会社を名乗る偽の「お詫び」「補償」「再登録」の連絡が届きやすくなります。",
       steps: ["お知らせは、公式サイトを自分で開いて確認する", "補償やポイントの受け取りを急がせる連絡は無視する", "会社がメールでパスワードや認証コードを聞くことはない"],
       link: ["scams.html#notice", "典型的な手口"] },
     "alias": { p: "week", t: "サービスごとに別のメールアドレス（エイリアス）を使う",
-      why: "A社用のアドレスに「B社」から届いたメールは偽物だと一目で分かり、漏れた元も特定できます。漏れたアドレスだけを止めることもできます。",
+      why: "宛先の違いは不審な連絡や流出経路を調べる手掛かりになりますが、メールの真偽や流出元を証明するものではありません。漏れたアドレスだけを止めることもできます。",
       steps: ["iCloud＋の「メールを非公開」や Firefox Relay などで作る", "大事なサービスから順に、登録アドレスを変える"],
       link: ["accounts.html#alias", "作り方"] },
     "pw-change": { p: "now", t: "同じパスワードを使っているサービスを変更する",
@@ -121,7 +121,7 @@
       steps: ["iPhoneの「パスワード」アプリかGoogleパスワードマネージャーを使う", "新しいパスワードは機械に作らせる", "「秘密の質問」の答えもランダムな文字列にする"],
       link: ["accounts.html#password", "詳しく"] },
     "passkey": { p: "week", t: "大事なサービスをパスキーに切り替える",
-      why: "パスキーは本物のサイトでしか反応しないので、偽サイトに入力させられる心配がありません。SMSの認証コードより強い方式です。",
+      why: "パスキー自体は偽サイトで使えず、SMSの認証コードよりフィッシングに強い方式です。ただし、同じアカウントに残るパスワードなど別のログイン方法は狙われ得ます。",
       steps: ["サービスの設定の「セキュリティ」で「パスキーを作成」を選ぶ", "メール、携帯会社、銀行・証券、通販の順に"],
       link: ["accounts.html#passkey", "パスキーとは"] },
     "carrier-lock": { p: "now", t: "携帯電話会社のアカウントと暗証番号を固める",
@@ -150,9 +150,9 @@
     "no-birth-pin": { p: "now", t: "暗証番号や秘密の質問に生年月日を使っていたら変える",
       why: "生年月日はもう秘密ではありません。",
       steps: ["キャッシュカード、携帯電話の暗証番号、スマホのロックを見直す", "秘密の質問の答えは、ランダムな文字列にしてパスワード管理に保存する"] },
-    "credit-declare": { p: "week", t: "信用情報機関3社に「本人申告」をする",
-      why: "あなたの名前でのカードやローンの申し込みに、注意の目印を付けてもらえます。",
-      steps: ["CIC、JICC、全国銀行個人信用情報センターの公式サイトから申し込む", "免許証の現物が手元にあり、画像だけ漏れた場合は「名義の悪用防止」などを選ぶ", "手続きは混雑しています。郵送も選べます"],
+    "credit-declare": { p: "week", t: "信用情報機関への「本人申告」を検討する",
+      why: "カードやローンの審査で参考にされます。機関ごとに受付条件が異なり、預金口座開設や携帯契約を止める制度ではありません。",
+      steps: ["CICとJICCの公式案内で、名義悪用防止の申告条件を確かめる", "全国銀行個人信用情報センターは通常の取引で画像を提出しただけの場合、原則として受け付けません。漏えい通知を受けた場合の扱いを公式窓口で確認する", "審査で信用情報を照会しない契約には効かず、悪用防止も保証されません"],
       link: ["id.html#todo", "しくみと限界"] },
     "credit-disclose": { p: "ongoing", t: "3〜6か月ごとに、自分の信用情報を開示して確かめる",
       why: "身に覚えのない申し込みや契約に、早く気づけます。",
@@ -230,7 +230,7 @@
     "license-reissue"
   ];
   Object.keys(A).forEach(function (k) { if (ORDER.indexOf(k) < 0) ORDER.push(k); });
-  var BASE = ["rule-inbound", "email-lock", "bank-limit", "card-notify"];
+  var BASE = ["rule-inbound", "email-lock"];
   var MAP = {
     email: ["phish-email", "alias"],
     password: ["pw-change", "pwm", "passkey"],
@@ -238,21 +238,20 @@
     address: ["known-not-proof", "visitor", "mail-watch"],
     birth: ["known-not-proof", "no-birth-pin"],
     idimg: ["carrier-lock", "fake-police", "credit-declare", "credit-disclose", "mail-watch", "outage", "license-reissue"],
-    card: ["card-reissue", "card-statement"],
-    bank: ["refund-scam", "bank-notify-detail"],
+    card: ["card-reissue", "card-statement", "card-notify"],
+    bank: ["refund-scam", "bank-notify-detail", "bank-limit"],
     history: ["context-scam", "known-not-proof"],
     family: ["family-pass", "family-card"],
-    unknown: ["notice-check", "pw-change", "pwm", "passkey", "hibp"],
+    unknown: ["notice-check", "pw-change", "pwm", "passkey", "hibp", "delete-unused"],
     elderly: ["family-pass", "family-card", "scam-app", "visitor"],
     landline: ["answering", "intl-call"],
-    netbank: ["passkey", "securities"],
-    qr: ["qr-lock"]
+    netbank: ["passkey", "securities", "bank-limit"],
+    qr: ["qr-lock", "card-notify"]
   };
 
   function buildPlan(selected) {
     var ids = BASE.slice();
     selected.forEach(function (s) { (MAP[s] || []).forEach(function (id) { if (ids.indexOf(id) < 0) ids.push(id); }); });
-    if (ids.indexOf("delete-unused") < 0) ids.push("delete-unused");
     ids.sort(function (a, b) { return ORDER.indexOf(a) - ORDER.indexOf(b); });
     var html = "";
     var chosen = selected.map(function (s) { return LABELS[s]; }).filter(Boolean);
@@ -367,6 +366,8 @@
     var form = $("#erase-form");
     var out = $("#erase-output");
     if (!form || !out) return;
+    var error = $("#erase-error");
+    var copy = $('[data-copy="#erase-output"]');
     function v(id) { var el = $("#" + id); return el ? el.value.trim() : ""; }
     function c(id) { var el = $("#" + id); return !!(el && el.checked); }
     function fmtDate(iso) {
@@ -377,27 +378,26 @@
       var d = new Date();
       return d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日";
     }
-    function build() {
+    function build(status) {
       var company = v("f-company") || "〇〇株式会社";
       var service = v("f-service") || "〇〇";
       var name = v("f-name") || "（氏名）";
       var email = v("f-email") || "（登録メールアドレス）";
       var member = v("f-member");
-      var left = fmtDate(v("f-left"));
+      var left = status === "former" ? fmtDate(v("f-left")) : "";
+      var target = v("f-target");
       var reasons = [];
       var basis = [];
       if (c("f-r-left")) {
-        reasons.push((left ? "私は" + left + "に貴社サービスを退会しており" : "私は貴社サービスを利用しておらず") + "、貴社が私の保有個人データを利用する必要はなくなっています（法第35条第5項「利用する必要がなくなった場合」）。");
+        reasons.push((left ? "私は" + left + "に貴社サービスを退会しており" : "私は貴社サービスを退会しており") + "、請求対象のデータを引き続き利用する必要がなくなったと考えています（法第35条第5項「利用する必要がなくなった場合」）。");
         basis.push("利用する必要がなくなった場合");
       }
       if (c("f-r-leak")) {
         reasons.push("貴社から、私の個人データが漏えい等の対象となった旨の通知を受けています（同項「第26条第1項本文に規定する事態が生じた場合」）。漏えいした情報が悪用されるおそれがあり、貴社が引き続き保有することにより、私の権利又は正当な利益が害されるおそれがあります。");
         basis.push("漏えい等の事態が生じた場合");
       }
-      if (!reasons.length) reasons.push("（請求の理由を記入してください）");
-
       var items = [];
-      items.push("私が識別される保有個人データ（会員情報、連絡先、注文・配送・利用の履歴を含みます）の利用停止及び消去" + (c("f-c-id") ? "。運転免許証その他の本人確認書類の画像及び番号を含みます" : ""));
+      items.push("私が識別される保有個人データのうち、上記理由に該当する「" + target + "」の利用停止又は消去" + (c("f-c-id") ? "。私が提出した本人確認書類の画像及び番号も対象に含みます" : ""));
       if (c("f-c-copies")) items.push("上記データのバックアップ、分析用の複製、及び業務委託先が保有する複製についても、合理的に可能な範囲で消去すること。困難な場合は、その理由と、代わりに講じる措置（利用停止、アクセス制限、保存期限後の確実な消去など）をご回答ください");
       if (c("f-c-legal")) items.push("法令により保存義務があるため直ちに消去できない情報がある場合は、その項目、根拠となる法令の名称及び条項、並びに保存期限をご回答いただき、保存期限の経過後に遅滞なく消去すること。また、保存期間中は当該法令上の目的以外に利用しないこと");
       items.push("対応の結果を、法第35条第7項に基づき、書面又は電子メールでご通知いただくこと");
@@ -405,7 +405,7 @@
       var t = "";
       t += "件名：保有個人データの利用停止及び消去の請求（個人情報保護法第35条第5項）\n\n";
       t += company + "\n個人情報保護ご担当者様\n\n";
-      t += "私は、貴社サービス「" + service + "」の" + (c("f-r-left") ? "元利用者" : "利用者") + "です。個人情報の保護に関する法律（以下「法」といいます。）第35条第5項に基づき、私が識別される保有個人データについて、下記のとおり請求します。\n\n";
+      t += "私は、貴社サービス「" + service + "」の" + (status === "former" ? "元利用者" : "利用者") + "です。個人情報の保護に関する法律（以下「法」といいます。）第35条第5項に基づき、私が識別される保有個人データについて、下記のとおり請求します。\n\n";
       t += "記\n\n";
       t += "1．請求者\n";
       t += "　氏名：" + name + "\n";
@@ -426,9 +426,24 @@
       t += today() + "\n" + name + "\n";
       return t;
     }
-    form.addEventListener("submit", function (e) { e.preventDefault(); out.value = build(); out.focus(); });
-    $all("input", form).forEach(function (el) { el.addEventListener("change", function () { out.value = build(); }); });
-    out.value = build();
+    function showError(message) {
+      if (error) { error.textContent = message; error.hidden = false; }
+      if (copy) copy.disabled = true;
+    }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var status = form.querySelector('input[name="f-status"]:checked');
+      if (!status) { showError("利用状況を選んでください。"); return; }
+      if (c("f-r-left") && status.value !== "former") { showError("退会済みを選んだ場合だけ、退会後の利用目的に関する理由を選べます。"); return; }
+      if (!c("f-r-left") && !c("f-r-leak")) { showError("事実に合う請求理由を少なくとも1つ選んでください。"); return; }
+      if (error) { error.hidden = true; error.textContent = ""; }
+      out.value = build(status.value);
+      if (copy) copy.disabled = false;
+      out.focus();
+    });
+    form.addEventListener("input", function () { if (copy) copy.disabled = true; });
+    form.addEventListener("change", function () { if (copy) copy.disabled = true; });
+    out.value = "利用状況と請求理由を選び、［文面を作る］を押してください。";
   }
 
   /* ---------- コピー・印刷 ---------- */
