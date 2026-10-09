@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>アカウントの守りを固める ── 優先順位とパスキー・エイリアス・振込限度額｜漏れた後の守り方</title>
-<meta name="description" content="メール、携帯電話、銀行・証券、決済、ポイントの順に、どこから固めるべきか。パスワード管理、パスキー、メールエイリアス、迷惑SMSフィルタ、振込限度額の設定を、理由とともに説明します。">
+<title>パスワードとログインの守り方 ── 優先順位とパスキー・エイリアス・振込限度額｜漏れた後の守り方</title>
+<meta name="description" content="メール、携帯電話、銀行・証券、決済、ポイントの順に、どこから見直すべきか。パスワード管理、パスキー、メールエイリアス、迷惑SMSフィルタ、振込限度額の設定を、理由とともに説明します。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/accounts.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="漏れた後の守り方">
-<meta property="og:title" content="アカウントの守りを固める ── 優先順位とパスキー・エイリアス・振込限度額｜漏れた後の守り方">
-<meta property="og:description" content="メール、携帯電話、銀行・証券、決済、ポイントの順に、どこから固めるべきか。パスワード管理、パスキー、メールエイリアス、迷惑SMSフィルタ、振込限度額の設定を、理由とともに説明します。">
+<meta property="og:title" content="パスワードとログインの守り方 ── 優先順位とパスキー・エイリアス・振込限度額｜漏れた後の守り方">
+<meta property="og:description" content="メール、携帯電話、銀行・証券、決済、ポイントの順に、どこから見直すべきか。パスワード管理、パスキー、メールエイリアス、迷惑SMSフィルタ、振込限度額の設定を、理由とともに説明します。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/accounts.html">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=d934a93ce6">
-<script src="assets/app.js?v=d934a93ce6" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=f8c2e0ee28">
+<script src="assets/app.js?v=f8c2e0ee28" defer></script>
 </head>
 <body class="page-accounts">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -38,16 +38,16 @@
       <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
       <details class="menu-mobile">
         <summary>メニュー</summary>
-        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html" aria-current="page">アカウントの守りを固める</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
+        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html" aria-current="page">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
       </details>
     </div>
   </div>
 </header>
 <main id="main" class="wrap">
 <div class="prose">
-<nav class="crumbs" aria-label="現在地"><a href="index.html">トップ</a><span aria-hidden="true">›</span><span aria-current="page">アカウントの守りを固める</span></nav><header class="hero page-hero"><p class="eyebrow">2026年10月版 市民のための自衛ガイド</p><h1>アカウントの守りを固める</h1><p class="lead">全部を一度にやる必要はありません。乗っ取られたときの被害が大きく、ほかのアカウントの鍵にもなる順に固めます。</p><ul class="trust" aria-label="このページについて"><li>事実には出典を明記</li><li>最終更新 2026年10月9日</li></ul></header><nav class="toc" aria-label="このページの目次"><strong>このページの内容</strong>
+<nav class="crumbs" aria-label="現在地"><a href="index.html">トップ</a><span aria-hidden="true">›</span><span aria-current="page">パスワードとログインの守り方</span></nav><header class="hero page-hero"><p class="eyebrow">2026年10月版 市民のための自衛ガイド</p><h1>パスワードとログインの守り方</h1><p class="lead">全部を一度にやる必要はありません。乗っ取られたときの被害が大きく、ほかのサービスの鍵にもなるものから順に見直します。</p><ul class="trust" aria-label="このページについて"><li>事実には出典を明記</li><li>最終更新 2026年10月9日</li></ul></header><nav class="toc" aria-label="このページの目次"><strong>このページの内容</strong>
 <ol>
-  <li><a href="#order">どこから固めるか（優先順位）</a></li>
+  <li><a href="#order">どこから見直すか（優先順位）</a></li>
   <li><a href="#password">パスワード：全部を別々にする</a></li>
   <li><a href="#passkey">パスキー：偽サイトに強いログイン</a></li>
   <li><a href="#alias">メールアドレスをサービスごとに分ける</a></li>
@@ -57,7 +57,7 @@
   <li><a href="#check">漏えいの確認サービス</a></li>
 </ol></nav>
 
-<h2 id="order">どこから固めるか（優先順位）</h2>
+<h2 id="order">どこから見直すか（優先順位）</h2>
 <ol class="steps">
   <li><strong>メール（Gmail、iCloud、Yahoo!メール、キャリアメールなど）</strong>ほかのサービスのパスワード再設定がここに届く、すべての合鍵です。</li>
   <li><strong>携帯電話会社のアカウントと電話番号</strong>SMSの認証コードの受け取り先です。番号を奪われると、多くのサービスの2段階認証が意味を失います。</li>
@@ -119,7 +119,7 @@
 
 <h2 id="carrier">携帯電話：番号を奪われない</h2>
 <ul>
-  <li><strong>携帯会社のアカウントを固める。</strong>dアカウント、au ID、My SoftBank、楽天IDなどのパスワードを固有のものにし、2段階認証やパスキーをオンにします。</li>
+  <li><strong>携帯会社のIDを乗っ取られないようにする。</strong>dアカウント、au ID、My SoftBank、楽天IDなどのパスワードを固有のものにし、2段階認証やパスキーをオンにします。</li>
   <li><strong>契約時の4桁の暗証番号を見直す。</strong>生年月日、電話番号の一部、「0000」「1234」なら変更します。</li>
   <li><strong>迷惑SMSのフィルタをオンにする。</strong>ドコモの「危険SMS拒否設定」、au・UQ mobile・povoの「迷惑SMSブロック」、ソフトバンク・ワイモバイル・LINEMOの「迷惑SMSフィルター」などがあり、多くは無料です。名称と内容は各社の公式サイトで確認してください。</li>
   <li><strong>大事なサービスの認証を、SMSからパスキーや認証アプリに移す。</strong></li>
@@ -180,12 +180,12 @@
       <div class="report">
         <p class="report-title">誤りや古い情報を見つけたら</p>
         <p>X（旧Twitter）で、作成者の @skikkh に知らせてください。ボタンを押すと、このページの名前とURLが入った状態で投稿画面が開きます。</p>
-        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%BC%8F%E3%82%8C%E3%81%9F%E5%BE%8C%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9%E3%80%8D%E3%81%AE%E3%80%8C%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%AE%88%E3%82%8A%E3%82%92%E5%9B%BA%E3%82%81%E3%82%8B+%E2%94%80%E2%94%80+%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%A8%E3%83%91%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E3%83%BB%E6%8C%AF%E8%BE%BC%E9%99%90%E5%BA%A6%E9%A1%8D%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Faccounts.html" rel="noopener">Xで知らせる</a>
+        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%BC%8F%E3%82%8C%E3%81%9F%E5%BE%8C%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9%E3%80%8D%E3%81%AE%E3%80%8C%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9+%E2%94%80%E2%94%80+%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%A8%E3%83%91%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E3%83%BB%E6%8C%AF%E8%BE%BC%E9%99%90%E5%BA%A6%E9%A1%8D%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Faccounts.html" rel="noopener">Xで知らせる</a>
       </div>
     </div>
     <div>
       <h2>ページ一覧</h2>
-      <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html" aria-current="page">アカウントの守りを固める</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
+      <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html" aria-current="page">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
     </div>
   </div>
 </footer>
