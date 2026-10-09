@@ -417,7 +417,7 @@
         basis.push("利用する必要がなくなった場合");
       }
       if (c("f-r-leak")) {
-        reasons.push("貴社から、私の個人データが漏えい等の対象となった旨の通知を受けています（同項「第26条第1項本文に規定する事態が生じた場合」）。漏えいした情報が悪用されるおそれがあり、貴社が引き続き保有することにより、私の権利又は正当な利益が害されるおそれがあります。");
+        reasons.push("貴社から、私の個人データの漏えい又はそのおそれについて通知を受けています。通知された事態が法第26条第1項本文に規定する事態に該当する場合として、対象データの利用停止又は消去を請求します。漏えいの有無・範囲が未確定の場合は、調査結果と私のデータの該当範囲もご説明ください。");
         basis.push("漏えい等の事態が生じた場合");
       }
       if (c("f-r-harm")) {
@@ -495,6 +495,7 @@
     });
     form.addEventListener("input", function () { if (copy) copy.disabled = true; });
     form.addEventListener("change", function () { if (copy) copy.disabled = true; });
+    out.addEventListener("input", function () { if (copy) copy.disabled = !out.value.trim(); });
     $all('button[type="submit"], #erase-template', form).forEach(function (btn) { btn.disabled = false; });
     out.value = "利用状況と請求理由を選び、［文面を作る］を押してください。";
   }
