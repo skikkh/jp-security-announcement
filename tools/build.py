@@ -11,6 +11,8 @@ import html
 import json
 import re
 import shutil
+from collections import Counter
+from datetime import date
 import urllib.parse
 from pathlib import Path
 
@@ -47,6 +49,8 @@ TAG_CLASS = {
     "パスワード": "t-warn",
     "カード情報の一部": "t-warn",
     "カード情報（番号・有効期限など）": "t-danger",
+    "カード情報": "t-warn",
+    "認証トークン": "t-warn",
     "口座情報": "t-warn",
 }
 # 漏えい項目タグ → 「自分専用の対策」の選択肢
@@ -55,19 +59,44 @@ TAG_TO_PLAN = {
     "生年月日": "birth", "パスワード": "password", "本人確認書類の画像": "idimg",
     "パスポート情報": "idimg", "免許証番号": "idimg", "本人確認書類の番号": "idimg",
     "カード情報の一部": "card", "カード情報（番号・有効期限など）": "card", "口座情報": "bank", "購入・配送・利用履歴": "history",
-    "家族情報": "family",
+    "家族情報": "family", "カード情報": "card", "認証トークン": "token", "保存ファイル・画像": "files",
 }
 STATUS = {
     "確認": ("s-confirmed", "漏えい確認"),
     "可能性": ("s-possible", "可能性・おそれ"),
     "調査中": ("s-investigating", "調査中"),
+    "未確認": ("s-investigating", "漏えい未確認"),
 }
 FILTER_KEYS = {
     "id": {"本人確認書類の画像", "パスポート情報", "免許証番号", "本人確認書類の番号"},
     "password": {"パスワード"},
     "address": {"住所"},
-    "money": {"カード情報の一部", "カード情報（番号・有効期限など）", "口座情報"},
+    "money": {"カード情報の一部", "カード情報（番号・有効期限など）", "カード情報", "口座情報"},
 }
+
+CATEGORIES = {
+    "retail": "小売・通販", "food": "飲食", "travel": "旅行・宿泊", "transport": "交通・配送",
+    "finance": "金融・保険", "telecom_it": "通信・IT", "health": "医療・健康",
+    "work_education": "人材・教育", "media_entertainment": "メディア・娯楽",
+    "government": "行政・公共", "manufacturing": "製造・卸売", "energy": "エネルギー・インフラ",
+    "real_estate": "不動産・住まい", "other": "その他",
+}
+
+
+def category_options(entries: list[dict]) -> str:
+    counts = Counter(e["category"] for e in entries)
+    options = [f'<option value="all">すべての事業種別（{len(entries)}件）</option>']
+    for key, label in CATEGORIES.items():
+        if counts[key]:
+            options.append(f'<option value="{key}">{esc(label)}（{counts[key]}件）</option>')
+    return "".join(options)
+
+
+def check_date_label(iso: str | None) -> str:
+    if not iso:
+        return "確認日未記録"
+    value = date.fromisoformat(iso)
+    return f"{value.year}年{value.month}月{value.day}日確認"
 
 META_RE = re.compile(r"\A\s*<!--meta\s*\n(.*?)\n-->\s*\n", re.S)
 
@@ -154,7 +183,7 @@ def contact_html(e: dict) -> str:
     for f in c.get("forms", []):
         rows.append(f'<li><a href="{esc(f["url"])}" rel="noopener">{esc(f["label"])}</a></li>')
     note = f'<p class="contact-note">{esc(c["note"])}</p>' if c.get("note") else ""
-    check = f'<p class="contact-check">{src_link}（{esc(UPDATED)}確認）</p>' if src_link else ""
+    check = f'<p class="contact-check">{src_link}（{esc(check_date_label(e.get("contact_checked_on")))}）</p>' if src_link else ""
     return (
         '<div class="contact"><span class="contact-title">公式の問い合わせ窓口</span>'
         f'<ul>{"".join(rows)}</ul>{note}{check}</div>'
@@ -166,7 +195,7 @@ def breach_cards(entries: list[dict]) -> str:
     for e in sorted(entries, key=lambda x: x["date"], reverse=True):
         tags = e["items"]
         keys = sorted({k for k, v in FILTER_KEYS.items() if v & set(tags)})
-        plan = sorted({TAG_TO_PLAN[t] for t in tags if t in TAG_TO_PLAN})
+        plan = sorted({TAG_TO_PLAN[t] for t in tags if t in TAG_TO_PLAN}) or ["unknown"]
         st_cls, st_label = STATUS[e["status"]]
         tag_html = "".join(
             f'<li class="{TAG_CLASS.get(t, "")}">{esc(t)}</li>' if TAG_CLASS.get(t) else f"<li>{esc(t)}</li>"
@@ -177,14 +206,15 @@ def breach_cards(entries: list[dict]) -> str:
         official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
         links = [] if official == e["url"] else [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
         if plan:
-            links.append(f'<a href="plan.html#items={",".join(plan)}">この漏えいの対策を見る</a>')
+            links.append(f'<a href="plan.html#items={",".join(plan)}">この事案の対策を確認する</a>')
         service = f'<span class="muted">｜{esc(e["service"])}</span>' if e.get("service") else ""
         note = f'<p class="breach-note">{esc(e["note"])}</p>' if e.get("note") else ""
         out.append(
-            f'<li class="{cls}" data-keys="{" ".join(keys)}" data-search="{esc(search)}">'
+            f'<li class="{cls}" data-keys="{" ".join(keys)}" data-category="{e["category"]}" data-search="{esc(search)}">'
             f'<div class="breach-top"><span>{esc(e["date_label"])} 公表</span>'
             f'<span class="status {st_cls}">{st_label}</span></div>'
             f'<p class="breach-name">{esc(e["org"])}{service}</p>'
+            f'<p class="muted">事業種別：{esc(CATEGORIES[e["category"]])}</p>'
             f'<span class="breach-count">{esc(e["count"])}</span>'
             f'<ul class="tags" aria-label="漏えい（の可能性がある）項目">{tag_html}</ul>'
             f"{note}"
@@ -236,7 +266,7 @@ def page_hero(slug: str, body: str, root: str) -> str:
 ALLOWED_TAGS = {
     "氏名", "住所", "電話番号", "メールアドレス", "生年月日", "性別", "会員ID", "パスワード",
     "本人確認書類の画像", "免許証番号", "パスポート情報", "本人確認書類の番号",
-    "カード情報の一部", "カード情報（番号・有効期限など）", "口座情報", "購入・配送・利用履歴", "家族情報", "勤務先・所属",
+    "カード情報の一部", "カード情報（番号・有効期限など）", "カード情報", "認証トークン", "保存ファイル・画像", "口座情報", "購入・配送・利用履歴", "家族情報", "勤務先・所属",
     "その他（詳細は出典）",
 }
 CONTACT_KEYS = {"name", "tels", "hours", "emails", "forms", "note"}
@@ -248,13 +278,21 @@ def validate(entries: list[dict]) -> None:
     seen = set()
     for i, e in enumerate(entries):
         where = f"#{i} {e.get('org', '?')}"
-        for k in ("date", "date_label", "org", "count", "status", "items", "url", "src"):
+        for k in ("date", "date_label", "org", "count", "status", "items", "url", "src", "category"):
             if not e.get(k):
                 errors.append(f"{where}: {k} がありません")
         if e.get("date") and not re.fullmatch(r"20\d\d-\d\d-\d\d", e["date"]):
             errors.append(f"{where}: date は YYYY-MM-DD 形式にしてください")
         if e.get("status") not in STATUS:
             errors.append(f"{where}: status は {list(STATUS)} のいずれか")
+        if e.get("category") not in CATEGORIES:
+            errors.append(f"{where}: category は定義済みの事業種別を選んでください")
+        for key in ("date", "source_checked_on", "contact_checked_on"):
+            if e.get(key):
+                try:
+                    date.fromisoformat(e[key])
+                except (ValueError, TypeError):
+                    errors.append(f"{where}: {key} は有効な YYYY-MM-DD の日付にしてください")
         if e.get("src") not in ("公式", "報道"):
             errors.append(f"{where}: src は 公式 か 報道")
         for t in e.get("items", []):
@@ -306,6 +344,7 @@ def main() -> None:
     replacements = {
         "{{breach_cards}}": breach_cards(breaches),
         "{{breach_total}}": str(len(breaches)),
+        "{{category_options}}": category_options(breaches),
         "{{updated}}": UPDATED,
     }
 

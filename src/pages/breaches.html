@@ -1,31 +1,35 @@
 <!--meta
-title: 主な漏えい事案の一覧（2026年）｜漏れた後の守り方
-description: 2026年に公表された国内の主な個人情報漏えい事案を、漏れた項目つきで一覧にしました。運転免許証などの本人確認書類、パスワード、住所、カード・口座で絞り込めます。
+title: 漏えい・不正アクセス事案の一覧（2026年）｜漏れた後の守り方
+description: 2026年に公表された漏えい・不正アクセス事案を、事業種別、会社名、対象項目で絞り込めます。流出の確認、可能性・調査中・未確認を区別しています。
 -->
 <p class="updated">最終更新 {{updated}}（この日までの各社発表・報道をもとに作成）</p>
-<h1>主な漏えい事案の一覧</h1>
-<p class="lead">2026年に公表された国内の個人情報の漏えい事案を、各社の公式発表で確かめて{{breach_total}}件まとめました。使っていたサービスがあれば、<strong>そのサービスの公式サイトを自分で開いて</strong>、通知の内容を確かめてください。</p>
+<h1>漏えい・不正アクセス事案の一覧</h1>
+<p class="lead">2026年に公表された事案を{{breach_total}}件掲載しています。情報流出の有無や範囲がまだ確認されていない事案も含みます。事業種別で絞り込み、使っていたサービスがあれば<strong>公式発表と自分への通知</strong>で対象項目を確かめてください。</p>
 <div class="callout warn">
   <span class="callout-title">この一覧の読み方</span>
   <ul>
     <li>件数と項目は、公表時点の各社発表と報道によるものです。調査が進むと変わります。必ず出典の最新情報を確認してください。</li>
-    <li>「漏えい確認」「可能性・おそれ」「調査中」は、各社の表現をもとに分類しています。</li>
+    <li>「漏えい確認」「可能性・おそれ」「調査中」「漏えい未確認」は、流出についての公表内容をもとに分類しています。不正アクセスが確認されても、個人情報の流出まで確認されたとは限りません。</li>
     <li>トップに載せている「119件」は、セキュリティ会社マクニカによる集計です。マクニカは件数だけを公表していて、事案名の一覧は出していません。そのため、この一覧は、事案名を公表しているまとめサイトを手がかりに、一件ずつ各社の公式発表で確かめたものを載せています。件数は119件と一致しません。</li>
-    <li>公式発表や信頼できる報道で確かめられなかった事案は、載せていません。新しい事案は毎時追加しています。</li>
-    <li>「この漏えいの対策を見る」を押すと、漏れた項目に合わせた対策リストが開きます。</li>
+    <li>新規事案と続報は毎時調査し、出典で確認できた変更を反映します。調査時点で未確認の点は、その旨を注記しています。</li>
+    <li>項目は事案全体の範囲です。全員の全項目が漏れたという意味ではありません。「この事案の対策を確認する」の選択肢は、自分への通知に合わせて選び直してください。</li>
   </ul>
 </div>
 <div class="callout info">
   <span class="callout-title">公式の問い合わせ窓口について</span>
   <ul>
-    <li>各事案の「公式の問い合わせ窓口」は、各社の公式発表に書かれた本件専用の窓口を、{{updated}}に書き写したものです。</li>
+    <li>各事案の窓口は、公式発表が本件用に指定した利用者向けの連絡先です。確認日は各窓口に記載し、サイトのビルド日だけで再確認済みにはしません。</li>
     <li>かける前に「公式発表で確認」から、番号と受付時間が今も同じか確かめてください。このサイトの書き写しを信用する理由はありません。</li>
     <li>メールやSMSに書かれた「お問い合わせ番号」には、かけないでください。窓口を名乗る詐欺に使われます。</li>
     <li>退会済みでも、対象かどうかを問い合わせられる会社があります。</li>
   </ul>
 </div>
 <div class="filters no-print" role="search">
-  <div class="field"><label for="breach-q">会社名・サービス名で探す</label><input type="search" id="breach-q" placeholder="例：タイムズ、ローソン、アプリ"></div>
+  <div class="field-row">
+    <div class="field"><label for="breach-category">事業の種別で絞り込む</label><select id="breach-category">{{category_options}}</select></div>
+    <div class="field"><label for="breach-q">会社名・サービス名で探す</label><input type="search" id="breach-q" placeholder="例：タイムズ、ローソン、JR"></div>
+  </div>
+  <p class="muted">事業種別は対象サービスの用途をもとに分類しています。会社の全事業を分類したものではありません。</p>
   <div class="chips" role="group" aria-label="漏れた項目で絞り込む">
     <button type="button" class="chip" data-filter="all" aria-pressed="true">すべて</button>
     <button type="button" class="chip" data-filter="id" aria-pressed="false">本人確認書類・旅券</button>
@@ -34,6 +38,8 @@ description: 2026年に公表された国内の主な個人情報漏えい事案
     <button type="button" class="chip" data-filter="money" aria-pressed="false">カード・口座</button>
   </div>
   <p class="muted" id="breach-count" aria-live="polite"></p>
+  <button type="button" class="btn small" id="breach-clear">絞り込みを解除する</button>
 </div>
+<p id="breach-empty" hidden>条件に合う事案がありません。会社名を短くするか、事業種別・対象項目の条件を解除してください。</p>
 {{breach_cards}}
 <p class="src">主な集計元：<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ</a>、<a href="https://smartscope.blog/en/blog/japan-data-breach-list-tier-2026-09-10/" rel="noopener">SmartScope</a>、<a href="https://qiita.com/nnnnnnnok/items/95cb61994478d827fee3" rel="noopener">Qiita「2026年の大規模な情報漏洩まとめ」</a>、<a href="https://enterprisezine.jp/news/detail/25188" rel="noopener">EnterpriseZine</a>、各社の発表。誤りや新しい情報があれば、ページのいちばん下の「Xで知らせる」ボタンからお知らせください。</p>

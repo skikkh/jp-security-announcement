@@ -178,7 +178,6 @@ br.pc { display: none; }
 .callout.ok .callout-title { color: var(--ok); }
 .callout.engineer { background: var(--surface); border-left: 5px solid var(--brand); }
 .callout.engineer .callout-title { color: var(--brand); }
-.callout.engineer .callout-title::before { content: "エンジニアの見立て｜"; font-size: .8em; letter-spacing: .06em; }
 
 /* ---------- チェックリスト ---------- */
 .checklist { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: 12px; }

@@ -80,7 +80,7 @@
   var LABELS = {
     email: "メールアドレス", password: "パスワード", phone: "電話番号", address: "氏名・住所",
     birth: "生年月日", idimg: "本人確認書類の画像や番号", card: "クレジットカード情報", bank: "口座情報",
-    history: "購入・配送・利用の履歴", family: "家族の情報", unknown: "わからない",
+    history: "購入・配送・利用の履歴", family: "家族の情報", token: "認証トークン・外部サービス連携", files: "保存した写真・文書など", unknown: "わからない",
     elderly: "高齢の家族がいる", landline: "固定電話がある", netbank: "ネットバンキング・証券", qr: "スマホ決済"
   };
   var GROUPS = [
@@ -94,9 +94,9 @@
       why: "漏れた情報を使った詐欺は、名前や使っているサービスを正しく言い当ててきます。見分けるより、連絡の経路で防ぐほうが確実です。",
       steps: ["メールやSMSのリンクは押さず、公式アプリかブックマークから開く", "電話は一度切り、カード裏面や公式サイトの番号にかけ直す", "訪問者にはドアを開けず、会社や役所の代表番号で確かめる"],
       link: ["scams.html#rule", "詳しく"] },
-    "email-lock": { p: "now", t: "メールを乗っ取られないようにする（パスワードの変更と2段階認証）",
-      why: "ほとんどのサービスのパスワード再設定はメールに届きます。メールは全アカウントの合鍵です。",
-      steps: ["パスワードを、ほかで使っていない長いものに変える", "設定の「セキュリティ」で、パスキーか2段階認証をオンにする", "再設定用の電話番号と予備のメールアドレスが今も自分のものか確認する"],
+    "email-lock": { p: "now", t: "メールのログイン方法と再設定先を点検する",
+      why: "多くのサービスのパスワード再設定がメールに届くため、メールの乗っ取りは被害を広げる原因になります。",
+      steps: ["パスワードが短い・推測されやすい・使い回し・漏えいの対象なら、長くランダムで固有のものへ変更する", "対応するパスキーや多要素認証を設定する。新しい方法でログインできることを確認してから古い方法を変更する", "再設定用の電話番号と予備のメールアドレスが今も自分のものか確認する。不審なログインがあれば被害時の手順へ"],
       link: ["accounts.html#order", "優先順位を見る"] },
     "bank-limit": { p: "now", t: "ネットバンキングの振込限度額を下げる",
       why: "銀行振込による被害額を抑えるための設定です。カードの不正利用やなりすまし契約には効きません。",
@@ -113,16 +113,17 @@
       why: "宛先の違いは不審な連絡や流出経路を調べる手掛かりになりますが、メールの真偽や流出元を証明するものではありません。漏れたアドレスだけを止めることもできます。",
       steps: ["iCloud＋の「メールを非公開」や Firefox Relay などで作る", "大事なサービスから順に、登録アドレスを変える"],
       link: ["accounts.html#alias", "作り方"] },
-    "pw-change": { p: "now", t: "同じパスワードを使っているサービスを変更する",
-      why: "暗号化されていても、短いパスワードは解読されることがあります。解読されたパスワードは、ほかのサービスに自動で試されます。",
-      steps: ["漏えいしたサービスのパスワードを、公式アプリかブックマークから開いて変える", "同じ・似たパスワードのサービスを、メール、銀行・証券、買い物、SNSの順に変える"] },
+    "pw-change": { p: "now", t: "漏れたパスワードと、使い回しを変更する",
+      why: "暗号化とハッシュ化は異なる保管方法です。危険度は方式や別管理の鍵、パスワードの強さによるため、『読めない形式』だけで安全とは判断できません。",
+      steps: ["対象サービスの公式案内に従って変更する。停止中なら、先に同じ・似たパスワードを使う他のサービスを変更する", "新しいものはサービスごとに独立して生成する。古いものの末尾だけを変える方法は使わない", "偽サイトへ入力した、不審なログインがある場合は、ログイン済み端末と連携・再設定先の確認も行う"],
+      link: ["accounts.html#password", "変更する場合と保管方式の説明"] },
     "pwm": { p: "week", t: "パスワード管理を使い、全部を別々にする",
-      why: "1つ漏れても、ほかに広がらなくなります。",
-      steps: ["iPhoneの「パスワード」アプリかGoogleパスワードマネージャーを使う", "新しいパスワードは機械に作らせる", "「秘密の質問」の答えもランダムな文字列にする"],
+      why: "長さ・予測しにくさ・サービスごとの独立性をそろえ、1つ漏れた情報で他のサービスへログインされるリスクを減らします。",
+      steps: ["OSやブラウザーのパスワード管理、または信頼できる専用アプリを使う", "サービスの制限に合わせ、できれば16文字以上のランダムなパスワードを個別に生成する", "管理ツールの鍵と復旧方法も確認する。秘密の質問は、利用できる安全な別方式があればそちらを選ぶ"],
       link: ["accounts.html#password", "詳しく"] },
     "passkey": { p: "week", t: "大事なサービスをパスキーに切り替える",
       why: "パスキー自体は偽サイトで使えず、SMSの認証コードよりフィッシングに強い方式です。ただし、同じアカウントに残るパスワードなど別のログイン方法は狙われ得ます。",
-      steps: ["サービスの設定の「セキュリティ」で「パスキーを作成」を選ぶ", "メール、携帯会社、銀行・証券、通販の順に"],
+      steps: ["対応サービスの公式設定から作成し、保存先と別の端末でログインできるか確認する", "機種変更や端末紛失時の復旧手段を確かめる。残るパスワードと再設定先も保護する"],
       link: ["accounts.html#passkey", "パスキーとは"] },
     "carrier-lock": { p: "now", t: "携帯電話会社のIDのパスワードと、契約の暗証番号を見直す",
       why: "偽造した身分証で電話番号を乗っ取られると、SMSの認証コードが全部相手に届きます。",
@@ -132,8 +133,8 @@
       why: "漏れた番号には、詐欺のSMSが増えます。受信前に止められるものは止めます。",
       steps: ["ドコモ「危険SMS拒否設定」、au・UQ mobile・povo「迷惑SMSブロック」、ソフトバンク・ワイモバイル・LINEMO「迷惑SMSフィルター」など", "設定後、必要な認証コードのSMSが届くか確かめる"] },
     "sms-2fa": { p: "week", t: "大事なサービスの認証を、SMSからパスキーや認証アプリへ移す",
-      why: "電話番号を乗っ取られても、ログインを守れるようにします。",
-      steps: ["銀行、証券、決済、メールの設定で、パスキーや認証アプリが選べるか確認する"] },
+      why: "SMSを使う認証はSIM乗っ取りの影響を受けます。選べるならフィッシングに強い認証を使い、SMS以外の方法も用意します。SMSでも認証なしより被害を減らす効果があります。",
+      steps: ["公式設定でパスキー・セキュリティキー、または認証アプリが使えるか確認する", "新しい認証と復旧手段を使えることを確かめてから、既存のSMS認証を変更する"] },
     "outage": { p: "ongoing", t: "突然「圏外」「SIMなし」になったら、すぐ携帯会社へ",
       why: "SIM乗っ取りの兆候です。その間に銀行や決済が狙われます。",
       steps: ["家族の電話などから携帯会社に連絡し、回線を止めてもらう", "銀行と決済アプリのログイン履歴を確認する"] },
@@ -154,20 +155,20 @@
       why: "カードやローンの審査で参考にされます。機関ごとに受付条件が異なり、預金口座開設や携帯契約を止める制度ではありません。",
       steps: ["CICとJICCの公式案内で、名義悪用防止の申告条件を確かめる", "全国銀行個人信用情報センターは通常の取引で画像を提出しただけの場合、原則として受け付けません。漏えい通知を受けた場合の扱いを公式窓口で確認する", "審査で信用情報を照会しない契約には効かず、悪用防止も保証されません"],
       link: ["id.html#todo", "しくみと限界"] },
-    "credit-disclose": { p: "ongoing", t: "3〜6か月ごとに、自分の信用情報を開示して確かめる",
+    "credit-disclose": { p: "ongoing", t: "必要に応じて、信用情報の開示で確認する",
       why: "身に覚えのない申し込みや契約に、早く気づけます。",
-      steps: ["各機関の公式サイトから開示を申し込む", "知らない会社からの照会や契約がないか見る"] },
+      steps: ["身に覚えのない契約や通知があれば、まず該当会社へ連絡する", "開示の手数料と記録の保持期間を各機関で確認し、知らない照会や契約を調べる。継続して開示する頻度は状況に応じて決める"] },
     "fake-police": { p: "now", t: "「警察」を名乗る電話の筋書きを知っておく",
       why: "漏れた免許証の番号や写真を見せて、信用させてきます。",
       steps: ["警察が電話でお金や口座の確認を求めることはない", "LINEやビデオ通話に誘導されたら切る", "不安なら #9110 か、自分で調べた警察署の番号へ"],
       link: ["scams.html#police", "ニセ警察詐欺"] },
-    "license-reissue": { p: "opt", t: "運転免許証の再交付を検討する",
-      why: "顔写真と番号の末尾は変わりますが、偽造品は目で見るだけの確認を狙うため、効果は限定的です。",
-      steps: ["住所地の運転免許センターか警察署に、特例の有無と条件を確かめる"],
+    "license-reissue": { p: "opt", t: "流出した本人確認書類の発行元へ相談する",
+      why: "免許証・旅券・マイナンバーカードは手続きが異なります。画像や番号の流出だけで一律に再交付を勧めることはできません。",
+      steps: ["書類の種類と、現物の紛失なのか画像・番号の流出なのかを伝え、発行元の公式窓口で対応を確認する", "免許証は住所地の運転免許センター等に、流出時の再交付受付と条件を確認する"],
       link: ["id.html#reissue", "判断の材料"] },
-    "card-reissue": { p: "now", t: "カード会社に、番号を変える再発行を相談する",
-      why: "番号の一部や有効期限も、ほかの情報と組み合わせると悪用の手がかりになります。",
-      steps: ["カードの裏面の番号に電話する", "再発行後、カードを登録しているサービスの情報を更新する"] },
+    "card-reissue": { p: "now", t: "漏れたカード情報の範囲を確かめ、カード会社へ相談する",
+      why: "番号全体・セキュリティコードと、番号の一部だけでは危険度が異なります。一部の流出だけで必ず再発行が必要とは限りません。",
+      steps: ["番号全体を偽サイトへ入力した、全体の流出通知や不正利用がある場合は、すぐカードの裏面の番号など公式窓口へ連絡する", "末尾など一部だけなら公式通知と明細を確認し、不審な利用や不明な点をカード会社へ相談する。再発行はカード会社の案内に従う"] },
     "card-statement": { p: "ongoing", t: "カードの明細を毎月確認する",
       why: "少額の見覚えのない請求は、カードが使えるかの「試し打ち」のことがあります。",
       steps: ["少額でも、覚えのない請求はカード会社に連絡する"] },
@@ -198,12 +199,12 @@
       steps: ["haveibeenpwned.com にメールアドレスを入れる", "知らないサイトの「漏えいチェック」には個人情報を入れない"],
       link: ["accounts.html#check", "詳しく"] },
     "delete-unused": { p: "week", t: "使っていないサービスを洗い出し、退会と消去請求をする",
-      why: "退会しただけではデータは消えません。法律にもとづく消去請求で、将来の漏えいを減らします。",
+      why: "退会後も一部の情報が残る場合があります。保存する目的と期間を確認し、条件に合う情報の利用停止・消去を請求できます。",
       steps: ["本人確認書類を出したサービスから優先する", "消去請求の文面は、退会・削除のページで作れる"],
       link: ["delete.html", "退会・削除の真実"] },
     "scam-app": { p: "week", t: "スマホに詐欺対策アプリを入れる",
       why: "国際電話番号や、犯行に使われた番号からの着信を警告したり止めたりできます。",
-      steps: ["「詐欺対策 by NTTタウンページ」「詐欺バスター Lite」など。タイムズカーが警察庁から紹介されたとして案内しています"],
+      steps: ["警察庁の公式『推奨アプリ』一覧から案内先を開く。検索広告や届いたリンクから入れない", "対応OSと設定、取得する情報を確かめる。警告・遮断の機能は環境によって異なり、全ての詐欺を止めるものではない"],
       link: ["family.html#phone", "電話の設定"] },
     "answering": { p: "now", t: "固定電話をいつも留守番電話にしておく",
       why: "相手と用件を確かめてから出られます。詐欺の電話は録音を嫌がります。",
@@ -218,13 +219,21 @@
       link: ["accounts.html#money", "詳しく"] },
     "qr-lock": { p: "now", t: "スマホ決済（PayPayなど）の設定を見直す",
       why: "決済アプリは、銀行口座からの自動チャージでお金を引き出される入口になります。",
-      steps: ["パスワードを固有にし、アプリのロックに生体認証を使う", "利用通知をオンにする", "銀行口座からの自動チャージをオフにするか、金額を低くする"] }
+      steps: ["対応するログイン保護と画面ロックを設定する", "利用通知をオンにし、自動チャージを必要な範囲へ見直す"] },
+    "session-revoke": { p: "now", t: "ログイン済み端末と外部サービス連携を見直す",
+      why: "パスワードを変えても、第三者のログイン状態や連携用トークンがすべて失効するとは限りません。",
+      steps: ["公式設定で、心当たりのないログイン済み端末・セッション・連携アプリを解除する", "認証トークンやアクセスキーの流出通知があれば、発行元の手順で無効化・再発行する。新しい認証情報を入力して流出を調べるサイトは使わない", "再設定先、登録された認証方法、メールの転送設定も点検する"],
+      link: ["help.html#account-recovery", "乗っ取りが疑われる場合の手順"] },
+    "files-review": { p: "now", t: "保存していた写真・文書の内容に応じて対処する",
+      why: "画像や文書に、ログイン情報や身分証・非公開の情報が含まれる場合があります。何が保存されていたかによって対応が変わります。",
+      steps: ["公式発表と通知で、対象のファイルや公開範囲を確認する", "パスワードやアクセスキーが写っていれば、その発行元で変更・無効化する。身分証の画像が含まれる場合は発行元に相談する", "脅迫や『削除費用』の要求には応じず、記録を残して警察など公式窓口へ相談する"],
+      link: ["help.html", "被害時の連絡先"] }
   };
   /* 同じグループ内の並び順（攻撃者の換金ルートへの効き目が大きい順） */
   var ORDER = [
-    "rule-inbound", "email-lock", "carrier-lock", "pw-change", "card-reissue", "refund-scam", "fake-police",
+    "notice-check", "rule-inbound", "email-lock", "carrier-lock", "pw-change", "session-revoke", "files-review", "card-reissue", "refund-scam", "fake-police",
     "phish-email", "known-not-proof", "bank-limit", "card-notify", "securities", "qr-lock", "bank-notify-detail",
-    "sms-filter", "no-birth-pin", "context-scam", "family-pass", "answering", "notice-check",
+    "sms-filter", "no-birth-pin", "context-scam", "family-pass", "answering",
     "credit-declare", "passkey", "pwm", "sms-2fa", "alias", "scam-app", "intl-call", "family-card", "hibp", "delete-unused",
     "outage", "mail-watch", "credit-disclose", "card-statement", "visitor",
     "license-reissue"
@@ -234,6 +243,8 @@
   var MAP = {
     email: ["phish-email", "alias"],
     password: ["pw-change", "pwm", "passkey"],
+    token: ["session-revoke"],
+    files: ["files-review"],
     phone: ["carrier-lock", "sms-filter", "sms-2fa", "outage"],
     address: ["known-not-proof", "visitor", "mail-watch"],
     birth: ["known-not-proof", "no-birth-pin"],
@@ -242,7 +253,7 @@
     bank: ["refund-scam", "bank-notify-detail", "bank-limit"],
     history: ["context-scam", "known-not-proof"],
     family: ["family-pass", "family-card"],
-    unknown: ["notice-check", "pw-change", "pwm", "passkey", "hibp", "delete-unused"],
+    unknown: ["notice-check", "pwm", "passkey", "hibp", "delete-unused"],
     elderly: ["family-pass", "family-card", "scam-app", "visitor"],
     landline: ["answering", "intl-call"],
     netbank: ["passkey", "securities", "bank-limit"],
@@ -334,6 +345,9 @@
     if (!list) return;
     var items = $all("#breach-list > li");
     var q = $("#breach-q");
+    var category = $("#breach-category");
+    var clear = $("#breach-clear");
+    var empty = $("#breach-empty");
     var chips = $all(".chip[data-filter]");
     var count = $("#breach-count");
     var filter = "all";
@@ -343,12 +357,14 @@
       items.forEach(function (li) {
         var keys = (li.getAttribute("data-keys") || "").split(" ");
         var okFilter = filter === "all" || keys.indexOf(filter) >= 0;
-        var text = norm(li.getAttribute("data-search") + " " + li.textContent);
+        var okCategory = !category || category.value === "all" || li.getAttribute("data-category") === category.value;
+        var text = norm(li.getAttribute("data-search"));
         var okQuery = !query || text.indexOf(query) >= 0;
-        li.hidden = !(okFilter && okQuery);
+        li.hidden = !(okFilter && okCategory && okQuery);
         if (!li.hidden) shown += 1;
       });
       if (count) count.textContent = items.length + "件中 " + shown + "件を表示";
+      if (empty) empty.hidden = shown !== 0;
     }
     chips.forEach(function (c) {
       c.addEventListener("click", function () {
@@ -358,6 +374,14 @@
       });
     });
     if (q) q.addEventListener("input", apply);
+    if (category) category.addEventListener("change", apply);
+    if (clear) clear.addEventListener("click", function () {
+      if (q) q.value = "";
+      if (category) category.value = "all";
+      filter = "all";
+      chips.forEach(function (chip) { chip.setAttribute("aria-pressed", chip.getAttribute("data-filter") === "all" ? "true" : "false"); });
+      apply();
+    });
     apply();
   }
 

@@ -27,7 +27,10 @@
    "emails": [
     "info@skyticket.com"
    ]
-  }
+  },
+  "category": "travel",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-09",
@@ -47,7 +50,7 @@
    "会員ID",
    "パスワード"
   ],
-  "note": "パスワードは暗号化されており、そのままでは読み取れないとしています。ポイントカード番号も対象。決済情報は保有していないとしています。",
+  "note": "公式発表はパスワードのハッシュ値を対象に挙げています。会員情報の流出自体は確認されていますが、対象となる人数と範囲は精査中です。最大約643万件は会員番号の件数で、実人数ではありません。決済情報は保有していないとしています。",
   "url": "https://ssl4.eir-parts.net/doc/9278/tdnet/2893077/00.pdf",
   "src": "公式",
   "contact": {
@@ -62,7 +65,10 @@
      "url": "https://www.bookoffgroup.co.jp/contact-us/contact-us-261009/"
     }
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-08",
@@ -91,7 +97,10 @@
      "url": "https://lawson-faq.lawson.co.jp/"
     }
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-08",
@@ -122,7 +131,10 @@
    ],
    "note": "10月9日に専用のフリーダイヤルが開設されました。電話がつながりにくい場合は、メールでも受け付けています。"
   },
-  "official": "https://www.dkkaraoke.co.jp/news/newsletter/261009_1.html"
+  "official": "https://www.dkkaraoke.co.jp/news/newsletter/261009_1.html",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-08",
@@ -154,7 +166,10 @@
      "url": "https://brand.hi-ho.jp/support/technical/"
     }
    ]
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-07",
@@ -181,7 +196,10 @@
     "0120-268-567"
    ],
    "hours": "平日9:00〜17:00（土・日・祝日・年末年始を除く）"
-  }
+  },
+  "category": "finance",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-07",
@@ -209,7 +227,10 @@
    "emails": [
     "support-desk@his-world.com"
    ]
-  }
+  },
+  "category": "travel",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -225,7 +246,7 @@
    "メールアドレス",
    "電話番号"
   ],
-  "note": "住所、生年月日、カード情報、パスワード、購入履歴は含まないとしています。",
+  "note": "流出した事実は確認されていますが、最大1,735,154人は流出の可能性がある対象範囲です。登録状況により項目は異なります。住所、生年月日、カード情報、パスワード、購入履歴は含まないとしています。",
   "url": "https://www.mrmax.co.jp/info/incident_20261006/",
   "src": "公式",
   "contact": {
@@ -233,7 +254,10 @@
    "emails": [
     "incident-desk@mrmax.co.jp"
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -248,7 +272,9 @@
    "住所",
    "電話番号",
    "メールアドレス",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "口座情報",
+   "カード情報"
   ],
   "note": "問い合わせ欄に書き込まれた口座やカードの情報が含まれる可能性があるとしています。",
   "url": "https://www.citizen.co.jp/release/news/detail/2026/20261006.html",
@@ -261,7 +287,10 @@
      "url": "https://contact.citizen.co.jp/m/support-202610"
     }
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-27",
@@ -288,7 +317,10 @@
    "emails": [
     "incident_support@cinra.net"
    ]
-  }
+  },
+  "category": "work_education",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-06",
@@ -296,13 +328,15 @@
   "org": "楽天ドライブ",
   "service": "",
   "kana": "らくてん",
-  "count": "15,382アカウント（保存データ）ほか",
+  "count": "保存データ15,382アカウント／パスワード情報313アカウントほか",
   "status": "確認",
   "items": [
    "パスワード",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "会員ID",
+   "保存ファイル・画像"
   ],
-  "note": "管理者用アカウントの認証情報が盗まれ、1月29日から9月17日まで、保存された写真や文書などが取得・閲覧されました。別に8月27日、313アカウントで変換済みのパスワードなどが閲覧されています。",
+  "note": "保存された写真・文書等が取得・閲覧された15,382アカウントに加え、8月27日にアカウント名等687件、変換済みパスワード等313件が対象です。対象が重なる可能性があるため合計していません。保存していた内容に応じて対応が変わります。",
   "url": "https://support.rakuten-drive.com/hc/ja/articles/62934949147929",
   "src": "公式",
   "contact": {
@@ -317,7 +351,10 @@
      "url": "https://support.rakuten-drive.com/hc/ja/requests/new"
     }
    ]
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -342,7 +379,10 @@
     "0120-795-775"
    ],
    "hours": "10時〜18時（土日祝日を含む）"
-  }
+  },
+  "category": "food",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -372,7 +412,10 @@
     "infoq-support@gmo-research.ai"
    ],
    "hours": "平日10:00〜18:00（メールは24時間受付）"
-  }
+  },
+  "category": "other",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-12",
@@ -392,7 +435,8 @@
    "勤務先・所属",
    "会員ID",
    "パスワード",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "購入・配送・利用履歴"
   ],
   "note": "パスワードは暗号化された状態です。口座情報は保有しておらず、画像の漏えいも確認されていないとしています。マイページ機能は停止中です。",
   "url": "https://www.whiteessence.com/news/news/20261005/",
@@ -406,7 +450,10 @@
    "emails": [
     "cust-qqsupport@whiteessence.co.jp"
    ]
-  }
+  },
+  "category": "health",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -431,7 +478,10 @@
     "0120-851850"
    ],
    "hours": "午前9時から午後5時まで（土・日・祝日を除く）"
-  }
+  },
+  "category": "finance",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -454,7 +504,10 @@
     "0120-600-463"
    ],
    "hours": "平日9時〜18時"
-  }
+  },
+  "category": "work_education",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -482,7 +535,10 @@
    ],
    "hours": "9:00〜18:00（土日祝を含む）",
    "note": "公式サイトの問い合わせフォーム、代表電話、店舗では本件の対応をしていないとしています。"
-  }
+  },
+  "category": "food",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -516,7 +572,10 @@
     "security@guest-desk.jp"
    ],
    "note": "自分が対象かどうかの確認も受け付けています。"
-  }
+  },
+  "category": "travel",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-05",
@@ -542,7 +601,10 @@
      "url": "https://www.omu.moe/news/2026-10-06-0377b39a.html"
     }
    ]
-  }
+  },
+  "category": "work_education",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-03",
@@ -573,7 +635,10 @@
      "url": "https://abahouse.jp/contact/"
     }
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-02",
@@ -607,7 +672,10 @@
      "url": "https://forms.cloud.microsoft/r/FqmSVGt9KW"
     }
    ]
-  }
+  },
+  "category": "finance",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-27",
@@ -635,7 +703,10 @@
      "url": "https://forms.cloud.microsoft/r/DcQBY0RiTD"
     }
    ]
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-27",
@@ -647,9 +718,10 @@
   "status": "可能性",
   "items": [
    "メールアドレス",
-   "氏名"
+   "氏名",
+   "住所"
   ],
-  "note": "氏名と都道府県は一部の会員のみです。",
+  "note": "メールアドレスのほか、氏名と住所（都道府県まで）は一部の会員が対象です。電話番号や番地までの住所が閲覧された形跡は確認されていないとしています。",
   "url": "https://starts-pub.jp/info20261001",
   "src": "公式",
   "contact": {
@@ -664,7 +736,10 @@
      "url": "https://starts-pub.jp/contact_info"
     }
    ]
-  }
+  },
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-01",
@@ -679,9 +754,15 @@
    "住所",
    "電話番号",
    "本人確認書類の番号",
-   "口座情報"
+   "口座情報",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "会員ID",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
   ],
-  "note": "本人確認書類の種別と番号、買取申込み時に入力した銀行名・支店・口座番号・名義が含まれる可能性があります。10月9日の追記で、免許証などの画像、カード情報、パスワードは漏れていないとしています。",
+  "note": "本人確認書類の種別と番号、買取申込み時に入力した銀行名・支店・口座番号・名義が含まれる可能性があります。10月9日の追記で、免許証などの画像、カード情報、パスワードは漏れていないとしています。 買取・注文・配送の明細、職業、買取の同意書画像なども対象です。項目は利用状況により異なります。",
   "url": "https://enterprisezine.jp/news/detail/25188",
   "src": "報道",
   "official": "https://www.lashinbang.com/info/26357",
@@ -694,16 +775,19 @@
      "url": "https://forms.gle/1aykt4BcQ4iDKnyD8"
     }
    ]
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-10-01",
   "date_label": "2026年10月1日（続報）",
   "org": "ニッポンレンタカー",
-  "service": "ニッポンレンタカーアプリ",
+  "service": "NRアプリ（9月29日に判明した別事象）",
   "kana": "にっぽんれんたかー",
-  "count": "55人（10月1日の続報）。9月26日の第一報では41人",
-  "status": "確認",
+  "count": "55人（9月19日〜21日の別事象）",
+  "status": "可能性",
   "items": [
    "氏名",
    "電話番号",
@@ -715,16 +799,18 @@
    "カード情報の一部",
    "購入・配送・利用履歴"
   ],
-  "note": "登録していた場合、免許証の番号、住所、生年月日、カードの下4桁と名義も含まれます。",
-  "url": "https://enterprisezine.jp/news/detail/25188",
-  "src": "報道",
-  "official": "https://www.nipponrentacar.co.jp/info/202610_2.html",
+  "note": "10月1日の発表は、9月26日の41人の事象とは別の攻撃です。55人の会員情報ページへ不正アクセスがあり、閲覧のおそれがあります。登録していた場合は免許証番号・住所・生年月日とカード下4桁・名義も対象です。",
+  "url": "https://www.nipponrentacar.co.jp/info/202610_2.html",
+  "src": "公式",
   "contact": {
    "name": "お客様サポート窓口",
    "emails": [
     "voice@nipponrentacar.co.jp"
    ]
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-30",
@@ -732,7 +818,7 @@
   "org": "佐川急便",
   "service": "お荷物問い合わせサービス",
   "kana": "さがわきゅうびん 宅配",
-  "count": "調査中（約100日分の荷物データが対象）",
+  "count": "調査中（件数・対象範囲は未確定）",
   "status": "調査中",
   "items": [
    "氏名",
@@ -740,7 +826,7 @@
    "電話番号",
    "購入・配送・利用履歴"
   ],
-  "note": "送り主と届け先の情報です。",
+  "note": "送り主・届け先、運賃契約のお客様、スマートクラブ登録者の情報が対象となる可能性があります。個人と事業者、重複データを整理して調査中です。",
   "url": "https://www2.sagawa-exp.co.jp/information/detail/426/",
   "src": "公式",
   "contact": {
@@ -750,7 +836,10 @@
    ],
    "hours": "午前9時〜午後5時（土日・祝日を含む）",
    "note": "荷物そのものの問い合わせは、最寄りの営業所が窓口です。"
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-29",
@@ -787,7 +876,10 @@
     }
    ],
    "note": "メールは本件の問い合わせ全般の窓口です。サービスは10月9日13時に再開しました。"
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-29",
@@ -815,7 +907,10 @@
     "0120-89-8551"
    ],
    "hours": "月〜土 9:00〜17:00"
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-29",
@@ -829,12 +924,12 @@
    "氏名",
    "メールアドレス",
    "口座情報",
-   "購入・配送・利用履歴"
+   "購入・配送・利用履歴",
+   "住所"
   ],
-  "note": "払い戻しの記録1,463件のうち、751件に銀行口座の情報が含まれます。カード情報とパスワードは含まないとしています。",
-  "url": "https://enterprisezine.jp/news/detail/25188",
-  "src": "報道",
-  "official": "https://support-qa.eplus.jp/hc/ja/articles/62711500727961",
+  "note": "払戻し記録1,463件のうち、銀行口座は751件、郵便振替払出証書の送付先住所は68件に含まれます。公演名・会場・開催日時も対象です。カード情報とパスワードは含まないとしています。",
+  "url": "https://support-qa.eplus.jp/hc/ja/articles/62711500727961",
+  "src": "公式",
   "contact": {
    "name": "イープラス お客様対応窓口",
    "forms": [
@@ -844,7 +939,10 @@
     }
    ],
    "note": "対象者には、個別の通知で専用のフリーダイヤルが案内されています。"
-  }
+  },
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-29",
@@ -858,12 +956,17 @@
    "氏名",
    "住所",
    "生年月日",
-   "家族情報"
+   "家族情報",
+   "性別",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
   ],
   "note": "ゆうIDの会員情報、アドレス帳、送り状の情報が不正に取得されました。",
-  "url": "https://enterprisezine.jp/news/detail/25188",
-  "src": "報道",
-  "official": "https://files.japanpost.jp/assets/34d9d11432734cfaa759e78fe395b688/18239b871f714763aa7eb15c25e7b30b/20260929_01.pdf",
+  "url": "https://files.japanpost.jp/assets/34d9d11432734cfaa759e78fe395b688/18239b871f714763aa7eb15c25e7b30b/20260929_01.pdf",
+  "src": "公式",
   "contact": {
    "name": "日本郵便 お客様サービス相談センター",
    "tels": [
@@ -878,7 +981,10 @@
     }
    ],
    "note": "0570-046-666は携帯電話から（有料）。ガイダンスで「*」のあと「5」を選びます。"
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-28",
@@ -920,7 +1026,10 @@
     }
    ],
    "note": "退会済みの人は、専用フォームで対象かどうかを確認できます。"
-  }
+  },
+  "category": "transport",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-25",
@@ -933,9 +1042,10 @@
   "items": [
    "氏名",
    "電話番号",
-   "メールアドレス"
+   "メールアドレス",
+   "購入・配送・利用履歴"
   ],
-  "note": "予約者の情報です。",
+  "note": "予約者の氏名・電話・メールのほか、予約店舗・メニュー・日時等が対象です。",
   "url": "https://e-tenki.co.jp/news/%E5%BC%8A%E7%A4%BE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84/",
   "src": "公式",
   "contact": {
@@ -950,7 +1060,10 @@
      "url": "https://e-tenki.co.jp/contact/"
     }
    ]
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-24",
@@ -961,9 +1074,16 @@
   "count": "約2,218万行（人数ではありません）",
   "status": "確認",
   "items": [
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "生年月日",
+   "性別",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "カード情報"
   ],
-  "note": "データの転送が確認されています。",
+  "note": "氏名・連絡先・生年月日等に加え、備考欄に健康状態等の要配慮個人情報が一部含まれます。備考欄にはカード情報に該当する可能性のある5件（有効期限経過・内容の真正性は未確認）もありました。全レコードに全項目があるわけではありません。約2,218万は重複除外後のレコード数で実人数へ換算できません。",
   "url": "https://www.epark-relax.co.jp/news/231",
   "src": "公式",
   "contact": {
@@ -975,7 +1095,10 @@
    "emails": [
     "pm-support@epark-r.jp"
    ]
-  }
+  },
+  "category": "health",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-18",
@@ -986,9 +1109,16 @@
   "count": "約6万アカウント",
   "status": "確認",
   "items": [
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "生年月日",
+   "性別",
+   "メールアドレス",
+   "住所",
+   "勤務先・所属",
+   "家族情報"
   ],
-  "note": "分析ツールMetabaseの脆弱性が悪用されました。",
+  "note": "アザスは氏名・生年月日・所属・体温等、するーぷはメール・生年月・郵便番号・子供の有無・職業等が対象です。住所タグはするーぷの郵便番号を指します。パスワードは対象システムで管理していないとしています。",
   "url": "https://jgc-digital.com/topics/topics-3049/",
   "src": "公式",
   "contact": {
@@ -999,7 +1129,10 @@
    ],
    "hours": "平日9:00〜17:00",
    "note": "アザスは support@azas-token.com、するーぷは support@suloop.biz です。"
-  }
+  },
+  "category": "other",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-16",
@@ -1007,15 +1140,18 @@
   "org": "Helpfeel",
   "service": "Gyazo",
   "kana": "ぎゃぞー へるぷふぃーる",
-  "count": "約2,362万件",
+  "count": "約2,362万ユーザー情報（匿名アカウントを含む）",
   "status": "確認",
   "items": [
    "メールアドレス",
    "パスワード",
    "会員ID",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "認証トークン",
+   "保存ファイル・画像"
   ],
-  "note": "パスワードはハッシュ値。X（旧Twitter）との連携情報も含みます。",
+  "note": "パスワードのハッシュ値、任意の名前・ニックネーム、X連携トークン等が対象です。画像URLを構成するメタデータも流出し、非公開画像の不正閲覧の可能性は否定できないとしています。対象者の実人数は調査中です。",
   "url": "https://corp.helpfeel.com/news/news-20260916-1",
   "src": "公式",
   "contact": {
@@ -1026,11 +1162,14 @@
      "url": "https://help-ja.gyazo.com/contact-us"
     }
    ]
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
-  "date": "2026-09-15",
-  "date_label": "2026年9月15日",
+  "date": "2026-07-24",
+  "date_label": "2026年7月24日（9月15日に第二報）",
   "org": "ムラウチドットコム",
   "service": "通販サイト",
   "kana": "むらうち 家電",
@@ -1044,9 +1183,25 @@
    "生年月日",
    "性別"
   ],
-  "note": "カード情報とパスワードは含まないとされています。",
+  "note": "件数は報道によります。公式FAQで対象項目と窓口を確認しました。メール・生年月日・性別は一部の方のみで、配送先情報、カード情報、ログインID・パスワードは対象ではないとしています。",
   "url": "https://internet.watch.impress.co.jp/docs/news/2141530.html",
-  "src": "報道"
+  "src": "報道",
+  "official": "https://murauchi.com/static-pages/privacy/pressrelease.html",
+  "contact": {
+   "name": "個人情報漏えいに関するお問い合わせ窓口",
+   "emails": [
+    "privacy@murauchi.com"
+   ],
+   "forms": [
+    {
+     "label": "本件の公式FAQ",
+     "url": "https://murauchi.com/static-pages/privacy/pressrelease.html#faq"
+    }
+   ]
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-15",
@@ -1059,12 +1214,18 @@
   "items": [
    "メールアドレス",
    "パスワード",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "生年月日",
+   "性別",
+   "住所",
+   "カード情報の一部",
+   "勤務先・所属",
+   "購入・配送・利用履歴"
   ],
-  "note": "パスワードは暗号化。分析ツールMetabaseの脆弱性が悪用されました。",
-  "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56382.html",
-  "src": "報道",
-  "official": "https://lean-body.co.jp/news/JlBWMCs7",
+  "note": "都道府県・身長体重等の入力情報、利用・請求の記録、カード下4桁等が対象です。氏名・所属・従業員番号は法人制度を利用する一部の方に含まれます。パスワードは暗号化され、解読に必要な別管理情報は取得されていないと説明していますが、同社は変更をお願いしています。",
+  "url": "https://lean-body.co.jp/news/JlBWMCs7",
+  "src": "公式",
   "contact": {
    "name": "LEAN BODY お問い合わせ窓口",
    "forms": [
@@ -1078,7 +1239,10 @@
     }
    ],
    "note": "返信には3営業日ほどかかるとしています。"
-  }
+  },
+  "category": "health",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-11",
@@ -1089,7 +1253,11 @@
   "count": "約24.6万件",
   "status": "可能性",
   "items": [
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "住所"
   ],
   "note": "職員や事業者の情報です。一般の国民の情報とマイナンバーは含まないとしています。",
   "url": "https://www.digital.go.jp/news/2026-0911-01",
@@ -1099,8 +1267,13 @@
    "tels": [
     "0120-360-036"
    ],
-   "note": "専用のメールアドレスもあります。公式発表で確認してください。"
-  }
+   "emails": [
+    "kojin-info@digital.go.jp"
+   ]
+  },
+  "category": "government",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-09-10",
@@ -1112,9 +1285,19 @@
   "status": "可能性",
   "items": [
    "パスワード",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "生年月日",
+   "性別",
+   "会員ID",
+   "勤務先・所属",
+   "購入・配送・利用履歴",
+   "保存ファイル・画像"
   ],
-  "note": "うち30アカウントは、ハッシュ化されたパスワードが閲覧された可能性があります。",
+  "note": "会員・契約情報1,360,563アカウントのほか、レンタルサーバ951アカウントの利用領域（メール・Web・ファイル等）が対象となる可能性があります。30アカウントのハッシュ化会員パスワードとは別に、一部の初期サーバー・VPS管理者パスワードも保存されていました。対象者への公式通知に従ってください。外部持出しを裏付ける明確な事実は確認されていないとしています。",
   "url": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/09/10/1968225692/",
   "src": "公式",
   "contact": {
@@ -1127,7 +1310,10 @@
     "support@sakura.ad.jp"
    ],
    "note": "問い合わせの際は会員IDを伝えるよう案内されています。"
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-28",
@@ -1144,41 +1330,52 @@
    "会員ID"
   ],
   "note": "",
-  "url": "https://www.itmedia.co.jp/news/article/2608/28/2000000922/",
-  "src": "報道",
-  "official": "https://www.yellowhat.jp/information/yellowhat/202608.html",
+  "url": "https://www.yellowhat.jp/information/yellowhat/202608.html",
+  "src": "公式",
   "contact": {
    "name": "株式会社イエローハット 専用相談窓口",
    "tels": [
     "0120-405-092"
    ],
    "hours": "10月13日以降は平日10:00〜19:00（10月12日までは全日）"
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-08-01",
-  "date_label": "2026年8月1日",
+  "date_label": "2026年8月1日（8月2日に第二報）",
   "org": "Eストアー",
   "service": "ショップサーブ",
   "kana": "いーすとあー",
-  "count": "最大 延べ8,853,839件（人数ではありません）",
+  "count": "8,853,839件（重複を含む可能性があり、人数ではありません）",
   "status": "確認",
   "items": [
    "氏名",
    "住所",
-   "カード情報の一部"
+   "カード情報の一部",
+   "電話番号",
+   "メールアドレス",
+   "勤務先・所属",
+   "会員ID",
+   "パスワード",
+   "口座情報",
+   "その他（詳細は出典）"
   ],
-  "note": "カード名義、カード番号の先頭6桁と下4桁、有効期限が含まれます。セキュリティコードは含まないとしています。",
-  "url": "https://netshop.impress.co.jp/n/2026/08/05/16526",
-  "src": "報道",
-  "official": "https://estore.jp/press/20260802/",
+  "note": "購入者の連絡先・会員情報と暗号化パスワード、カード名義・先頭6桁と下4桁・有効期限等が対象です。店舗側の管理画面・メール・FTPの認証情報と振込先口座も対象に含まれます。セキュリティコードは保有していないとしています。",
+  "url": "https://estore.jp/press/20260802/",
+  "src": "公式",
   "contact": {
    "name": "Eストアー 個人情報に関するお客様ご相談窓口（購入者向け）",
    "emails": [
     "support@estore.co.jp"
    ],
    "note": "公式発表にある電話番号は店舗運営者向けの窓口です。"
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-06-30",
@@ -1192,12 +1389,15 @@
    "氏名",
    "住所",
    "口座情報",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "生年月日",
+   "性別",
+   "電話番号",
+   "家族情報"
   ],
-  "note": "証券番号と保障内容を含みます。保険料の振替口座の情報は約22万人分です（第二報）。",
-  "url": "https://www.itmedia.co.jp/news/article/2606/30/1260630133/",
-  "src": "報道",
-  "official": "https://www.aflac.co.jp/static/corp/profile/news/2026/20260630.pdf",
+  "note": "契約者・被保険者・受取人等の情報、証券番号と保障内容を含みます。振替口座情報は約22万人分です。メールアドレス、ログイン情報、マイナンバー、カード情報は含まないとしています。",
+  "url": "https://www.aflac.co.jp/info/yorisou_faq.html",
+  "src": "公式",
   "contact": {
    "name": "コールセンター",
    "tels": [
@@ -1211,7 +1411,10 @@
      "url": "https://www.aflac.co.jp/info/yorisou_faq.html"
     }
    ]
-  }
+  },
+  "category": "finance",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-06-23",
@@ -1226,14 +1429,17 @@
    "パスワード",
    "その他（詳細は出典）"
   ],
-  "note": "パスワードの漏えいは7,616,173人です。メール本文が流出したおそれもあります。",
+  "note": "個人情報保護委員会は、7,616,173人分のパスワードが平文で保存されていたと説明しています。盗まれた認証情報でメールボックスや他のサービスへアクセスされるおそれがあるため、契約先の案内と使い回しの確認が必要です。",
   "url": "https://xtech.nikkei.com/atcl/nxt/news/24/03297/",
   "src": "報道",
-  "official": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-73_4619/kddi_nr_s-73_4619_pdf_01.pdf",
+  "official": "https://www.ppc.go.jp/files/pdf/260819_01_houdou.pdf",
   "contact": {
    "name": "KDDIの専用窓口の記載はありません",
    "note": "利用しているプロバイダ（ピカラ、CPI、J:COM NET、コミュファ光、@nifty、BIGLOBE）からの案内を確認するよう呼びかけています。"
-  }
+  },
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
  },
  {
   "date": "2026-04-23",
@@ -1249,18 +1455,48 @@
    "生年月日",
    "パスワード",
    "会員ID",
-   "その他（詳細は出典）"
+   "その他（詳細は出典）",
+   "電話番号",
+   "メールアドレス",
+   "性別"
   ],
   "note": "アプリのIDとパスワード、車台番号を含みます。",
-  "url": "https://www.itmedia.co.jp/news/article/2605/01/1260501111/",
-  "src": "報道",
-  "official": "https://2rinkan.jp/annai/20260423/",
+  "url": "https://2rinkan.jp/annai/20260423/",
+  "src": "公式",
   "contact": {
    "name": "2りんかん専用お客様相談窓口",
    "tels": [
     "0120-853-049"
    ],
    "hours": "平日10:00〜19:00"
-  }
+  },
+  "category": "retail",
+  "source_checked_on": "2026-10-09",
+  "contact_checked_on": "2026-10-09"
+ },
+ {
+  "date": "2026-09-26",
+  "date_label": "2026年9月26日",
+  "org": "ニッポンレンタカー",
+  "service": "NRアプリ（9月26日公表の事象）",
+  "kana": "にっぽんれんたかー",
+  "count": "41人（別事象の55人とは合計していません）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "電話番号",
+   "メールアドレス",
+   "会員ID",
+   "住所",
+   "生年月日",
+   "免許証番号",
+   "カード情報の一部",
+   "購入・配送・利用履歴"
+  ],
+  "note": "会員情報が不正に閲覧されたおそれがあります。免許証・カードを登録していた場合は、免許証番号・住所・生年月日とカード下4桁・名義も対象です。10月1日公表の55人の事象とは別の攻撃です。",
+  "url": "https://www.nipponrentacar.co.jp/info/202609.html",
+  "src": "公式",
+  "category": "transport",
+  "source_checked_on": "2026-10-09"
  }
 ]
