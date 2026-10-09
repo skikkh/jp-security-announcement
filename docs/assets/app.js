@@ -454,7 +454,7 @@
       return t;
     }
     function showError(message) {
-      if (error) { error.textContent = message; error.hidden = false; error.scrollIntoView({ block: "center" }); error.focus({ preventScroll: true }); }
+      if (error) { error.textContent = message; error.hidden = false; error.scrollIntoView({ block: "center", behavior: "instant" }); error.focus({ preventScroll: true }); }
       if (copy) copy.disabled = true;
     }
     form.addEventListener("submit", function (e) {
@@ -484,14 +484,16 @@
       if (error) { error.hidden = true; error.textContent = ""; }
       out.value = build(status.value);
       if (copy) copy.disabled = false;
-      out.focus();
+      out.focus({ preventScroll: true });
+      out.scrollIntoView({ block: "center", behavior: "instant" });
     });
     var template = $("#erase-template");
     if (template) template.addEventListener("click", function () {
       if (error) { error.hidden = true; error.textContent = ""; }
       out.value = "件名：保有個人データの利用停止又は消去の請求\n\n（会社名）\n個人情報保護ご担当者様\n\n私は貴社サービス『（サービス名）』の（利用中／退会済み）の利用者です。個人情報保護法第35条第5項に基づき、次の情報について利用停止又は消去を請求します。\n\n1．対象情報\n（対象の情報を記入してください）\n\n2．請求理由\n（対象情報の利用目的が終了した、漏えい等の対象となった、又は権利・正当な利益が害されるおそれがある等、該当する理由と事実を記入してください）\n\n3．回答のお願い\n対応の結果をご通知ください。全部又は一部の対応ができない場合には、その理由、引き続き保存する情報・目的・期間と、代わりに講じる措置をご説明ください。本人確認の手続きが必要な場合は、貴社所定の方法をご案内ください。\n\n" + today() + "\n（氏名）\n（登録していた連絡先・会員番号等、本人を特定するために必要な情報）\n";
       if (copy) copy.disabled = false;
-      out.focus();
+      out.focus({ preventScroll: true });
+      out.scrollIntoView({ block: "center", behavior: "instant" });
     });
     form.addEventListener("input", function () { if (copy) copy.disabled = true; });
     form.addEventListener("change", function () { if (copy) copy.disabled = true; });
