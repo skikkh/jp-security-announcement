@@ -1,5 +1,5 @@
 <!--meta
-title: 退会・削除・書き換えの真実 ── 退会すれば消える？書き換えは効く？｜漏れた後の守り方
+title: 退会・削除・書き換えの真実 ── 退会すれば消える？書き換えは効く？｜情報漏えい対策ガイド
 description: 退会後も取引記録などが残る場合があり、会員画面の書き換えだけで履歴や複製まで変わるとは限りません。典型的な保存の例と、条件に合う場合の利用停止・消去請求の文面を紹介します。
 -->
 <p class="updated">最終更新 {{updated}}</p>
@@ -154,16 +154,19 @@ description: 退会後も取引記録などが残る場合があり、会員画�
     <div class="opt-grid">
       <label class="opt"><input type="checkbox" id="f-r-left"><span>退会済みで、対象データの利用目的が終わったと考える<small>「利用する必要がなくなった場合」</small></span></label>
       <label class="opt"><input type="checkbox" id="f-r-leak"><span>漏えいの対象だと通知を受けた<small>「漏えい等の事態が生じた場合」</small></span></label>
+      <label class="opt"><input type="checkbox" id="f-r-harm"><span>権利や正当な利益が害されるおそれがある<small>下の欄に、具体的な事情を記入してください</small></span></label>
       <label class="opt"><input type="checkbox" id="f-c-id"><span>提出した本人確認書類の画像と番号を対象にする</span></label>
       <label class="opt"><input type="checkbox" id="f-c-copies"><span>バックアップ、分析用の複製、委託先についても確認を求める</span></label>
       <label class="opt"><input type="checkbox" id="f-c-legal"><span>消せない場合は、法令名と保存期限の回答を求める</span></label>
       <label class="opt"><input type="checkbox" id="f-c-disclose"><span>あわせて、保有データの開示も請求する<small>第33条。手数料がかかる場合があります</small></span></label>
     </div>
+    <div class="field"><label for="f-harm">権利や正当な利益が害されるおそれの具体的な事情（上の理由を選ぶ場合は必須）</label><textarea id="f-harm" rows="3" placeholder="対象の情報、扱われ方、心配している影響を事実に沿って記入"></textarea></div>
   </fieldset>
   <p id="erase-error" role="alert" tabindex="-1" hidden></p>
-  <div class="btn-row"><button type="submit" class="btn primary">文面を作る</button><button type="button" class="btn" id="erase-template">個人情報なしでひな形を作る</button></div>
+  <div class="btn-row"><button type="submit" class="btn primary" disabled>文面を作る</button><button type="button" class="btn" id="erase-template" disabled>個人情報なしでひな形を作る</button></div>
   <p class="muted">入力せずに使いたい場合は、ひな形を作ってから編集できます。ひな形の括弧内は、送る前に事実に合う内容へ置き換えてください。</p>
 </form>
+<noscript><p class="callout warn">JavaScriptが無効です。下のひな形を選択して手動でコピーし、貼り付け先で編集してください。</p></noscript>
 <div class="field">
   <label for="erase-output">請求文（コピーして、会社の窓口やメールに貼り付けてください）</label>
   <textarea id="erase-output" readonly>JavaScriptが無効のため、文面を自動で作れません。下のひな形を参考にしてください。

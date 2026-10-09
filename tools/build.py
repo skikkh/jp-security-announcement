@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""漏れた後の守り方 — 静的サイトビルダー（Python標準ライブラリのみ）
+"""情報漏えい対策ガイド — 静的サイトビルダー（Python標準ライブラリのみ）
 
 src/ にある原稿から docs/ を生成します。GitHub Pages は docs/ を配信します。
     python3 tools/build.py
@@ -49,7 +49,7 @@ TAG_CLASS = {
     "パスワード": "t-warn",
     "カード情報の一部": "t-warn",
     "カード情報（番号・有効期限など）": "t-danger",
-    "カード情報": "t-warn",
+    "カード情報": "t-danger",
     "認証トークン": "t-warn",
     "口座情報": "t-warn",
 }
@@ -126,7 +126,7 @@ def report_url(title: str, canonical: str) -> str:
     """X の投稿画面を、ページ名とURLが入った状態で開くリンク"""
     page = title.split("｜")[0]
     text = (
-        f"@skikkh 「漏れた後の守り方」の「{page}」で、誤りや古い情報を見つけました。\n\n"
+        f"@skikkh 「情報漏えい対策ガイド」の「{page}」で、誤りや古い情報を見つけました。\n\n"
         "（どこが違うか・正しい情報が載っているページのURL）\n"
     )
     return "https://x.com/intent/post?" + urllib.parse.urlencode({"text": text, "url": canonical})
@@ -201,6 +201,8 @@ def breach_cards(entries: list[dict]) -> str:
             f'<li class="{TAG_CLASS.get(t, "")}">{esc(t)}</li>' if TAG_CLASS.get(t) else f"<li>{esc(t)}</li>"
             for t in tags
         )
+        if not tags:
+            tag_html = '<li>対象項目は未公表</li>'
         search = " ".join([e["org"], e.get("service", ""), e.get("kana", "")])
         cls = "breach has-id" if "id" in keys else "breach"
         official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
@@ -278,7 +280,7 @@ def validate(entries: list[dict]) -> None:
     seen = set()
     for i, e in enumerate(entries):
         where = f"#{i} {e.get('org', '?')}"
-        for k in ("date", "date_label", "org", "count", "status", "items", "url", "src", "category"):
+        for k in ("date", "date_label", "org", "count", "status", "url", "src", "category"):
             if not e.get(k):
                 errors.append(f"{where}: {k} がありません")
         if e.get("date") and not re.fullmatch(r"20\d\d-\d\d-\d\d", e["date"]):
@@ -295,7 +297,9 @@ def validate(entries: list[dict]) -> None:
                     errors.append(f"{where}: {key} は有効な YYYY-MM-DD の日付にしてください")
         if e.get("src") not in ("公式", "報道"):
             errors.append(f"{where}: src は 公式 か 報道")
-        for t in e.get("items", []):
+        if not isinstance(e.get("items"), list):
+            errors.append(f"{where}: items は配列にしてください（未公表なら空配列）")
+        for t in e.get("items", []) if isinstance(e.get("items"), list) else []:
             if t not in ALLOWED_TAGS:
                 errors.append(f"{where}: 未知のタグ {t}")
         for k in ("url", "official"):

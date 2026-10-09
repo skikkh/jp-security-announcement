@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>漏れた後の守り方｜2026年 個人情報大量漏えい いま個人ができること</title>
+<title>情報漏えい対策ガイド｜2026年 個人情報大量漏えい いま個人ができること</title>
 <meta name="description" content="2026年秋、国内で個人情報の大量漏えいが続いています。氏名・住所・電話番号・免許証画像が漏れた前提で、詐欺・乗っ取り・なりすましを防ぐ手順を、効果の大きい順にまとめました。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="漏れた後の守り方">
-<meta property="og:title" content="漏れた後の守り方 ── 情報が漏れていても、被害は防げる">
+<meta property="og:site_name" content="情報漏えい対策ガイド">
+<meta property="og:title" content="情報漏えい対策ガイド ── 情報が漏れていても、被害は防げる">
 <meta property="og:description" content="2026年秋、国内で個人情報の大量漏えいが続いています。氏名・住所・電話番号・免許証画像が漏れた前提で、詐欺・乗っ取り・なりすましを防ぐ手順を、効果の大きい順にまとめました。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=707e2fcbd9">
-<script src="assets/app.js?v=707e2fcbd9" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=90a40f7146">
+<script src="assets/app.js?v=90a40f7146" defer></script>
 </head>
 <body class="page-index">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -32,7 +32,7 @@
   <div class="wrap bar">
     <a class="brand" href="index.html">
       <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#0b4fa8"/><path d="m21 32.5 7.5 7.5L44 24.5" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="brand-text"><span class="brand-name">漏れた後の守り方</span><span class="brand-sub">個人情報漏えい 市民のための自衛ガイド</span></span>
+      <span class="brand-text"><span class="brand-name">情報漏えい対策ガイド</span><span class="brand-sub">個人と家族のための対策・事案情報</span></span>
     </a>
     <div class="header-right">
       <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
@@ -72,9 +72,18 @@
 <p class="src">出典：<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ セキュリティ研究センター（2026年10月7日）</a>、<a href="https://www.jpcert.or.jp/at/2026/at260030.html" rel="noopener">JPCERT/CC 注意喚起（10月8日）</a>、各社の発表。件数は公表時点の数字で、今後変わることがあります。</p>
 
 <div class="callout engineer">
-  <span class="callout-title">今回漏れたのは、パスワードより「あなたが本人である証拠」です</span>
-  <p>パスワードは変えられます。でも、氏名・住所・生年月日・顔写真は変えられません。これまで「本人確認」に使われてきた情報が、もう秘密ではなくなりました。だから、守る対象を<strong>「情報そのもの」から「情報がお金に変わる道筋」</strong>に切り替えます。詳しくは<a href="threat.html">なぜこの対策なのか</a>で説明しています。</p>
+  <span class="callout-title">パスワード以外の情報も漏えいしています</span>
+  <p>漏れた項目は事案ごとに違います。氏名・生年月日・顔写真はパスワードのように変えられず、住所も簡単には変えられません。本人確認に使われ得る情報だけを秘密の証拠にせず、<strong>悪用される道筋</strong>に合わせて対策します。詳しくは<a href="threat.html">なぜこの対策なのか</a>で説明しています。</p>
 </div>
+
+<h2 id="official-alerts">公的機関の最新の注意喚起</h2>
+<p>2026年10月9日の発表です。事業者に求められる対応と、利用者が確認できることをまとめました。</p>
+<ul class="cards">
+  <li><a class="card" href="https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html" rel="noopener"><span class="card-kicker">IPA｜事業者向け</span><span class="card-title">公開サービス・アカウント・保存データを点検</span><span class="card-body">外部公開アプリと利用する外部サービスを洗い出し、ログ・不審なアカウント・未適用パッチを確認。保有データも必要最小限に見直すよう求めています。</span></a></li>
+  <li><a class="card" href="https://www.soumu.go.jp/menu_kyotsuu/important/kinkyu02_000678.html" rel="noopener"><span class="card-kicker">総務省｜所管事業者・関係団体向け</span><span class="card-title">委託先も含めて対策を確認</span><span class="card-body">迅速な脆弱性対応、多要素認証、漏えい情報の悪用防止を、経営層の主導で徹底するよう注意を呼びかけています。</span></a></li>
+  <li><a class="card" href="https://www.fsa.go.jp/news/r8/sonota/20261009/20261009.html" rel="noopener"><span class="card-kicker">金融庁｜金融機関等向け</span><span class="card-title">本人確認の点検とICチップ読取への早期移行</span><span class="card-body">書類・顔画像の不自然な点を確認し、2027年4月1日の施行を待たず、ICチップ読取へ速やかに移行するよう要請。委託先や被害時の体制も点検対象です。</span></a></li>
+</ul>
+<p>利用者は、手続きの際に金融機関等の公式な本人確認方法を確かめてください。画像が漏れた場合の対策と限界は<a href="id.html">身分証の情報が漏れたら</a>、パスワード・認証の点検は<a href="accounts.html">ログインの守り方</a>にまとめています。</p>
 
 <h2 id="principles">覚えておく3つの原則</h2>
 <ol class="principles">
@@ -93,18 +102,18 @@
 </ol>
 
 <h2 id="today">今日の30分でやること</h2>
-<div class="callout warn"><span class="callout-title">被害が進行中なら、共通の点検より先に対応してください</span><p>不正な支払い・送金、カード番号の流出、パスワードの使い回し、突然の「圏外」などがあれば、<a href="help.html#first">被害時の初動</a>を優先してください。漏れた項目が分かる場合は<a href="plan.html">自分専用の対策</a>を作れます。</p></div>
+<div class="callout warn"><span class="callout-title">被害が進行中なら、共通の点検より先に対応してください</span><p>不正な支払い・送金や証券取引、カード番号やパスワードの流出、突然の「圏外」などがあれば、<a href="help.html#first">被害時の初動</a>を優先してください。金融機関に関わるときは連絡を急ぎます。漏れた項目が分かる場合は<a href="plan.html">自分専用の対策</a>を作れます。</p></div>
 <p>以下は被害が確認されていない人向けの共通の点検です。必要性と順番は、漏れた情報や利用中のサービスによって変わります。チェックを入れると、この端末に記録されます。</p>
 <div class="progress" data-progress-for="today"><span data-progress-text>0 / 6 完了</span><span class="bar"><span></span></span><button type="button" class="btn small" data-reset="today">チェックを消す</button></div>
 <ol class="checklist" data-checklist="today">
   <li>
-    <div class="check-head"><input type="checkbox" id="t1" data-save="today:mail"><label for="t1">メールを乗っ取られないようにする<span class="meta">約10分｜最優先｜パスワードの変更と2段階認証</span></label></div>
+    <div class="check-head"><input type="checkbox" id="t1" data-save="today:mail"><label for="t1">メールを乗っ取られないようにする<span class="meta">約10分｜最優先｜パスワードと追加の認証を点検</span></label></div>
     <details><summary>なぜ・やり方</summary>
-      <p class="why">ほぼすべてのサービスの「パスワード再設定」はメールに届きます。メールを取られると、ほかのアカウントを次々に取られます。メールは全アカウントの<strong>合鍵</strong>です。</p>
+      <p class="why">多くのサービスの「パスワード再設定」はメールに届きます。メールを取られると、ほかのアカウントも狙われます。メールは多くのアカウントの<strong>合鍵</strong>です。</p>
       <ul>
-        <li>Gmail、iCloud、Yahoo!メール、キャリアメールなど、普段使うメールのパスワードを、ほかで使っていない長いものに変える</li>
+        <li>Gmail、iCloud、Yahoo!メール、キャリアメールなど、普段使うメールのパスワードが長く、推測しにくく、ほかで使っていないものか確認する。流出・使い回し・不審なログインがあれば変える</li>
         <li>設定の「セキュリティ」から、<strong>パスキー</strong>か<strong>2段階認証</strong>をオンにする</li>
-        <li>再設定用の電話番号と予備のメールアドレスが、今も自分のものか確認する</li>
+        <li>再設定用の電話番号と予備のメールアドレスが、今も自分のものか確認する。不審なログインがあれば<a href="help.html#account-recovery">ログイン中の端末や転送設定も点検する</a></li>
       </ul>
     </details>
   </li>
@@ -156,10 +165,10 @@
   <li>
     <div class="check-head"><input type="checkbox" id="t6" data-save="today:reuse"><label for="t6">漏えいしたサービスと同じパスワードを、ほかで使っていたら変える<span class="meta">約5分｜使い回し対策</span></label></div>
     <details><summary>なぜ・やり方</summary>
-      <p class="why">パスワードが暗号化されて保存されていても、短いものやよくあるものは解読されることがあります。解読されたパスワードは、ほかのサービスへのログインに自動で試されます。</p>
+      <p class="why">パスワードが流出した場合、保存方法によっても危険は変わります。元に戻せない形（ハッシュ化）で保存されていても、短いものやよくあるものは推測され得ます。メールアドレスだけが漏れた場合とは分けて考えます。</p>
       <ul>
-        <li>漏えいが公表されたサービスで使っていたパスワードを思い出す</li>
-        <li>同じ、または似たパスワードを使っているサービスを、メール、銀行・証券、買い物、SNSの順に変える</li>
+        <li>漏えいした項目にパスワードが含まれるか、サービスの公式発表で確認する</li>
+        <li>パスワードが漏れた、または使い回していた場合は、同じ・似たパスワードのサービスを、メール、銀行・証券、買い物、SNSの順に変える</li>
         <li>覚えきれない場合は、スマホに標準で入っているパスワード管理（iPhoneの「パスワード」アプリ、Googleパスワードマネージャー）に保存させる</li>
       </ul>
     </details>
@@ -168,10 +177,10 @@
 
 <h2 id="week">今週中にやること</h2>
 <ul class="cards">
-  <li><a class="card" href="accounts.html#password"><span class="card-kicker">使い回しを根絶</span><span class="card-title">パスワード管理を使い、全部を別々にする</span><span class="card-body">1つ漏れても、ほかに広がらなくなります。</span></a></li>
-  <li><a class="card" href="accounts.html#passkey"><span class="card-kicker">偽サイトに強いログイン</span><span class="card-title">大事なサービスをパスキーに切り替える</span><span class="card-body">SMSの認証コードは横取りされることがあります。パスキーは偽サイトでは使えません。</span></a></li>
+  <li><a class="card" href="accounts.html#password"><span class="card-kicker">使い回しを根絶</span><span class="card-title">パスワード管理を使い、長く、ランダムで別々にする</span><span class="card-body">1つ漏れても、ほかへの悪用を防ぎやすくなります。</span></a></li>
+  <li><a class="card" href="accounts.html#passkey"><span class="card-kicker">偽サイトに強いログイン</span><span class="card-title">大事なサービスでパスキーを使う</span><span class="card-body">SMSも認証なしより安全です。パスキーを設定する際は復旧手段も確認します。</span></a></li>
   <li><a class="card" href="id.html"><span class="card-kicker">免許証などが漏れた人</span><span class="card-title">信用情報機関への本人申告を検討する</span><span class="card-body">カードやローンの審査で参考にされる制度です。機関ごとの受付条件と限界を確かめてください。</span></a></li>
-  <li><a class="card" href="accounts.html#carrier"><span class="card-kicker">SMS詐欺を減らす</span><span class="card-title">携帯会社の迷惑SMSフィルタをオンにする</span><span class="card-body">多くは無料です。危険なリンク付きのSMSを受信前に止めます。</span></a></li>
+  <li><a class="card" href="accounts.html#carrier"><span class="card-kicker">SMS詐欺を減らす</span><span class="card-title">携帯会社の迷惑SMSフィルタをオンにする</span><span class="card-body">多くは無料です。怪しいSMSの一部を受信前に止められます。</span></a></li>
   <li><a class="card" href="family.html#phone"><span class="card-kicker">固定電話がある家</span><span class="card-title">国際電話の発着信を無料で止める</span><span class="card-body">詐欺電話には国際電話番号がよく使われています。</span></a></li>
   <li><a class="card" href="delete.html"><span class="card-kicker">将来の漏えいを減らす</span><span class="card-title">使っていないサービスの退会と保存データを確認する</span><span class="card-body">退会後も一部の情報が残る場合があります。条件に合えば、利用停止や消去を請求できます。</span></a></li>
 </ul>
@@ -189,8 +198,8 @@
 <h2 id="why">国の呼びかけだけでは足りない理由</h2>
 <p>デジタル大臣は10月6日、国民に「パスワードの使い回しをやめる」「多要素認証を使う」「不審なメールやSNSに注意する」の3つを呼びかけました。どれも正しい対策です。ただ、今回の漏えいの性質を考えると、それだけでは防げない被害があります。</p>
 <ul>
-  <li><strong>漏れた情報の多くは、パスワードではありません。</strong>住所、生年月日、免許証の画像は、パスワードを変えても守れません。</li>
-  <li><strong>SMSの認証コードは万全ではありません。</strong>電話番号の乗っ取りや、偽サイトでコードをその場で横取りする手口に弱いからです。</li>
+  <li><strong>漏れた情報は、パスワードだけではありません。</strong>住所、生年月日、免許証の画像は、パスワードを変えても守れません。</li>
+  <li><strong>SMSの認証コードは万全ではありません。</strong>認証なしより安全ですが、電話番号の乗っ取りや、偽サイトでコードをその場で横取りする手口に弱いからです。</li>
   <li><strong>漏れた情報を使った詐欺は、不審に見えません。</strong>見分ける力に頼らず、「届いた連絡からは動かない」という行動のルールで防ぎます。</li>
 </ul>
 <p><a href="threat.html">攻撃者の目線で見た、なぜこの対策なのか</a></p>
@@ -199,14 +208,13 @@
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
-      <h2>漏れた後の守り方</h2>
-      <p class="byline">作成 生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p>
+      <h2>情報漏えい対策ガイド</h2>
       <p>個人が運営する非公式の情報サイトです。政府・企業・各機関の公式発表を優先してください。事実関係には出典を付けています。最終更新：2026年10月9日。</p>
       <p>このサイトは外部のスクリプト、アクセス解析、広告、Cookieを一切使っていません。チェックの記録は、あなたの端末の中にだけ保存されます。</p>
       <div class="report">
         <p class="report-title">誤りや古い情報を見つけたら</p>
         <p>X（旧Twitter）で、作成者の @skikkh に知らせてください。ボタンを押すと、このページの名前とURLが入った状態で投稿画面が開きます。</p>
-        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%BC%8F%E3%82%8C%E3%81%9F%E5%BE%8C%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9%E3%80%8D%E3%81%AE%E3%80%8C%E6%BC%8F%E3%82%8C%E3%81%9F%E5%BE%8C%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2F" rel="noopener">Xで知らせる</a>
+        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E5%AF%BE%E7%AD%96%E3%82%AC%E3%82%A4%E3%83%89%E3%80%8D%E3%81%AE%E3%80%8C%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E5%AF%BE%E7%AD%96%E3%82%AC%E3%82%A4%E3%83%89%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2F" rel="noopener">Xで知らせる</a>
       </div>
     </div>
     <div>
@@ -214,6 +222,7 @@
       <ul><li><a href="index.html" aria-current="page">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
     </div>
   </div>
+  <div class="wrap"><p class="byline">運営：生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p></div>
 </footer>
 </body>
 </html>

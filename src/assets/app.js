@@ -420,6 +420,9 @@
         reasons.push("貴社から、私の個人データが漏えい等の対象となった旨の通知を受けています（同項「第26条第1項本文に規定する事態が生じた場合」）。漏えいした情報が悪用されるおそれがあり、貴社が引き続き保有することにより、私の権利又は正当な利益が害されるおそれがあります。");
         basis.push("漏えい等の事態が生じた場合");
       }
+      if (c("f-r-harm")) {
+        reasons.push("次の事情により、私の権利又は正当な利益が害されるおそれがあります（法第35条第5項）：" + v("f-harm"));
+      }
       var items = [];
       items.push("私が識別される保有個人データのうち、上記理由に該当する「" + target + "」の利用停止又は消去" + (c("f-c-id") ? "。私が提出した本人確認書類の画像及び番号も対象に含みます" : ""));
       if (c("f-c-copies")) items.push("上記データのバックアップ、分析用の複製、及び業務委託先が保有する複製についても、合理的に可能な範囲で消去すること。困難な場合は、その理由と、代わりに講じる措置（利用停止、アクセス制限、保存期限後の確実な消去など）をご回答ください");
@@ -457,6 +460,10 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var invalid = $all("input:invalid", form);
+      ["f-company", "f-name", "f-target"].forEach(function (id) {
+        var el = $("#" + id);
+        if (el && !v(id) && invalid.indexOf(el) < 0) invalid.push(el);
+      });
       if (invalid.length) {
         var names = [];
         invalid.forEach(function (el) {
@@ -471,7 +478,9 @@
       var status = form.querySelector('input[name="f-status"]:checked');
       if (!status) { showError("利用状況を選んでください。"); return; }
       if (c("f-r-left") && status.value !== "former") { showError("退会済みを選んだ場合だけ、退会後の利用目的に関する理由を選べます。"); return; }
-      if (!c("f-r-left") && !c("f-r-leak")) { showError("事実に合う請求理由を少なくとも1つ選んでください。"); return; }
+      if (!c("f-r-left") && !c("f-r-leak") && !c("f-r-harm")) { showError("事実に合う請求理由を少なくとも1つ選んでください。"); return; }
+      if (c("f-r-harm") && !v("f-harm")) { showError("権利や正当な利益が害されるおそれの具体的な事情を記入してください。"); return; }
+      if (status.value === "former" && v("f-left") && new Date(v("f-left") + "T00:00:00") > new Date()) { showError("退会日は今日以前の日付を入力してください。"); return; }
       if (error) { error.hidden = true; error.textContent = ""; }
       out.value = build(status.value);
       if (copy) copy.disabled = false;
@@ -486,6 +495,7 @@
     });
     form.addEventListener("input", function () { if (copy) copy.disabled = true; });
     form.addEventListener("change", function () { if (copy) copy.disabled = true; });
+    $all('button[type="submit"], #erase-template', form).forEach(function (btn) { btn.disabled = false; });
     out.value = "利用状況と請求理由を選び、［文面を作る］を押してください。";
   }
 

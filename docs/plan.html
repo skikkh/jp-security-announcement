@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>自分専用の対策を作る ── 漏れた情報を選ぶだけ｜漏れた後の守り方</title>
+<title>自分専用の対策を作る ── 漏れた情報を選ぶだけ｜情報漏えい対策ガイド</title>
 <meta name="description" content="漏れた（可能性がある）情報と、あなたの状況を選ぶと、今日・今週・これから続けることに分けた対策リストを作ります。入力内容はどこにも送信されません。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/plan.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="漏れた後の守り方">
-<meta property="og:title" content="自分専用の対策を作る ── 漏れた情報を選ぶだけ｜漏れた後の守り方">
+<meta property="og:site_name" content="情報漏えい対策ガイド">
+<meta property="og:title" content="自分専用の対策を作る ── 漏れた情報を選ぶだけ｜情報漏えい対策ガイド">
 <meta property="og:description" content="漏れた（可能性がある）情報と、あなたの状況を選ぶと、今日・今週・これから続けることに分けた対策リストを作ります。入力内容はどこにも送信されません。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/plan.html">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=707e2fcbd9">
-<script src="assets/app.js?v=707e2fcbd9" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=90a40f7146">
+<script src="assets/app.js?v=90a40f7146" defer></script>
 </head>
 <body class="page-plan">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -32,7 +32,7 @@
   <div class="wrap bar">
     <a class="brand" href="index.html">
       <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15.2 10.2 26.6 24 30 13.8-3.4 24-14.8 24-30V13L32 4Z" fill="#0b4fa8"/><path d="m21 32.5 7.5 7.5L44 24.5" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="brand-text"><span class="brand-name">漏れた後の守り方</span><span class="brand-sub">個人情報漏えい 市民のための自衛ガイド</span></span>
+      <span class="brand-text"><span class="brand-name">情報漏えい対策ガイド</span><span class="brand-sub">個人と家族のための対策・事案情報</span></span>
     </a>
     <div class="header-right">
       <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html" aria-current="page">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
@@ -53,6 +53,8 @@
     <div class="opt-grid">
       <label class="opt"><input type="checkbox" name="items" value="email"><span>メールアドレス</span></label>
       <label class="opt"><input type="checkbox" name="items" value="password"><span>パスワード<small>暗号化・ハッシュ化されたものを含む</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="token"><span>認証トークン・外部サービス連携<small>ログイン状態や連携に使う情報</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="files"><span>保存した写真・文書など<small>何が含まれていたかを確認</small></span></label>
       <label class="opt"><input type="checkbox" name="items" value="phone"><span>電話番号</span></label>
       <label class="opt"><input type="checkbox" name="items" value="address"><span>氏名・住所</span></label>
       <label class="opt"><input type="checkbox" name="items" value="birth"><span>生年月日</span></label>
@@ -92,14 +94,13 @@
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
-      <h2>漏れた後の守り方</h2>
-      <p class="byline">作成 生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p>
+      <h2>情報漏えい対策ガイド</h2>
       <p>個人が運営する非公式の情報サイトです。政府・企業・各機関の公式発表を優先してください。事実関係には出典を付けています。最終更新：2026年10月9日。</p>
       <p>このサイトは外部のスクリプト、アクセス解析、広告、Cookieを一切使っていません。チェックの記録は、あなたの端末の中にだけ保存されます。</p>
       <div class="report">
         <p class="report-title">誤りや古い情報を見つけたら</p>
         <p>X（旧Twitter）で、作成者の @skikkh に知らせてください。ボタンを押すと、このページの名前とURLが入った状態で投稿画面が開きます。</p>
-        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%BC%8F%E3%82%8C%E3%81%9F%E5%BE%8C%E3%81%AE%E5%AE%88%E3%82%8A%E6%96%B9%E3%80%8D%E3%81%AE%E3%80%8C%E8%87%AA%E5%88%86%E5%B0%82%E7%94%A8%E3%81%AE%E5%AF%BE%E7%AD%96%E3%82%92%E4%BD%9C%E3%82%8B+%E2%94%80%E2%94%80+%E6%BC%8F%E3%82%8C%E3%81%9F%E6%83%85%E5%A0%B1%E3%82%92%E9%81%B8%E3%81%B6%E3%81%A0%E3%81%91%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Fplan.html" rel="noopener">Xで知らせる</a>
+        <a class="btn report-btn" href="https://x.com/intent/post?text=%40skikkh+%E3%80%8C%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E5%AF%BE%E7%AD%96%E3%82%AC%E3%82%A4%E3%83%89%E3%80%8D%E3%81%AE%E3%80%8C%E8%87%AA%E5%88%86%E5%B0%82%E7%94%A8%E3%81%AE%E5%AF%BE%E7%AD%96%E3%82%92%E4%BD%9C%E3%82%8B+%E2%94%80%E2%94%80+%E6%BC%8F%E3%82%8C%E3%81%9F%E6%83%85%E5%A0%B1%E3%82%92%E9%81%B8%E3%81%B6%E3%81%A0%E3%81%91%E3%80%8D%E3%81%A7%E3%80%81%E8%AA%A4%E3%82%8A%E3%82%84%E5%8F%A4%E3%81%84%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A%EF%BC%88%E3%81%A9%E3%81%93%E3%81%8C%E9%81%95%E3%81%86%E3%81%8B%E3%83%BB%E6%AD%A3%E3%81%97%E3%81%84%E6%83%85%E5%A0%B1%E3%81%8C%E8%BC%89%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEURL%EF%BC%89%0A&amp;url=https%3A%2F%2Fskikkh.github.io%2Fjp-security-announcement%2Fplan.html" rel="noopener">Xで知らせる</a>
       </div>
     </div>
     <div>
@@ -107,6 +108,7 @@
       <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html" aria-current="page">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
     </div>
   </div>
+  <div class="wrap"><p class="byline">運営：生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p></div>
 </footer>
 </body>
 </html>
