@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-09",
+  "checked_on": "2026-10-10",
   "candidates": [
     {
       "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -27,20 +27,93 @@
         "note": "取引先担当者11人へのメールに会員情報のファイルを誤添付し、うち2人の開封を確認。コース・入退会日・ワンタッチパスID等も含みます。カード情報と口座情報は含まれません。9月8日時点で取引先による削除を確認し、二次的な流出は確認されていません。",
         "url": "https://www.sanga-fc.jp/news/detail/21401",
         "src": "公式"
-      }
+      },
+      "checked_on": "2026-10-09"
     },
     {
       "candidateNumber": 95,
       "name": "楽天会員データ販売主張",
       "referenceURL": "https://ai.itokoba.com/security-tier/#incident-095",
       "sourceURL": "https://rocket-boys.co.jp/security-measures-lab/rakuten-101m-data-sale-unverified-20261004/",
-      "reason": "第三者の販売主張と公開仕様に合うサンプルだけでは真正性・取得元・1億100万件を検証できない。楽天グループの公式発表も確認できず、元の保留を維持する。"
+      "reason": "第三者の販売主張と公開仕様に合うサンプルだけでは真正性・取得元・1億100万件を検証できない。楽天グループの公式発表も確認できず、元の保留を維持する。",
+      "checked_on": "2026-10-09"
     },
     {
       "candidateNumber": 105,
       "name": "Suno",
       "sourceURL": "https://haveibeenpwned.com/Breach/Suno",
-      "reason": "HIBPは55.3百万件のメールアドレス等を報告するが、Suno公式サイトで同件数・項目を確認できない。Suno広報の媒体向け声明は2025年11月の限定的事案と一部利用者情報を認める一方、55.3百万件の範囲を確定していない。日本の対象人数も未公表のため、会社公式一次資料を要する掲載条件では保留。"
+      "reason": "HIBPは55.3百万件のメールアドレス等を報告するが、Suno公式サイトで同件数・項目を確認できない。Suno広報の媒体向け声明は2025年11月の限定的事案と一部利用者情報を認める一方、55.3百万件の範囲を確定していない。日本の対象人数も未公表のため、会社公式一次資料を要する掲載条件では保留。",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "name": "北海学園大学",
+      "sourceURL": "https://www.hgu.jp/info/news/20261007-01.html",
+      "checked_on": "2026-10-10",
+      "reason": "公式本文には個人情報の閲覧・取得・漏えい可能性と項目の明記がない。送信先5名を漏えい人数に置き換えず、続報で個人情報への影響が示された時点で再判定。"
+    },
+    {
+      "name": "小池酸素工業",
+      "sourceURL": "https://koike-japan.com/pages/1?b_id=206&detail=1&r_id=523",
+      "checked_on": "2026-10-10",
+      "reason": "漏えいデータの内容および対象群を確認中のため、顧客・利用者・社外関係者等の個人情報が含まれると断定できない。個人情報の範囲の続報待ち。"
+    },
+    {
+      "name": "大気社マレーシアグループ",
+      "sourceURL": "https://www.taikisha.co.jp/common/mtimg/20260918.pdf",
+      "checked_on": "2026-10-10",
+      "reason": "従業員1名のメールアカウント侵害と不審メール送信のみ。顧客等の個人情報への影響の可能性を公表していないため掲載保留。"
+    },
+    {
+      "name": "大阪市北区 住民票の誤記載",
+      "sourceURL": "https://www.city.osaka.lg.jp/hodoshiryo/somu/0000688424.html",
+      "checked_on": "2026-10-10",
+      "reason": "10月9日の一括公表で2人対象の付番誤り・住民票誤記載を確認したが、第三者への漏えい・その可能性の説明がなく、個人情報流出の事案としては掲載を保留する。"
+    },
+    {
+      "name": "バンダイナムコ系 湾岸ミッドナイト公式コミュニティという投稿",
+      "referenceURL": "https://x.com/polymarketjapan/status/2108512195273543979",
+      "sourceURL": "https://xp.bandainamco-am.co.jp/information/",
+      "checked_on": "2026-10-10",
+      "reason": "投稿では約1700人・パスワード等の流出とするが、公式原文を確認できていない。公式の情報一覧は取得時に見出しのみ表示。Commune全体の公表はパスワード漏えいを確認していないとしており、同じ範囲かも未確認。投稿の数字や項目を転記せず保留。"
+    },
+    {
+      "name": "小平市の公式サイト関連の個人情報への影響",
+      "referenceURL": "https://news.livedoor.com/article/detail/32519525/",
+      "sourceURL": "https://www.city.kodaira.tokyo.jp/",
+      "checked_on": "2026-10-10",
+      "reason": "公式の臨時案内でサイト障害を確認。報道は問い合わせフォーム情報の流出可能性を伝えるが、現行の公式ページは対象項目・漏えい可能性を明記していない。公式Xでの当該説明をまだ確認していないため、項目を推測せず保留。"
+    },
+    {
+      "name": "ビューカード VIEW’s NET向けメール配信用外部サービス",
+      "sourceURL": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
+      "referenceURL": "https://x.com/traicycom/status/2108463488452694024",
+      "checked_on": "2026-10-10",
+      "reason": "親のweb取得本文では約403万件・メールアドレスのみ・対象外カード・本件電話を読めたが、独立担当の原文取得と現在の直接取得は403となり、原文の独立照合が未完了。今回の公開分から外し、読めた案を保持して次回に再確認する。",
+      "draft_entry_on_recovery": {
+        "date": "2026-10-09",
+        "date_label": "2026年10月9日",
+        "org": "ビューカード",
+        "service": "VIEW’s NET向けのメール配信用外部サービス",
+        "kana": "びゅーかーど view card views net ビューズネット",
+        "category": "finance",
+        "source_checked_on": "2026-10-10",
+        "count": "メールアドレス 約403万件（対象者を調査中）",
+        "status": "可能性",
+        "items": [
+          "メールアドレス"
+        ],
+        "note": "IDCフロンティアへの不正アクセスに伴い、メール配信用外部サービスの一部が使用できず、メールアドレスが閲覧・取得された可能性があります。氏名、住所、電話番号、カード番号等の漏えいの可能性はないとしています。iiマークのあるカードとビュー法人カードは対象外です。対象者には準備でき次第、個別にメールで案内するとしています。件数をJR東日本等の事案と合算しません。",
+        "url": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
+        "src": "公式",
+        "contact": {
+          "name": "本件お問い合わせ先 ビューカードセンター",
+          "tels": [
+            "03-6685-7000"
+          ],
+          "hours": "9:00〜17:30"
+        },
+        "contact_checked_on": "2026-10-10"
+      }
     }
   ]
 }
