@@ -56,8 +56,10 @@
       <p>このサイトは外部のスクリプト、アクセス解析、広告、Cookieを一切使っていません。チェックの記録は、あなたの端末の中にだけ保存されます。</p>
       <div class="report">
         <p class="report-title">誤りや古い情報を見つけたら</p>
-        <p>X（旧Twitter）で、作成者の @skikkh に知らせてください。ボタンを押すと、このページの名前とURLが入った状態で投稿画面が開きます。</p>
-        <a class="btn report-btn" href="{{report_url}}" rel="noopener">Xで知らせる</a>
+        <p>X（旧Twitter）の @skikkh に、このページの名前とURLを添えてお知らせください。</p>
+        <a class="btn report-btn" data-share-report data-share-text="{{report_text}}" data-share-url="{{canonical}}" href="{{report_url}}" target="_blank" rel="noopener noreferrer">Xで知らせる</a>
+        <p class="muted" data-share-help hidden>表示された共有メニューでXを選んでください。</p>
+        <p role="status" data-share-status hidden></p>
       </div>
     </div>
     <div>

@@ -363,8 +363,10 @@ textarea { min-height: 18rem; font-size: .92rem; line-height: 1.75; font-family:
 .site-footer h2 { font-size: .95rem; margin: 0 0 .5rem; }
 .footer-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.3fr 1fr; } }
-.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 14px; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; }
 .site-footer li { margin: 0; }
+.site-footer ul a { display: block; padding: 4px 0; line-height: 1.65; }
+.footer-grid > div { min-width: 0; }
 .site-footer p { margin: 0 0 .6rem; }
 
 /* ---------- 印刷 ---------- */

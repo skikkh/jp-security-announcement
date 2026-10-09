@@ -1,5 +1,6 @@
-/* 漏れた後の守り方 — app.js
-   外部通信は一切しません。保存はこの端末の localStorage のみ。 */
+/* 情報漏えい対策ガイド — app.js
+   自動の外部通信はしません。記録はこの端末の localStorage のみ。
+   利用者が共有ボタンを押した場合、公開ページの名前とURLを選択先へ渡します。 */
 (function () {
   "use strict";
 
@@ -536,6 +537,33 @@
     return ok;
   }
   function initActions() {
+    var mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent));
+    $all("[data-share-report]").forEach(function (btn) {
+      if (!mobile || typeof navigator.share !== "function") return;
+      var data = { text: btn.getAttribute("data-share-text"), url: btn.getAttribute("data-share-url") };
+      if (navigator.canShare && !navigator.canShare(data)) return;
+      var report = btn.closest(".report");
+      var help = $("[data-share-help]", report);
+      var status = $("[data-share-status]", report);
+      if (help) help.hidden = false;
+      var pending = false;
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (pending) return;
+        pending = true;
+        if (status) { status.hidden = true; status.textContent = ""; }
+        var result;
+        try { result = navigator.share(data); }
+        catch (err) { pending = false; window.location.assign(btn.href); return; }
+        Promise.resolve(result).then(function () {
+          pending = false;
+        }, function (err) {
+          pending = false;
+          if (err && err.name === "AbortError") return;
+          window.location.assign(btn.href);
+        });
+      });
+    });
     $all("[data-copy]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var el = $(btn.getAttribute("data-copy"));

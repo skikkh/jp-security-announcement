@@ -125,14 +125,18 @@ def nav_primary_html(current: str, root: str) -> str:
     return "<ul>" + "".join(items) + "</ul>"
 
 
-def report_url(title: str, canonical: str) -> str:
-    """X の投稿画面を、ページ名とURLが入った状態で開くリンク"""
+def report_text(title: str) -> str:
     page = title.split("｜")[0]
     text = (
         f"@skikkh 「情報漏えい対策ガイド」の「{page}」で、誤りや古い情報を見つけました。\n\n"
         "（どこが違うか・正しい情報が載っているページのURL）\n"
     )
-    return "https://x.com/intent/post?" + urllib.parse.urlencode({"text": text, "url": canonical})
+    return text
+
+
+def report_url(title: str, canonical: str) -> str:
+    """X の投稿画面を、ページ名とURLが入った状態で開くリンク"""
+    return "https://x.com/intent/post?" + urllib.parse.urlencode({"text": report_text(title), "url": canonical})
 
 
 def nav_html(current: str, root: str) -> str:
@@ -382,6 +386,7 @@ def build_into(output: Path) -> tuple[int, int, str]:
             "nav": nav_html(slug, root),
             "nav_primary": nav_primary_html(slug, root),
             "report_url": esc(report_url(meta["title"], canonical)),
+            "report_text": esc(report_text(meta["title"])),
             "nav_footer": nav_html(slug, root),
             "content": body.strip(),
         }
