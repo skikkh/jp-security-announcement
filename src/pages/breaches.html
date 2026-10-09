@@ -5,6 +5,40 @@ description: 2026年に公表された漏えい・不正アクセス事案を、
 <p class="updated">最終更新 {{updated}}（この日までの各社発表・報道をもとに作成）</p>
 <h1>漏えい・不正アクセス事案の一覧</h1>
 <p class="lead">2026年に公表された事案を{{breach_total}}件掲載しています。情報流出の有無や範囲がまだ確認されていない事案も含みます。事業種別で絞り込み、使っていたサービスがあれば<strong>公式発表と自分への通知</strong>で対象項目を確かめてください。</p>
+<div class="filters no-print" role="search" id="breach-search" data-as-of="{{updated_iso}}">
+  <div class="field-row">
+    <div class="field"><label for="breach-q">会社名・サービス名で探す</label><input type="search" id="breach-q" placeholder="例：タイムズ、ローソン、JR"></div>
+    <div class="field"><label for="breach-category">事業の種別で絞り込む</label><select id="breach-category">{{category_options}}</select></div>
+  </div>
+  <div class="field-row">
+    <div class="field"><label for="breach-status">発表状況</label><select id="breach-status"><option value="all">すべての状況</option><option value="確認">漏えい確認</option><option value="可能性">可能性・おそれ</option><option value="調査中">調査中</option><option value="未確認">漏えい未確認</option><option value="対象情報なし">対象に個人情報なし</option></select></div>
+    <div class="field"><label for="breach-period">公表・続報の期間</label><select id="breach-period"><option value="all">全期間</option><option value="7">直近7日</option><option value="30">直近30日</option><option value="90">直近90日</option></select></div>
+    <div class="field"><label for="breach-sort">並び順</label><select id="breach-sort"><option value="latest">公表・続報が新しい順</option><option value="initial">初報が新しい順</option><option value="name">会社名・サービス名順</option></select></div>
+  </div>
+  <p class="muted">期間は{{updated}}を基準に、公表・続報が明記された日付で絞ります。このサイトの確認日は続報日として扱いません。</p>
+  <p class="muted">事業種別は、対象サービスの用途や運営元の業種を目安にした検索用の分類です。会社の全事業を表すものではありません。</p>
+  <div class="chips" role="group" aria-label="漏れた項目で絞り込む">
+    <button type="button" class="chip" data-filter="all" aria-pressed="true">項目を限定しない</button>
+    <button type="button" class="chip" data-filter="id" aria-pressed="false">本人確認書類・旅券</button>
+    <button type="button" class="chip" data-filter="password" aria-pressed="false">パスワード</button>
+    <button type="button" class="chip" data-filter="address" aria-pressed="false">住所</button>
+    <button type="button" class="chip" data-filter="money" aria-pressed="false">カード・口座</button>
+    <button type="button" class="chip" data-filter="name" aria-pressed="false">氏名</button>
+    <button type="button" class="chip" data-filter="email" aria-pressed="false">メールアドレス</button>
+    <button type="button" class="chip" data-filter="phone" aria-pressed="false">電話番号</button>
+    <button type="button" class="chip" data-filter="birth" aria-pressed="false">生年月日</button>
+    <button type="button" class="chip" data-filter="token" aria-pressed="false">認証トークン・連携</button>
+    <button type="button" class="chip" data-filter="files" aria-pressed="false">保存した写真・文書</button>
+    <button type="button" class="chip" data-filter="history" aria-pressed="false">購入・配送・利用履歴</button>
+    <button type="button" class="chip" data-filter="family" aria-pressed="false">家族情報</button>
+  </div>
+  <p class="muted">項目は複数選べます。選んだ項目のどれかを含む事案を表示します。会社名・事業種別・期間・発表状況は、すべての条件を満たす事案だけを表示します。</p>
+  <p class="muted" id="breach-count" role="status" aria-live="polite" aria-atomic="true"></p>
+  <button type="button" class="btn small" id="breach-clear">絞り込みを解除する</button>
+</div>
+<p id="breach-empty" hidden>条件に合う事案がありません。会社名を短くするか、事業種別・期間・発表状況・対象項目の条件を解除してください。</p>
+<p class="callout warn">項目は事案全体の範囲です。あなたの情報が漏れたか、どの項目が対象かは、公式発表と自分への通知で確認してください。</p>
+<details class="reading-guide"><summary>一覧の読み方・公式窓口を確かめる方法</summary>
 <div class="callout warn">
   <span class="callout-title">この一覧の読み方</span>
   <ul>
@@ -12,7 +46,7 @@ description: 2026年に公表された漏えい・不正アクセス事案を、
     <li>「漏えい確認」「可能性・おそれ」「調査中」「漏えい未確認」は、流出についての公表内容をもとに分類しています。不正アクセスが確認されても、個人情報の流出まで確認されたとは限りません。</li>
     <li>トップに載せている「119件」は、セキュリティ会社マクニカによる集計です。マクニカは件数だけを公表していて、事案名の一覧は出していません。そのため、この一覧は、事案名を公表しているまとめサイトを手がかりに、一件ずつ各社の公式発表で確かめたものを載せています。件数は119件と一致しません。</li>
     <li>新規事案と続報は毎時調査し、出典で確認できた変更を反映します。調査時点で未確認の点は、その旨を注記しています。</li>
-    <li>項目は事案全体の範囲です。全員の全項目が漏れたという意味ではありません。「この事案の対策を確認する」の選択肢は、自分への通知に合わせて選び直してください。</li>
+    <li>項目は事案全体の範囲です。全員の全項目が漏れたという意味ではありません。「自分の通知に合わせて対策を選ぶ」から、自分の対象項目だけを選んでください。</li>
   </ul>
 </div>
 <div class="callout info">
@@ -24,23 +58,7 @@ description: 2026年に公表された漏えい・不正アクセス事案を、
     <li>退会済みでも、対象かどうかを問い合わせられる会社があります。</li>
   </ul>
 </div>
-<div class="filters no-print" role="search">
-  <div class="field-row">
-    <div class="field"><label for="breach-category">事業の種別で絞り込む</label><select id="breach-category">{{category_options}}</select></div>
-    <div class="field"><label for="breach-q">会社名・サービス名で探す</label><input type="search" id="breach-q" placeholder="例：タイムズ、ローソン、JR"></div>
-  </div>
-  <p class="muted">事業種別は対象サービスの用途をもとに分類しています。会社の全事業を分類したものではありません。</p>
-  <div class="chips" role="group" aria-label="漏れた項目で絞り込む">
-    <button type="button" class="chip" data-filter="all" aria-pressed="true">すべて</button>
-    <button type="button" class="chip" data-filter="id" aria-pressed="false">本人確認書類・旅券</button>
-    <button type="button" class="chip" data-filter="password" aria-pressed="false">パスワード</button>
-    <button type="button" class="chip" data-filter="address" aria-pressed="false">住所</button>
-    <button type="button" class="chip" data-filter="money" aria-pressed="false">カード・口座</button>
-  </div>
-  <p class="muted" id="breach-count" aria-live="polite"></p>
-  <button type="button" class="btn small" id="breach-clear">絞り込みを解除する</button>
-</div>
-<p id="breach-empty" hidden>条件に合う事案がありません。会社名を短くするか、事業種別・対象項目の条件を解除してください。</p>
+</details>
 {{breach_cards}}
 <p class="src">候補発見の参考：<a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html" rel="noopener">マクニカ</a>、<a href="https://smartscope.blog/en/blog/japan-data-breach-list-tier-2026-09-10/" rel="noopener">SmartScope</a>、<a href="https://qiita.com/nnnnnnnok/items/95cb61994478d827fee3" rel="noopener">Qiita「2026年の大規模な情報漏洩まとめ」</a>、<a href="https://enterprisezine.jp/news/detail/25188" rel="noopener">EnterpriseZine</a>、各社の発表。誤りや新しい情報があれば、ページのいちばん下の「Xで知らせる」ボタンからお知らせください。</p>
 

@@ -438,3 +438,14 @@ h1 small { display: block; font-size: .6em; margin-top: .2em; }
 .report-title { font-weight: 800; color: var(--brand-strong); }
 .report-btn { background: var(--brand); color: #fff; border-color: var(--brand); }
 .report-btn:hover { background: var(--brand-strong); }
+
+/* 状況を選ぶ入口と、読後の行動 */
+.next-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.4rem 0; }
+.next-actions h2 { flex-basis: 100%; margin: 0 0 .4rem; }
+.next-actions .btn { white-space: normal; text-align: left; }
+.reading-guide { margin: 1rem 0; }
+.reading-guide > summary { cursor: pointer; padding: .8rem; font-weight: 700; background: var(--surface-2); border-radius: 8px; }
+#incident-context h2 { margin-top: 0; }
+
+.plan-section-label { background: var(--surface-2); font-weight: 700; padding: .65rem 1rem !important; border: 0 !important; list-style: none; }
+#breach-empty { padding: 1rem; border: 1px solid var(--line); }

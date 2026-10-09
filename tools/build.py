@@ -32,7 +32,7 @@ NAV = [
     ("index", "トップ"),
     ("plan", "自分専用の対策を作る"),
     ("id", "免許証・身分証が漏れたら"),
-    ("delete", "退会・削除・書き換えの真実"),
+    ("delete", "退会・データ消去の進め方"),
     ("scams", "便乗詐欺の手口"),
     ("accounts", "パスワードとログインの守り方"),
     ("family", "家族・高齢の親を守る"),
@@ -73,6 +73,9 @@ STATUS = {
 FILTER_KEYS = {
     "id": {"本人確認書類の画像", "パスポート情報", "免許証番号", "本人確認書類の番号"},
     "password": {"パスワード"},
+    "name": {"氏名"}, "email": {"メールアドレス"}, "phone": {"電話番号"},
+    "birth": {"生年月日"}, "token": {"認証トークン"}, "files": {"保存ファイル・画像"},
+    "history": {"購入・配送・利用履歴"}, "family": {"家族情報"},
     "address": {"住所"},
     "money": {"カード情報の一部", "カード情報（番号・有効期限など）", "カード情報", "口座情報"},
 }
@@ -197,9 +200,41 @@ def contact_html(e: dict) -> str:
     )
 
 
+def incident_id(e: dict) -> str:
+    # 表示順・件数・注記・確認日が変わっても同じ事案を参照する。
+    identity = json.dumps([e["org"], e.get("service", ""), e["date"]], ensure_ascii=False)
+    return "i-" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:20]
+
+
+def latest_announcement(e: dict) -> str:
+    """date_labelに明記された公表・続報の日付だけを使う。確認日は使わない。"""
+    initial = date.fromisoformat(e["date"])
+    year = initial.year
+    values = [initial]
+    for match in re.finditer(r"(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日", e["date_label"]):
+        if match[1]:
+            year = int(match[1])
+        try:
+            values.append(date(year, int(match[2]), int(match[3])))
+        except ValueError:
+            continue
+    return max(values).isoformat()
+
+
+def incident_registry(entries: list[dict]) -> str:
+    rows = []
+    for e in entries:
+        official = e.get("official") or (e["url"] if e["src"] == "公式" else "")
+        attrs = {"id": incident_id(e), "org": e["org"], "service": e.get("service", ""),
+                 "note": e.get("note", ""), "official": official,
+                 "status": STATUS[e["status"]][1], "items": "、".join(e["items"])}
+        rows.append("<span " + " ".join(f'data-{k}="{esc(v)}"' for k, v in attrs.items()) + "></span>")
+    return '<div id="incident-data" hidden>' + "".join(rows) + "</div>"
+
+
 def breach_cards(entries: list[dict]) -> str:
     out = []
-    for e in sorted(entries, key=lambda x: x["date"], reverse=True):
+    for e in sorted(entries, key=lambda x: (latest_announcement(x), x["date"], x["org"]), reverse=True):
         tags = e["items"]
         keys = sorted({k for k, v in FILTER_KEYS.items() if v & set(tags)})
         plan = [] if e["status"] == "対象情報なし" else (sorted({TAG_TO_PLAN[t] for t in tags if t in TAG_TO_PLAN}) or ["unknown"])
@@ -215,11 +250,11 @@ def breach_cards(entries: list[dict]) -> str:
         official = e.get("official") or (e["url"] if e["src"] == "公式" else None)
         links = [f'<a href="{esc(e["url"])}" rel="noopener">出典（{esc(e["src"])}）</a>']
         if plan:
-            links.append(f'<a href="plan.html#items={",".join(plan)}">この事案の対策を確認する</a>')
+            links.append(f'<a href="plan.html#incident={incident_id(e)}">自分の通知に合わせて対策を選ぶ</a>')
         service = f'<span class="muted">｜{esc(e["service"])}</span>' if e.get("service") else ""
         note = f'<p class="breach-note">{esc(e["note"])}</p>' if e.get("note") else ""
         out.append(
-            f'<li class="{cls}" data-keys="{" ".join(keys)}" data-category="{e["category"]}" data-search="{esc(search)}">'
+            f'<li class="{cls}" data-keys="{" ".join(keys)}" data-category="{e["category"]}" data-status="{e["status"]}" data-initial="{e["date"]}" data-latest="{latest_announcement(e)}" data-name="{esc(search)}" data-incident="{incident_id(e)}" data-search="{esc(search)}">'
             f'<div class="breach-top"><span>{esc(e["date_label"])} 公表</span>'
             f'<span class="status {st_cls}">{st_label}</span></div>'
             f'<p class="breach-name">{esc(e["org"])}{service}</p>'
@@ -359,6 +394,8 @@ def build_into(output: Path) -> tuple[int, int, str]:
         "{{breach_cards}}": breach_cards(breaches),
         "{{breach_total}}": str(len(breaches)),
         "{{category_options}}": category_options(breaches),
+        "{{incident_registry}}": incident_registry(breaches),
+        "{{updated_iso}}": UPDATED_ISO,
         "{{updated}}": UPDATED,
     }
 

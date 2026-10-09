@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=33316f20f6">
-<script src="assets/app.js?v=33316f20f6" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=4539eaecf1">
+<script src="assets/app.js?v=4539eaecf1" defer></script>
 </head>
 <body class="page-threat">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -38,7 +38,7 @@
       <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
       <details class="menu-mobile">
         <summary>メニュー</summary>
-        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html" aria-current="page">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
+        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・データ消去の進め方</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html" aria-current="page">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
       </details>
     </div>
   </div>
@@ -59,7 +59,7 @@
 <ul>
   <li><strong>既知の弱点や設定ミスを探す。</strong>ソフトウェアの公表済みの脆弱性や、設定ファイル・バックアップファイルの置きっぱなしを、標的ごとに探索・悪用しようとした可能性が報告されています。</li>
   <li><strong>スマホアプリを分解して、裏口のAPIを操作する。</strong>アプリの中から通信の宛先や鍵を見つけ出し、画面からはできない操作（権限の変更、アカウントの作成など）を実行します。</li>
-  <li><strong>分析ツールの脆弱性を突く。</strong>データ分析ツール「Metabase」の重大な脆弱性が悪用されました。分析ツールは、会員データベースの<strong>コピー</strong>につながっていることが多い点が重要です。</li>
+  <li><strong>分析ツールの脆弱性を突く。</strong>データ分析ツール「Metabase」の重大な脆弱性が悪用されました。分析ツールから保有データへアクセスできる場合があります。どの保存先から流出したかは、各事案の公式発表で確認します。</li>
   <li><strong>サーバーに遠隔操作の仕掛けを置く。</strong>公開サーバーから届く内部のサーバーに、命令を実行させるファイルが置かれた例があります。</li>
 </ul>
 <p>マクニカは、弱いシステムを広く探す攻撃の可能性が高いと分析しています。同社が定義した事案では、2026年10月6日までに公表された119件のうち81件が7月以降です。一方、その81件のうち65件は公表情報だけでは侵入原因を分類できません。JPCERT/CCも、把握している情報は限定的で、示した手口が全事案に共通するわけではないとしています。</p>
@@ -79,7 +79,7 @@
     <tr><th scope="row">電話番号</th><td data-label="変えられるか">変えにくい</td><td data-label="使い道">SMS詐欺、詐欺電話、SIM乗っ取りの入口</td></tr>
     <tr><th scope="row">住所</th><td data-label="変えられるか" class="no">ほぼ変えられない</td><td data-label="使い道">郵便・訪問による詐欺、名簿化、強盗の下見</td></tr>
     <tr><th scope="row">氏名・生年月日</th><td data-label="変えられるか" class="no">変えられない</td><td data-label="使い道">電話での「本人確認」の突破、信用させる材料</td></tr>
-    <tr><th scope="row">免許証などの画像</th><td data-label="変えられるか" class="no">番号の末尾と写真は再交付で変わる。顔と生年月日は変わらない</td><td data-label="使い道">偽造身分証の材料、なりすまし契約、詐欺の小道具</td></tr>
+    <tr><th scope="row">免許証などの画像</th><td data-label="変えられるか" class="no">免許証では写真・交付日等が変わり、番号の末尾が変わる場合がある。書類ごとに手続きと変更項目は異なり、流出済み画像は回収できない</td><td data-label="使い道">偽造身分証の材料、なりすまし契約、詐欺の小道具</td></tr>
     <tr><th scope="row">購入・配送・予約の履歴</th><td data-label="変えられるか" class="no">変えられない</td><td data-label="使い道">「本物らしさ」の演出。実際の注文に合わせた偽の連絡</td></tr>
   </tbody>
 </table>
@@ -92,7 +92,7 @@
 <p>今回の漏えいには、パスワード以外に<strong>本人確認に使われ得る情報</strong>も含まれます。どの情報が漏れたかは事案ごとに違います。氏名・住所・生年月日だけを秘密の証拠にできないため、情報が悪用される道筋も点検します。</p>
 
 <h2 id="routes">攻撃者の6つの換金ルートと、断ち方</h2>
-<p>盗んだ情報は、それだけではお金になりません。攻撃者は次のどれかの道を通ってお金に変えます。どの道も、途中のどこかで断ち切れます。</p>
+<p>盗んだ情報は、それだけではお金になりません。攻撃者は次のどれかの道を通ってお金に変えます。主な悪用経路と被害の可能性を減らす対策を整理します。対策だけで全ての被害を防げるわけではありません。</p>
 <ol class="routes">
   <li>
     <div class="route-head"><strong>信じ込ませる（フィッシング・詐欺電話）</strong></div>
@@ -119,7 +119,7 @@
     <div class="route-flow">
       <div class="step"><b>使う情報</b>氏名、住所、生年月日、免許証の画像</div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="step"><b>攻撃者の動き</b>偽造の身分証で携帯ショップに行き、SIMを再発行させる。盗んだ携帯会社のIDで、ネットからeSIMを再発行させることもある。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
+      <div class="step"><b>攻撃者の動き</b>偽造書類で携帯ショップのSIM再発行等を狙う手口が報告されています。盗んだ携帯会社のIDで、ネットからeSIMを再発行させることもある。SMSの認証コードを受け取り、決済や銀行を乗っ取る</div>
       <div class="arrow" aria-hidden="true"></div>
       <div class="step defense"><b>断ち方</b>携帯会社のIDのパスワードと、契約の暗証番号を見直す。対応していれば新しい認証と復旧方法を確認してからSMSを移す。突然圏外になったらすぐ連絡。<a href="accounts.html#carrier">携帯電話の守り方</a></div>
     </div>
@@ -168,7 +168,7 @@
   <tbody>
     <tr><th scope="row">パスワードの使い回しをやめる</th><td data-label="評価">正しい</td><td data-label="足りない点">事案によっては氏名や住所、本人確認書類なども漏れる。これだけでは、詐欺、SIM乗っ取り、なりすまし契約、訪問は防げない</td></tr>
     <tr><th scope="row">多要素認証を使う</th><td data-label="評価">正しいが、中身が大事</td><td data-label="足りない点">SMSも認証なしより安全。ただし、電話番号の乗っ取りと、偽サイトでコードを横取りする手口に弱い。選べるならパスキーなど偽サイトに強い方式を使い、移行時は予備の手段も確認する</td></tr>
-    <tr><th scope="row">不審なメールやSNSに注意する</th><td data-label="評価">方向は正しいが、実行が難しい</td><td data-label="足りない点">漏れた情報を使った詐欺は「不審に見えない」のが問題。見た目で見分ける方法は、いずれ破られる前提で考える。だから「届いた連絡からは動かない」という行動のルールにする</td></tr>
+    <tr><th scope="row">不審なメールやSMSのリンクを開かず、公式サイト・アプリから確認する</th><td data-label="評価">独立した確認経路を使う</td><td data-label="足りない点">公式会見もこの確認方法を案内しています。このサイトでは電話・郵便・訪問も含め、相手から示された連絡先に頼らず確認する手順を整理します</td></tr>
     <tr><th scope="row">「自分の情報は自分で守る」</th><td data-label="評価">誤解を生みやすい</td><td data-label="足りない点">企業に預けた情報は、個人では守れない。個人にできるのは、漏れても使えなくすること、被害の上限を決めること、早く気づくこと</td></tr>
   </tbody>
 </table>
@@ -189,6 +189,8 @@
   <li><strong>退会時にデータを消す仕組みを、最初から作る。</strong></li>
 </ul>
 <p class="src">出典：<a href="https://www.fsa.go.jp/news/r8/sonota/20261009/20261009.html" rel="noopener">金融庁 注意喚起（2026年10月9日）</a>、<a href="https://www.cyber.go.jp/pdf/press/taiou.pdf" rel="noopener">内閣官房国家サイバー統括室「不正アクセスによる漏えい等の事案を踏まえた対応について」（2026年10月9日）</a>、<a href="https://www.ppc.go.jp/news/press/2026/261007_houdou/" rel="noopener">個人情報保護委員会 注意喚起（2026年10月7日）</a>、<a href="https://corp.timescar.jp/mail/announce/faq.pdf" rel="noopener">タイムズカー「ご質問と回答」</a></p>
+
+<p class="src">確認に使った追加資料：<a href="https://www.digital.go.jp/speech/minister-261006-01" rel="noopener">デジタル大臣会見の原文</a>、<a href="https://www.npa.go.jp/hakusyo/r06/honbun/html/aa3321000.html" rel="noopener">警察白書のSIMスワップの説明</a></p>
 </div>
 </main>
 <footer class="site-footer">
@@ -210,7 +212,7 @@
     </div>
     <div>
       <h2>ページ一覧</h2>
-      <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html" aria-current="page">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
+      <ul><li><a href="index.html">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・データ消去の進め方</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html" aria-current="page">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
     </div>
   </div>
   <div class="wrap"><p class="byline">運営：生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p></div>

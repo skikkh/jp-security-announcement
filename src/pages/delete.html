@@ -1,11 +1,12 @@
 <!--meta
-title: 退会・削除・書き換えの真実 ── 退会すれば消える？書き換えは効く？｜情報漏えい対策ガイド
+title: 退会・データ消去の進め方 ── 退会すれば消える？書き換えは効く？｜情報漏えい対策ガイド
 description: 退会後も取引記録などが残る場合があり、会員画面の書き換えだけで履歴や複製まで変わるとは限りません。典型的な保存の例と、条件に合う場合の利用停止・消去請求の文面を紹介します。
 -->
 <p class="updated">最終更新 {{updated}}</p>
-<h1>退会・削除・書き換えの真実</h1>
+<h1>退会・データ消去の進め方</h1>
 <p class="lead">「漏れるのが怖いので、使っていないサービスを退会しまくる」「退会の前に住所や名前をでたらめに書き換える」。SNSで広がっているこの話を、データベースの中で実際に何が起きるかから検証します。</p>
 
+<nav class="next-actions no-print" aria-label="退会・消去を進める入口"><a class="btn primary" href="#how">退会前の確認と手順</a><a class="btn" href="#request">消去請求の文面を作る</a><a class="btn" href="help.html#contacts">対応してもらえないときの相談</a></nav>
 <div class="callout engineer">
   <span class="callout-title">結論</span>
   <ul>
@@ -26,7 +27,7 @@ description: 退会後も取引記録などが残る場合があり、会員画�
 </ol></nav>
 
 <h2 id="where">あなたのデータは、どこに何個あるか</h2>
-<p>会員登録すると、あなたの情報は1か所ではなく、いくつもの場所にコピーされます。退会前に住所と名前を書き換えた場合に、それぞれがどうなるかを図にしました（典型的な設計の例です）。</p>
+<p>登録情報は、取引記録やバックアップ等の複数の場所に保存される場合があります。退会前に住所と名前を書き換えた場合に、それぞれがどうなるかを図にしました（典型的な設計の例です）。</p>
 <div class="db-grid">
   <div class="db">
     <div class="db-title">① 会員テーブル<span class="verdict gone">書き換えが効く</span></div>
@@ -74,7 +75,7 @@ description: 退会後も取引記録などが残る場合があり、会員画�
   <thead><tr><th scope="col">例</th><th scope="col">法律</th><th scope="col">保存期間の目安</th></tr></thead>
   <tbody>
     <tr><th scope="row">古物商の帳簿・電磁的な取引記録</th><td data-label="法律">古物営業法第18条</td><td data-label="保存期間">帳簿は最終記載日から3年、電磁的記録は記録日から3年</td></tr>
-    <tr><th scope="row">対象事業者の取引時確認に係る確認記録</th><td data-label="法律">犯罪収益移転防止法第6条</td><td data-label="保存期間">取引終了日から7年。取引記録等は作成日から7年</td></tr>
+    <tr><th scope="row">対象事業者の取引時確認に係る確認記録</th><td data-label="法律">犯罪収益移転防止法第6条</td><td data-label="保存期間">特定取引等に係る契約終了日その他主務省令で定める日から7年。取引記録等は作成日から7年</td></tr>
     <tr><th scope="row">携帯音声通信の契約時の本人確認記録</th><td data-label="法律">携帯電話不正利用防止法第4条</td><td data-label="保存期間">役務提供契約の終了日から3年</td></tr>
     <tr><th scope="row">法人税の帳簿と取引に関する書類</th><td data-label="法律">法人税法など</td><td data-label="保存期間">事業年度の確定申告書提出期限の翌日から原則7年。欠損金等が生じた事業年度は10年となる場合がある</td></tr>
   </tbody>
@@ -129,6 +130,7 @@ description: 退会後も取引記録などが残る場合があり、会員画�
 
 <h2 id="request">消去請求の文面を作る</h2>
 <p>入力した内容は、この端末の中だけで文章に組み立てます。どこにも送信されません。実際の利用状況と請求理由を選んでから文面を作り、送る前に内容を確認してください。会社の窓口に専用の書式がある場合は、そちらを優先してください。</p>
+<p class="muted">正規の公開先は <a href="https://skikkh.github.io/jp-security-announcement/delete.html">skikkh.github.io/jp-security-announcement/</a> です。入力はこの端末で請求文を作るために使い、このサイトへ送信しません。本サイトでは、パスワード・認証コード・本人確認書類の画像を入力するよう求めません。</p>
 <form id="erase-form" class="no-print" autocomplete="off" novalidate>
   <fieldset>
     <legend>宛先とあなたの情報</legend>
@@ -202,3 +204,5 @@ description: 退会後も取引記録などが残る場合があり、会員画�
   <li>スマホのパスワード管理アプリに保存された一覧を見る</li>
   <li>財布の中のポイントカードと、スマホのアプリ一覧を見る</li>
 </ul>
+
+<nav class="next-actions no-print" aria-label="次に確認すること"><h2>次に確認すること</h2><a class="btn" href="help.html#contacts">消去に応じてもらえないときの相談</a><a class="btn" href="plan.html">漏れた情報の悪用を減らす対策</a><a class="btn" href="accounts.html#alias">通知を受け取れる連絡先を維持する</a></nav>

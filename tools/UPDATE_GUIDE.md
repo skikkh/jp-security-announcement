@@ -1,13 +1,13 @@
 # 漏えい事案の更新手順（毎時ルーティン用）
 
 このリポジトリは GitHub Pages（https://skikkh.github.io/jp-security-announcement/ ）で公開している市民向けの自衛ガイドです。
-毎時のルーティンは、この手順に従って「主な漏えい事案」（`src/data/breaches.json`）を更新し、`main` に直接 push します。
+毎時のルーティンは、この手順に従って「主な漏えい事案」（`src/data/breaches.json`）を更新し、GitHubの署名付きコミットとして `main` に追加します。
 リポジトリのオーナーは、新規事案の追加と続報の反映について `main` への直接 push を許可しています。
 
 ## 1. 準備
 
 ```sh
-git fetch origin main
+git fetch origin refs/heads/main:refs/remotes/origin/main
 git checkout main
 git pull --ff-only origin main
 git log -1 --format='%cI %s' origin/main   # 前回の更新時刻
@@ -16,14 +16,15 @@ git log -1 --format='%cI %s' origin/main   # 前回の更新時刻
 git status --short  # 未コミット変更があれば、専用のclean cloneで更新する
 ```
 
-**コミットの作成者（author）はリポジトリのオーナーにする（必須）。** 次のように `--author` を付けてコミットする。
-コミッターは環境の設定（Claude）のままにする。署名の有無は実際のコミットで確認する。設定だけで署名済みとは判断しない。
+**公開には `tools/publish_signed.py` を使います。** 既存のgh認証が所有者本人であること、ローカルHEADが最新mainと一致すること、ビルド・構文・リンク検証を確認し、GitHubの `createCommitOnBranch` で署名付きコミットを作ります。鍵の値は読み出しません。過去の履歴を書き換えません。
 
 ```sh
-git commit --author="Ikki Shoka <16469483+skikkh@users.noreply.github.com>" -m "..."
+# 新しい追跡対象ファイルがある場合だけ、対象ファイルを明示してgit addする
+python3 -I tools/publish_signed.py --dry-run --message '確認した更新内容'
+python3 -I tools/publish_signed.py --message '確認した更新内容'
 ```
 
-コミットメッセージの末尾には、セッションの案内どおり Claude を共同作成者（Co-Authored-By）として付けてよい。
+公開したSHAと `verified: true` を実際のAPI応答で確認します。SHA確認に失敗した場合は再作成せず、mainの履歴を先に読み直します。通常更新の許可範囲はデータ、更新履歴、更新日、配信ファイル、保留候補です。`--all-tracked` は明示的に許可された実装変更に限り、repo外の独立確認済み `--reviewed-manifest` と併せて使います。通常の毎時更新ではこの例外を使いません。
 
 `src/pages/about.html` の「更新履歴」と `src/data/breaches.json` を読み、すでに載っている事案を把握します。
 
@@ -95,11 +96,11 @@ git commit --author="Ikki Shoka <16469483+skikkh@users.noreply.github.com>" -m "
 4. `tools/build.py` の `UPDATED`（例：`2026年10月9日`）と `UPDATED_ISO` を日本時間の今日にする
 5. `src/pages/about.html` の「更新履歴」の先頭に1行足す
    例：`<li>2026年10月10日：漏えい事案に〇〇を追加。△△の窓口を更新</li>`
-6. 公開前に、各行の事実と利用者向け窓口を一次資料の該当箇所と再照合する。別担当を利用できる場合は独立して照合する。モデルを指定する場合は利用者の希望どおり `gpt-6.1-sol` を用いる。Claude で実行するときは Fable 5.1 を使わない（負荷が大きすぎるため）。別担当には Sonnet 5.5（`claude-sonnet-5-5`）を1つだけ使い、事案ごとに増やさない。未確認の事実を追加しない。
+6. 公開前に、各行の事実と利用者向け窓口を一次資料の該当箇所と再照合する。別担当を利用できる場合は独立して照合する。モデルを指定する場合は利用者の希望どおり `gpt-6.1-sol` を用いる。Fableモード・スキルは使わない。別担当は `gpt-6.1-sol` を明示する。利用できない場合は親担当で照合し、別モデルへ勝手に変更しない。未確認の事実を追加しない。
 7. `python3 tools/build.py` を実行する。検査に失敗したら直す
 8. 追加・変更したURLを `curl -sSL -o /dev/null -w '%{http_code}'` で確かめる。403 はボット対策のことがあるので、ブラウザ相当のUAで再確認する
-9. コミットして `git push origin HEAD:main`
-   拒否されたら `git pull --rebase origin main`。`docs/` が衝突したら `python3 tools/build.py` で作り直して解決し、再度 push（最大3回）
+9. `python3 -I tools/publish_signed.py --message '確認した更新内容'` で署名付きコミットを作成する。
+   mainが進んで拒否されたら、fresh mainの専用コピーへ差分を3方向で統合し、`docs/` をソースから再生成して再検証する。再試行は最大2回。APIの成否が不明な場合は、実際の履歴を確認するまで再作成しない。
 10. 変更がなければ、何もコミットしない
 
 ## 6. してはいけないこと
@@ -122,4 +123,4 @@ git commit --author="Ikki Shoka <16469483+skikkh@users.noreply.github.com>" -m "
 - `tools/pending-notices.json` の保留候補を再確認する。会社自身の確認と第三者の登録・販売主張を混同しない。
 - 新しい公表・続報は既存事案の対象期間・攻撃・サービスと照合する。同じ攻撃の第二報を別行に増やさない。独立した事象は分ける。
 - 合計人数を推定しない。レコード・メール・ファイル・企業・人数の単位を保持する。
-- 通常のpushが拒否されたらfresh mainへ統合し、ソースから再ビルドして再試行する。force pushはしない。公開後はGitHub Pagesの配信を読み返す。
+- 最新HEADとの一致やAPIの期待HEADで拒否されたらfresh mainへ統合し、ソースから再ビルドして再試行する。force pushはしない。公開後はGitHub Pagesの配信を読み返す。

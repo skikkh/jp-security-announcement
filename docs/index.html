@@ -6,13 +6,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>情報漏えい対策ガイド｜2026年 個人情報大量漏えい いま個人ができること</title>
-<meta name="description" content="2026年秋、国内で個人情報の大量漏えいが続いています。氏名・住所・電話番号・免許証画像が漏れた前提で、詐欺・乗っ取り・なりすましを防ぐ手順を、効果の大きい順にまとめました。">
+<meta name="description" content="公表事案を会社名・サービス名で探し、公式発表を確認。身分証・家族・便乗詐欺・被害時の初動を整理した、個人運営の非公式ガイドです。">
 <meta name="author" content="生賀一輝（しょうかいっき）">
 <link rel="canonical" href="https://skikkh.github.io/jp-security-announcement/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="情報漏えい対策ガイド">
-<meta property="og:title" content="情報漏えい対策ガイド ── 情報が漏れていても、被害は防げる">
-<meta property="og:description" content="2026年秋、国内で個人情報の大量漏えいが続いています。氏名・住所・電話番号・免許証画像が漏れた前提で、詐欺・乗っ取り・なりすましを防ぐ手順を、効果の大きい順にまとめました。">
+<meta property="og:title" content="情報漏えい対策ガイド｜漏れた情報に合わせて、次の行動を選ぶ">
+<meta property="og:description" content="公表事案を会社名・サービス名で探し、公式発表を確認。身分証・家族・便乗詐欺・被害時の初動を整理した、個人運営の非公式ガイドです。">
 <meta property="og:url" content="https://skikkh.github.io/jp-security-announcement/">
 <meta property="og:image" content="https://skikkh.github.io/jp-security-announcement/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="color-scheme" content="light only">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=33316f20f6">
-<script src="assets/app.js?v=33316f20f6" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=4539eaecf1">
+<script src="assets/app.js?v=4539eaecf1" defer></script>
 </head>
 <body class="page-index">
 <a class="skip" href="#main">本文へスキップ</a>
@@ -38,7 +38,7 @@
       <nav class="nav-primary" aria-label="主なページ"><ul><li><a href="plan.html">対策を作る</a></li><li><a href="id.html">免許証が漏れたら</a></li><li><a href="scams.html">詐欺の手口</a></li><li><a href="help.html">被害に遭ったら</a></li></ul></nav>
       <details class="menu-mobile">
         <summary>メニュー</summary>
-        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html" aria-current="page">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
+        <nav aria-label="サイト内メニュー"><ul><li><a href="index.html" aria-current="page">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・データ消去の進め方</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul></nav>
       </details>
     </div>
   </div>
@@ -50,8 +50,8 @@
   <h1>あなたの名前・住所・電話番号は、<br class="pc">もう漏れている前提で動いてください。</h1>
   <p class="lead">それでも、被害を抑えるためにできることがあります。漏れた情報は取り戻せませんが、<strong>悪用される経路を減らし、早く気づく</strong>ことはできます。このサイトは、漏れた項目と現在の状況に合わせて対策を選ぶためのガイドです。</p>
   <div class="hero-actions">
-    <a class="btn primary" href="#today">今日の30分でやること</a>
-    <a class="btn" href="plan.html">漏れた情報から、自分専用の対策を作る</a>
+    <a class="btn primary" href="#start">状況から、最初にすることを選ぶ</a>
+    <a class="btn" href="breaches.html#breach-search">会社名・サービス名で探す</a>
   </div>
   <ul class="trust" aria-label="このサイトについて">
     <li>事実には出典を明記</li>
@@ -59,6 +59,15 @@
     <li>最終更新 2026年10月9日</li>
   </ul>
 </section>
+
+<h2 id="start">状況に合わせて、ここから</h2>
+<ul class="cards three">
+  <li><a class="card" href="help.html#first"><span class="card-kicker">覚えのない支払い・送金・取引がある</span><span class="card-title">被害を止めるために、まず連絡する</span><span class="card-body">銀行・証券・カード会社など、利用した事業者の公式窓口へ。パスワード変更より連絡を急ぐ場合があります。</span></a></li>
+  <li><a class="card" href="breaches.html"><span class="card-kicker">利用したサービスから通知が来た</span><span class="card-title">自分が対象か、何の情報が漏れたかを確認</span><span class="card-body">会社名・サービス名で探し、公式発表と自分への通知を確認。通知のリンクから手続きせず、公式サイトを自分で開きます。</span></a></li>
+  <li><a class="card" href="plan.html"><span class="card-kicker">漏れた情報に合わせて対策したい</span><span class="card-title">自分に必要な対策を選ぶ</span><span class="card-body">身分証、パスワード、住所など、通知で確認した項目を選べます。まだ分からない場合も、確認から始められます。</span></a></li>
+</ul>
+
+
 
 <h2 id="now">いま何が起きているか</h2>
 <p>マクニカが定義した国内Webシステムの事案では、2026年7月以降の公表が増えています。同社は、弱いシステムを広く探す攻撃の可能性が高いと分析しています。ただし、公表情報だけでは侵入原因が分からない事案も多く、すべてが同じ手口と確認されたわけではありません。</p>
@@ -76,13 +85,6 @@
   <p>漏れた項目は事案ごとに違います。氏名・生年月日・顔写真はパスワードのように変えられず、住所も簡単には変えられません。本人確認に使われ得る情報だけを秘密の証拠にせず、<strong>悪用される道筋</strong>に合わせて対策します。詳しくは<a href="threat.html">なぜこの対策なのか</a>で説明しています。</p>
 </div>
 
-<h2 id="start">状況に合わせて、ここから</h2>
-<ul class="cards three">
-  <li><a class="card" href="help.html#first"><span class="card-kicker">覚えのない支払い・送金・取引がある</span><span class="card-title">被害を止めるために、まず連絡する</span><span class="card-body">銀行・証券・カード会社など、利用した事業者の公式窓口へ。パスワード変更より連絡を急ぐ場合があります。</span></a></li>
-  <li><a class="card" href="breaches.html"><span class="card-kicker">利用したサービスから通知が来た</span><span class="card-title">自分が対象か、何の情報が漏れたかを確認</span><span class="card-body">会社名・サービス名で探し、公式発表と自分への通知を確認。通知のリンクから手続きせず、公式サイトを自分で開きます。</span></a></li>
-  <li><a class="card" href="plan.html"><span class="card-kicker">漏れた情報に合わせて対策したい</span><span class="card-title">自分に必要な対策を選ぶ</span><span class="card-body">身分証、パスワード、住所など、通知で確認した項目を選べます。まだ分からない場合も、確認から始められます。</span></a></li>
-</ul>
-
 <h2 id="principles">覚えておく3つの原則</h2>
 <ol class="principles">
   <li>
@@ -99,7 +101,7 @@
   </li>
 </ol>
 
-<h2 id="today">今日の30分でやること</h2>
+<h2 id="today">被害が確認されていない人の点検（今日の30分）</h2>
 <div class="callout warn"><span class="callout-title">被害が進行中なら、共通の点検より先に対応してください</span><p>不正な支払い・送金や証券取引、カード番号やパスワードの流出、突然の「圏外」などがあれば、<a href="help.html#first">被害時の初動</a>を優先してください。金融機関に関わるときは連絡を急ぎます。漏れた項目が分かる場合は<a href="plan.html">自分専用の対策</a>を作れます。</p></div>
 <p>以下は被害が確認されていない人向けの共通の点検です。必要性と順番は、漏れた情報や利用中のサービスによって変わります。チェックを入れると、この端末に記録されます。</p>
 <div class="progress" data-progress-for="today"><span data-progress-text>0 / 6 完了</span><span class="bar"><span></span></span><button type="button" class="btn small" data-reset="today">チェックを消す</button></div>
@@ -186,15 +188,15 @@
 <h2 id="situations">いま、こんな状況なら</h2>
 <ul class="cards three">
   <li><a class="card" href="scams.html#notice"><span class="card-kicker">通知が来た</span><span class="card-title">「漏えいのお知らせ」が届いた</span><span class="card-body">本物か確かめる方法と、届いた後にやること。</span></a></li>
-  <li><a class="card" href="id.html"><span class="card-kicker">いちばん深刻</span><span class="card-title">免許証・身分証の画像が漏れた</span><span class="card-body">何ができてしまい、何はできないか。効く順の対策。</span></a></li>
+  <li><a class="card" href="id.html"><span class="card-kicker">身分証の画像・番号</span><span class="card-title">免許証・身分証の画像が漏れた</span><span class="card-body">できる対策と、その効果・受付条件の限界を確認します。</span></a></li>
   <li><a class="card" href="delete.html"><span class="card-kicker">データを消したい</span><span class="card-title">退会すれば消える？書き換えは効く？</span><span class="card-body">データベースの中で実際に何が起きるかを図で説明します。</span></a></li>
   <li><a class="card" href="scams.html"><span class="card-kicker">怪しい連絡</span><span class="card-title">メール・SMS・電話が来た</span><span class="card-body">漏えいに便乗した詐欺の典型と、見分けずに防ぐ方法。</span></a></li>
   <li><a class="card" href="family.html"><span class="card-kicker">家族が心配</span><span class="card-title">高齢の親を守りたい</span><span class="card-body">印刷して冷蔵庫に貼れる「わが家のルール」付き。</span></a></li>
   <li><a class="card" href="help.html"><span class="card-kicker">被害に遭った</span><span class="card-title">入力した・払ってしまった</span><span class="card-body">順番どおりに動けば、被害を止められることがあります。</span></a></li>
 </ul>
 
-<h2 id="why">国の呼びかけだけでは足りない理由</h2>
-<p>デジタル大臣は10月6日、国民に「パスワードの使い回しをやめる」「多要素認証を使う」「不審なメールやSNSに注意する」の3つを呼びかけました。どれも正しい対策です。ただ、今回の漏えいの性質を考えると、それだけでは防げない被害があります。</p>
+<h2 id="why">漏れた情報に合わせて対策を選ぶ</h2>
+<p>デジタル大臣は10月6日、国民に「パスワードの使い回しをやめる」「多要素認証を使う」「不審なメールやSMSに注意する」の3つを呼びかけました。公式サイト・公式アプリからアクセスすることも案内しています。このサイトでは、電話・郵便・訪問も含め、漏れた情報に応じた確認の手順を整理します。</p>
 <ul>
   <li><strong>漏れた情報は、パスワードだけではありません。</strong>住所、生年月日、免許証の画像は、パスワードを変えても守れません。</li>
   <li><strong>SMSの認証コードは万全ではありません。</strong>認証なしより安全ですが、電話番号の乗っ取りや、偽サイトでコードをその場で横取りする手口に弱いからです。</li>
@@ -222,7 +224,7 @@
     </div>
     <div>
       <h2>ページ一覧</h2>
-      <ul><li><a href="index.html" aria-current="page">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・削除・書き換えの真実</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
+      <ul><li><a href="index.html" aria-current="page">トップ</a></li><li><a href="plan.html">自分専用の対策を作る</a></li><li><a href="id.html">免許証・身分証が漏れたら</a></li><li><a href="delete.html">退会・データ消去の進め方</a></li><li><a href="scams.html">便乗詐欺の手口</a></li><li><a href="accounts.html">パスワードとログインの守り方</a></li><li><a href="family.html">家族・高齢の親を守る</a></li><li><a href="breaches.html">主な漏えい事案</a></li><li><a href="threat.html">なぜこの対策なのか</a></li><li><a href="help.html">被害に遭ったら・相談窓口</a></li><li><a href="about.html">このサイトについて</a></li></ul>
     </div>
   </div>
   <div class="wrap"><p class="byline">運営：生賀一輝（しょうかいっき） · <a href="https://x.com/skikkh" rel="me noopener">X</a></p></div>

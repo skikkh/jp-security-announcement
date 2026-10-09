@@ -92,7 +92,7 @@
   var LABELS = {
     email: "メールアドレス", password: "パスワード", phone: "電話番号", address: "氏名・住所",
     birth: "生年月日", idimg: "本人確認書類の画像や番号", card: "クレジットカード情報", bank: "口座情報",
-    history: "購入・配送・利用の履歴", family: "家族の情報", token: "認証トークン・外部サービス連携", files: "保存した写真・文書など", unknown: "わからない",
+    history: "購入・配送・利用の履歴", family: "家族の情報", token: "認証トークン・外部サービス連携", files: "保存した写真・文書など", unknown: "まだ分からない",
     elderly: "高齢の家族がいる", landline: "固定電話がある", netbank: "ネットバンキング・証券", qr: "スマホ決済"
   };
   var GROUPS = [
@@ -131,7 +131,7 @@
       link: ["scams.html#notice", "典型的な手口"] },
     "alias": { p: "week", t: "サービスごとに別のメールアドレス（エイリアス）を使う",
       why: "宛先の違いは不審な連絡や流出経路を調べる手掛かりになりますが、メールの真偽や流出元を証明するものではありません。漏れたアドレスだけを止めることもできます。",
-      steps: ["iCloud＋の「メールを非公開」や Firefox Relay などで作る", "大事なサービスから順に、登録アドレスを変える"],
+      steps: ["iCloud＋の「メールを非公開」や Firefox Relay などで作る", "登録先と再設定先を更新し、新しいアドレスで通知・復旧を受けられることを確かめてから、不要なエイリアスを止める"],
       link: ["accounts.html#alias", "作り方"] },
     "pw-change": { p: "now", t: "漏れたパスワードと、使い回しを変更する",
       why: "暗号化とハッシュ化は異なる保管方法です。危険度は方式や別管理の鍵、パスワードの強さによるため、『読めない形式』だけで安全とは判断できません。",
@@ -155,9 +155,9 @@
     "sms-2fa": { p: "week", t: "大事なサービスの認証を、SMSからパスキーや認証アプリへ移す",
       why: "SMSを使う認証はSIM乗っ取りの影響を受けます。選べるならフィッシングに強い認証を使い、SMS以外の方法も用意します。SMSでも認証なしより被害を減らす効果があります。",
       steps: ["公式設定でパスキー・セキュリティキー、または認証アプリが使えるか確認する", "新しい認証と復旧手段を使えることを確かめてから、既存のSMS認証を変更する"] },
-    "outage": { p: "ongoing", t: "突然「圏外」「SIMなし」になったら、すぐ携帯会社へ",
-      why: "SIM乗っ取りの兆候です。その間に銀行や決済が狙われます。",
-      steps: ["家族の電話などから携帯会社に連絡し、回線を止めてもらう", "銀行と決済アプリのログイン履歴を確認する"] },
+    "outage": { p: "now", t: "突然「圏外」「SIMなし」になったら、すぐ携帯会社へ",
+      why: "障害や故障でも起きますが、SIM乗っ取りの可能性もあります。不審な変更通知や障害情報を確かめます。",
+      steps: ["説明できない場合は別の電話から携帯会社へ至急連絡し、必要な回線停止を相談する", "銀行と決済アプリのログイン履歴を確認する"] },
     "visitor": { p: "ongoing", t: "アポなしの訪問者にドアを開けない",
       why: "住所と名前が分かると、業者、役所、警察を名乗る訪問がしやすくなります。名簿は強盗の下見にも悪用され得ます。",
       steps: ["インターホン越しに用件を聞く", "名乗った会社や役所の代表番号に自分で確認する", "在宅中も鍵をかける"],
@@ -170,7 +170,7 @@
       steps: ["自分からかけた電話でなければ、生年月日などを聞かれても答えない", "相手が情報を知っていることを、信用する理由にしない"] },
     "no-birth-pin": { p: "now", t: "暗証番号や秘密の質問に生年月日を使っていたら変える",
       why: "生年月日はもう秘密ではありません。",
-      steps: ["キャッシュカード、携帯電話の暗証番号、スマホのロックを見直す", "秘密の質問の答えは、ランダムな文字列にしてパスワード管理に保存する"] },
+      steps: ["キャッシュカード、携帯電話の暗証番号、スマホのロックを見直す", "任意の答えを認める秘密の質問だけ、推測されにくい答えを管理機能に保存する。本人確認の事実申告には虚偽を書かない"] },
     "credit-declare": { p: "week", t: "信用情報機関への「本人申告」を検討する",
       why: "カードやローンの審査で参考にされます。機関ごとに受付条件が異なり、預金口座開設や携帯契約を止める制度ではありません。",
       steps: ["CICとJICCの公式案内で、名義悪用防止の申告条件を確かめる", "全国銀行個人信用情報センターは通常の取引で画像を提出しただけの場合、原則として受け付けません。漏えい通知を受けた場合の扱いを公式窓口で確認する", "審査で信用情報を照会しない契約には効かず、悪用防止も保証されません"],
@@ -180,7 +180,7 @@
       steps: ["身に覚えのない契約や通知があれば、まず該当会社へ連絡する", "開示の手数料と記録の保持期間を各機関で確認し、知らない照会や契約を調べる。継続して開示する頻度は状況に応じて決める"] },
     "fake-police": { p: "now", t: "「警察」を名乗る電話の筋書きを知っておく",
       why: "漏れた免許証の番号や写真を見せて、信用させてきます。",
-      steps: ["警察が電話でお金や口座の確認を求めることはない。「資産を保護する」「安全な口座へ」と言われたら、その時点で切る", "LINEやビデオ通話に誘導されたら切る。制服や警察手帳が映っても本物とは限らない", "「総務省」「NTT」などを名乗る自動音声の電話は、1を押さずに切る", "画面に出た番号が本物の警察署でも偽装できる。不安なら #9110 に自分からかける"],
+      steps: ["警察を名乗って資金調査のための送金や暗証番号を求める連絡には応じない。「資産を保護する」「安全な口座へ」と言われたら、その時点で切る", "LINEやビデオ通話に誘導されたら切る。制服や警察手帳が映っても本物とは限らない", "「総務省」「NTT」などを名乗る自動音声の電話は、1を押さずに切る", "画面に出た番号が本物の警察署でも偽装できる。不安なら #9110 に自分からかける"],
       link: ["scams.html#police", "ニセ警察詐欺"] },
     "invest-scam": { p: "ongoing", t: "SNS・広告・ネットで知り合った相手からの投資話には、お金を入れない",
       why: "2026年の被害額がいちばん大きい詐欺です。著名人の画像や動画を無断で使った広告や、会ったことのない相手からの勧誘で始まります。",
@@ -202,7 +202,7 @@
       steps: ["少額でも、覚えのない請求はカード会社に連絡する"] },
     "refund-scam": { p: "now", t: "「返金」「補償金の振込先確認」を名乗る連絡を疑う",
       why: "口座の情報が漏れた人は、返金を口実にした詐欺の標的になります。",
-      steps: ["暗証番号を尋ねる会社や役所はない", "補償の案内は、公式サイトを自分で開いて確認する"] },
+      steps: ["電話やメールの相手に暗証番号を伝えない。必要な認証操作は自分で開いた公式窓口で確認する", "補償の案内は、公式サイトを自分で開いて確認する"] },
     "bank-notify-detail": { p: "now", t: "入出金と登録情報の変更のお知らせをオンにする",
       why: "住所や連絡先を勝手に変えられたことに、すぐ気づけます。",
       steps: ["銀行と証券のアプリで、お知らせの設定を確認する"] },
@@ -257,9 +257,9 @@
       steps: ["公式発表と通知で、対象のファイルや公開範囲を確認する", "パスワードやアクセスキーが写っていれば、その発行元で変更・無効化する。身分証の画像が含まれる場合は発行元に相談する", "脅迫や『削除費用』の要求には応じず、記録を残して警察など公式窓口へ相談する"],
       link: ["help.html", "被害時の連絡先"] }
   };
-  /* 同じグループ内の並び順（攻撃者の換金ルートへの効き目が大きい順） */
+  /* 直接対応を先にし、同じ時期の一般的な点検と分ける。 */
   var ORDER = [
-    "notice-check", "rule-inbound", "inbound-code", "remote-app", "email-lock", "carrier-lock", "pw-change", "session-revoke", "files-review", "card-reissue", "refund-scam", "fake-police",
+    "notice-check", "card-reissue", "pw-change", "session-revoke", "files-review", "rule-inbound", "inbound-code", "remote-app", "email-lock", "carrier-lock", "refund-scam", "fake-police",
     "phish-email", "known-not-proof", "bank-limit", "card-notify", "securities", "qr-lock", "bank-notify-detail",
     "sms-filter", "line-code", "no-birth-pin", "context-scam", "family-pass", "invest-scam", "answering",
     "credit-declare", "passkey", "pwm", "sms-2fa", "alias", "scam-app", "intl-call", "family-card", "hibp", "delete-unused",
@@ -298,14 +298,17 @@
     html += '<p class="muted">' + (chosen.length ? "選んだ項目：" + esc(chosen.join("、")) : "項目を選んでいないため、全員に共通の対策だけを表示しています。") + "</p>";
     html += '<div class="progress" data-progress-for="plan"><span data-progress-text></span><span class="bar"><span></span></span></div>';
     html += '<div data-checklist="plan">';
-    var n = 0;
+    var direct = ["notice-check", "card-reissue", "pw-change", "session-revoke", "files-review"];
     GROUPS.forEach(function (g) {
       var items = ids.filter(function (id) { return A[id].p === g.key; });
       if (!items.length) return;
       html += '<div class="plan-group"><span class="badge ' + g.badge + '">' + g.badgeText + "</span><h3>" + g.label + "</h3></div>";
       html += '<ol class="checklist">';
-      items.forEach(function (id) {
-        var a = A[id]; n += 1;
+      items.forEach(function (id, index) {
+        if (g.key === "now" && (index === 0 || (direct.indexOf(items[index - 1]) >= 0) !== (direct.indexOf(id) >= 0))) {
+          html += '<li class="plan-section-label">' + (direct.indexOf(id) >= 0 ? "選んだ項目の確認・直接対応" : "あわせて行う共通の点検") + "</li>";
+        }
+        var a = A[id];
         var cid = "p-" + id;
         html += "<li>";
         html += '<div class="check-head"><input type="checkbox" id="' + cid + '" data-save="plan:' + id + '"><label for="' + cid + '">' + esc(a.t) + "</label></div>";
@@ -327,7 +330,26 @@
     var out = $("#plan-result");
     if (!form || !out) return;
     var boxes = $all('input[name="items"]', form);
-
+    var context = $("#incident-context");
+    var shared = $("#plan-shared-note");
+    var incident = "";
+    function params() { return new URLSearchParams((location.hash || "").slice(1)); }
+    function readContext() {
+      var id = params().get("incident") || "";
+      incident = "";
+      context.innerHTML = "";
+      context.hidden = !id;
+      if (!id) return;
+      // IDだけを参照し、URL・会社名・項目を外部から注入しない。
+      var record = $all("#incident-data [data-id]").filter(function (node) { return node.dataset.id === id; })[0];
+      if (!record) {
+        context.innerHTML = '<h2 id="incident-title">参照した事案を確認できません</h2><p>一覧が更新された可能性があります。<a href="breaches.html">会社名・サービス名で探し直す</a>か、公式通知を見ながら項目を選んでください。</p>';
+        return;
+      }
+      incident = id;
+      var d = record.dataset;
+      context.innerHTML = '<h2 id="incident-title">' + esc(d.org) + (d.service ? "｜" + esc(d.service) : "") + '</h2><p>' + esc(d.status) + '</p><p><strong>事案全体の候補です。あなたの対象項目とは限りません。</strong>自分への通知で確認した項目だけを、下で選んでください。分からない場合は「まだ分からない」を選べます。</p><p>公表された項目：' + esc(d.items || "未公表") + '</p>' + (d.note ? '<p>' + esc(d.note) + '</p>' : '') + (d.official ? '<p><a href="' + esc(d.official) + '" rel="noopener">公式発表を確認する</a></p>' : '<p>公式発表のリンクを確認できていません。会社の公式サイトを自分で開いて確認してください。</p>') + '<p><a href="breaches.html">事案一覧に戻る</a></p>';
+    }
     function selectedValues() { return boxes.filter(function (b) { return b.checked; }).map(function (b) { return b.value; }); }
     function render(scroll) {
       var sel = selectedValues();
@@ -335,7 +357,8 @@
       bindChecklist(out);
       $("#plan-tools").hidden = false;
       $("#plan-share-note").hidden = false;
-      var hash = sel.length ? "#items=" + sel.join(",") : "#items=";
+      shared.hidden = false;
+      var hash = "#" + (incident ? "incident=" + incident + "&" : "") + "items=" + sel.join(",");
       try { history.replaceState(null, "", hash); } catch (e) { location.hash = hash; }
       if (scroll) {
         var t = $("#plan-title");
@@ -343,11 +366,20 @@
       }
     }
     function fromHash() {
-      var m = /items=([a-z,]*)/.exec(location.hash || "");
-      if (!m) return false;
-      var vals = m[1] ? m[1].split(",") : [];
+      var values = params().get("items");
+      var vals = values === null ? [] : values.split(",");
       boxes.forEach(function (b) { b.checked = vals.indexOf(b.value) >= 0; });
-      return true;
+      return values !== null;
+    }
+    function loadHash(scroll) {
+      readContext();
+      if (fromHash()) render(scroll);
+      else {
+        out.innerHTML = "";
+        $("#plan-tools").hidden = true;
+        $("#plan-share-note").hidden = true;
+        shared.hidden = true;
+      }
     }
     form.addEventListener("submit", function (e) { e.preventDefault(); render(true); });
     form.addEventListener("reset", function () {
@@ -355,11 +387,12 @@
         out.innerHTML = "";
         $("#plan-tools").hidden = true;
         $("#plan-share-note").hidden = true;
-        try { history.replaceState(null, "", location.pathname); } catch (e) { /* noop */ }
+        shared.hidden = true;
+        try { history.replaceState(null, "", location.pathname + (incident ? "#incident=" + incident : "")); } catch (e) { /* noop */ }
       }, 0);
     });
-    if (fromHash()) render(false);
-    window.addEventListener("hashchange", function () { if (fromHash()) render(true); });
+    loadHash(false);
+    window.addEventListener("hashchange", function () { loadHash(true); });
   }
 
   /* ---------- 漏えい事案の絞り込み ---------- */
@@ -372,43 +405,56 @@
     var list = $("#breach-list");
     if (!list) return;
     var items = $all("#breach-list > li");
-    var q = $("#breach-q");
-    var category = $("#breach-category");
-    var clear = $("#breach-clear");
-    var empty = $("#breach-empty");
+    var q = $("#breach-q"), category = $("#breach-category"), status = $("#breach-status");
+    var period = $("#breach-period"), sort = $("#breach-sort"), clear = $("#breach-clear");
+    var empty = $("#breach-empty"), count = $("#breach-count");
     var chips = $all(".chip[data-filter]");
-    var count = $("#breach-count");
-    var filter = "all";
+    var filters = [];
+    var asOf = Date.parse($("#breach-search").dataset.asOf + "T00:00:00Z");
+    function updateChips() {
+      chips.forEach(function (chip) { chip.setAttribute("aria-pressed", (chip.dataset.filter === "all" ? !filters.length : filters.indexOf(chip.dataset.filter) >= 0) ? "true" : "false"); });
+    }
     function apply() {
-      var query = norm(q ? q.value : "");
-      var shown = 0;
+      var query = norm(q ? q.value : ""), shown = 0;
+      var days = period && period.value !== "all" ? Number(period.value) : 0;
       items.forEach(function (li) {
-        var keys = (li.getAttribute("data-keys") || "").split(" ");
-        var okFilter = filter === "all" || keys.indexOf(filter) >= 0;
-        var okCategory = !category || category.value === "all" || li.getAttribute("data-category") === category.value;
-        var text = norm(li.getAttribute("data-search"));
-        var okQuery = !query || text.indexOf(query) >= 0;
-        li.hidden = !(okFilter && okCategory && okQuery);
+        var keys = (li.dataset.keys || "").split(" ");
+        var okFilter = !filters.length || filters.some(function (key) { return keys.indexOf(key) >= 0; });
+        var okCategory = !category || category.value === "all" || li.dataset.category === category.value;
+        var okStatus = !status || status.value === "all" || li.dataset.status === status.value;
+        var timestamp = Date.parse(li.dataset.latest + "T00:00:00Z");
+        // 直近7日=基準日を含む7暦日。確認日や端末の日付に依存しない。
+        var okPeriod = !days || (timestamp <= asOf && timestamp >= asOf - (days - 1) * 86400000);
+        var okQuery = !query || norm(li.dataset.search).indexOf(query) >= 0;
+        li.hidden = !(okFilter && okCategory && okStatus && okPeriod && okQuery);
         if (!li.hidden) shown += 1;
       });
+      var mode = sort ? sort.value : "latest";
+      items.slice().sort(function (a, b) {
+        var nameOrder = a.dataset.name.localeCompare(b.dataset.name, "ja");
+        if (mode === "name") return nameOrder;
+        var key = mode === "initial" ? "initial" : "latest";
+        return b.dataset[key].localeCompare(a.dataset[key]) || b.dataset.initial.localeCompare(a.dataset.initial) || nameOrder;
+      }).forEach(function (li) { list.appendChild(li); });
       if (count) count.textContent = items.length + "件中 " + shown + "件を表示";
       if (empty) empty.hidden = shown !== 0;
     }
-    chips.forEach(function (c) {
-      c.addEventListener("click", function () {
-        filter = c.getAttribute("data-filter");
-        chips.forEach(function (x) { x.setAttribute("aria-pressed", x === c ? "true" : "false"); });
-        apply();
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var key = chip.dataset.filter, index = filters.indexOf(key);
+        if (key === "all") filters = [];
+        else if (index >= 0) filters.splice(index, 1);
+        else filters.push(key);
+        updateChips(); apply();
       });
     });
     if (q) q.addEventListener("input", apply);
-    if (category) category.addEventListener("change", apply);
+    [category, status, period, sort].forEach(function (el) { if (el) el.addEventListener("change", apply); });
     if (clear) clear.addEventListener("click", function () {
       if (q) q.value = "";
-      if (category) category.value = "all";
-      filter = "all";
-      chips.forEach(function (chip) { chip.setAttribute("aria-pressed", chip.getAttribute("data-filter") === "all" ? "true" : "false"); });
-      apply();
+      [category, status, period].forEach(function (el) { if (el) el.value = "all"; });
+      if (sort) sort.value = "latest";
+      filters = []; updateChips(); apply();
     });
     apply();
   }
@@ -454,7 +500,7 @@
       var items = [];
       items.push("私が識別される保有個人データのうち、上記理由に該当する「" + target + "」の利用停止又は消去" + (c("f-c-id") ? "。私が提出した本人確認書類の画像及び番号も対象に含みます" : ""));
       if (c("f-c-copies")) items.push("上記データのバックアップ、分析用の複製、及び業務委託先が保有する複製についても、合理的に可能な範囲で消去すること。困難な場合は、その理由と、代わりに講じる措置（利用停止、アクセス制限、保存期限後の確実な消去など）をご回答ください");
-      if (c("f-c-legal")) items.push("法令により保存義務があるため直ちに消去できない情報がある場合は、その項目、根拠となる法令の名称及び条項、並びに保存期限をご回答いただき、保存期限の経過後に遅滞なく消去すること。また、保存期間中は当該法令上の目的以外に利用しないこと");
+      if (c("f-c-legal")) items.push("法令により保存義務があるため直ちに消去できない情報がある場合は、その項目、根拠となる法令の名称及び条項、並びに保存期限をご回答いただき、保存期間中の利用目的と利用制限をご回答ください。請求理由に該当する利用は停止し、保存期限の経過後は継続保有の必要性を再確認して消去等をご検討ください");
       items.push("対応の結果を、法第35条第7項に基づき、書面又は電子メールでご通知いただくこと");
 
       var t = "";
@@ -557,7 +603,8 @@
     $all("[data-share-report]").forEach(function (btn) {
       if (!mobile || typeof navigator.share !== "function") return;
       var data = { text: btn.getAttribute("data-share-text"), url: btn.getAttribute("data-share-url") };
-      if (navigator.canShare && !navigator.canShare(data)) return;
+      try { if (navigator.canShare && !navigator.canShare(data)) return; }
+      catch (err) { return; }
       var report = btn.closest(".report");
       var help = $("[data-share-help]", report);
       var status = $("[data-share-status]", report);

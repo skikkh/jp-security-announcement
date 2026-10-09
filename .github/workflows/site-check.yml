@@ -1,11 +1,8 @@
 name: サイト検証
 
-on:
-  push:
-    branches: [main]
+'on':
   pull_request:
     branches: [main]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -28,5 +25,9 @@ jobs:
         run: |
           python3 tools/build.py
           git diff --exit-code -- docs
+          if [[ -n "$(git status --porcelain --untracked-files=all -- docs)" ]]; then
+            echo "::error::配信ファイルに未追跡または未反映の差分があります"
+            exit 1
+          fi
           node --check src/assets/app.js
           python3 tools/check_site.py

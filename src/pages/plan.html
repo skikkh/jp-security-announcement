@@ -4,9 +4,13 @@ description: 漏れた（可能性がある）情報と、あなたの状況を�
 -->
 <p class="updated">最終更新 {{updated}}</p>
 <h1>自分専用の対策を作る</h1>
-<p class="lead">漏れた（可能性がある）情報と、あなたの状況を選んでください。効く順に並べた対策リストを作ります。選んだ内容は、この端末の中だけで処理し、どこにも送信しません。</p>
-<p class="muted">企業からの通知に書かれた「漏えいした項目」を見ながら選ぶと正確です。通知が来ていなくても心配なら「わからない」を選んでください。</p>
+<p class="lead">漏れた（可能性がある）情報と、あなたの状況を選んでください。確認した項目に合わせ、今日・今週・継続の時期別に対策リストを作ります。被害が進行中なら初動を優先してください。選んだ内容は、この端末の中だけで処理し、どこにも送信しません。</p>
+<p class="muted">企業からの通知に書かれた「漏えいした項目」を見ながら選ぶと正確です。通知の項目が不明、対象か不明、通知が来ていない場合は「まだ分からない」を選んでください。</p>
 
+<p class="callout warn">不正な支払い・取引、不審なログイン、偽サイトへの入力、突然の圏外などがある場合は、点検より先に<a href="help.html#first">被害時の初動</a>へ。銀行・証券・カードに関わるときは公式窓口への連絡を急ぎます。</p>
+{{incident_registry}}
+<section id="incident-context" class="callout info" hidden aria-labelledby="incident-title"></section>
+<p class="muted" id="plan-shared-note" hidden>このURLの項目は作成した人の選択です。会社があなたの情報の漏えいを確認した証拠ではありません。自分への通知に合わせて選び直してください。</p>
 <form id="plan-form" class="no-print" autocomplete="off">
   <fieldset>
     <legend>漏れた（可能性がある）情報</legend>
@@ -23,7 +27,7 @@ description: 漏れた（可能性がある）情報と、あなたの状況を�
       <label class="opt"><input type="checkbox" name="items" value="bank"><span>銀行や証券の口座情報</span></label>
       <label class="opt"><input type="checkbox" name="items" value="history"><span>購入・配送・予約・利用の履歴</span></label>
       <label class="opt"><input type="checkbox" name="items" value="family"><span>家族の情報</span></label>
-      <label class="opt"><input type="checkbox" name="items" value="unknown"><span>わからない<small>通知は来ていないが心配</small></span></label>
+      <label class="opt"><input type="checkbox" name="items" value="unknown"><span>まだ分からない<small>通知の項目が不明／対象か不明／通知が来ていない</small></span></label>
     </div>
   </fieldset>
   <fieldset>
@@ -48,4 +52,6 @@ description: 漏れた（可能性がある）情報と、あなたの状況を�
   <button type="button" class="btn" data-print>このリストを印刷する</button>
   <button type="button" class="btn" data-copy-url>このリストのURLをコピー</button>
 </div>
-<p class="muted no-print" id="plan-share-note" hidden>URLには選んだ項目だけが入ります（例：#items=email,phone）。家族に送れば、同じリストを開けます。</p>
+<p class="muted no-print" id="plan-share-note" hidden>URLには選んだ項目と、事案から開いた場合は事案の参照が入ります（例：#items=email,phone）。家族に送れば同じ選択を開けますが、受け取った人も自分の対象項目を確認してください。</p>
+
+<nav class="next-actions no-print" aria-label="次に確認すること"><h2>次に確認すること</h2><a class="btn" href="breaches.html">公式発表と窓口を確認する</a><a class="btn" href="help.html#first">被害・不審なログインがある場合</a></nav>
