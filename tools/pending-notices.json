@@ -114,6 +114,13 @@
         },
         "contact_checked_on": "2026-10-10"
       }
+    },
+    {
+      "name": "パナソニック LUMIXコミュニティ・ヘアサプ by Panasonic Beauty",
+      "sourceURL": "https://www.panasonic.com/jp/about/news/20261009.html",
+      "referenceURL": "https://www.itmedia.co.jp/news/article/2610/10/2000002190/",
+      "checked_on": "2026-10-10",
+      "reason": "10月10日の報道から発見。検索結果には公式10月9日発表の概要があるが、公式原文のweb取得は失敗、直接取得は403。原文本文・人数・対象項目・対象者向け窓口をまだ確認できないため、報道や検索断片から掲載行を作らず保留。"
     }
   ]
 }
