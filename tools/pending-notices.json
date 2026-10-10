@@ -121,6 +121,13 @@
       "referenceURL": "https://www.itmedia.co.jp/news/article/2610/10/2000002190/",
       "checked_on": "2026-10-10",
       "reason": "10月10日の報道から発見。検索結果には公式10月9日発表の概要があるが、公式原文のweb取得は失敗、直接取得は403。原文本文・人数・対象項目・対象者向け窓口をまだ確認できないため、報道や検索断片から掲載行を作らず保留。"
+    },
+    {
+      "name": "東武鉄道 お客さまセンターお問い合わせフォームの委託先侵害",
+      "sourceURL": "https://www.tobu.co.jp/cms-pdf/news/20261007153424wpo2m-MJPLTJzWJHnUDkVw.pdf",
+      "referenceURL": "https://atmarkit.itmedia.co.jp/ait/articles/2610/10/news007.html",
+      "checked_on": "2026-10-10",
+      "reason": "10月10日の報道から発見。10月7日の公式原文は委託先侵害を報告するが、東武鉄道に関する情報の閲覧・取得の形跡は確認されていないと明記。漏えい確認や可能性の明示はなく、対象人数・項目を推測せず掲載保留。調査進展による続報で再判定する。"
     }
   ]
 }
