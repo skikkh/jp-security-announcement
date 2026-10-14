@@ -2,6 +2,48 @@
  {
   "date": "2026-10-14",
   "date_label": "2026年10月14日",
+  "org": "日テレWands",
+  "service": "FaveConnect（高嶺のなでしこオフィシャルファンクラブ、HEROINES OFFICIAL WEBSITE）",
+  "kana": "にってれわんず ntv wands faveconnect ふぇいぶこねくと たかねのなでしこ ひろいんず ふぁんくらぶ",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-15",
+  "contact_checked_on": "2026-10-15",
+  "count": "117,392アカウント（2サービス合計）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "住所",
+   "電話番号",
+   "勤務先・所属",
+   "生年月日",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "ファンクラブ運営者向け管理画面に第三者が管理者アカウントで不正ログインし、10月11日から13日に会員情報を閲覧した形跡が確認されました。会員と退会後6か月以内の元会員の氏名・メールアドレス・住所・電話番号・職業・生年月日・性別・ニックネーム、任意のコメント（アンケート回答を含む）が閲覧された可能性があります。カード番号などの決済情報は含まれません。データベースへの直接侵入、改ざん、公開・不正利用は確認されていないとしています。対象者には別途メールで知らせるとしています。運営会社や共同提供会社を装った不審な連絡に注意してください。",
+  "url": "https://www.ntv-wands.co.jp/news/articles/pbs9b02rgl3oubrj.html",
+  "src": "公式",
+  "contact": {
+   "name": "本件に関わるお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "高嶺のなでしこオフィシャルファンクラブ会員用お問い合わせ窓口",
+     "url": "https://takanekofc.com/contact/form"
+    },
+    {
+     "label": "HEROINES OFFICIAL WEBSITE会員用お問い合わせ窓口",
+     "url": "https://heroines.jp/contact/form"
+    }
+   ],
+   "emails": [
+    "support@ntv-wands.zendesk.com"
+   ],
+   "note": "メールは退会した元会員用。件名に「不正アクセスに関する問い合わせ」と入れるよう求めています。"
+  }
+ },
+ {
+  "date": "2026-10-14",
+  "date_label": "2026年10月14日",
   "org": "ピーチ・ジョン",
   "service": "メールマガジン配信（IDCフロンティア経由）",
   "kana": "ぴーちじょん peach john めーるまがじん idcf",
