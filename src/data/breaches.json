@@ -2,6 +2,24 @@
  {
   "date": "2026-10-14",
   "date_label": "2026年10月14日",
+  "org": "豊川市",
+  "service": "とよかわ安心メール（SpeeCAN RAIDEN）",
+  "kana": "とよかわし あいち あんしんめーる ぼうさい あるかでぃあ らいでん",
+  "category": "government",
+  "source_checked_on": "2026-10-15",
+  "count": "36,328件（市民登録者32,576件、市職員登録者3,752件、10月1日時点の登録件数）",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "防災や気象情報などをメールで配信する「とよかわ安心メール」の運営会社アルカディアへの不正アクセスにより、メールアドレス等の連絡先情報が漏えいした可能性があると公表しています。影響の有無と範囲は調査中です。登録アドレス宛に不審なメールが送られる可能性があるとしています。サービスは緊急停止中です。提供元全体や他自治体の件数とは合算しません。",
+  "url": "https://www.city.toyokawa.lg.jp/soshiki/kikaku/johoseisaku/2/31497.html",
+  "src": "公式"
+ },
+ {
+  "date": "2026-10-14",
+  "date_label": "2026年10月14日",
   "org": "マツダ",
   "service": "コミュニティサイト「CLUB MAZDA COMMUNITY」（Commune経由）",
   "kana": "まつだ mazda くらぶまつだこみゅにてぃ club mazda community こみゅーん commune",
