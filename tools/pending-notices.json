@@ -1,172 +1,178 @@
 {
-  "checked_on": "2026-10-10",
-  "candidates": [
-    {
-      "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
-      "url": "https://www.sanga-fc.jp/news/detail/21401",
-      "reason": "検索インデックスには2026年9月8日付の公式記事本文が残り、15,612人分の誤送信等を読める。一方、現行URLはChromeでメンテナンス画面、検索閲覧は502となり、現在の公式本文と本件窓口を再確認できない。掲載用の生きた出典リンクも確保できないため保留。",
-      "draft_entry_on_recovery": {
-        "date": "2026-09-08",
-        "date_label": "2026年9月8日",
-        "org": "京都パープルサンガ",
-        "service": "京都サンガF.C.ファンクラブ",
-        "kana": "きょうとぱーぷるさんが きょうとさんが ふぁんくらぶ",
-        "category": "media_entertainment",
-        "count": "ファンクラブ会員15,612人分（2026年7月3日時点の保有データ）",
-        "status": "確認",
-        "items": [
-          "氏名",
-          "住所",
-          "メールアドレス",
-          "電話番号",
-          "生年月日",
-          "性別",
-          "会員ID",
-          "その他（詳細は出典）"
-        ],
-        "note": "取引先担当者11人へのメールに会員情報のファイルを誤添付し、うち2人の開封を確認。コース・入退会日・ワンタッチパスID等も含みます。カード情報と口座情報は含まれません。9月8日時点で取引先による削除を確認し、二次的な流出は確認されていません。",
-        "url": "https://www.sanga-fc.jp/news/detail/21401",
-        "src": "公式"
-      },
-      "checked_on": "2026-10-09"
+ "checked_on": "2026-10-10",
+ "candidates": [
+  {
+   "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
+   "url": "https://www.sanga-fc.jp/news/detail/21401",
+   "reason": "検索インデックスには2026年9月8日付の公式記事本文が残り、15,612人分の誤送信等を読める。一方、現行URLはChromeでメンテナンス画面、検索閲覧は502となり、現在の公式本文と本件窓口を再確認できない。掲載用の生きた出典リンクも確保できないため保留。",
+   "draft_entry_on_recovery": {
+    "date": "2026-09-08",
+    "date_label": "2026年9月8日",
+    "org": "京都パープルサンガ",
+    "service": "京都サンガF.C.ファンクラブ",
+    "kana": "きょうとぱーぷるさんが きょうとさんが ふぁんくらぶ",
+    "category": "media_entertainment",
+    "count": "ファンクラブ会員15,612人分（2026年7月3日時点の保有データ）",
+    "status": "確認",
+    "items": [
+     "氏名",
+     "住所",
+     "メールアドレス",
+     "電話番号",
+     "生年月日",
+     "性別",
+     "会員ID",
+     "その他（詳細は出典）"
+    ],
+    "note": "取引先担当者11人へのメールに会員情報のファイルを誤添付し、うち2人の開封を確認。コース・入退会日・ワンタッチパスID等も含みます。カード情報と口座情報は含まれません。9月8日時点で取引先による削除を確認し、二次的な流出は確認されていません。",
+    "url": "https://www.sanga-fc.jp/news/detail/21401",
+    "src": "公式"
+   },
+   "checked_on": "2026-10-09"
+  },
+  {
+   "candidateNumber": 95,
+   "name": "楽天会員データ販売主張",
+   "referenceURL": "https://ai.itokoba.com/security-tier/#incident-095",
+   "sourceURL": "https://rocket-boys.co.jp/security-measures-lab/rakuten-101m-data-sale-unverified-20261004/",
+   "reason": "第三者の販売主張と公開仕様に合うサンプルだけでは真正性・取得元・1億100万件を検証できない。楽天グループの公式発表も確認できず、元の保留を維持する。",
+   "checked_on": "2026-10-09"
+  },
+  {
+   "candidateNumber": 105,
+   "name": "Suno",
+   "sourceURL": "https://haveibeenpwned.com/Breach/Suno",
+   "reason": "HIBPは55.3百万件のメールアドレス等を報告するが、Suno公式サイトで同件数・項目を確認できない。Suno広報の媒体向け声明は2025年11月の限定的事案と一部利用者情報を認める一方、55.3百万件の範囲を確定していない。日本の対象人数も未公表のため、会社公式一次資料を要する掲載条件では保留。",
+   "checked_on": "2026-10-09"
+  },
+  {
+   "name": "北海学園大学",
+   "sourceURL": "https://www.hgu.jp/info/news/20261007-01.html",
+   "checked_on": "2026-10-10",
+   "reason": "公式本文には個人情報の閲覧・取得・漏えい可能性と項目の明記がない。送信先5名を漏えい人数に置き換えず、続報で個人情報への影響が示された時点で再判定。"
+  },
+  {
+   "name": "小池酸素工業",
+   "sourceURL": "https://koike-japan.com/pages/1?b_id=206&detail=1&r_id=523",
+   "checked_on": "2026-10-10",
+   "reason": "漏えいデータの内容および対象群を確認中のため、顧客・利用者・社外関係者等の個人情報が含まれると断定できない。個人情報の範囲の続報待ち。"
+  },
+  {
+   "name": "大気社マレーシアグループ",
+   "sourceURL": "https://www.taikisha.co.jp/common/mtimg/20260918.pdf",
+   "checked_on": "2026-10-10",
+   "reason": "従業員1名のメールアカウント侵害と不審メール送信のみ。顧客等の個人情報への影響の可能性を公表していないため掲載保留。"
+  },
+  {
+   "name": "大阪市北区 住民票の誤記載",
+   "sourceURL": "https://www.city.osaka.lg.jp/hodoshiryo/somu/0000688424.html",
+   "checked_on": "2026-10-10",
+   "reason": "10月9日の一括公表で2人対象の付番誤り・住民票誤記載を確認したが、第三者への漏えい・その可能性の説明がなく、個人情報流出の事案としては掲載を保留する。"
+  },
+  {
+   "name": "バンダイナムコ系 湾岸ミッドナイト公式コミュニティという投稿",
+   "referenceURL": "https://x.com/polymarketjapan/status/2108512195273543979",
+   "sourceURL": "https://wanganmaxi-official.com/wanganmaxi6rrplus/jp/news/035.html",
+   "checked_on": "2026-10-11",
+   "reason": "公式10月9日発表を10月11日に本文確認。同じ事案は最新mainの湾岸ミッドナイト アーケードポータル行に掲載済み。公式の対象項目はメールアドレス・プロフィール等で、人数とパスワード漏えいは公表していない。同じパスワードを他サービスで使う場合の予防的変更推奨を、パスワード漏えい確認と読み替えない。SNSの約1700人・パスワード流出という追加主張のみ未確認として保留し、重複掲載しない。"
+  },
+  {
+   "name": "小平市の公式サイト関連の個人情報への影響",
+   "referenceURL": "https://news.livedoor.com/article/detail/32519525/",
+   "sourceURL": "https://www.city.kodaira.tokyo.jp/",
+   "checked_on": "2026-10-10",
+   "reason": "公式の臨時案内でサイト障害を確認。報道は問い合わせフォーム情報の流出可能性を伝えるが、現行の公式ページは対象項目・漏えい可能性を明記していない。公式Xでの当該説明をまだ確認していないため、項目を推測せず保留。"
+  },
+  {
+   "name": "ビューカード VIEW’s NET向けメール配信用外部サービス",
+   "sourceURL": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
+   "referenceURL": "https://x.com/traicycom/status/2108463488452694024",
+   "checked_on": "2026-10-10",
+   "reason": "親のweb取得本文では約403万件・メールアドレスのみ・対象外カード・本件電話を読めたが、独立担当の原文取得と現在の直接取得は403となり、原文の独立照合が未完了。今回の公開分から外し、読めた案を保持して次回に再確認する。",
+   "draft_entry_on_recovery": {
+    "date": "2026-10-09",
+    "date_label": "2026年10月9日",
+    "org": "ビューカード",
+    "service": "VIEW’s NET向けのメール配信用外部サービス",
+    "kana": "びゅーかーど view card views net ビューズネット",
+    "category": "finance",
+    "source_checked_on": "2026-10-10",
+    "count": "メールアドレス 約403万件（対象者を調査中）",
+    "status": "可能性",
+    "items": [
+     "メールアドレス"
+    ],
+    "note": "IDCフロンティアへの不正アクセスに伴い、メール配信用外部サービスの一部が使用できず、メールアドレスが閲覧・取得された可能性があります。氏名、住所、電話番号、カード番号等の漏えいの可能性はないとしています。iiマークのあるカードとビュー法人カードは対象外です。対象者には準備でき次第、個別にメールで案内するとしています。件数をJR東日本等の事案と合算しません。",
+    "url": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
+    "src": "公式",
+    "contact": {
+     "name": "本件お問い合わせ先 ビューカードセンター",
+     "tels": [
+      "03-6685-7000"
+     ],
+     "hours": "9:00〜17:30"
     },
-    {
-      "candidateNumber": 95,
-      "name": "楽天会員データ販売主張",
-      "referenceURL": "https://ai.itokoba.com/security-tier/#incident-095",
-      "sourceURL": "https://rocket-boys.co.jp/security-measures-lab/rakuten-101m-data-sale-unverified-20261004/",
-      "reason": "第三者の販売主張と公開仕様に合うサンプルだけでは真正性・取得元・1億100万件を検証できない。楽天グループの公式発表も確認できず、元の保留を維持する。",
-      "checked_on": "2026-10-09"
-    },
-    {
-      "candidateNumber": 105,
-      "name": "Suno",
-      "sourceURL": "https://haveibeenpwned.com/Breach/Suno",
-      "reason": "HIBPは55.3百万件のメールアドレス等を報告するが、Suno公式サイトで同件数・項目を確認できない。Suno広報の媒体向け声明は2025年11月の限定的事案と一部利用者情報を認める一方、55.3百万件の範囲を確定していない。日本の対象人数も未公表のため、会社公式一次資料を要する掲載条件では保留。",
-      "checked_on": "2026-10-09"
-    },
-    {
-      "name": "北海学園大学",
-      "sourceURL": "https://www.hgu.jp/info/news/20261007-01.html",
-      "checked_on": "2026-10-10",
-      "reason": "公式本文には個人情報の閲覧・取得・漏えい可能性と項目の明記がない。送信先5名を漏えい人数に置き換えず、続報で個人情報への影響が示された時点で再判定。"
-    },
-    {
-      "name": "小池酸素工業",
-      "sourceURL": "https://koike-japan.com/pages/1?b_id=206&detail=1&r_id=523",
-      "checked_on": "2026-10-10",
-      "reason": "漏えいデータの内容および対象群を確認中のため、顧客・利用者・社外関係者等の個人情報が含まれると断定できない。個人情報の範囲の続報待ち。"
-    },
-    {
-      "name": "大気社マレーシアグループ",
-      "sourceURL": "https://www.taikisha.co.jp/common/mtimg/20260918.pdf",
-      "checked_on": "2026-10-10",
-      "reason": "従業員1名のメールアカウント侵害と不審メール送信のみ。顧客等の個人情報への影響の可能性を公表していないため掲載保留。"
-    },
-    {
-      "name": "大阪市北区 住民票の誤記載",
-      "sourceURL": "https://www.city.osaka.lg.jp/hodoshiryo/somu/0000688424.html",
-      "checked_on": "2026-10-10",
-      "reason": "10月9日の一括公表で2人対象の付番誤り・住民票誤記載を確認したが、第三者への漏えい・その可能性の説明がなく、個人情報流出の事案としては掲載を保留する。"
-    },
-    {
-      "name": "バンダイナムコ系 湾岸ミッドナイト公式コミュニティという投稿",
-      "referenceURL": "https://x.com/polymarketjapan/status/2108512195273543979",
-      "sourceURL": "https://wanganmaxi-official.com/wanganmaxi6rrplus/jp/news/035.html",
-      "checked_on": "2026-10-11",
-      "reason": "公式10月9日発表を10月11日に本文確認。同じ事案は最新mainの湾岸ミッドナイト アーケードポータル行に掲載済み。公式の対象項目はメールアドレス・プロフィール等で、人数とパスワード漏えいは公表していない。同じパスワードを他サービスで使う場合の予防的変更推奨を、パスワード漏えい確認と読み替えない。SNSの約1700人・パスワード流出という追加主張のみ未確認として保留し、重複掲載しない。"
-    },
-    {
-      "name": "小平市の公式サイト関連の個人情報への影響",
-      "referenceURL": "https://news.livedoor.com/article/detail/32519525/",
-      "sourceURL": "https://www.city.kodaira.tokyo.jp/",
-      "checked_on": "2026-10-10",
-      "reason": "公式の臨時案内でサイト障害を確認。報道は問い合わせフォーム情報の流出可能性を伝えるが、現行の公式ページは対象項目・漏えい可能性を明記していない。公式Xでの当該説明をまだ確認していないため、項目を推測せず保留。"
-    },
-    {
-      "name": "ビューカード VIEW’s NET向けメール配信用外部サービス",
-      "sourceURL": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
-      "referenceURL": "https://x.com/traicycom/status/2108463488452694024",
-      "checked_on": "2026-10-10",
-      "reason": "親のweb取得本文では約403万件・メールアドレスのみ・対象外カード・本件電話を読めたが、独立担当の原文取得と現在の直接取得は403となり、原文の独立照合が未完了。今回の公開分から外し、読めた案を保持して次回に再確認する。",
-      "draft_entry_on_recovery": {
-        "date": "2026-10-09",
-        "date_label": "2026年10月9日",
-        "org": "ビューカード",
-        "service": "VIEW’s NET向けのメール配信用外部サービス",
-        "kana": "びゅーかーど view card views net ビューズネット",
-        "category": "finance",
-        "source_checked_on": "2026-10-10",
-        "count": "メールアドレス 約403万件（対象者を調査中）",
-        "status": "可能性",
-        "items": [
-          "メールアドレス"
-        ],
-        "note": "IDCフロンティアへの不正アクセスに伴い、メール配信用外部サービスの一部が使用できず、メールアドレスが閲覧・取得された可能性があります。氏名、住所、電話番号、カード番号等の漏えいの可能性はないとしています。iiマークのあるカードとビュー法人カードは対象外です。対象者には準備でき次第、個別にメールで案内するとしています。件数をJR東日本等の事案と合算しません。",
-        "url": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
-        "src": "公式",
-        "contact": {
-          "name": "本件お問い合わせ先 ビューカードセンター",
-          "tels": [
-            "03-6685-7000"
-          ],
-          "hours": "9:00〜17:30"
-        },
-        "contact_checked_on": "2026-10-10"
-      }
-    },
-    {
-      "name": "パナソニック LUMIXコミュニティ・ヘアサプ by Panasonic Beauty",
-      "sourceURL": "https://www.panasonic.com/jp/about/news/20261009.html",
-      "referenceURL": "https://www.itmedia.co.jp/news/article/2610/10/2000002190/",
-      "checked_on": "2026-10-10",
-      "reason": "10月10日の報道から発見。検索結果には公式10月9日発表の概要があるが、公式原文のweb取得は失敗、直接取得は403。原文本文・人数・対象項目・対象者向け窓口をまだ確認できないため、報道や検索断片から掲載行を作らず保留。"
-    },
-    {
-      "name": "東武鉄道 お客さまセンターお問い合わせフォームの委託先侵害",
-      "sourceURL": "https://www.tobu.co.jp/cms-pdf/news/20261007153424wpo2m-MJPLTJzWJHnUDkVw.pdf",
-      "referenceURL": "https://atmarkit.itmedia.co.jp/ait/articles/2610/10/news007.html",
-      "checked_on": "2026-10-10",
-      "reason": "10月10日の報道から発見。10月7日の公式原文は委託先侵害を報告するが、東武鉄道に関する情報の閲覧・取得の形跡は確認されていないと明記。漏えい確認や可能性の明示はなく、対象人数・項目を推測せず掲載保留。調査進展による続報で再判定する。"
-    },
-    {
-      "name": "Peach Aviation 予約関連メール配信システム（IDCFクラウド経由）",
-      "sourceURL": "https://www.flypeach.com/news/20261009",
-      "referenceURL": "https://incident.yagurasec.com/status/monitoring/",
-      "checked_on": "2026-10-13",
-      "reason": "10月13日の報道候補から発見。公式10月9日発表は予約関連メール配信基盤の障害と対象システム約189万件を記載するが、現時点で個人情報の外部流出は確認されていないと明記。対象情報はメールアドレス、アルファベット氏名、電話、予約番号、旅程内容。カード・旅券等は対象サーバーに保存なし。189万件を漏えい確認の件数や実人数として載せず、漏えい可能性を明示する続報が出るまで掲載保留。"
-    },
-    {
-      "name": "大分県 防災メール等配信システム（アルカディア経由）",
-      "sourceURL": "https://www.pref.oita.jp/",
-      "referenceURL": "https://news.livedoor.com/article/detail/32556508/",
-      "checked_on": "2026-10-13",
-      "reason": "10月13日17時の記者会見を報じた続報候補を発見。報道に防災メール・職員安否確認の対象件数があるが、県の公式会見資料・原文をまだ確認できない。提供元は漏えい可能性を公表しているが県の項目別人数を独立に確定できず、報道の計37,936件等は転記せず一次資料待ち。"
-    },
-    {
-      "name": "松本市 松本安心ネット",
-      "sourceURL": "https://www.city.matsumoto.nagano.jp/soshiki/7/216138.html",
-      "checked_on": "2026-10-14",
-      "reason": "10月13日公式案内は運営会社への不正アクセスを報告し、メールアドレスが漏えいしていないか調査中と記載。現在被害情報なしとしており、個別の漏えい可能性や対象件数を推測して行を追加しない。具体的な影響範囲を明示する続報待ち。"
-    },
-    {
-      "name": "横手市 よこて安全・安心メール等",
-      "sourceURL": "https://www.city.yokote.lg.jp/kurashi/1001136/1001182/1011454.html",
-      "checked_on": "2026-10-14",
-      "reason": "10月13日公式本文を確認。提供元への不正アクセスと安全安心メール・学校連絡・学童保護者連絡のサービス停止を公表し、影響範囲は調査中とするが、横手市利用者の個人情報漏えいの確認・可能性・項目・人数を具体的には示していない。学校連絡の利用停止だけで児童情報等の漏えいを推測せず続報待ち。"
-    },
-    {
-      "name": "静岡市 防災・職員向け配信等の市全体の影響範囲",
-      "sourceURL": "https://www.city.shizuoka.lg.jp/",
-      "referenceURL": "https://www.fnn.jp/articles/-/1132446",
-      "checked_on": "2026-10-15",
-      "reason": "報道に市全体約4万3千人分との説明があるが、対象サービス別の件数・項目の公式会見資料は未確認。認知症しずメールは公式原文でメールアドレスの可能性を確認して別行に掲載済み。同行に報道の総数を当てはめず、サービス別の一次資料を確認後に既存行更新または別行追加を判断。"
-    },
-    {
-      "name": "ゴルフダイジェスト・オンライン（GDO）10月13日の不正アクセス",
-      "sourceURL": "https://company.golfdigest.co.jp/brand/news/2026101301.html",
-      "checked_on": "2026-10-15",
-      "reason": "公式本文は不正アクセスによるクーポン・商品配送・チケット購入等への支障を公表するが個人情報の流出は未確認で、可能性を含め調査中と記載。利用者の情報項目・対象人数・流出の具体的可能性を推測せず掲載保留。サービス障害を個人情報漏えい確定と読み替えず続報待ち。"
-    }
-  ]
+    "contact_checked_on": "2026-10-10"
+   }
+  },
+  {
+   "name": "パナソニック LUMIXコミュニティ・ヘアサプ by Panasonic Beauty",
+   "sourceURL": "https://www.panasonic.com/jp/about/news/20261009.html",
+   "referenceURL": "https://www.itmedia.co.jp/news/article/2610/10/2000002190/",
+   "checked_on": "2026-10-10",
+   "reason": "10月10日の報道から発見。検索結果には公式10月9日発表の概要があるが、公式原文のweb取得は失敗、直接取得は403。原文本文・人数・対象項目・対象者向け窓口をまだ確認できないため、報道や検索断片から掲載行を作らず保留。"
+  },
+  {
+   "name": "東武鉄道 お客さまセンターお問い合わせフォームの委託先侵害",
+   "sourceURL": "https://www.tobu.co.jp/cms-pdf/news/20261007153424wpo2m-MJPLTJzWJHnUDkVw.pdf",
+   "referenceURL": "https://atmarkit.itmedia.co.jp/ait/articles/2610/10/news007.html",
+   "checked_on": "2026-10-10",
+   "reason": "10月10日の報道から発見。10月7日の公式原文は委託先侵害を報告するが、東武鉄道に関する情報の閲覧・取得の形跡は確認されていないと明記。漏えい確認や可能性の明示はなく、対象人数・項目を推測せず掲載保留。調査進展による続報で再判定する。"
+  },
+  {
+   "name": "Peach Aviation 予約関連メール配信システム（IDCFクラウド経由）",
+   "sourceURL": "https://www.flypeach.com/news/20261009",
+   "referenceURL": "https://incident.yagurasec.com/status/monitoring/",
+   "checked_on": "2026-10-13",
+   "reason": "10月13日の報道候補から発見。公式10月9日発表は予約関連メール配信基盤の障害と対象システム約189万件を記載するが、現時点で個人情報の外部流出は確認されていないと明記。対象情報はメールアドレス、アルファベット氏名、電話、予約番号、旅程内容。カード・旅券等は対象サーバーに保存なし。189万件を漏えい確認の件数や実人数として載せず、漏えい可能性を明示する続報が出るまで掲載保留。"
+  },
+  {
+   "name": "大分県 防災メール等配信システム（アルカディア経由）",
+   "sourceURL": "https://www.pref.oita.jp/",
+   "referenceURL": "https://news.livedoor.com/article/detail/32556508/",
+   "checked_on": "2026-10-13",
+   "reason": "10月13日17時の記者会見を報じた続報候補を発見。報道に防災メール・職員安否確認の対象件数があるが、県の公式会見資料・原文をまだ確認できない。提供元は漏えい可能性を公表しているが県の項目別人数を独立に確定できず、報道の計37,936件等は転記せず一次資料待ち。"
+  },
+  {
+   "name": "松本市 松本安心ネット",
+   "sourceURL": "https://www.city.matsumoto.nagano.jp/soshiki/7/216138.html",
+   "checked_on": "2026-10-14",
+   "reason": "10月13日公式案内は運営会社への不正アクセスを報告し、メールアドレスが漏えいしていないか調査中と記載。現在被害情報なしとしており、個別の漏えい可能性や対象件数を推測して行を追加しない。具体的な影響範囲を明示する続報待ち。"
+  },
+  {
+   "name": "横手市 よこて安全・安心メール等",
+   "sourceURL": "https://www.city.yokote.lg.jp/kurashi/1001136/1001182/1011454.html",
+   "checked_on": "2026-10-14",
+   "reason": "10月13日公式本文を確認。提供元への不正アクセスと安全安心メール・学校連絡・学童保護者連絡のサービス停止を公表し、影響範囲は調査中とするが、横手市利用者の個人情報漏えいの確認・可能性・項目・人数を具体的には示していない。学校連絡の利用停止だけで児童情報等の漏えいを推測せず続報待ち。"
+  },
+  {
+   "name": "静岡市 防災・職員向け配信等の市全体の影響範囲",
+   "sourceURL": "https://www.city.shizuoka.lg.jp/",
+   "referenceURL": "https://www.fnn.jp/articles/-/1132446",
+   "checked_on": "2026-10-15",
+   "reason": "報道に市全体約4万3千人分との説明があるが、対象サービス別の件数・項目の公式会見資料は未確認。認知症しずメールは公式原文でメールアドレスの可能性を確認して別行に掲載済み。同行に報道の総数を当てはめず、サービス別の一次資料を確認後に既存行更新または別行追加を判断。"
+  },
+  {
+   "name": "ゴルフダイジェスト・オンライン（GDO）10月13日の不正アクセス",
+   "sourceURL": "https://company.golfdigest.co.jp/brand/news/2026101301.html",
+   "checked_on": "2026-10-15",
+   "reason": "公式本文は不正アクセスによるクーポン・商品配送・チケット購入等への支障を公表するが個人情報の流出は未確認で、可能性を含め調査中と記載。利用者の情報項目・対象人数・流出の具体的可能性を推測せず掲載保留。サービス障害を個人情報漏えい確定と読み替えず続報待ち。"
+  },
+  {
+   "name": "一宮市 Net119緊急通報システム",
+   "sourceURL": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1076175/1077245.html",
+   "checked_on": "2026-10-15",
+   "reason": "10月15日付の公式発表を検索結果から発見。検索概要は、10月14日発表の災害時一斉情報配信サービスとは別に、消防本部のNet119でも漏えいの可能性があると説明。公式本文の閲覧は失敗し、直接取得は403、ブラウザ相当UAでもリダイレクトが繰り返されて読めない。対象人数・項目・利用継続の可否・対象者向け窓口を未確認のため、掲載行を作らず保留。"
+  }
+ ]
 }
