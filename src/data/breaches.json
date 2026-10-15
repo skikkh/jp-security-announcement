@@ -2,6 +2,36 @@
  {
   "date": "2026-10-14",
   "date_label": "2026年10月14日",
+  "org": "マツダ",
+  "service": "コミュニティサイト「CLUB MAZDA COMMUNITY」（Commune経由）",
+  "kana": "まつだ mazda くらぶまつだこみゅにてぃ club mazda community こみゅーん commune",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-15",
+  "contact_checked_on": "2026-10-15",
+  "count": "最大4,103名（会員と運営担当従業員）",
+  "status": "可能性",
+  "items": [
+   "会員ID",
+   "メールアドレス",
+   "性別",
+   "住所",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
+  ],
+  "note": "サイト運営の委託先コミューンのプラットフォーム「Commune」への不正アクセスにより、会員ID、アカウント名、メールアドレス、性別、居住地（都道府県）、購買・利用状況履歴、趣味・嗜好・アンケート回答が閲覧・取得された可能性があります。カード情報は対象外です。サイトは停止中で、悪用や二次被害、マツダの社内システムへの影響は確認されていないとしています。便乗したフィッシングに注意してください。Communeの事案と合算しません。マツダの別事案（タイ部品倉庫）とは別の行です。",
+  "url": "https://newsroom.mazda.com/ja/publicity/release/2026/202610/261014a.pdf",
+  "src": "公式",
+  "contact": {
+   "name": "コミューン株式会社 本件専用お問い合わせ窓口",
+   "emails": [
+    "user-security@commune.co.jp"
+   ],
+   "note": "本文にコミュニティ名（CLUB MAZDA COMMUNITY）とユーザー名を記載するよう求めています。"
+  }
+ },
+ {
+  "date": "2026-10-14",
+  "date_label": "2026年10月14日",
   "org": "座間市",
   "service": "座間市緊急情報配信システム（いさまメール）、職員安否参集確認システム（SpeeCAN RAIDEN）",
   "kana": "ざまし かながわ いさまめーる ぼうさい あるかでぃあ らいでん",
