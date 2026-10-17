@@ -2364,6 +2364,32 @@
   "contact_checked_on": "2026-10-09"
  },
  {
+  "date": "2026-09-25",
+  "date_label": "2026年9月25日",
+  "org": "LEGOLAND Japan",
+  "service": "レゴランド・ジャパン・ホテルの公式予約サイト（予約プラットフォーム Amadeus）",
+  "kana": "れごらんどじゃぱん れごらんど ほてる あまでうす Amadeus",
+  "category": "travel",
+  "source_checked_on": "2026-10-17",
+  "contact_checked_on": "2026-10-17",
+  "count": "1,557件（予約件数）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号"
+  ],
+  "note": "ホテルの公式予約サイトに使うオンライン予約プラットフォームの運営会社Amadeus IT Groupから、予約情報に含まれる連絡先情報（氏名、メールアドレス、電話番号）が不正アクセスされたと報告を受けました。カード等の決済情報、パスワード、金融情報、パスポート情報へのアクセスは確認されていません。予約情報を引用した詐欺メール・SMS・WhatsAppに注意を呼びかけています。",
+  "url": "https://www.legoland.jp/operation/news/news-release/news20260925/",
+  "src": "公式",
+  "contact": {
+   "name": "レゴランド・ジャパン・ホテル 予約（本件のお問い合わせ先）",
+   "emails": [
+    "Legoland.Reservation@legoland.jp"
+   ]
+  }
+ },
+ {
   "date": "2026-08-27",
   "date_label": "2026年8月27日（10月6日に最終報告）",
   "org": "CINRA",
