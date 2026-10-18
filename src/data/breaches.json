@@ -760,6 +760,36 @@
  },
  {
   "date": "2026-10-15",
+  "date_label": "2026年10月15日更新",
+  "org": "福岡県",
+  "service": "土砂災害危険度情報配信システム（SpeeCAN RAIDEN）",
+  "kana": "ふくおかけん ふくおか どしゃさいがい きけんど はいしん あるかでぃあ らいでん",
+  "category": "government",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "対象人数・件数はこの発表に示されていません",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "住所"
+  ],
+  "note": "県が利用する土砂災害危険度情報配信システムの一斉配信サービスSpeeCAN RAIDEN（アルカディア）への不正アクセスにより、利用登録者のメールアドレス・住所などが漏えいした可能性があると公表しています。影響範囲は調査中。県や事業者を装って個人情報の入力等を求めるメールに注意するよう求めています。提供元全体や他自治体の件数とは合算しません。",
+  "url": "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html",
+  "src": "公式",
+  "contact": {
+   "name": "株式会社アルカディア個人情報相談窓口（福岡県が案内する本件窓口）",
+   "tels": [
+    "050-5830-0750"
+   ],
+   "emails": [
+    "info@arcadia.co.jp"
+   ],
+   "hours": "9:00〜17:00（土日祝・年末年始を除く）"
+  },
+  "contact_source": "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html"
+ },
+ {
+  "date": "2026-10-15",
   "date_label": "2026年10月15日（第二報、第1報は8月21日）",
   "org": "いまでや",
   "service": "IMADEYA ONLINE STORE",
