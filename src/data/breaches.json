@@ -2,6 +2,62 @@
  {
   "date": "2026-10-16",
   "date_label": "2026年10月16日",
+  "org": "Finatextホールディングス",
+  "service": "コーポレートサイト等の問い合わせフォーム（Studio経由のGoogleスプレッドシート）",
+  "kana": "ふぃなてきすと Finatext すまーとぷらすしょうがくたんきほけん すたじお Studio",
+  "category": "finance",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "Finatextグループのコーポレートサイト問い合わせ7,241件のうち最大18%程度、およびスマートプラス少額短期保険のキャンセル保険問い合わせ12件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "勤務先・所属",
+   "メールアドレス",
+   "電話番号"
+  ],
+  "note": "Web制作ツールStudioへの不正アクセスにより、Studioから連携していた同社管理のGoogleスプレッドシートに保存された問い合わせ情報の一部に漏えいの形跡を確認（法人名称・部署名称、保険の問い合わせは団体名称を含む）。それ以外のフォームは漏えいの形跡なし。不正利用・二次被害は未確認。対象者へ順次本人通知。Studio全体の件数とは合算しません。",
+  "url": "https://finatext.com/hd/news/20261016",
+  "src": "公式",
+  "contact": {
+   "name": "本件に関するお問い合わせ窓口",
+   "emails": [
+    "privacy@finatext.com"
+   ],
+   "note": "受付時間は原文未記載。"
+  },
+  "contact_source": "https://finatext.com/hd/news/20261016"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
+  "org": "東京都（東京都住宅供給公社）",
+  "service": "都営住宅の維持管理業務（排水管清掃のお知らせの郵送）",
+  "kana": "とうきょうと とうきょうとじゅうたくきょうきゅうこうしゃ JKK とえいじゅうたく",
+  "category": "government",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "770名分",
+  "status": "確認",
+  "items": [
+   "氏名"
+  ],
+  "note": "委託先の公社が全自治会長宛てに郵送した1,997通のうち846通を誤った宛先に送付し、宛先不明で返送された76通を除く770通が別の居住者に届き、自治会長の氏名が漏えい。宛名ラベル作成時のExcelリストの参照誤りが原因。公社が自治会長と誤配先の居住者に個別に連絡・謝罪。",
+  "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605",
+  "src": "公式",
+  "contact": {
+   "name": "住宅政策本部都営住宅経営部経営企画課／東京都住宅供給公社住宅営繕部営繕計画課（本件公表の問い合わせ先）",
+   "tels": [
+    "03-5320-4972",
+    "03-3409-2261"
+   ],
+   "note": "03-3409-2261は公社の代表番号。受付時間は原文未記載。"
+  },
+  "contact_source": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
   "org": "Fukuoka Growth Next",
   "service": "FGN・スタートアップカフェのウェブフォーム（Studio）",
   "kana": "ふくおかぐろーすねくすと FGN すたーとあっぷかふぇ ふくおかし すたじお Studio",
