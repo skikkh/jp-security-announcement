@@ -181,12 +181,6 @@
    "reason": "10月16日の公式第2報を検索で発見したが、公式本文の閲覧取得は失敗。対象群・項目・件数と対象者向け窓口を本文で照合できていないため保留。"
   },
   {
-   "name": "糸魚川市 移住・ワーケーション問い合わせ（Studio）",
-   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
-   "checked_on": "2026-10-18",
-   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
-  },
-  {
    "name": "静岡新聞社 掲載・SBS学苑フォーム（Studio）",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
    "checked_on": "2026-10-18",
@@ -202,19 +196,15 @@
    "name": "和歌山県立21校 ライデン・スクール",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
    "checked_on": "2026-10-18",
-   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+   "reason": "公式県政ニュース一覧で当該発表へのリンクを確認したが、個別資料リンク（学校sid=45691、外国人材sid=45700）への直接取得が一覧ページへ戻り本文を取得できなかった。対象項目・件数・本件窓口の照合が未完了のため保留継続。まとめサイトの値は転記しない。",
+   "sourceURL": "https://wave.pref.wakayama.lg.jp/news/kensei/"
   },
   {
    "name": "和歌山県 外国人材雇用サポートデスク（Studio）",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
    "checked_on": "2026-10-18",
-   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
-  },
-  {
-   "name": "東北電力フロンティア イベント問い合わせフォーム（Studio）",
-   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
-   "checked_on": "2026-10-18",
-   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+   "reason": "公式県政ニュース一覧で当該発表へのリンクを確認したが、個別資料リンク（学校sid=45691、外国人材sid=45700）への直接取得が一覧ページへ戻り本文を取得できなかった。対象項目・件数・本件窓口の照合が未完了のため保留継続。まとめサイトの値は転記しない。",
+   "sourceURL": "https://wave.pref.wakayama.lg.jp/news/kensei/"
   },
   {
    "name": "セカンドリテイリング ゲオ・セカンドストリートのサービス停止",
