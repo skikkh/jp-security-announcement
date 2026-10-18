@@ -163,18 +163,11 @@
    "reason": "報道に市全体約4万3千人分との説明があるが、対象サービス別の件数・項目の公式会見資料は未確認。認知症しずメールは公式原文でメールアドレスの可能性を確認して別行に掲載済み。同行に報道の総数を当てはめず、サービス別の一次資料を確認後に既存行更新または別行追加を判断。"
   },
   {
-   "name": "ゴルフダイジェスト・オンライン（GDO）10月13日の不正アクセス",
-   "sourceURL": "https://company.golfdigest.co.jp/brand/news/2026101301.html",
-   "checked_on": "2026-10-15",
-   "reason": "公式本文は不正アクセスによるクーポン・商品配送・チケット購入等への支障を公表するが個人情報の流出は未確認で、可能性を含め調査中と記載。利用者の情報項目・対象人数・流出の具体的可能性を推測せず掲載保留。サービス障害を個人情報漏えい確定と読み替えず続報待ち。"
-  },
-  {
    "name": "一宮市 Net119緊急通報システム",
    "sourceURL": "https://www.city.ichinomiya.aichi.jp/shisei/houdouhappyo/1068631/1076175/1077245.html",
    "checked_on": "2026-10-15",
    "reason": "10月15日付の公式発表を検索結果から発見。検索概要は、10月14日発表の災害時一斉情報配信サービスとは別に、消防本部のNet119でも漏えいの可能性があると説明。公式本文の閲覧は失敗し、直接取得は403、ブラウザ相当UAでもリダイレクトが繰り返されて読めない。対象人数・項目・利用継続の可否・対象者向け窓口を未確認のため、掲載行を作らず保留。"
   },
-  
   {
    "name": "葛飾区 災害情報発信システム（SpeeCAN RAIDEN）",
    "sourceURL": "https://city-katsushika.eye-bousai-plus.com/PTLC0100/announce?id=T_ANN000000002542",
@@ -186,6 +179,54 @@
    "sourceURL": "https://www.japantimes.co.jp/press/2026/10/16/notice-ransomware-incident-second-report-jp/",
    "checked_on": "2026-10-18",
    "reason": "10月16日の公式第2報を検索で発見したが、公式本文の閲覧取得は失敗。対象群・項目・件数と対象者向け窓口を本文で照合できていないため保留。"
+  },
+  {
+   "name": "糸魚川市 移住・ワーケーション問い合わせ（Studio）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "静岡新聞社 掲載・SBS学苑フォーム（Studio）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "諫早市 道の駅251いいもりじゃがーロード（Studio）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "和歌山県立21校 ライデン・スクール",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "和歌山県 外国人材雇用サポートデスク（Studio）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "東北電力フロンティア イベント問い合わせフォーム（Studio）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "セカンドリテイリング ゲオ・セカンドストリートのサービス停止",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-18/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
+  },
+  {
+   "name": "日経BP 日本経済新聞社クラウドへの影響調査",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-17/",
+   "checked_on": "2026-10-18",
+   "reason": "候補発見資料で新規・更新を把握。公式原文の対象範囲・項目・件数・窓口の照合は未完了のため、掲載事実として転記せず一次資料の確認待ち。"
   }
  ]
 }
