@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-10-17",
+  "date_label": "2026年10月17日",
+  "org": "Y Capital（YC塾）",
+  "service": "YC Seminar・Y Capital等のウェブサイトのお問い合わせフォーム（Studio）",
+  "kana": "わいきゃぴたる Y Capital わいしーじゅく YC塾 YC Seminar すたじお Studio",
+  "category": "work_education",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "件数は未公表",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "ウェブサイト制作に使うStudioへの不正アクセスにより、YC Seminar（YC塾）、Y Capital、閉鎖済みのYC Certified Internshipの各サイトのフォーム送信内容（学生は在籍大学名、企業は会社名・部署・役職、問い合わせ本文を含む）が流出した可能性があります。住所・カード情報は取得していないとしています。イベント申込サイト・メール等は対象外。実際の取得や二次被害は未確認。対象者へ個別にメールで連絡。Studio全体の件数とは合算しません。",
+  "url": "https://yc-seminar.jp/article-detail/20261017",
+  "src": "公式",
+  "contact": {
+   "name": "Y Capital株式会社 YC塾運営事務局",
+   "emails": [
+    "info@yc-seminar.jp"
+   ],
+   "note": "受付時間は原文未記載。"
+  },
+  "contact_source": "https://yc-seminar.jp/article-detail/20261017"
+ },
+ {
+  "date": "2026-10-17",
+  "date_label": "2026年10月17日",
+  "org": "スマートラウンド",
+  "service": "コーポレートサイトのフォーム（Studio）",
+  "kana": "すまーとらうんど smartround すたじお Studio",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "1,371件（対象人数は約1,050名、2023年3月28日〜2026年10月15日の送信分）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "ウェブサイト制作に使うStudioへの不正アクセスにより、お問い合わせ・SOC2報告書の開示申込フォームの送信情報（企業名・部署・役職、企業URL、お問い合わせ内容を含む）が流出したおそれがあります。サービス「smartround」の登録情報、チャット、採用ページ、資料ダウンロードフォーム、スマートラウンド証券の保有情報は対象外。実際の取得や二次被害は未確認。対象者へ順次メールで連絡。Studio全体の件数とは合算しません。",
+  "url": "https://jp.smartround.com/corporate/news/posts/Ab4Kkfrj",
+  "src": "公式",
+  "contact": {
+   "name": "本件のお問い合わせ先",
+   "emails": [
+    "privacy@smartround.com"
+   ],
+   "hours": "24時間受付、平日10:00〜18:00に順次回答"
+  },
+  "contact_source": "https://jp.smartround.com/corporate/news/posts/Ab4Kkfrj"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
+  "org": "イメージ・マジック（3DME）",
+  "service": "コーポレートサイト・3DMEのお問い合わせフォーム（Studio）",
+  "kana": "いめーじまじっく IMAGE MAGIC すりーでぃーみー 3DME すたじお Studio",
+  "category": "manufacturing",
+  "source_checked_on": "2026-10-18",
+  "contact_checked_on": "2026-10-18",
+  "count": "1,510件（コーポレートサイト379件＋3DME 1,131件、フォーム送信件数）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "ウェブサイト制作に使うStudioへの不正アクセスにより、コーポレートサイト（2026年5月8日〜7月15日分）と3DME（2025年5月19日〜2026年10月15日分）のフォーム送信情報（問い合わせ内容、添付ファイル名を含む）が漏えいした可能性があります。暗号化保存されていたが復号鍵も読み出されたとしています。添付ファイルの中身や「オリジナルプリント.jp」等Studio非利用のサービスは対象外。件数は送信件数で人数と一致しない場合があります。実際の取得や二次被害は未確認。Studio全体の件数とは合算しません。",
+  "url": "https://3dme.jp/news/studio-incident",
+  "src": "公式",
+  "contact": {
+   "name": "本件お問い合わせ窓口",
+   "emails": [
+    "privacy@imagemagic.co.jp"
+   ],
+   "hours": "平日10:00〜18:00"
+  },
+  "contact_source": "https://3dme.jp/news/studio-incident"
+ },
+ {
   "date": "2026-10-16",
   "date_label": "2026年10月16日",
   "org": "Finatextホールディングス",
