@@ -2,6 +2,56 @@
  {
   "date": "2026-10-19",
   "date_label": "2026年10月19日",
+  "org": "TRUSTART（トラスタート）",
+  "service": "サービス紹介ページのお問い合わせ・資料請求フォーム（Studio）",
+  "kana": "とらすたーと TRUSTART ふどうさん すたじお Studio",
+  "category": "real_estate",
+  "count": "約1,440件（2021年12月〜2026年5月の送信分、重複・テスト送信を含む）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "勤務先・所属",
+   "メールアドレス",
+   "電話番号",
+   "その他（詳細は出典）"
+  ],
+  "note": "ウェブサイトの制作・運用に使っていたStudioへの不正アクセスにより、お問い合わせ・資料請求フォームの送信情報（会社名・会社URL・役職・従業員規模・お問い合わせ種別、自由記述）が流出した可能性があります。R.E.DATA Plus等のサービス利用者情報は対象外。対象者へ順次メール。本件専用の問い合わせ窓口は外部フォーム（Google フォーム）のため掲載していません。Studio全体の件数とは合算しません。",
+  "url": "https://www.trustart.co.jp/news/20261019",
+  "src": "公式",
+  "source_checked_on": "2026-10-20"
+ },
+ {
+  "date": "2026-10-19",
+  "date_label": "2026年10月19日（第一報）",
+  "org": "Awarefy",
+  "service": "コーポレート・サービスページ・採用等のフォーム（Studio）",
+  "kana": "あうぇあふぁい Awarefy めんたるへるす すたじお Studio",
+  "category": "health",
+  "count": "件数は公表されていません",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "その他（詳細は出典）"
+  ],
+  "note": "コーポレートサイトの制作・運用に使うStudioへの不正アクセスにより、お問い合わせフォーム、サービスページのお問い合わせ、採用エントリー、研究・実践パートナーエントリーの各フォームに入力された内容（添付ファイル名を含む）が漏えいしたおそれがあります。アプリ「Awarefy」のアカウント情報・利用データ・支払い情報は対象外。対象者へ個別に連絡。Studio全体の件数とは合算しません。",
+  "url": "https://www.awarefy.com/news/corporate-261019",
+  "contact": {
+   "name": "株式会社Awarefy サポート担当（本件に関するお問い合わせ窓口）",
+   "emails": [
+    "support@awarefy.app"
+   ],
+   "note": "受付時間は原文未記載。"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "contact_source": "https://www.awarefy.com/news/corporate-261019"
+ },
+ {
+  "date": "2026-10-19",
+  "date_label": "2026年10月19日",
   "org": "YAMAGATA",
   "service": "コーポレートサイトの「ご相談・お問い合せ」フォーム（Studio）",
   "kana": "やまがた YAMAGATA まにゅある ほんやく すたじお Studio",
@@ -314,6 +364,96 @@
    "hours": "24時間受付、平日10:00〜18:00に順次回答"
   },
   "contact_source": "https://jp.smartround.com/corporate/news/posts/Ab4Kkfrj"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
+  "org": "シンプルフォーム",
+  "service": "Webサイトのお問い合わせフォーム（Studio）",
+  "kana": "しんぷるふぉーむ SimpleForm すたじお Studio",
+  "category": "telecom_it",
+  "count": "3,404件（10月16日時点）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "勤務先・所属",
+   "電話番号",
+   "その他（詳細は出典）"
+  ],
+  "note": "Webサイト制作に使うStudioへの不正アクセスにより、お問い合わせフォームから送信された内容（法人名・部署名・お問い合わせ内容を含む）が取得・閲覧された可能性があります。SimpleCheck・SimpleMonitor等の同社サービスは対象外。対象者へ個別にメール。Studio全体の件数とは合算しません。",
+  "url": "https://www.simpleform.co.jp/news/384Piuke",
+  "contact": {
+   "name": "シンプルフォーム株式会社（本件の問い合わせ窓口）",
+   "emails": [
+    "info@simpleform.co.jp"
+   ],
+   "note": "受付時間は原文未記載。"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "contact_source": "https://www.simpleform.co.jp/news/384Piuke"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
+  "org": "永和システムマネジメント",
+  "service": "Webサイトのお問い合わせフォーム等（Studio）",
+  "kana": "えいわしすてむまねじめんと ESM すたじお Studio",
+  "category": "telecom_it",
+  "count": "流出範囲は未確定（調査中）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "その他（詳細は出典）"
+  ],
+  "note": "Webサイトの構築・運用に使うStudioへの不正アクセスにより、お問い合わせフォーム等から送信された情報（お問い合わせ内容など）が流出した可能性があります。添付ファイルの中身は対象外。二次被害は未確認。Studio全体の件数とは合算しません。",
+  "url": "https://esm.co.jp/news/security-notice-studio-202610",
+  "contact": {
+   "name": "永和システムマネジメント 管理部（本件のお問い合わせ窓口）",
+   "emails": [
+    "privacy@esm.co.jp"
+   ],
+   "note": "受付時間は原文未記載。"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "contact_source": "https://esm.co.jp/news/security-notice-studio-202610"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
+  "org": "アルビレックス新潟レディース（新潟レディースフットボールクラブ）",
+  "service": "クラブ公式サイトのお問い合わせフォーム（Studio）",
+  "kana": "あるびれっくすにいがたれでぃーす albirex にいがた さっかー すたじお Studio",
+  "category": "media_entertainment",
+  "count": "対象範囲・件数は調査中",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "公式サイトの構築に使うStudioへの不正アクセスにより、お問い合わせフォームから送信された氏名・メールアドレス・本文中の個人情報等が流出した可能性があります。対象範囲・件数と二次被害の有無は調査中。Studioのパスワードを変更し、サーバーに残るフォーム送信情報を削除しました。Studio全体の件数とは合算しません。",
+  "url": "https://albirex-niigata-ladies.com/news/2026-10-26-1930",
+  "contact": {
+   "name": "株式会社新潟レディースフットボールクラブ 事業本部",
+   "tels": [
+    "025-257-5814"
+   ],
+   "emails": [
+    "enjoyfootball@albirexL.com"
+   ],
+   "hours": "土日祝を除く10:00〜17:00"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "contact_source": "https://albirex-niigata-ladies.com/news/2026-10-26-1930"
  },
  {
   "date": "2026-10-16",
