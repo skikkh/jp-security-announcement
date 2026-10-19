@@ -1,5 +1,45 @@
 [
  {
+  "date": "2026-10-19",
+  "date_label": "2026年10月19日",
+  "org": "エイチ・ツー・オー リテイリング（阪急阪神百貨店）",
+  "service": "阪急百貨店・阪神百貨店予約サイト、HANKYU HANSHIN E-STORES、Remo Order（H2O ID）",
+  "kana": "えいちつーおーりていりんぐ H2O はんきゅうはんしんひゃっかてん はんきゅう はんしん よやくさいと いーすとあーず E-STORES りもおーだー Remo Order",
+  "category": "retail",
+  "source_checked_on": "2026-10-19",
+  "contact_checked_on": "2026-10-19",
+  "count": "H2O ID 約126万件（ほぼ全てのH2O ID会員）",
+  "status": "確認",
+  "items": [
+   "会員ID",
+   "氏名",
+   "性別",
+   "メールアドレス",
+   "住所",
+   "電話番号",
+   "生年月日",
+   "その他（詳細は出典）"
+  ],
+  "note": "10月16日に予約サイト経由で顧客管理システムへの不正アクセスを確認し、10月17日にはHANKYU HANSHIN E-STORESとRemo Orderでも確認、各サイトを停止。10月19日、H2O ID約126万件の個人情報の一部（H2O ID、氏名・カナ、性別、メールアドレス、郵便番号・住所、携帯・固定電話番号、年齢、生年月日、利用サービス項目）の漏えいが判明しました。E-STORES／Remo Order経由では、注文履歴、カード情報の一部（種別・下4桁・名義・有効期限）、ポイントカード番号下4桁、アドレス帳情報の漏えい可能性を調査中（カード番号全桁とセキュリティコードは非保持）。ログインパスワードの漏えいは未確認。不正利用・二次被害は未確認。会員へメールで順次連絡（送信元noreply@h2o-retailing.co.jp）。",
+  "url": "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261019552921/pdfFile.pdf",
+  "src": "公式",
+  "contact": {
+   "name": "本件に関するお問い合わせ先",
+   "tels": [
+    "0120-110-256",
+    "0120-369-089"
+   ],
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://h2o-id.h2o-retailing.co.jp/web/contact"
+    }
+   ],
+   "hours": "各日10:00〜20:00"
+  },
+  "contact_source": "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261019552921/pdfFile.pdf"
+ },
+ {
   "date": "2026-10-17",
   "date_label": "2026年10月17日",
   "org": "ナッジ",
