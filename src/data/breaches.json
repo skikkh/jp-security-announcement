@@ -9352,5 +9352,28 @@
    ],
    "note": "同社が本件窓口として案内する運営元の窓口です。従来のCSセンターは10月18日までの受付。"
   }
+ },
+ {
+  "date": "2026-10-17",
+  "date_label": "2026年10月17日",
+  "org": "Joshin",
+  "service": "社内ネットワークへの不正アクセスに伴う情報流出の可能性・一部サービス停止",
+  "kana": "じょーしん じょうしんでんき 上新電機 Joshin",
+  "category": "retail",
+  "source_checked_on": "2026-10-19",
+  "contact_checked_on": "2026-10-19",
+  "count": "対象件数・人数は未公表（影響範囲を調査中）",
+  "status": "可能性",
+  "items": [],
+  "note": "10月16日にネットワークへの第三者の不正アクセスを認識し、外部からのアクセスを制限した結果、一部サービスを提供できない状態と公表しました。外部専門機関と詳細・影響範囲・情報流出の有無を調査中で、個人情報漏えいの可能性を否定できないとして個人情報保護委員会に第一報を提出しています。対象サービス・情報項目・人数は公表されておらず、会員情報や購入履歴などが流出したとは推測しません。サービス再開に向け対応中です。",
+  "url": "https://www.joshin.co.jp/ja/news/info/info-20261017/main/0/link/20261017Notice%20and%20Apology%20Regarding%20System%20Disruption%20Caused%20by%20Unauthorized%20Access.pdf",
+  "src": "公式",
+  "contact": {
+   "name": "Joshin お客様相談室",
+   "emails": [
+    "joshin_otoiawase@joshin.co.jp"
+   ],
+   "note": "本件発表の「お客さまのお問い合わせ先」。受付時間は原文に記載なし。"
+  }
  }
 ]
