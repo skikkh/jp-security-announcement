@@ -2,6 +2,39 @@
  {
   "date": "2026-10-19",
   "date_label": "2026年10月19日",
+  "org": "クリプトン・フューチャー・メディア",
+  "service": "SONICWIRE（ソニックワイヤ）・D2R",
+  "kana": "くりぷとん crypton そにっくわいや SONICWIRE でぃーつーあーる D2R",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-19",
+  "contact_checked_on": "2026-10-19",
+  "count": "SONICWIRE会員（ニュースレター購読者含む）最大約42万件、D2R登録店舗（件数未公表）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "パスワード",
+   "住所",
+   "会員ID",
+   "その他（詳細は出典）"
+  ],
+  "note": "10月17日20時頃にSONICWIREとD2Rへの不正アクセスの可能性を確認し、同日23時39分頃にサーバーを停止。SONICWIRE会員は氏名・メールアドレス・ハッシュ化パスワード・住所（請求書・見積書発行時に入力した場合）・登録日等、D2R登録店舗は氏名・店舗名・ログインID・ハッシュ化パスワードが参照・取得された可能性があります。カード情報はシステムに保存しておらず漏えいは未確認。全会員のパスワードを無効化し、再開時に再設定を求めています。SONICWIRE関連ECストアも停止中。再開時期は未定。",
+  "url": "https://www.crypton.co.jp/cfm/news/2026/10/20info",
+  "src": "公式",
+  "contact": {
+   "name": "本件に関するユーザー様向けお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://www.crypton.co.jp/cfm/inquiry-general"
+    }
+   ]
+  },
+  "contact_source": "https://www.crypton.co.jp/cfm/news/2026/10/20info"
+ },
+ {
+  "date": "2026-10-19",
+  "date_label": "2026年10月19日",
   "org": "東邦ホールディングス（エンタッチ）",
   "service": "リモートディテーリング事業のデータベース（非連結子会社エンタッチ）",
   "kana": "とうほうほーるでぃんぐす とうほうやくひん えんたっち りもーとでぃてーりんぐ らんさむうぇあ",
