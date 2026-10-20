@@ -454,6 +454,33 @@
  {
   "date": "2026-10-16",
   "date_label": "2026年10月16日",
+  "org": "STANDS（Onboarding）",
+  "service": "Onboarding 管理画面",
+  "kana": "すたんず stands おんぼーでぃんぐ onboarding ノーコード UI改善",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "count": "対象件数は未公表",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "10月14日にOnboardingの管理画面で第三者による不正アクセスを確認（第一報）。管理者権限を利用して複数の顧客環境で設定情報の取得や一部設定の不正変更、レポート情報の取得操作、AIチャット機能の接続情報の取得が行われたとしています。管理画面に登録された顧客担当者の氏名・メールアドレス・権限情報は閲覧された可能性が高いものの、実際の取得・保存は未確認。管理画面とAI機能は停止中で、影響が確認された顧客に個別に報告を進めています。",
+  "url": "https://onboarding.co.jp/news-list/2026-10-16",
+  "src": "公式",
+  "contact": {
+   "name": "株式会社STANDS（本件・不審な連絡の連絡先）",
+   "emails": [
+    "info@stands.ai"
+   ]
+  },
+  "contact_source": "https://onboarding.co.jp/news-list/2026-10-16"
+ },
+ {
+  "date": "2026-10-16",
+  "date_label": "2026年10月16日",
   "org": "シンプルフォーム",
   "service": "Webサイトのお問い合わせフォーム（Studio）",
   "kana": "しんぷるふぉーむ SimpleForm すたじお Studio",
