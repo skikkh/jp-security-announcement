@@ -9867,5 +9867,32 @@
    ],
    "hours": "平日9:00〜16:30"
   }
+ },
+ {
+  "date": "2026-10-17",
+  "date_label": "2026年10月17日",
+  "org": "MAPPA（MAPPA EXPO運営事務局）",
+  "service": "MAPPA EXPO 15th Anniversary公式サイトのCONTACTフォーム（Studio）",
+  "kana": "まっぱ えきすぽ MAPPA EXPO Studio",
+  "category": "media_entertainment",
+  "source_checked_on": "2026-10-20",
+  "contact_checked_on": "2026-10-20",
+  "count": "対象件数は確認中",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "公式イベントサイトが利用するStudioのクラウド環境への不正アクセスに伴い、2026年6月19日〜10月15日にCONTACTフォームへ寄せられた氏名・メールアドレス・問い合わせ内容が外部へ流出した可能性があります。実際に第三者が取得した事実、情報の不正利用・二次被害は公表時点で未確認です。影響範囲・件数を確認中で、必要に応じて対象者へ個別案内を行うとしています。MAPPA公式サイトおよびMAPPA ONLINE SHOPへの不正アクセスは確認されていません。事務局やStudioを装う不審なメールのURL・添付を開かず、個人情報を入力しないよう呼びかけています。Studio全体や他の利用先の件数とは合算しません。",
+  "url": "https://expo.mappa.co.jp/infomation/QVIAWjFu",
+  "src": "公式",
+  "contact": {
+   "name": "MAPPA EXPO 15th Anniversary 運営事務局 本件お問い合わせ",
+   "emails": [
+    "contact@mappaexpo15.jp"
+   ],
+   "note": "公式発表は本件についてメールで直接連絡するよう案内。受付時間は記載なし。"
+  }
  }
 ]

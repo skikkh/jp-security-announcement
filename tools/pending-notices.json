@@ -235,6 +235,12 @@
    "referenceURL": "https://ufocatch.com/document/TD2026101900124",
    "checked_on": "2026-10-19",
    "reason": "10月19日16時30分の適時開示候補を発見したが、公式原文・TDnet PDFへのリンクを取得できず。第三者の要約にある医療従事者等の項目を確定情報として転記せず、対象群・項目・件数・本件顧客窓口の一次資料確認待ち。"
+  },
+  {
+   "name": "ソフトバンク My SoftBank等の不正アクセス試行とWeb停止",
+   "sourceURL": "https://www.softbank.jp/corp/news/press/sbkk/2026/20261019_01/",
+   "checked_on": "2026-10-20",
+   "reason": "10月19日公式原文を確認。17日のMy SoftBank関連システムへの不正アクセスの試みを自動検知し、My SoftBank・My Y!mobile・My MenuのWeb版を安全措置で停止。アプリ版は利用可能とするが、個人情報漏えい・具体的な対象情報・件数は未公表。停止を漏えい確認と読み替えず続報待ち。"
   }
  ]
 }
