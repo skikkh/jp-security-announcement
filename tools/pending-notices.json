@@ -243,12 +243,6 @@
    "reason": "10月19日公式原文を確認。17日のMy SoftBank関連システムへの不正アクセスの試みを自動検知し、My SoftBank・My Y!mobile・My MenuのWeb版を安全措置で停止。アプリ版は利用可能とするが、個人情報漏えい・具体的な対象情報・件数は未公表。停止を漏えい確認と読み替えず続報待ち。"
   },
   {
-   "name": "メディアリンク Studio問い合わせフォーム",
-   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-20/",
-   "checked_on": "2026-10-20",
-   "reason": "10月20日の候補発見資料で新規または続報を把握。公式原文の照合は未完了。件数・項目・流出の確度・窓口を転記せず一次資料確認待ち。既掲載事案との同一性は原文のサービス・時期・対象を照合して判定する。"
-  },
-  {
    "name": "八十二長野銀行 職員メールの続報",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-20/",
    "checked_on": "2026-10-20",
