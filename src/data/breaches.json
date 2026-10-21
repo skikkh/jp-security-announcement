@@ -2,6 +2,53 @@
  {
   "date": "2026-10-21",
   "date_label": "2026年10月21日",
+  "org": "デジタルアーツ",
+  "service": "クラウドサービス（i-FILTER@Cloud、m-FILTER@Cloud、FINAL CODE@Cloud、z-FILTER、Desk など）の運用環境",
+  "kana": "でじたるあーつ digital arts あいふぃるたー i-filter えむふぃるたー m-filter ふぁいなるこーど finalcode ぜっとふぃるたー z-filter desk",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-21",
+  "contact_checked_on": "2026-10-21",
+  "count": "対象件数は未公表",
+  "status": "可能性",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "10月9日の総点検で、クラウドサービスの運用環境と社内環境への不正アクセスの痕跡を発見（2025年7月頃にさかのぼるものを含む）。運用に用いる認証情報が不正に取得され、i-FILTER@Cloud、m-FILTER@Cloud（Modern Edition）、m-FILTER MailAdviser Microsoft 365対応版、FINAL CODE@Cloud、z-FILTER、Deskを利用する一部の顧客の情報が閲覧された可能性があるとしています。10月21日正午時点で外部への持ち出しや二次被害は確認されていません。対象クラウドサービスの全利用者に管理者用・利用者用パスワードの変更を求めています。ソフトウェア版は対象外。",
+  "url": "https://www.release.tdnet.info/inbs/140120261021554017.pdf",
+  "src": "公式",
+  "contact": {
+   "name": "デジタルアーツ お客様専用サポート窓口（お客様・パートナー様向け）",
+   "emails": [
+    "k-support@daj.co.jp"
+   ]
+  },
+  "contact_source": "https://www.release.tdnet.info/inbs/140120261021554017.pdf"
+ },
+ {
+  "date": "2026-10-21",
+  "date_label": "2026年10月21日",
+  "org": "クレシード（テリロジーホールディングス）",
+  "service": "採用サイトのお問い合わせ・求人応募フォーム（Studio）",
+  "kana": "くれしーど cresceed てりろじー terilogy スタジオ studio 採用",
+  "category": "telecom_it",
+  "source_checked_on": "2026-10-21",
+  "count": "39件（お問い合わせ14件、求人応募25件）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "生年月日",
+   "住所",
+   "その他（詳細は出典）"
+  ],
+  "note": "テリロジーホールディングスの連結子会社クレシードが採用サイトに利用するStudioのクラウド環境への不正アクセスにより、採用サイトのお問い合わせフォームと求人応募フォームの送信内容が流出した可能性があるとしています。氏名・メールアドレス・電話番号等のほか、求人応募では生年月日・住所・学歴・就業状況・経歴・志望動機等を含みます。実際の取得は未確認。お問い合わせフォームは非表示にしました。開示資料の問合せ先はIR窓口のため掲載しません。Studio全体の件数とは合算しません。",
+  "url": "https://www.release.tdnet.info/inbs/140120261021553964.pdf",
+  "src": "公式"
+ },
+ {
+  "date": "2026-10-21",
+  "date_label": "2026年10月21日",
   "org": "リクルート（カーセンサー）",
   "service": "中古車情報サイト『カーセンサーnet』（アプリ含む）・販売店向け業務支援サービス『C-MATCH』",
   "kana": "りくるーと recruit かーせんさー carsensor しーまっち c-match 中古車",
