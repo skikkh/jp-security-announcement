@@ -5172,6 +5172,47 @@
   "contact_source": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-71_4593/kddi_nr_s-71_4593_pdf_01.pdf"
  },
  {
+  "date": "2026-05-01",
+  "date_label": "2026年5月1日（6月23日に第四報）",
+  "org": "マネーフォワード",
+  "service": "ソースコード管理サービス『GitHub』上のリポジトリ",
+  "kana": "まねーふぉわーど money forward まねーふぉわーどくらうど びじねすかーど github",
+  "category": "finance",
+  "source_checked_on": "2026-10-21",
+  "contact_checked_on": "2026-10-21",
+  "count": "ビジネスカード370件（カード保持者名・下4桁）、顧客124名、取引先28名、従業員（退職者含む）2,300名、単体で個人を特定できない管理用番号60,449名分（項目別、合算不可）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "電話番号",
+   "カード情報の一部",
+   "その他（詳細は出典）"
+  ],
+  "note": "GitHubの認証情報が漏えいし、第三者が不正アクセスしてリポジトリをコピーしたと5月1日に公表。リポジトリ内のファイルに含まれていた個人情報が流出した可能性があり、第一報では『マネーフォワード ビジネスカード』370件のカード保持者名（アルファベット）とカード番号下4桁（全桁・有効期限・セキュリティコードは確認されず）。6月23日の第四報で精査を完了し、顧客の氏名またはメールアドレス124名分、取引先28名分、従業員（退職者含む）2,300名分（氏名・メールアドレス・電話番号・固有識別子）、氏名等を含まない管理用番号60,449名分を追加で公表しました。本番データベースへの不正アクセスや本番環境からの漏えい、二次被害は確認されていないとしています。第一報：https://corp.moneyforward.com/news/info/20260501-mf-press-1/",
+  "url": "https://corp.moneyforward.com/news/info/20260623-mf-press-1/",
+  "src": "公式",
+  "contact": {
+   "name": "マネーフォワード 本件に関するお問い合わせ先（サービス別）",
+   "emails": [
+    "biz.feedback@moneyforward.com",
+    "biz-pay@moneyforward.com"
+   ],
+   "forms": [
+    {
+     "label": "『マネーフォワード ME』に関する問い合わせ窓口",
+     "url": "https://moneyforward.com/feedback/new/"
+    },
+    {
+     "label": "退職済従業員に関する問い合わせ窓口",
+     "url": "https://recruit.moneyforward.com/contact/"
+    }
+   ],
+   "note": "biz.feedback@はマネーフォワード クラウド、biz-pay@はマネーフォワード ビジネスカードに関する窓口。"
+  },
+  "contact_source": "https://corp.moneyforward.com/news/info/20260623-mf-press-1/"
+ },
+ {
   "date": "2026-04-23",
   "date_label": "2026年4月23日",
   "org": "2りんかんイエローハット",
