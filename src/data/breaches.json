@@ -2,6 +2,23 @@
  {
   "date": "2026-10-21",
   "date_label": "2026年10月21日",
+  "org": "イオン",
+  "service": "グループ各社の一部Webサイト",
+  "kana": "いおん aeon イオングループ",
+  "category": "retail",
+  "source_checked_on": "2026-10-21",
+  "count": "対象人数・項目は調査中",
+  "status": "調査中",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "グループ各社の一部のWebサイトで第三者による不正アクセスを検知し、安全確認とシステムメンテナンスを実施中と公表しています。個人情報の流出の有無は調査中で、結果が確認でき次第公式サイトで知らせるとしています。対象サイト・項目・人数は未公表。",
+  "url": "https://www.aeon.info/wp-content/uploads/news/important/pdf/2026/10/261021R_2.pdf",
+  "src": "公式"
+ },
+ {
+  "date": "2026-10-21",
+  "date_label": "2026年10月21日",
   "org": "デジタルアーツ",
   "service": "クラウドサービス（i-FILTER@Cloud、m-FILTER@Cloud、FINAL CODE@Cloud、z-FILTER、Desk など）の運用環境",
   "kana": "でじたるあーつ digital arts あいふぃるたー i-filter えむふぃるたー m-filter ふぁいなるこーど finalcode ぜっとふぃるたー z-filter desk",
