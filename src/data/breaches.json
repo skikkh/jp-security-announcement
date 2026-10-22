@@ -8322,20 +8322,20 @@
  },
  {
   "date": "2026-09-26",
-  "date_label": "2026年9月26日",
+  "date_label": "2026年9月26日（10月16日に第2報、10月21日に第3報）",
   "org": "京王電鉄グループ",
   "service": "グループ営業系システム",
   "kana": "京王電鉄グループ グループ営業系システム",
   "count": "対象人数・項目は未公表",
-  "status": "未確認",
+  "status": "可能性",
   "items": [
    "その他（詳細は出典）"
   ],
-  "note": "グループの一部営業系システムにランサムウェアによる障害。鉄道運行への影響はない。情報漏えいは発表時点で未確認。",
-  "url": "https://www.keio.co.jp/news/update/announce/nr260926v13404/",
+  "note": "グループの一部営業系システムにランサムウェアによる障害。鉄道運行への影響はない。情報漏えいは発表時点で未確認。 10月16日の第2報で、攻撃者を名乗る組織がグループ保有情報の一部を公開したと主張していることを確認。10月21日の第3報で、窃取したと主張する情報が公開されたとの報告を外部専門家から受け、内容と影響範囲は調査中ながら個人情報漏洩の可能性もあるとみて個人情報保護委員会へ報告したと公表しました。影響を受けた人には個別に通知するとしています。第3報の出典：https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261021_newsrelease.pdf",
+  "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261021_newsrelease.pdf",
   "src": "公式",
   "category": "transport",
-  "source_checked_on": "2026-10-09"
+  "source_checked_on": "2026-10-22"
  },
  {
   "date": "2026-08-19",
