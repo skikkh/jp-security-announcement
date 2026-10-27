@@ -309,35 +309,40 @@
    "reason": "候補発見資料（satimo一覧・日本経済新聞の企業一覧）で把握。公式PDFは10月24日以降の再試行でも接続がリセットされ取得できず、対象・件数・窓口を一次資料で確認できていないため保留。取得でき次第照合する。"
   },
   {
-    "name": "スパイラルローキャス 職員参集システム",
-    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-23/",
-    "checked_on": "2026-10-23",
-    "reason": "10月23日の候補発見資料で把握。発表主体の公式原文・件数・対象項目・窓口の照合は未完了。報道・第三者要約から確定情報を転記せず一次確認待ち。"
+   "name": "スパイラルローキャス 職員参集システム",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-23/",
+   "checked_on": "2026-10-23",
+   "reason": "10月23日の候補発見資料で把握。発表主体の公式原文・件数・対象項目・窓口の照合は未完了。報道・第三者要約から確定情報を転記せず一次確認待ち。"
   },
   {
-    "name": "中日サービス 問い合わせフォーム",
-    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-23/",
-    "checked_on": "2026-10-23",
-    "reason": "10月23日の候補発見資料で把握。発表主体の公式原文・件数・対象項目・窓口の照合は未完了。報道・第三者要約から確定情報を転記せず一次確認待ち。"
+   "name": "中日サービス 問い合わせフォーム",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-23/",
+   "checked_on": "2026-10-23",
+   "reason": "10月23日の候補発見資料で把握。発表主体の公式原文・件数・対象項目・窓口の照合は未完了。報道・第三者要約から確定情報を転記せず一次確認待ち。"
   },
   {
-    "name": "Keystone 公式通販サイト",
-    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-25/",
-    "checked_on": "2026-10-26",
-    "reason": "Tier追加から発見。海外企業の通販サイトの購入者情報流出について報道はあるが、公式原文と日本の利用者への対象範囲は未確認。二次資料の人数・項目・窓口は確定情報として転記しない。"
+   "name": "Keystone 公式通販サイト",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-25/",
+   "checked_on": "2026-10-26",
+   "reason": "Tier追加から発見。海外企業の通販サイトの購入者情報流出について報道はあるが、公式原文と日本の利用者への対象範囲は未確認。二次資料の人数・項目・窓口は確定情報として転記しない。"
   },
   {
-    "name": "エスケーロジ ランサムウェアによる一部社内情報の漏えい",
-    "sourceURL": "https://www.sklg.co.jp/news/%E5%BD%93%E7%A4%BE%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%A8/",
-    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-26/",
-    "checked_on": "2026-10-26",
-    "reason": "10月26日の新着報道・Tier追加から発見。公式10月3日第二報の原文画像を読了し、一部社内情報の漏えいは確認。個人情報を含むか、対象者・項目・人数は明記されておらず、本ガイドの掲載対象と判断できないため保留。取引先・顧客の情報流出と推定しない。"
+   "name": "エスケーロジ ランサムウェアによる一部社内情報の漏えい",
+   "sourceURL": "https://www.sklg.co.jp/news/%E5%BD%93%E7%A4%BE%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%A8/",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-26/",
+   "checked_on": "2026-10-26",
+   "reason": "10月26日の新着報道・Tier追加から発見。公式10月3日第二報の原文画像を読了し、一部社内情報の漏えいは確認。個人情報を含むか、対象者・項目・人数は明記されておらず、本ガイドの掲載対象と判断できないため保留。取引先・顧客の情報流出と推定しない。"
   },
   {
-    "name": "ギフティグループ eギフト不正発行",
-    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-27/",
-    "checked_on": "2026-10-27",
-    "reason": "Tier追加から発見。公式原文と個人情報漏えいの対象有無・件数・項目の照合は未完了。金銭損失や不正発行の報道だけで個人情報漏えい行を作らず一次確認待ち。"
+   "name": "ギフティグループ eギフト不正発行",
+   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-27/",
+   "checked_on": "2026-10-27",
+   "reason": "Tier追加から発見。公式原文と個人情報漏えいの対象有無・件数・項目の照合は未完了。金銭損失や不正発行の報道だけで個人情報漏えい行を作らず一次確認待ち。"
+  },
+  {
+   "name": "りそなホールディングス（りそな銀行など3行）委託先への不正アクセスによるメールアドレス漏えいの可能性",
+   "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+   "reason": "2026年10月27日付の公式PDFとされるが、取得時にAccess Denied（Akamai）となり本文・件数・窓口を公式ドメインで確認できないため保留。"
   }
  ]
 }
