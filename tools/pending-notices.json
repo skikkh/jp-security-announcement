@@ -334,15 +334,82 @@
    "reason": "10月26日の新着報道・Tier追加から発見。公式10月3日第二報の原文画像を読了し、一部社内情報の漏えいは確認。個人情報を含むか、対象者・項目・人数は明記されておらず、本ガイドの掲載対象と判断できないため保留。取引先・顧客の情報流出と推定しない。"
   },
   {
-   "name": "ギフティグループ eギフト不正発行",
-   "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-27/",
-   "checked_on": "2026-10-27",
-   "reason": "Tier追加から発見。公式原文と個人情報漏えいの対象有無・件数・項目の照合は未完了。金銭損失や不正発行の報道だけで個人情報漏えい行を作らず一次確認待ち。"
-  },
+  "name": "ギフティグループ eギフト不正発行",
+  "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-27/",
+  "checked_on": "2026-10-28",
+  "reason": "10月27日の株式会社ギフティ公式補足説明を10月28日に読了。10月25日のeギフト不正発行は確認したが、顧客の個人情報漏えい、保有eギフトの不正利用・残高減少は確認されていないと公表。個人情報漏えい事案としての新規掲載は見送り、対象情報が判明する続報待ち。別件のブラストメール事案とは分離。",
+  "sourceURL": "https://giftee.co.jp/press/news/info20261027/"
+},
   {
    "name": "りそなホールディングス（りそな銀行など3行）委託先への不正アクセスによるメールアドレス漏えいの可能性",
    "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
    "reason": "2026年10月27日付の公式PDFとされるが、取得時にAccess Denied（Akamai）となり本文・件数・窓口を公式ドメインで確認できないため保留。"
-  }
- ]
+  },
+{
+  "name": "DIRIGIO／DEAN & DELUCA モバイルオーダー",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-515/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "静岡市／静岡駅前地下駐車場の駐車券紛失届",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-518/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "JFEケミカル／IT環境への不正アクセス",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-520/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "神戸市／NPO法人資料の住所マスキング",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-522/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "札幌国際大学／メールアカウントの不正利用",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-523/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "スズキ二輪／スズキワールドの問い合わせフォーム",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-524/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "PIECE／Booking.com施設管理アカウント",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-525/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "palan／岐阜県地産地消スタンプラリーの分析データ",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-526/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "兵庫県スタートアップ成長支援事業（ブラストメール経由）",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-483/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "お名前.com デスクトップクラウド 特別見舞金・懸賞金の続報",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-473/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+},
+{
+  "name": "トイポアプリ 対象規模等の続報",
+  "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-385/",
+  "checked_on": "2026-10-28",
+  "reason": "10月28日朝回のTier更新で新規または続報候補を発見。公式原文の対象・時期・確度・件数・項目・利用者向け窓口の照合は未完了。二次資料の人数や販売・取得主張は掲載事実に転記せず一次確認待ち。既掲載との同一性を原文で判定する。"
+}
+  ]
 }
