@@ -310,6 +310,35 @@
  },
  {
   "date": "2026-10-27",
+  "date_label": "2026年10月27日（10月28日に第二報）",
+  "org": "インプレス（DIGITAL X News）",
+  "service": "メールマガジン「DIGITAL X News」（委託先ユミルリンク「Cuenote」）",
+  "kana": "いんぷれす impress でじたるくろす digital x ゆみるりんく cuenote",
+  "category": "media_entertainment",
+  "count": "約58,000件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "会員ID",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "メールマガジン配信に使うユミルリンクの「Cuenote」への不正アクセスにより、「DIGITAL X News」登録者約58,000件が漏えい対象に含まれていたと、10月28日の第二報で公表しました。全会員の会員ID・メールアドレス・登録日と、一部会員の氏名・会社名・郵送先の都道府県・業種・職種・役職区分が対象です。生年月日・電話番号・パスワード・決済情報は含まれず、他のメールマガジンへの影響はありません。対象者には、ユミルリンクの調査完了後にメールで個別に連絡します。第一報：https://www.impress.co.jp/newsrelease/2026/10/info20261027.html 提供元（ユミルリンク）の公表分とは合算しません。",
+  "url": "https://www.impress.co.jp/newsrelease/2026/10/info20261028.html",
+  "contact": {
+   "name": "インプレス 本件専用メールアドレス",
+   "emails": [
+    "customer-bm.cn@impress.co.jp"
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-10-29",
+  "contact_checked_on": "2026-10-29",
+  "contact_source": "https://www.impress.co.jp/newsrelease/2026/10/info20261028.html"
+ },
+ {
+  "date": "2026-10-27",
   "date_label": "2026年10月27日",
   "org": "資さん（従業員・退職者）",
   "service": "委託先カホエンタープライズが管理・運用するサーバー",
