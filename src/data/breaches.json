@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-10-29",
+  "date_label": "2026年10月29日",
+  "org": "全日本空輸（ANA）",
+  "service": "旅客サービスシステム（Amadeus社提供）",
+  "kana": "ぜんにっぽんくうゆ ana えーえぬえー あまでうす amadeus",
+  "category": "travel",
+  "count": "影響範囲は調査中",
+  "status": "確認",
+  "items": [
+   "その他（詳細は出典）"
+  ],
+  "note": "旅客サービスシステムを提供するAmadeus IT Group（スペイン）から、ANA便の予約情報に第三者による不正アクセスがあり、一部顧客の個人情報が参照された形跡があると報告を受けたと公表しています。影響範囲はAmadeus社と連携して特定中で、確認でき次第、対象者に知らせるとしています。参照された情報の項目と件数は公表されていません。",
+  "url": "https://www.anahd.co.jp/group/pr/202610/notification.html",
+  "src": "公式",
+  "source_checked_on": "2026-10-29"
+ },
+ {
   "date": "2026-10-28",
   "date_label": "2026年10月28日",
   "org": "ENEOS Power（ENEOSでんき）",
