@@ -415,12 +415,7 @@
    "url": "https://www.jal.co.jp/ja-jp/news/general/2026/other/261028.html",
    "reason": "10月28日付の公式ページとされるが取得時にAccess Denied（Akamai）となり、件数・項目・窓口を公式ドメインで確認できないため保留。"
   },
-  {
-   "name": "サーティワン「31モバイルオーダー」",
-   "referenceURL": "https://moreta.jp/",
-   "checked_on": "2026-10-29",
-   "reason": "直近48時間の候補検索でモバイルオーダー侵害の新規掲載を発見。企業公式ドメイン検索では当該原文を確認できず。第三者資料の人数・項目・窓口は転記せず一次確認待ち。"
-  },
+  
   {
    "name": "経済産業省／デントリネットへの不正アクセス",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-29/",
