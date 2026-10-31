@@ -464,6 +464,13 @@
    "name": "シュッピン（10月30日付のお知らせ）",
    "url": "https://www.syuppin.co.jp/20261030",
    "reason": "satimo掲載の公式URLがAccess Denied（HTTP 403）で本文・件数・窓口を確認できないため保留。"
-  }
- ]
+  },
+{
+  "name": "ANA Amadeus経由の予約情報（10月30日続報、約37,800名と報道）",
+  "sourceURL": "https://cad.www.ana.co.jp/ja/jp/special-notice/001612.html?p1=top&p2=ja&p3=global",
+  "referenceURL": "https://www.traicy.com/posts/20261030386421/",
+  "checked_on": "2026-10-31",
+  "reason": "既掲載10月29日事案の続報候補。公式ドメイン検索結果で詳細公表候補を発見したが、cad.www.ana.co.jpの本文は取得できず、通常www.ana.co.jpの同一パスは404。検索索引や報道の人数・項目を原文読了とせず保留。初報原文は読めるが続報の事実はまだ既存行に反映しない。"
+}
+]
 }
