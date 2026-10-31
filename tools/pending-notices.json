@@ -415,7 +415,6 @@
    "url": "https://www.jal.co.jp/ja-jp/news/general/2026/other/261028.html",
    "reason": "10月28日付の公式ページとされるが取得時にAccess Denied（Akamai）となり、件数・項目・窓口を公式ドメインで確認できないため保留。"
   },
-  
   {
    "name": "経済産業省／デントリネットへの不正アクセス",
    "referenceURL": "https://ai.itokoba.com/security-tier/updates/2026-10-29/",
@@ -451,15 +450,20 @@
   },
   {
    "name": "外務省 不正アクセスによる個人情報の漏えい（約3,600件と報道）",
-   "url": "https://www.mofa.go.jp/mofaj/press/release/index.html",
+   "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04395.html",
    "reason": "10月30日発表と報道されているが、公式ドメインがHTTP 403で報道発表の本文・件数・窓口を確認できないため保留。"
   },
-{
-  "name": "品川区 通知の誤送付（10月29日公表）",
-  "sourceURL": "https://www.city.shinagawa.tokyo.jp/kusei/press_release/1008314/1011935.html",
-  "referenceURL": "https://incidentnews.jp/incidents/2026-10-29-0241/",
-  "checked_on": "2026-10-30",
-  "reason": "新着の誤送付候補を発見したが、公式ページ本文はHTTP403で読めず。対象・件数・漏えい情報項目・利用者向け窓口は一次確認待ち。第三者の分類だけでは掲載しない。"
-}
-]
+  {
+   "name": "品川区 通知の誤送付（10月29日公表）",
+   "sourceURL": "https://www.city.shinagawa.tokyo.jp/kusei/press_release/1008314/1011935.html",
+   "referenceURL": "https://incidentnews.jp/incidents/2026-10-29-0241/",
+   "checked_on": "2026-10-30",
+   "reason": "新着の誤送付候補を発見したが、公式ページ本文はHTTP403で読めず。対象・件数・漏えい情報項目・利用者向け窓口は一次確認待ち。第三者の分類だけでは掲載しない。"
+  },
+  {
+   "name": "シュッピン（10月30日付のお知らせ）",
+   "url": "https://www.syuppin.co.jp/20261030",
+   "reason": "satimo掲載の公式URLがAccess Denied（HTTP 403）で本文・件数・窓口を確認できないため保留。"
+  }
+ ]
 }
