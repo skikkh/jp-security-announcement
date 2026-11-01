@@ -476,6 +476,20 @@
    "name": "iDA（ida-mode.com、10月の不正アクセスに関するお知らせ）",
    "url": "https://ida-mode.com/lp/news/unauthorized-access-2026-10/",
    "reason": "satimo掲載の公式URLがHTTP 403で本文・件数・窓口を確認できないため保留。"
+  },
+  {
+    "name": "野村證券（10月31日デジタル特典付き社債、NTTデータ委託先侵害）",
+    "sourceURL": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
+    "referenceURL": "https://www.nomura.co.jp/introduc/",
+    "checked_on": "2026-11-01",
+    "reason": "野村證券の公式一覧に10月31日付の発表と本文リンクを確認したが、リンク先の公式本文はweb・curlとも403。対象項目・件数・顧客窓口は未確認。既掲載10月23日i-Portメール配信のユミルリンク事案とは別候補で、内容を混合しない。"
+  },
+  {
+    "name": "近鉄グループホールディングス（10月31日第135回無担保社債、デジタル証券プラットフォーム侵害）",
+    "sourceURL": "https://files.microcms-assets.io/assets/b5bb8ced8fa1487390ad071605410061/3d5fea5cb2814f86a6e7f89d5aec14a0/20261031hd.pdf",
+    "referenceURL": "https://joho-rouei.jp/incident/2026-1515",
+    "checked_on": "2026-11-01",
+    "reason": "第三者記事から公式発表候補PDFのURLを発見。公式ニュース一覧は取得できるがJavaScriptで記事を読み込む形式で、当該PDFへの公式リンクとPDF本文は今回未確認。第三者記載の2,678件・氏名・購入金額を確定値にしない。楽天証券の延べ362件と対象が重なる可能性があるため合算しない。"
   }
  ]
 }
