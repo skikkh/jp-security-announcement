@@ -504,6 +504,13 @@
     "reportURL": "https://news.livedoor.com/article/detail/32694851/",
     "checked_on": "2026-11-02",
     "reason": "Tierの新規項目として発見。厚生労働省公式ドメインで当該システムの発表原文を検索したが特定できず、正式なシステム名・公表日・対象範囲・項目・窓口は一次未確認。Tierの発生日や87人・健康医療情報等の記載を確定事実にしない。"
+  },
+  {
+    "name": "SmartNews（10月31日〜11月1日の不正アクセス、11月1日15時続報）",
+    "sourceURL": "https://about.smartnews.com/ja/news/2617.html",
+    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-562/",
+    "checked_on": "2026-11-02",
+    "reason": "公式原文は読了。不正アクセス・ポイント特典の不正操作・機能停止は確認済みだが、利用者アカウントおよび広告関連情報への影響は調査中で、個人情報漏えいの事実・可能性・項目・件数は明示されていないため掲載保留。10月22日告知とは別事案との説明を保持し混合しない。ポイント等に不審な変化があれば公式ヘルプセンターへ連絡するよう案内あり。"
   }
  ]
 }
