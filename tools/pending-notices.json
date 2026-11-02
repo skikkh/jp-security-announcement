@@ -511,6 +511,13 @@
     "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-562/",
     "checked_on": "2026-11-02",
     "reason": "公式原文は読了。不正アクセス・ポイント特典の不正操作・機能停止は確認済みだが、利用者アカウントおよび広告関連情報への影響は調査中で、個人情報漏えいの事実・可能性・項目・件数は明示されていないため掲載保留。10月22日告知とは別事案との説明を保持し混合しない。ポイント等に不審な変化があれば公式ヘルプセンターへ連絡するよう案内あり。"
+  },
+  {
+    "name": "SHIPS CYCLE MARKET（Swym Wishlist Plus経由、10月22日公表・11月2日報道候補）",
+    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-568/",
+    "reportURL": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html",
+    "checked_on": "2026-11-02",
+    "reason": "Tier新規項目から発見。外部アプリ侵害と疑似サイト誘導の報道候補だが、発表主体の原文を今回未特定。保存情報の漏えい有無・偽サイト入力者への影響・期間・利用者窓口の一次照合が未完了で掲載保留。カード情報流出を確認済みとせず、SHIPSの別事案とも混合しない。"
   }
  ]
 }
