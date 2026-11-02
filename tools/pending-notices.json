@@ -490,6 +490,20 @@
     "referenceURL": "https://joho-rouei.jp/incident/2026-1515",
     "checked_on": "2026-11-01",
     "reason": "第三者記事から公式発表候補PDFのURLを発見。公式ニュース一覧は取得できるがJavaScriptで記事を読み込む形式で、当該PDFへの公式リンクとPDF本文は今回未確認。第三者記載の2,678件・氏名・購入金額を確定値にしない。楽天証券の延べ362件と対象が重なる可能性があるため合算しない。"
+  },
+  {
+    "name": "経済産業省 ベツナナ予約管理システム（10月31日報道、約1,100人とする候補）",
+    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-556/",
+    "reportURL": "https://www.yomiuri.co.jp/economy/20261031-GYT1T00010/",
+    "checked_on": "2026-11-02",
+    "reason": "Tierの新規項目として発見。経済産業省公式ドメインで当該不正アクセスの原文を検索したが、発表本文を特定できず、対象期間・人数・項目・利用者窓口は一次未確認。既存のデントリネット事案と別の予約管理サービス候補として保持し、報道やTierの人数・項目を確認済みデータに転記しない。"
+  },
+  {
+    "name": "厚生労働省 マイシンのシステムへの不正ログイン（87人分の漏えいのおそれとする候補）",
+    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-557/",
+    "reportURL": "https://news.livedoor.com/article/detail/32694851/",
+    "checked_on": "2026-11-02",
+    "reason": "Tierの新規項目として発見。厚生労働省公式ドメインで当該システムの発表原文を検索したが特定できず、正式なシステム名・公表日・対象範囲・項目・窓口は一次未確認。Tierの発生日や87人・健康医療情報等の記載を確定事実にしない。"
   }
  ]
 }
