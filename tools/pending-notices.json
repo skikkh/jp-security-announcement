@@ -454,13 +454,6 @@
    "reason": "10月30日発表と報道されているが、公式ドメインがHTTP 403で報道発表の本文・件数・窓口を確認できないため保留。"
   },
   {
-   "name": "品川区 通知の誤送付（10月29日公表）",
-   "sourceURL": "https://www.city.shinagawa.tokyo.jp/kusei/press_release/1008314/1011935.html",
-   "referenceURL": "https://incidentnews.jp/incidents/2026-10-29-0241/",
-   "checked_on": "2026-10-30",
-   "reason": "新着の誤送付候補を発見したが、公式ページ本文はHTTP403で読めず。対象・件数・漏えい情報項目・利用者向け窓口は一次確認待ち。第三者の分類だけでは掲載しない。"
-  },
-  {
    "name": "シュッピン（10月30日付のお知らせ）",
    "url": "https://www.syuppin.co.jp/20261030",
    "reason": "satimo掲載の公式URLがAccess Denied（HTTP 403）で本文・件数・窓口を確認できないため保留。"
@@ -529,14 +522,12 @@
    "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf",
    "reason": "公式PDFがHTTP 403で本文・件数・窓口を確認できないため保留。"
   },
-
-
   {
-    "name": "Mリーグ機構（11月2日公式サイト・オンラインショップ情報漏えい発表候補）",
-    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-574/",
-    "reportURL": "https://rocket-boys.co.jp/security-measures-lab/mleague-official-shop-9502-data-breach-personal-risks-20261102/",
-    "checked_on": "2026-11-02",
-    "reason": "Tierと報道の新規候補。報道ページはweb・curlで取得不可、公式トップを取得しても当該本文へのリンクを特定できなかった。9,502人・注文13,922件・パスワードハッシュ等は一次未確認で確定掲載しない。"
+   "name": "Mリーグ機構（11月2日公式サイト・オンラインショップ情報漏えい発表候補）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-574/",
+   "reportURL": "https://rocket-boys.co.jp/security-measures-lab/mleague-official-shop-9502-data-breach-personal-risks-20261102/",
+   "checked_on": "2026-11-02",
+   "reason": "Tierと報道の新規候補。報道ページはweb・curlで取得不可、公式トップを取得しても当該本文へのリンクを特定できなかった。9,502人・注文13,922件・パスワードハッシュ等は一次未確認で確定掲載しない。"
   }
  ]
 }
