@@ -528,6 +528,12 @@
    "reportURL": "https://rocket-boys.co.jp/security-measures-lab/mleague-official-shop-9502-data-breach-personal-risks-20261102/",
    "checked_on": "2026-11-02",
    "reason": "Tierと報道の新規候補。報道ページはweb・curlで取得不可、公式トップを取得しても当該本文へのリンクを特定できなかった。9,502人・注文13,922件・パスワードハッシュ等は一次未確認で確定掲載しない。"
+  },
+  {
+    "name": "アソビュー（11月3日アララ委託先侵害の発表候補）",
+    "sourceURL": "https://www.asoview.co.jp/news/articles/AyTdT_tX",
+    "checked_on": "2026-11-04",
+    "reason": "公式発表URLを発見。web取得不可、curl200の本文はタイトルとJavaScript用データのみで、発表本文・件数・対象項目・顧客窓口を読めなかった。報道の15,821,184件等は確定掲載しない。"
   }
  ]
 }
