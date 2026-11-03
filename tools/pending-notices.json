@@ -478,46 +478,61 @@
    "reason": "satimo掲載の公式URLがHTTP 403で本文・件数・窓口を確認できないため保留。"
   },
   {
-    "name": "野村證券（10月31日デジタル特典付き社債、NTTデータ委託先侵害）",
-    "sourceURL": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
-    "referenceURL": "https://www.nomura.co.jp/introduc/",
-    "checked_on": "2026-11-01",
-    "reason": "野村證券の公式一覧に10月31日付の発表と本文リンクを確認したが、リンク先の公式本文はweb・curlとも403。対象項目・件数・顧客窓口は未確認。既掲載10月23日i-Portメール配信のユミルリンク事案とは別候補で、内容を混合しない。"
+   "name": "野村證券（10月31日デジタル特典付き社債、NTTデータ委託先侵害）",
+   "sourceURL": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
+   "referenceURL": "https://www.nomura.co.jp/introduc/",
+   "checked_on": "2026-11-01",
+   "reason": "野村證券の公式一覧に10月31日付の発表と本文リンクを確認したが、リンク先の公式本文はweb・curlとも403。対象項目・件数・顧客窓口は未確認。既掲載10月23日i-Portメール配信のユミルリンク事案とは別候補で、内容を混合しない。"
   },
   {
-    "name": "近鉄グループホールディングス（10月31日第135回無担保社債、デジタル証券プラットフォーム侵害）",
-    "sourceURL": "https://files.microcms-assets.io/assets/b5bb8ced8fa1487390ad071605410061/3d5fea5cb2814f86a6e7f89d5aec14a0/20261031hd.pdf",
-    "referenceURL": "https://joho-rouei.jp/incident/2026-1515",
-    "checked_on": "2026-11-01",
-    "reason": "第三者記事から公式発表候補PDFのURLを発見。公式ニュース一覧は取得できるがJavaScriptで記事を読み込む形式で、当該PDFへの公式リンクとPDF本文は今回未確認。第三者記載の2,678件・氏名・購入金額を確定値にしない。楽天証券の延べ362件と対象が重なる可能性があるため合算しない。"
+   "name": "近鉄グループホールディングス（10月31日第135回無担保社債、デジタル証券プラットフォーム侵害）",
+   "sourceURL": "https://files.microcms-assets.io/assets/b5bb8ced8fa1487390ad071605410061/3d5fea5cb2814f86a6e7f89d5aec14a0/20261031hd.pdf",
+   "referenceURL": "https://joho-rouei.jp/incident/2026-1515",
+   "checked_on": "2026-11-01",
+   "reason": "第三者記事から公式発表候補PDFのURLを発見。公式ニュース一覧は取得できるがJavaScriptで記事を読み込む形式で、当該PDFへの公式リンクとPDF本文は今回未確認。第三者記載の2,678件・氏名・購入金額を確定値にしない。楽天証券の延べ362件と対象が重なる可能性があるため合算しない。"
   },
   {
-    "name": "経済産業省 ベツナナ予約管理システム（10月31日報道、約1,100人とする候補）",
-    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-556/",
-    "reportURL": "https://www.yomiuri.co.jp/economy/20261031-GYT1T00010/",
-    "checked_on": "2026-11-02",
-    "reason": "Tierの新規項目として発見。経済産業省公式ドメインで当該不正アクセスの原文を検索したが、発表本文を特定できず、対象期間・人数・項目・利用者窓口は一次未確認。既存のデントリネット事案と別の予約管理サービス候補として保持し、報道やTierの人数・項目を確認済みデータに転記しない。"
+   "name": "経済産業省 ベツナナ予約管理システム（10月31日報道、約1,100人とする候補）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-556/",
+   "reportURL": "https://www.yomiuri.co.jp/economy/20261031-GYT1T00010/",
+   "checked_on": "2026-11-02",
+   "reason": "Tierの新規項目として発見。経済産業省公式ドメインで当該不正アクセスの原文を検索したが、発表本文を特定できず、対象期間・人数・項目・利用者窓口は一次未確認。既存のデントリネット事案と別の予約管理サービス候補として保持し、報道やTierの人数・項目を確認済みデータに転記しない。"
   },
   {
-    "name": "厚生労働省 マイシンのシステムへの不正ログイン（87人分の漏えいのおそれとする候補）",
-    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-557/",
-    "reportURL": "https://news.livedoor.com/article/detail/32694851/",
-    "checked_on": "2026-11-02",
-    "reason": "Tierの新規項目として発見。厚生労働省公式ドメインで当該システムの発表原文を検索したが特定できず、正式なシステム名・公表日・対象範囲・項目・窓口は一次未確認。Tierの発生日や87人・健康医療情報等の記載を確定事実にしない。"
+   "name": "厚生労働省 マイシンのシステムへの不正ログイン（87人分の漏えいのおそれとする候補）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-557/",
+   "reportURL": "https://news.livedoor.com/article/detail/32694851/",
+   "checked_on": "2026-11-02",
+   "reason": "Tierの新規項目として発見。厚生労働省公式ドメインで当該システムの発表原文を検索したが特定できず、正式なシステム名・公表日・対象範囲・項目・窓口は一次未確認。Tierの発生日や87人・健康医療情報等の記載を確定事実にしない。"
   },
   {
-    "name": "SmartNews（10月31日〜11月1日の不正アクセス、11月1日15時続報）",
-    "sourceURL": "https://about.smartnews.com/ja/news/2617.html",
-    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-562/",
-    "checked_on": "2026-11-02",
-    "reason": "公式原文は読了。不正アクセス・ポイント特典の不正操作・機能停止は確認済みだが、利用者アカウントおよび広告関連情報への影響は調査中で、個人情報漏えいの事実・可能性・項目・件数は明示されていないため掲載保留。10月22日告知とは別事案との説明を保持し混合しない。ポイント等に不審な変化があれば公式ヘルプセンターへ連絡するよう案内あり。"
+   "name": "SmartNews（10月31日〜11月1日の不正アクセス、11月1日15時続報）",
+   "sourceURL": "https://about.smartnews.com/ja/news/2617.html",
+   "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-562/",
+   "checked_on": "2026-11-02",
+   "reason": "公式原文は読了。不正アクセス・ポイント特典の不正操作・機能停止は確認済みだが、利用者アカウントおよび広告関連情報への影響は調査中で、個人情報漏えいの事実・可能性・項目・件数は明示されていないため掲載保留。10月22日告知とは別事案との説明を保持し混合しない。ポイント等に不審な変化があれば公式ヘルプセンターへ連絡するよう案内あり。"
   },
   {
-    "name": "SHIPS CYCLE MARKET（Swym Wishlist Plus経由、10月22日公表・11月2日報道候補）",
-    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-568/",
-    "reportURL": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html",
-    "checked_on": "2026-11-02",
-    "reason": "Tier新規項目から発見。外部アプリ侵害と疑似サイト誘導の報道候補だが、発表主体の原文を今回未特定。保存情報の漏えい有無・偽サイト入力者への影響・期間・利用者窓口の一次照合が未完了で掲載保留。カード情報流出を確認済みとせず、SHIPSの別事案とも混合しない。"
+   "name": "SHIPS CYCLE MARKET（Swym Wishlist Plus経由、10月22日公表・11月2日報道候補）",
+   "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-568/",
+   "reportURL": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html",
+   "checked_on": "2026-11-02",
+   "reason": "Tier新規項目から発見。外部アプリ侵害と疑似サイト誘導の報道候補だが、発表主体の原文を今回未特定。保存情報の漏えい有無・偽サイト入力者への影響・期間・利用者窓口の一次照合が未完了で掲載保留。カード情報流出を確認済みとせず、SHIPSの別事案とも混合しない。"
+  },
+  {
+   "name": "大阪ガス（satimo掲載の報道発表）",
+   "url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html",
+   "reason": "公式URLが接続失敗で本文・件数・窓口を確認できないため保留。"
+  },
+  {
+   "name": "東京電力（10月30日付の報道発表PDF）",
+   "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf",
+   "reason": "公式PDFがHTTP 403で本文・件数・窓口を確認できないため保留。"
+  },
+  {
+   "name": "TKC（11月2日付のお知らせ）",
+   "url": "https://www.tkc.jp/news/2026/20261102_2/",
+   "reason": "公式ページがHTTP 403で本文・件数・窓口を確認できないため保留。"
   }
  ]
 }
