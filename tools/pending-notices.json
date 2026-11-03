@@ -529,15 +529,14 @@
    "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf",
    "reason": "公式PDFがHTTP 403で本文・件数・窓口を確認できないため保留。"
   },
+
+
   {
-   "name": "TKC（11月2日付のお知らせ）",
-   "url": "https://www.tkc.jp/news/2026/20261102_2/",
-   "reason": "公式ページがHTTP 403で本文・件数・窓口を確認できないため保留。"
-  },
-  {
-   "name": "ネットマイル（ポイント交換サービス、最大約549万人の個人情報漏えいのおそれと報道）",
-   "url": "https://www.netmile.co.jp/",
-   "reason": "11月2日に公表と報道されているが、公式サイトがHTTP 503で本文・件数・窓口を確認できないため保留。"
+    "name": "Mリーグ機構（11月2日公式サイト・オンラインショップ情報漏えい発表候補）",
+    "referenceURL": "https://ai.itokoba.com/security-tier/incidents/incident-574/",
+    "reportURL": "https://rocket-boys.co.jp/security-measures-lab/mleague-official-shop-9502-data-breach-personal-risks-20261102/",
+    "checked_on": "2026-11-02",
+    "reason": "Tierと報道の新規候補。報道ページはweb・curlで取得不可、公式トップを取得しても当該本文へのリンクを特定できなかった。9,502人・注文13,922件・パスワードハッシュ等は一次未確認で確定掲載しない。"
   }
  ]
 }
