@@ -21,6 +21,135 @@
  {
   "date": "2026-11-04",
   "date_label": "2026年11月4日",
+  "org": "ナバック（RESERVE GATE α）",
+  "service": "宿泊予約システム「RESERVE GATE α」",
+  "kana": "なばっく りざーぶげーと reservegate",
+  "category": "travel",
+  "count": "最大約35万件（RGαの全会員情報）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "住所",
+   "電話番号",
+   "メールアドレス",
+   "購入・配送・利用履歴"
+  ],
+  "note": "宿泊予約システム「RESERVE GATE α」の脆弱性を突いた不正アクセス（11月2日発生）で、宿泊予約会員の個人情報が漏えい。漏えいした可能性のある情報は氏名、住所（郵便番号含む）、電話番号、メールアドレス、宿泊先ホテル名、チェックイン日。カード情報・パスワード等の漏えいは確認されていない。ホテルや予約サイトを装った不審なメール・SMS・電話が実際に届いていることを確認。会員マイページは利用停止中。",
+  "url": "https://www.navc2.co.jp/news_detail.php?id=44",
+  "contact": {
+   "name": "ナバック ReserveGate コールセンター（本件に関するお問い合わせ先）",
+   "emails": [
+    "rgmainte@navc2.co.jp"
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://www.navc2.co.jp/news_detail.php?id=44"
+ },
+ {
+  "date": "2026-11-04",
+  "date_label": "2026年11月4日",
+  "org": "メーカーズシャツ鎌倉",
+  "service": "メールマガジン（アララ「repica」）",
+  "kana": "めーかーずしゃつかまくら あらら れぴか",
+  "category": "retail",
+  "count": "メールアドレス約16万件",
+  "status": "確認",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "メールマガジン配信に利用するアララの「repica」への不正アクセスで、2026年10月8日〜29日にメールマガジン配信対象だった顧客のメールアドレスのみが流出。氏名・住所・電話番号・生年月日・購買履歴・パスワード・カード情報は含まれない。提供元（アララ）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://yomukama.shirt.co.jp/5374",
+  "contact": {
+   "name": "メーカーズシャツ鎌倉 カスタマーサポート窓口（本件）",
+   "tels": [
+    "0120-843-018"
+   ],
+   "hours": "10:00～18:00",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://shop.shirt.co.jp/shop/contact/contact.aspx"
+    }
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://yomukama.shirt.co.jp/5374"
+ },
+ {
+  "date": "2026-11-04",
+  "date_label": "2026年11月4日",
+  "org": "モスフードサービス（モスWEB会員）",
+  "service": "メール配信システム（アララ「repica」）",
+  "kana": "もすふーどさーびす もすばーがー もすうぇぶかいいん あらら れぴか",
+  "category": "food",
+  "count": "7,517,087件",
+  "status": "確認",
+  "items": [
+   "メールアドレス",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "本部・店舗のメールマガジン配信に利用するアララの「repica」への不正アクセスで、「モスWEB会員」のメールアドレス、年齢、性別、お住まいの都道府県等が流出したと11月4日にアララから報告。決済関連情報は含まれない。10月27日のSNSキャンペーン事案とは別。提供元（アララ）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://www.mos.co.jp/company/pr_pdf/pr_261104_2.pdf",
+  "contact": {
+   "name": "モスフードサービス 本件に関するお客様のお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://form.mos.co.jp/webapp/form/12633_xrs_200/index.do"
+    }
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://www.mos.co.jp/company/pr_pdf/pr_261104_2.pdf"
+ },
+ {
+  "date": "2026-11-04",
+  "date_label": "2026年11月4日",
+  "org": "AIRDO",
+  "service": "外部メール配信システム",
+  "kana": "えあどぅ airdo",
+  "category": "transport",
+  "count": "メールアドレス最大673,920件",
+  "status": "確認",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "利用する外部のメール配信システムへの不正アクセスで、同システム経由で配信されたメールからメールアドレス情報が流出したと報告を受けた。予約内容・運航状況・My AIRDO関連メールの配信を停止。公表ページに本件専用窓口の記載なし（各種お問い合わせ窓口への案内のみ）。配信システムの提供元名は記載されていないため、他の事案と合算しません。",
+  "url": "https://www.airdo.jp/news/2026/news-10708.html",
+  "src": "公式",
+  "source_checked_on": "2026-11-05"
+ },
+ {
+  "date": "2026-11-04",
+  "date_label": "2026年11月4日",
+  "org": "ちょびリッチ",
+  "service": "ポイントサイト「ちょびリッチ」のメール配信（アララメッセージ）",
+  "kana": "ちょびりっち あらら",
+  "category": "other",
+  "count": "メールアドレス1,348,525件（会員数ではない、対象会員は特定中）",
+  "status": "可能性",
+  "items": [
+   "メールアドレス",
+   "会員ID",
+   "生年月日",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "メール配信に利用する「アララメッセージ」への不正アクセスで、会員のメールアドレスが第三者に取得されたとアララから11月3日に報告。アララに預けていたメールアドレス、会員番号、ニックネーム、生年月日、性別、居住地（都道府県）、保有ポイント数が流出した可能性。氏名・電話番号・パスワード・銀行口座情報は預けていない。案内された問い合わせフォームのリンク先は今回確認できなかったため記載していません。提供元（アララ）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://chobirich.co.jp/1sgvii4gv9/",
+  "src": "公式",
+  "source_checked_on": "2026-11-05"
+ },
+ {
+  "date": "2026-11-04",
+  "date_label": "2026年11月4日",
   "org": "野村インベスター・リレーションズ（機関Navi）",
   "service": "機関投資家・アナリスト向けIR情報提供サービス「機関Navi」",
   "kana": "のむらいんべすたーりれーしょんず きかんなび のむらIR",
@@ -104,6 +233,59 @@
   "source_checked_on": "2026-11-04",
   "contact_checked_on": "2026-11-04",
   "contact_source": "https://www.release.tdnet.info/inbs/140120261103563387.pdf"
+ },
+ {
+  "date": "2026-11-03",
+  "date_label": "2026年11月3日",
+  "org": "ゴルフネットワークプラス（ゴルフネットワークプラスTV）",
+  "service": "メールマガジン配信ツール（アララ「repica」）",
+  "kana": "ごるふねっとわーくぷらす ごるふねっとわーく あらら れぴか",
+  "category": "media_entertainment",
+  "count": "メールアドレス209,460件（重複を含む可能性）",
+  "status": "確認",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "メールマガジン配信ツールの提供事業者が利用する外部サーバー（アララの「repica」）への不正アクセスで、預かっていたメールアドレスが流出。メールアドレス以外の流出は確認されていない。提供元（アララ）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://tv.golfnetwork.co.jp/news/detail/147",
+  "contact": {
+   "name": "ゴルフネットワークプラス お問い合わせ窓口（本件）",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://score.golfnetwork.co.jp/contact"
+    }
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://tv.golfnetwork.co.jp/news/detail/147"
+ },
+ {
+  "date": "2026-11-03",
+  "date_label": "2026年11月3日（第一信）",
+  "org": "駅探",
+  "service": "運行情報メール・朝刊メール・乗換アラートメール等（アララメッセージ）",
+  "kana": "えきたん あらら",
+  "category": "transport",
+  "count": "件数は確認中",
+  "status": "確認",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "メール配信に利用する「アララメッセージ」への不正アクセスで、駅探が同サービスを通じて扱うメールアドレス情報も流出したと11月3日午後にアララから報告（10月29日時点では影響なしとの回答だった）。詳細と影響範囲はアララに確認中。運行情報メール、朝刊メール、乗換アラートメール、フライトお知らせメールを一時停止。提供元（アララ）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://ekitan.co.jp/corp/news/20261103-01/",
+  "contact": {
+   "name": "駅探（本件に関するお問い合わせ先）",
+   "emails": [
+    "privacy@ekitan.com"
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://ekitan.co.jp/corp/news/20261103-01/"
  },
  {
   "date": "2026-11-03",
@@ -285,6 +467,26 @@
   "source_checked_on": "2026-11-04",
   "contact_checked_on": "2026-11-04",
   "contact_source": "https://camelcoffee.jp/news/important/2026/002221.html"
+ },
+ {
+  "date": "2026-11-02",
+  "date_label": "2026年11月2日（第三報）",
+  "org": "NTTPCコミュニケーションズ（Cuenote FC）",
+  "service": "各種サービスのメール配信（ユミルリンク「Cuenote FC」）",
+  "kana": "えぬてぃてぃぴーしー nttpc ゆみるりんく きゅーのーと cuenote",
+  "category": "telecom_it",
+  "count": "60,929件（メールアドレス等）",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "勤務先・所属",
+   "その他（詳細は出典）"
+  ],
+  "note": "メール配信に利用するユミルリンク「Cuenote FC」への不正アクセスで、サービス利用者の連絡先メールアドレスとメール本文への差し込み情報の一部（会社名、氏名、サービスに係る情報等）が漏えいしたと報告を受けた。カード情報・パスワードは含まれない。対象者には順次メールで連絡。案内された特設フォームは外部サービスのため記載していません。提供元（ユミルリンク）の公表分とは合算しません。",
+  "url": "https://www.nttpc.co.jp/press/info/2026/11/202611021600.html",
+  "src": "公式",
+  "source_checked_on": "2026-11-05"
  },
  {
   "date": "2026-11-02",
@@ -2081,6 +2283,38 @@
   "source_checked_on": "2026-10-29",
   "contact_checked_on": "2026-10-29",
   "contact_source": "https://www.release.tdnet.info/inbs/140120261029559851.pdf"
+ },
+ {
+  "date": "2026-10-27",
+  "date_label": "2026年10月23日（初報）、10月27日（続報）",
+  "org": "ノースモール（Northmall）",
+  "service": "メールマガジン（ブラストメール）",
+  "kana": "のーすもーる northmall ぶらすとめーる",
+  "category": "retail",
+  "count": "169,585名",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "メールアドレス",
+   "生年月日",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
+  ],
+  "note": "メールマガジン等の配信を委託する「ブラストメール」（ラクスライトクラウド）への不正アクセスで、登録されていた顧客の個人情報が漏えい。対象169,585名で、メールアドレス（全員）、氏名、生年月日、最終購入日、顧客区分の全部または一部。カード情報・ログインパスワード・決済情報は含まれない。提供元（ラクスライトクラウド（ブラストメール））や他の利用企業の公表分とは合算しません。",
+  "url": "https://www.northmall.com/blogs/news/info_20261027",
+  "contact": {
+   "name": "Northmall 本件に関するお問い合わせ窓口",
+   "forms": [
+    {
+     "label": "お問い合わせフォーム",
+     "url": "https://www.northmall.com/pages/contact"
+    }
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-05",
+  "contact_checked_on": "2026-11-05",
+  "contact_source": "https://www.northmall.com/blogs/news/info_20261027"
  },
  {
   "date": "2026-10-27",
