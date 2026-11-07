@@ -583,6 +583,12 @@
    "url": "https://art.passes.jp/",
    "checked_on": "2026-11-06",
    "reason": "satimoの新着から発見。記事URLがHTTP 404で本文を確認できないため保留。"
+  },
+  {
+   "name": "山梨県 富士山通行予約関連の流出候補（11月4日）",
+   "url": "https://www.pref.yamanashi.jp/fujisan/20261104/20261104tsuukouyoyakuryuusyutu.html",
+   "checked_on": "2026-11-07",
+   "reason": "satimoの新着から発見。公式URLがHTTP 404で本文を確認できないため保留。既掲載の10月30日富士山吉田ルート事案の続報の可能性があり、確認できるまで混合しない。"
   }
  ]
 }
