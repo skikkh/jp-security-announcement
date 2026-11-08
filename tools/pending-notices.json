@@ -589,6 +589,12 @@
    "url": "https://www.pref.yamanashi.jp/fujisan/20261104/20261104tsuukouyoyakuryuusyutu.html",
    "checked_on": "2026-11-07",
    "reason": "satimoの新着から発見。公式URLがHTTP 404で本文を確認できないため保留。既掲載の10月30日富士山吉田ルート事案の続報の可能性があり、確認できるまで混合しない。"
+  },
+  {
+   "name": "TKC（11月6日の続報候補）",
+   "url": "https://www.tkc.jp/news/2026/20261106_1/",
+   "checked_on": "2026-11-08",
+   "reason": "satimoの新着から発見。公式ページがHTTP 403で本文を確認できないため保留。既掲載のTKC（第3報）行の続報の可能性。"
   }
  ]
 }
