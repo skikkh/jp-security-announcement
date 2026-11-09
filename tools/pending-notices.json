@@ -595,6 +595,12 @@
    "url": "https://www.tkc.jp/news/2026/20261106_1/",
    "checked_on": "2026-11-08",
    "reason": "satimoの新着から発見。公式ページがHTTP 403で本文を確認できないため保留。既掲載のTKC（第3報）行の続報の可能性。"
+  },
+  {
+   "name": "三井ダイレクト損害保険（MS&AD、11月6日公表）",
+   "url": "https://www.ms-ad-hd.com/ja/news_group/20261106_mitsui_direct/main/0/link/20261106_mitsuidirect.pdf",
+   "checked_on": "2026-11-09",
+   "reason": "satimoの新着から発見。公式PDFがHTTP 403で本文を確認できないため保留。"
   }
  ]
 }
