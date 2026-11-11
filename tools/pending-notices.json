@@ -596,6 +596,18 @@
    "url": "https://www.ms-ad-hd.com/ja/news_group/20261106_mitsui_direct/main/0/link/20261106_mitsuidirect.pdf",
    "checked_on": "2026-11-09",
    "reason": "satimoの新着から発見。公式PDFがHTTP 403で本文を確認できないため保留。"
+  },
+  {
+   "name": "九州旅客鉄道（JR九州、11月9日公表のメールアドレス流出）",
+   "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/09/20261109_Apology_Regarding_the_Email_Address_Leak_Due_to_Unauthorized_Access.pdf",
+   "checked_on": "2026-11-11",
+   "reason": "satimoの新着から発見。公式PDFがHTTP 403で本文を確認できないため保留。"
+  },
+  {
+   "name": "ec-tencho.jp のお知らせ（運営者・内容未確認）",
+   "url": "https://www.ec-tencho.jp/news/sub_news_view.html?code=internet&tid=b0000835",
+   "checked_on": "2026-11-11",
+   "reason": "satimoの新着から発見。公式ページへの接続がTLSエラーで失敗し本文を確認できないため保留。"
   }
  ]
 }
