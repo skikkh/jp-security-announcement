@@ -608,6 +608,12 @@
    "url": "https://www.ec-tencho.jp/news/sub_news_view.html?code=internet&tid=b0000835",
    "checked_on": "2026-11-11",
    "reason": "satimoの新着から発見。公式ページへの接続がTLSエラーで失敗し本文を確認できないため保留。"
+  },
+  {
+   "name": "ソースネクスト（11月10日公表のお知らせ）",
+   "url": "https://www.sourcenext.com/support/i/2026/1110_info",
+   "checked_on": "2026-11-12",
+   "reason": "satimoの新着から発見。公式ページがHTTP 403で本文を確認できないため保留。既掲載のソースネクスト行の続報の可能性。"
   }
  ]
 }
