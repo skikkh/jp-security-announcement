@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-10-10",
+ "checked_on": "2026-11-14",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -614,6 +614,18 @@
    "url": "https://www.sourcenext.com/support/i/2026/1110_info",
    "checked_on": "2026-11-12",
    "reason": "satimoの新着から発見。公式ページがHTTP 403で本文を確認できないため保留。既掲載のソースネクスト行の続報の可能性。"
+  },
+  {
+   "name": "マネックス証券 2026-11-13 プレスリリース",
+   "url": "https://info.monex.co.jp/press/pdf/press2026_11_13_monex_pr.pdf",
+   "checked_on": "2026-11-14",
+   "reason": "公式PDFの取得が403で拒否されたため未確認"
+  },
+  {
+   "name": "読売巨人軍 お知らせ 31752",
+   "url": "https://www.giants.jp/news/31752/",
+   "checked_on": "2026-11-14",
+   "reason": "公式ページの取得が403で拒否されたため未確認"
   }
  ]
 }
