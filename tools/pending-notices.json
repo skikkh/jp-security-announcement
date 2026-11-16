@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-15",
+ "checked_on": "2026-11-16",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -632,6 +632,18 @@
    "url": "https://www.yamada-denki.jp/information/pdf/261113_1.pdf",
    "checked_on": "2026-11-15",
    "reason": "公式PDFへの接続に失敗したため未確認"
+  },
+  {
+   "name": "本田技研工業 2026-11-13 お知らせ",
+   "url": "https://global.honda/jp/news/2026/c261113.html",
+   "checked_on": "2026-11-16",
+   "reason": "公式ページの取得が403で拒否されたため未確認"
+  },
+  {
+   "name": "近鉄不動産 2026-11-13 お知らせPDF",
+   "url": "https://www.kintetsu-re.co.jp/r/pdf/261113.pdf",
+   "checked_on": "2026-11-16",
+   "reason": "公式PDFの取得が403で拒否されたため未確認"
   }
  ]
 }
