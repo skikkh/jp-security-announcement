@@ -1,6 +1,21 @@
 [
  {
   "date": "2026-11-17",
+  "date_label": "2026年11月17日（第一報）",
+  "org": "チャットプラス",
+  "service": "「ChatPlus」「AI AgentPlus」「FAQPlus」で利用する一部のWebサーバ",
+  "kana": "ちゃっとぷらす chatplus えーあいえーじぇんとぷらす faqplus",
+  "category": "telecom_it",
+  "count": "調査中",
+  "status": "可能性",
+  "items": [],
+  "note": "2026年11月13日に「ChatPlus」「AI AgentPlus」「FAQPlus」で利用する一部のWebサーバに外部の第三者による不正アクセスがあり、17日にシステム監視で痕跡を検知して遮断したと公表しています。利用企業から預かっている個人データが閲覧または取得された可能性があり、漏えいの有無と範囲は外部専門機関と調査中です。利用企業が個別に公表する分とは合算しません。",
+  "url": "https://www.release.tdnet.info/inbs/140120261117582334.pdf",
+  "src": "公式",
+  "source_checked_on": "2026-11-17"
+ },
+ {
+  "date": "2026-11-17",
   "date_label": "2026年11月17日",
   "org": "ソフト99コーポレーション（GoQSystem経由）",
   "service": "オンラインショップの受注・発送管理委託先（GoQSystem）",
