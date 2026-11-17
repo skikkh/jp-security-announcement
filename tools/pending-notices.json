@@ -656,12 +656,6 @@
    "url": "https://www.motex.co.jp/news/notice/2026/release261116/",
    "checked_on": "2026-11-17",
    "reason": "公式ページの取得が500エラーのため未確認"
-  },
-  {
-   "name": "大阪府 報道発表 prs_00002",
-   "url": "https://www.pref.osaka.lg.jp/hodo/fumin/o050180/prs_00002.html",
-   "checked_on": "2026-11-17",
-   "reason": "公式ページの取得がタイムアウト（408）のため未確認"
   }
  ]
 }
