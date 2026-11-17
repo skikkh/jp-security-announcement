@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-16",
+ "checked_on": "2026-11-17",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -644,6 +644,24 @@
    "url": "https://www.kintetsu-re.co.jp/r/pdf/261113.pdf",
    "checked_on": "2026-11-16",
    "reason": "公式PDFの取得が403で拒否されたため未確認"
+  },
+  {
+   "name": "大和リビング 2026-11-16 お知らせPDF",
+   "url": "https://www.daiwaliving.co.jp/cms/wp-content/uploads/2026/11/20261116.pdf",
+   "checked_on": "2026-11-17",
+   "reason": "公式PDFの取得が403で拒否されたため未確認"
+  },
+  {
+   "name": "エムオーテックス 2026-11-16 お知らせ",
+   "url": "https://www.motex.co.jp/news/notice/2026/release261116/",
+   "checked_on": "2026-11-17",
+   "reason": "公式ページの取得が500エラーのため未確認"
+  },
+  {
+   "name": "大阪府 報道発表 prs_00002",
+   "url": "https://www.pref.osaka.lg.jp/hodo/fumin/o050180/prs_00002.html",
+   "checked_on": "2026-11-17",
+   "reason": "公式ページの取得がタイムアウト（408）のため未確認"
   }
  ]
 }
