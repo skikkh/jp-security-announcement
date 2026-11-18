@@ -23,6 +23,38 @@
  {
   "date": "2026-11-17",
   "date_label": "2026年11月17日",
+  "org": "Francfranc（フランフラン）",
+  "service": "Francfrancが利用するプレイドの「KARTE」",
+  "kana": "ふらんふらん francfranc かるて karte ぷれいど",
+  "category": "retail",
+  "count": "会員情報最大約598万件、公式EC購入履歴関連最大約400万件（区分間の重複の可能性あり）",
+  "status": "可能性",
+  "items": [
+   "氏名",
+   "生年月日",
+   "会員ID",
+   "住所",
+   "性別",
+   "購入・配送・利用履歴",
+   "その他（詳細は出典）"
+  ],
+  "note": "Francfrancが利用するプレイドの「KARTE」への不正アクセスで、会員情報と公式ECサイトの購入履歴が外部に流出した可能性があると公表しています。11月15日にプレイドからの連絡で把握しました。会員情報は最大約598万件（氏名、生年月日、ユーザーID、都道府県・市区町村）、公式EC購入履歴関連は最大約400万件（性別、生年月日、郵便番号、年代）です。カード情報とログインパスワードの流出は確認されていません。件数・範囲は調査中です。問い合わせ窓口はアインズ＆トルペ・アユーラと共通です。提供元（プレイド）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://www.francfranc.co.jp/news/2026/qa3pcqeqbdc7",
+  "contact": {
+   "name": "お客さまサポートセンター（アインズ＆トルペ・アユーラ・Francfranc共通、本件）",
+   "tels": [
+    "0120-001-318"
+   ],
+   "hours": "9:00〜21:00"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-18",
+  "contact_checked_on": "2026-11-18",
+  "contact_source": "https://www.francfranc.co.jp/news/2026/qa3pcqeqbdc7"
+ },
+ {
+  "date": "2026-11-17",
+  "date_label": "2026年11月17日",
   "org": "モリサワ（Morisawa Fonts）",
   "service": "Morisawa Fontsで利用する委託先プレイドの「KARTE」",
   "kana": "もりさわ morisawa もりさわふぉんつ morisawa fonts かるて karte ぷれいど",
