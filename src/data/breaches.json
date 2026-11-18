@@ -2,6 +2,24 @@
  {
   "date": "2026-11-18",
   "date_label": "2026年11月18日",
+  "org": "オープン（オープングループ）",
+  "service": "「BizRobo!mini」等を運用するクラウド環境",
+  "kana": "おーぷん おーぷんぐるーぷ open bizrobo びずろぼ びずろぼみに bizrobo!mini",
+  "category": "telecom_it",
+  "count": "BizRobo!mini利用企業約560社・約1,000アカウントの認証情報（影響は調査中）",
+  "status": "可能性",
+  "items": [
+   "会員ID",
+   "パスワード"
+  ],
+  "note": "連結子会社オープンが11月16日にクラウド環境のセキュリティアラートを確認し、11月12日に第三者がサービス運用用のクラウド環境へ不正アクセスしていたことが判明したと公表しています。「BizRobo!mini」利用企業（約560社、約1,000アカウント）の認証IDとパスワードを保存する認証サーバーへの不正アクセスを確認し、同じ環境上の他のサーバー・サービスへの影響も調査中です。個人情報保護委員会へ報告済みで、BizRobo!miniは引き続き利用できます。本件専用の問い合わせ窓口は記載されていません。",
+  "url": "https://www.release.tdnet.info/inbs/140120261117582184.pdf",
+  "src": "公式",
+  "source_checked_on": "2026-11-18"
+ },
+ {
+  "date": "2026-11-18",
+  "date_label": "2026年11月18日",
   "org": "インフキュリオン（Notion AI）",
   "service": "業務で利用する「Notion」のAI機能（委託先Fireworks AI）",
   "kana": "いんふきゅりおん infcurion のーしょん notion ふぁいやーわーくす fireworks ai",
