@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-21",
+ "checked_on": "2026-11-23",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -686,6 +686,24 @@
    "url": "https://www.nbk1560.com/news/2026/20261119/",
    "checked_on": "2026-11-21",
    "reason": "公式ページが403を返し、本文を確認できませんでした。"
+  },
+  {
+   "name": "BEAMS",
+   "url": "https://www.beams.co.jp/company/information/detail/282",
+   "checked_on": "2026-11-23",
+   "reason": "403"
+  },
+  {
+   "name": "Peach Aviation",
+   "url": "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf",
+   "checked_on": "2026-11-23",
+   "reason": "接続失敗"
+  },
+  {
+   "name": "メルセデス・ベンツ日本",
+   "url": "https://www.mercedes-benz.co.jp/passengercars/brand/notification/261120-information.html",
+   "checked_on": "2026-11-23",
+   "reason": "403"
   }
  ]
 }

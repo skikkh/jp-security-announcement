@@ -26,6 +26,82 @@
  {
   "date": "2026-11-20",
   "date_label": "2026年11月20日",
+  "org": "デジタル庁",
+  "service": "ガバメントソリューションサービス（GSS）のファイル共有サービス",
+  "kana": "でじたるちょう がばめんとそりゅーしょんさーびす gss",
+  "category": "government",
+  "count": "調査中",
+  "status": "可能性",
+  "items": [],
+  "note": "GSSのファイル共有サービスで、2026年7月30日〜11月12日に、権限のない者がファイルを閲覧・取得できた可能性があると公表しています。ファイルには個人情報が含まれていると想定され、個人情報保護委員会に報告しています。",
+  "url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986",
+  "src": "公式",
+  "source_checked_on": "2026-11-23"
+ },
+ {
+  "date": "2026-11-20",
+  "date_label": "2026年11月20日",
+  "org": "ポーラ（KARTE）",
+  "service": "ウェブサイト等で利用するプレイドの「KARTE」",
+  "kana": "ぽーら pola かるて karte ぷれいど",
+  "category": "retail",
+  "count": "56,349件",
+  "status": "確認",
+  "items": [
+   "氏名",
+   "会員ID"
+  ],
+  "note": "利用するプレイドの「KARTE」への不正アクセスで、顧客の氏名とPOLA ID 56,349件が漏えいしたと公表しています。提供元（プレイド）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://www.pola.co.jp/notice/unauthorized-access-20261120/index.html",
+  "src": "公式",
+  "source_checked_on": "2026-11-23"
+ },
+ {
+  "date": "2026-11-20",
+  "date_label": "2026年11月20日",
+  "org": "Vポイントマーケティング（元委託先WOW WORLD）",
+  "service": "2020年の「【Tポイント】Q＆Aメール」配信業務",
+  "kana": "ぶいぽいんと vぽいんと vpoint てぃーぽいんと tぽいんと わうわーるど wow world",
+  "category": "finance",
+  "count": "9,313件",
+  "status": "確認",
+  "items": [
+   "メールアドレス"
+  ],
+  "note": "過去にメール配信業務を委託していたWOW WORLDのサーバーが2026年11月7日に不正アクセスを受け、契約終了後も同社の作業用サーバーに残っていた「【Tポイント】Q＆Aメール」送付対象者のメールアドレス9,313件が漏えいしたと公表しています。氏名、住所、電話番号、生年月日、パスワード、ポイント数・利用履歴、カード情報等は含まれていません。提供元（WOW WORLD）の公表分や他の委託元の公表分とは合算しません。",
+  "url": "https://www.vpoint.co.jp/news/20261120_2532/",
+  "src": "公式",
+  "source_checked_on": "2026-11-23"
+ },
+ {
+  "date": "2026-11-20",
+  "date_label": "2026年11月20日",
+  "org": "WOW WORLD",
+  "service": "メール配信サービス等のサーバー",
+  "kana": "わうわーるど wow world",
+  "category": "telecom_it",
+  "count": "取引先4社の顧客データ 計約4万9,000件",
+  "status": "確認",
+  "items": [
+   "メールアドレス",
+   "その他（詳細は出典）"
+  ],
+  "note": "同社のサーバーが第三者による不正アクセスを受け、取引先4社の顧客データ（メールアドレス等、計約4万9,000件）が外部に漏えいしたと公表しています（第1報）。",
+  "url": "https://www.wow-world.co.jp/release/001621.html",
+  "contact": {
+   "name": "WOW WORLD 本件に関するお問い合わせ窓口",
+   "emails": [
+    "security-contact@wow-world.co.jp"
+   ]
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-23",
+  "contact_checked_on": "2026-11-23",
+  "contact_source": "https://www.wow-world.co.jp/release/001621.html"
+ },
+ {
+  "date": "2026-11-20",
+  "date_label": "2026年11月20日",
   "org": "三井住友銀行（KARTE）",
   "service": "ホームページ・アプリでのお知らせ表示等に利用するプレイドの「KARTE」",
   "kana": "みついすみともぎんこう smbc かるて karte ぷれいど",
@@ -2277,6 +2353,37 @@
   "url": "https://www.release.tdnet.info/inbs/140120261113579636.pdf",
   "src": "公式",
   "source_checked_on": "2026-11-13"
+ },
+ {
+  "date": "2026-11-12",
+  "date_label": "2026年11月12日",
+  "org": "エフェクチュアル",
+  "service": "クラウドサービス「Location Connect」",
+  "kana": "えふぇくちゅある effectual ろけーしょんこねくと location connect",
+  "category": "telecom_it",
+  "count": "1,348件（うち個人情報826件）",
+  "status": "確認",
+  "items": [
+   "メールアドレス",
+   "会員ID",
+   "その他（詳細は出典）"
+  ],
+  "note": "「Location Connect」の内部APIの設定不備により、2026年6月30日と7月22日の外部からのスキャンで1,348件（うち個人情報826件）が流出したと公表しています。メールアドレス、内部ユーザーID、アカウント状態、ログイン時刻などです。10月23日に判明しました。",
+  "url": "https://effectual.co.jp/news/20261112/",
+  "contact": {
+   "name": "エフェクチュアル 情報セキュリティ対策本部",
+   "tels": [
+    "0800-222-1006"
+   ],
+   "emails": [
+    "sec-desk@effectual.co.jp"
+   ],
+   "hours": "平日10:00〜18:00（2027年2月1日以降の電話は03-6447-2175）"
+  },
+  "src": "公式",
+  "source_checked_on": "2026-11-23",
+  "contact_checked_on": "2026-11-23",
+  "contact_source": "https://effectual.co.jp/news/20261112/"
  },
  {
   "date": "2026-11-12",
