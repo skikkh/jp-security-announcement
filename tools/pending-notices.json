@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-23",
+ "checked_on": "2026-11-25",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -704,6 +704,30 @@
    "url": "https://www.mercedes-benz.co.jp/passengercars/brand/notification/261120-information.html",
    "checked_on": "2026-11-23",
    "reason": "403"
+  },
+  {
+   "name": "ヴェレダ・ジャパン",
+   "url": "https://weleda-notice-static-apne1.s3.ap-northeast-1.amazonaws.com/news/20261116.html",
+   "checked_on": "2026-11-25",
+   "reason": "公式ドメイン（weleda.jp）が403・接続失敗で、告知ページとの関係を確認できない"
+  },
+  {
+   "name": "日本新薬",
+   "url": "https://www.nippon-shinyaku.co.jp/news/news.php?id=3856",
+   "checked_on": "2026-11-25",
+   "reason": "406"
+  },
+  {
+   "name": "サントリーウエルネス",
+   "url": "https://www.suntory-kenko.com/information/273/",
+   "checked_on": "2026-11-25",
+   "reason": "接続失敗"
+  },
+  {
+   "name": "TOHO-ONE",
+   "url": "https://www.toho-one.com/notifications/2026/20261117_01",
+   "checked_on": "2026-11-25",
+   "reason": "JavaScriptでのみ本文を表示し取得できない"
   }
  ]
 }
