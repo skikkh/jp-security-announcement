@@ -722,12 +722,6 @@
    "url": "https://www.suntory-kenko.com/information/273/",
    "checked_on": "2026-11-25",
    "reason": "接続失敗"
-  },
-  {
-   "name": "TOHO-ONE",
-   "url": "https://www.toho-one.com/notifications/2026/20261117_01",
-   "checked_on": "2026-11-25",
-   "reason": "JavaScriptでのみ本文を表示し取得できない"
   }
  ]
 }

@@ -1462,6 +1462,25 @@
  },
  {
   "date": "2026-11-17",
+  "date_label": "2026年11月17日（11月24日に続報）",
+  "org": "東宝（TOHO-ONE・KARTE）",
+  "service": "「TOHO-ONE」で利用するプレイドの「KARTE」",
+  "kana": "とうほう toho とうほうわん toho-one かるて karte ぷれいど",
+  "category": "media_entertainment",
+  "count": "3,470,217件",
+  "status": "確認",
+  "items": [
+   "会員ID",
+   "性別",
+   "その他（詳細は出典）"
+  ],
+  "note": "「TOHO-ONE」で利用するプレイドの「KARTE」への不正アクセスで、会員の会員番号、年代、都道府県、性別が流出したと公表しています。11月24日の続報で、サービス開始以降にログインした会員3,470,217件の流出が確認されたとしています。個人を特定できる情報、パスワード、カード情報は含まれていません。初報：https://www.toho.co.jp/company/2026/1117-pr-1.pdf 提供元（プレイド）の公表分や他の利用企業の公表分とは合算しません。",
+  "url": "https://www.toho.co.jp/company/2026/1124-pr-1.pdf",
+  "src": "公式",
+  "source_checked_on": "2026-11-25"
+ },
+ {
+  "date": "2026-11-17",
   "date_label": "2026年11月17日",
   "org": "カバー（hololive production OFFICIAL SHOP・オープンロジ経由）",
   "service": "hololive production OFFICIAL SHOPの出荷業務（過去の委託先オープンロジ）",
