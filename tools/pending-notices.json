@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-25",
+ "checked_on": "2026-11-26",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -721,6 +721,12 @@
    "name": "サントリーウエルネス",
    "url": "https://www.suntory-kenko.com/information/273/",
    "checked_on": "2026-11-25",
+   "reason": "接続失敗"
+  },
+  {
+   "name": "藤崎",
+   "url": "https://www.fujisaki.co.jp/event/post-35.html",
+   "checked_on": "2026-11-26",
    "reason": "接続失敗"
   }
  ]
