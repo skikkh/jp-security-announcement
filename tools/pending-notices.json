@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-26",
+ "checked_on": "2026-11-27",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -728,6 +728,12 @@
    "url": "https://www.fujisaki.co.jp/event/post-35.html",
    "checked_on": "2026-11-26",
    "reason": "接続失敗"
+  },
+  {
+   "name": "ニューバランス ジャパン（KARTE）",
+   "url": "https://shop.newbalance.jp/information-20261126.html",
+   "checked_on": "2026-11-27",
+   "reason": "403"
   }
  ]
 }
