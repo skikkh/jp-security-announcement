@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-11-27",
+ "checked_on": "2026-11-28",
  "candidates": [
   {
    "name": "京都サンガF.C. ファンクラブ会員情報の誤送信",
@@ -733,6 +733,12 @@
    "name": "ニューバランス ジャパン（KARTE）",
    "url": "https://shop.newbalance.jp/information-20261126.html",
    "checked_on": "2026-11-27",
+   "reason": "403"
+  },
+  {
+   "name": "パーソルキャリア",
+   "url": "https://www.persol-career.co.jp/newsroom/news/information/2026/20261126_2388/",
+   "checked_on": "2026-11-28",
    "reason": "403"
   }
  ]
